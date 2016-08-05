@@ -1,0 +1,41 @@
+html {
+  font-size: 20px;
+  line-height: 29px;
+  font-family: "PT Sans", sans-serif;
+  color: #453e34; }
+
+.max-width {
+  max-width: 34rem; }
+
+.centered {
+  margin: 0 auto; }
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: 1rem; }
+
+header {
+  color: #55d8a5;
+  font-size: 3em;
+  padding-top: 1em;
+  padding-bottom: 0.65em; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+.py1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+
+.my1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+
+.my2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+
+.my4 {
+  margin-top: 4rem;
+  margin-bottom: 4rem; }
