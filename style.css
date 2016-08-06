@@ -20,6 +20,7 @@ header {
   padding-bottom: 0.65em; }
 
 a {
+  color: #2fcb8e;
   text-decoration: none; }
   a:hover {
     text-decoration: underline; }
