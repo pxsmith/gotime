@@ -1,33 +1,59 @@
+// Variables
 $bright: rgb(85, 216, 165)
+$bright: gold
 $dark: rgb(69, 62, 52)
 
-html
-	font-size: 20px
-	line-height: 29px
-	font-family: 'PT Sans', sans-serif
+
+
+
+// Resets
+h1, h2, h3, h4, h5, h6
+	font-size: 1rem
+a
+	color: inherit
+
+
+
+// My stylees
+:root
+	background-color: whitesmoke
+	font-family: 'Inconsolata', monospace
+	font-size: 19px
+	line-height: 1em * 1.618
 	color: $dark
 
-.max-width
-	max-width: 34rem
-
-.centered
-	margin: 0 auto
-
-h1, h2, h3, h4, h5, h6, p
-	font-size: 1rem
-
-header
-	color: $bright
-	font-size: 3em
-	padding:
-		top: 1em
-		bottom: 0.65em
+h1, h2, h3, h4, h5, h6
+	color: darken(whitesmoke, 75)
+	font: 
+		family: 'Merriweather', serif
+		size: 5rem
 
 a
-	color: darken($bright, 10)
-	text-decoration: none
 	&:hover
 		text-decoration: underline
+		background-color: $bright
+	-webkit-text-decoration-color: $bright
+	text-decoration-color: $bright
+
+small
+	opacity: 0.5
+
+// Atomic classes
+.merriweather
+	font-family: 'Merriweather', serif
+.inconsolata
+	font-family: 'Inconsolata', monospace
+
+.max-width
+	max-width: 28rem
+
+::selection
+	background-color: gold
+
+.centered
+	margin: 
+		right: auto
+		left: auto
 
 // -----------------------------
 // Margin & Padding

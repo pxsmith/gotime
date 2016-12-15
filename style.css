@@ -1,29 +1,46 @@
-html {
-  font-size: 20px;
-  line-height: 29px;
-  font-family: "PT Sans", sans-serif;
-  color: #453e34; }
-
-.max-width {
-  max-width: 34rem; }
-
-.centered {
-  margin: 0 auto; }
-
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6 {
   font-size: 1rem; }
 
-header {
-  color: #55d8a5;
-  font-size: 3em;
-  padding-top: 1em;
-  padding-bottom: 0.65em; }
+a {
+  color: inherit; }
+
+:root {
+  background-color: whitesmoke;
+  font-family: 'Inconsolata', monospace;
+  font-size: 19px;
+  line-height: 1.618em;
+  color: #453e34; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #363636;
+  font-family: 'Merriweather', serif;
+  font-size: 5rem; }
 
 a {
-  color: #2fcb8e;
-  text-decoration: none; }
+  -webkit-text-decoration-color: gold;
+  text-decoration-color: gold; }
   a:hover {
-    text-decoration: underline; }
+    text-decoration: underline;
+    background-color: gold; }
+
+small {
+  opacity: 0.5; }
+
+.merriweather {
+  font-family: 'Merriweather', serif; }
+
+.inconsolata {
+  font-family: 'Inconsolata', monospace; }
+
+.max-width {
+  max-width: 28rem; }
+
+::selection {
+  background-color: gold; }
+
+.centered {
+  margin-right: auto;
+  margin-left: auto; }
 
 .py1 {
   padding-top: 1rem;
