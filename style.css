@@ -4,17 +4,42 @@ h1, h2, h3, h4, h5, h6 {
 a {
   color: inherit; }
 
+img {
+  box-sizing: border-box; }
+
 :root {
   background-color: whitesmoke;
   font-family: 'Inconsolata', monospace;
   font-size: 19px;
-  line-height: 1.618em;
+  line-height: 1.35;
   color: #453e34; }
 
 h1, h2, h3, h4, h5, h6 {
   color: #363636;
   font-family: 'Merriweather', serif;
+  font-size: 1.618rem; }
+
+.logo {
   font-size: 5rem; }
+
+.blog-post h1, .blog-post h2, .blog-post h3 {
+  font-family: 'Inconsolata', monospace;
+  font-size: 1.618rem;
+  font-weight: normal; }
+
+.blog-post img {
+  max-width: 180%;
+  margin-left: -40%;
+  padding: 0.75rem;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  box-shadow: 0 1px 5px gainsboro; }
+
+.blog-post--title {
+  font-weight: 900;
+  font-family: 'Merriweather', serif;
+  font-size: 1.618rem; }
 
 a {
   -webkit-text-decoration-color: gold;
@@ -33,7 +58,7 @@ small {
   font-family: 'Inconsolata', monospace; }
 
 .max-width {
-  max-width: 28rem; }
+  max-width: 36rem; }
 
 ::selection {
   background-color: gold; }
