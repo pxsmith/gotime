@@ -1,47 +1,29 @@
-// Variables
-$bright: rgb(85, 216, 165)
-$bright: gold
-$dark: rgb(69, 62, 52)
-
-
-$s: 1.618rem
-$s2: $s * 2
-$s3: $s * 3
-$s-1: 1 / $s
-
-
-// Resets
-h1, h2, h3, h4, h5, h6
-	font-size: 1rem
-a
-	color: inherit
-img
-	box-sizing: border-box
-
-
+@import resets
+@import variables
+@import inverse-font-scale
 
 // My stylees
-:root
+\:root
 	background-color: whitesmoke
 	font-family: 'Inconsolata', monospace
-	font-size: 19px
+	font-size: $base-font-size
 	line-height: 1.35
 	color: $dark
 
 h1, h2, h3, h4, h5, h6
 	color: darken(whitesmoke, 75)
 	font: 
-		family: 'Merriweather', serif
+		// family: 'Merriweather', serif
 		size: 1.618rem
+		weight: normal
 
-.logo
-	font-size: 5rem
+
 
 .blog-post
 	h1, h2, h3
 		font:
 			family: 'Inconsolata', monospace
-			size: $s
+			size: $gr1
 			weight: normal
 	img
 		max-width: 180%
@@ -56,7 +38,7 @@ h1, h2, h3, h4, h5, h6
 	font:
 		weight: 900
 		family: 'Merriweather', serif	
-		size: $s
+		size: $gr1
 
 
 a
@@ -80,33 +62,3 @@ small
 
 ::selection
 	background-color: gold
-
-.centered
-	margin: 
-		right: auto
-		left: auto
-
-// -----------------------------
-// Margin & Padding
-// -----------------------------
-.py1
-	padding:
-		top: 1rem
-		bottom: 1rem
-
-.my1
-	margin:
-		top: 1rem
-		bottom: 1rem
-
-.my2
-	margin:
-		top: 2rem
-		bottom: 2rem
-
-.my4
-	margin:
-		top: 4rem
-		bottom: 4rem
-
-// - - - - - - - - - - - - - - -

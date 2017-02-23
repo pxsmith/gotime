@@ -7,13 +7,713 @@
 		"uuidString": "0C294D0B-93BD-4630-86FE-2B1628DE5832"
 		}
 	],
-"creatorBuild": "25479",
+"creatorBuild": "25568",
 "files": {
 	"\/.gitignore": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/.gitignore",
 		"oF": 0
+		},
+	"\/bower.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/bower-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/bower_components\/tachyons\/.bower.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/bower_components\/tachyons\/.bower.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/bower_components\/tachyons\/bower.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/bower_components\/tachyons\/bower.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/bower_components\/tachyons\/code-of-conduct.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/bower_components\/tachyons\/code-of-conduct.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/bower_components\/tachyons\/css\/tachyons.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/tachyons\/css\/tachyons.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/css\/tachyons.min.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/tachyons\/css\/tachyons.min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/tachyons\/index.html",
+		"oF": 0
+		},
+	"\/bower_components\/tachyons\/license": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/tachyons\/license",
+		"oF": 0
+		},
+	"\/bower_components\/tachyons\/package.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/bower_components\/tachyons\/package.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/bower_components\/tachyons\/readme.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/bower_components\/tachyons\/readme.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/bower_components\/tachyons\/src\/_aspect-ratios.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_aspect-ratios.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_background-position.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_background-position.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_background-size.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_background-size.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_border-colors.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_border-colors.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_border-radius.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_border-radius.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_border-style.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_border-style.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_border-widths.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_border-widths.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_borders.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_borders.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_box-shadow.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_box-shadow.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_box-sizing.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_box-sizing.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_clears.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_clears.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_code.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_code.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_colors.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_colors.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_coordinates.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_coordinates.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_debug-children.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_debug-children.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_debug-grid.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_debug-grid.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_debug.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_debug.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_display.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_display.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_flexbox.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_flexbox.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_floats.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_floats.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_font-family.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_font-family.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_font-style.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_font-style.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_font-weight.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_font-weight.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_forms.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_forms.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_heights.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_heights.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_hovers.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_hovers.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_images.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_images.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_letter-spacing.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_letter-spacing.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_line-height.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_line-height.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_links.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_links.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_lists.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_lists.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_max-widths.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_max-widths.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_media-queries.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_media-queries.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_module-template.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_module-template.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_negative-margins.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_negative-margins.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_nested.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_nested.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_normalize.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_normalize.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_opacity.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_opacity.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_outlines.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_outlines.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_overflow.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_overflow.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_position.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_position.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_rotations.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_rotations.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_skins-pseudo.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_skins-pseudo.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_skins.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_skins.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_spacing.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_spacing.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_styles.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_styles.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_tables.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_tables.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_text-align.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_text-align.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_text-decoration.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_text-decoration.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_text-transform.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_text-transform.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_type-scale.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_type-scale.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_typography.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_typography.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_utilities.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_utilities.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_vertical-align.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_vertical-align.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_visibility.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_visibility.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_white-space.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_white-space.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_widths.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_widths.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_word-break.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_word-break.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/_z-index.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/bower_components\/tachyons\/src\/_z-index.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/tachyons\/src\/tachyons.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/tachyons\/src\/tachyons.css",
+		"oF": 0,
+		"oS": 0
 		},
 	"\/CNAME": {
 		"ft": 8192,
@@ -33,7 +733,36 @@
 		"oAP": "\/source\/.sass-cache\/984e944a149ff44c817000054f1251c50fdc9662\/style.sassc",
 		"oF": 0
 		},
-	"\/source\/index.jade": {
+	"\/source\/_html-head.pug": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/source\/_html-head.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/source\/_masthead.pug": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/source\/_masthead.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/source\/_variables.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/_variables.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/source\/index.pug": {
 		"cOD": 1,
 		"ft": 512,
 		"oA": 0,
@@ -64,25 +793,63 @@
 		"oF": 0,
 		"oS": 0
 		},
-	"\/thoughts\/rogue-one-first-thoughts.html": {
+	"\/thinks\/_rogue-one-first-thoughts.html": {
 		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/thoughts\/rogue-one-first-thoughts.html",
+		"oA": 1,
+		"oAP": "\/thinks\/_rogue-one-first-thoughts.html",
 		"oF": 0
 		},
-	"\/thoughts\/rogue-one-first-thoughts.pug": {
+	"\/thinks\/_rogue-one-first-thoughts.pug": {
 		"cOD": 1,
 		"ft": 512,
 		"oA": 0,
-		"oAP": "\/thoughts\/rogue-one-first-thoughts.html",
+		"oAP": "\/thinks\/_rogue-one-first-thoughts.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/thoughts\/thought.pug": {
+	"\/thinks\/about-growth.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/thinks\/about-growth.html",
+		"oF": 0
+		},
+	"\/thinks\/about-growth.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 1,
+		"oAP": "\/thinks\/about-growth.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/thinks\/about-growth.pug": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/thinks\/about-growth.html",
+		"oF": 1,
+		"oS": 0
+		},
+	"\/thinks\/rogue-one-first-thoughts.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/thinks\/rogue-one-first-thoughts.html",
+		"oF": 0
+		},
+	"\/thinks\/thought.pug": {
 		"cOD": 1,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "\/thoughts\/thought.html",
+		"oAP": "\/thinks\/thought.html",
 		"oF": 0,
 		"oS": 0
 		}
@@ -743,6 +1510,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-await-in-loop": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-bitwise": {
 			"active": 0,
 			"optionString": "{'allow': ['~'], 'int32Hint': true}"
@@ -960,6 +1731,10 @@
 			"optionString": "{'grouping': false, 'allowCall': false }"
 			},
 		"no-mixed-spaces-and-tabs": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-multi-assign": {
 			"active": 0,
 			"optionString": ""
 			},
@@ -1283,9 +2058,17 @@
 			"active": 0,
 			"optionString": "{'destructuring': 'any', 'ignoreReadBeforeAssign': false}"
 			},
+		"prefer-destructuring": {
+			"active": 0,
+			"optionString": "{'array': true, 'object': true}, {'enforceForRenamedProperties': false}"
+			},
 		"prefer-numeric-literals": {
 			"active": 0,
 			"optionString": ""
+			},
+		"prefer-promise-reject-errors": {
+			"active": 0,
+			"optionString": "{'allowEmptyReject': false}"
 			},
 		"prefer-rest-params": {
 			"active": 0,
@@ -1380,6 +2163,10 @@
 			"optionString": ""
 			},
 		"template-curly-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"template-tag-spacing": {
 			"active": 0,
 			"optionString": "'never'"
 			},

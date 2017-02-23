@@ -10,21 +10,13 @@
 doctype
 html
 head
-  meta(charset='utf-8')
-  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  include _html-head
   title pxsmith
-  meta(name='description', content='')
-  meta(name='viewport', content='width=device-width, initial-scale=1')
-  link(rel='stylesheet', href='style.css')
-  link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=PT+Sans')
-  link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Inconsolata')
-  link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Merriweather:900')
-  link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Merriweather:400,400i,900,900i')
-
+  include _masthead
+  
 body
-  main.centered.max-width
-    h1.py1.logo (px)smith
-    a(href='/thoughts/rogue-one-first-thoughts.html') Rogue One First Thoughts
+  main.center.max-width
+    +masthead
     p Hello! 👋 I&rsquo;m happy you&rsquo;ve made your way here. My name is Phil Smith. I&rsquo;m a product designer in <a href='http://vancouverisawesome.com'>Vancouver, BC</a> working for <a href='http://acl.com'>ACL</a>. I have experience branding, designing mobile and web apps, building prototypes, illustrating, and animating. I love good company, food, beer, music, and the great outdoors. If you want to chat about a side project (or anything else for that matter), let&rsquo;s grab a drink! 🍻 <a href='https://twitter.com/philsmithdesign'>DM me on Twitter</a>.
 
     p &mdash;Phil 
@@ -35,9 +27,6 @@ body
         | , 
         a(href='http://github.com/pxsmith') Github
         | )
-    //- a.typeform-share(href='https://smith.typeform.com/to/l0tJCK', data-mode='1', target='_blank') Who is the best musician of all time?
-    //-   script.
-    //-     (function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()
 
   script.
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

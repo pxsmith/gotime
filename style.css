@@ -7,6 +7,21 @@ a {
 img {
   box-sizing: border-box; }
 
+.f-1 {
+  font-size: 0.1618rem !important; }
+
+.f0 {
+  font-size: 19px !important; }
+
+.f1 {
+  font-size: 1.618rem !important; }
+
+.f2 {
+  font-size: 3.236rem !important; }
+
+.f3 {
+  font-size: 4.854rem !important; }
+
 :root {
   background-color: whitesmoke;
   font-family: 'Inconsolata', monospace;
@@ -16,11 +31,8 @@ img {
 
 h1, h2, h3, h4, h5, h6 {
   color: #363636;
-  font-family: 'Merriweather', serif;
-  font-size: 1.618rem; }
-
-.logo {
-  font-size: 5rem; }
+  font-size: 1.618rem;
+  font-weight: normal; }
 
 .blog-post h1, .blog-post h2, .blog-post h3 {
   font-family: 'Inconsolata', monospace;
@@ -31,10 +43,10 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 180%;
   margin-left: -40%;
   padding: 0.75rem;
-  border: 1px solid gainsboro;
+  border: 1px solid #dcdbdb;
   border-radius: 5px;
   background-color: #f2f2f2;
-  box-shadow: 0 1px 5px gainsboro; }
+  box-shadow: 0 1px 5px #dcdbdb; }
 
 .blog-post--title {
   font-weight: 900;
@@ -62,23 +74,3 @@ small {
 
 ::selection {
   background-color: gold; }
-
-.centered {
-  margin-right: auto;
-  margin-left: auto; }
-
-.py1 {
-  padding-top: 1rem;
-  padding-bottom: 1rem; }
-
-.my1 {
-  margin-top: 1rem;
-  margin-bottom: 1rem; }
-
-.my2 {
-  margin-top: 2rem;
-  margin-bottom: 2rem; }
-
-.my4 {
-  margin-top: 4rem;
-  margin-bottom: 4rem; }
