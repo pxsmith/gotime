@@ -840,6 +840,15 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/source\/ga.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/source\/min\/ga-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/source\/index.pug": {
 		"cOD": 1,
 		"ft": 512,
@@ -870,6 +879,12 @@
 		"oAP": "\/style-min.css",
 		"oF": 0,
 		"oS": 0
+		},
+	"\/thinks\/resolutions.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/thinks\/resolutions.html",
+		"oF": 0
 		},
 	"\/thinks\/resolutions.pug": {
 		"cOD": 1,
