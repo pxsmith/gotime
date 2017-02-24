@@ -727,6 +727,58 @@
 		"oAP": "\/index.html",
 		"oF": 0
 		},
+	"\/posts\/code\/_about-growth.pug": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/thinks\/_about-growth.html",
+		"oF": 3,
+		"oS": 0
+		},
+	"\/posts\/code\/_rogue-one-first-thoughts.pug": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/thinks\/_rogue-one-first-thoughts.html",
+		"oF": 3,
+		"oS": 0
+		},
+	"\/posts\/markdown\/about-growth.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/posts\/markdown\/about-growth.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 1,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/posts\/resolutions.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 1,
+		"oAP": "\/posts\/resolutions.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
 	"\/source\/.sass-cache\/984e944a149ff44c817000054f1251c50fdc9662\/style.sassc": {
 		"ft": 8192,
 		"oA": 2,
@@ -741,6 +793,19 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/source\/_inverse-font-scale.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/_inverse-font-scale.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/source\/_masthead.pug": {
 		"cOD": 1,
 		"ft": 512,
@@ -748,6 +813,19 @@
 		"oAP": "\/source\/_masthead.html",
 		"oF": 0,
 		"oS": 0
+		},
+	"\/source\/_resets.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/_resets.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
 		},
 	"\/source\/_variables.sass": {
 		"aP": 0,
@@ -793,57 +871,13 @@
 		"oF": 0,
 		"oS": 0
 		},
-	"\/thinks\/_rogue-one-first-thoughts.html": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/thinks\/_rogue-one-first-thoughts.html",
-		"oF": 0
-		},
-	"\/thinks\/_rogue-one-first-thoughts.pug": {
+	"\/thinks\/resolutions.pug": {
 		"cOD": 1,
 		"ft": 512,
 		"oA": 0,
-		"oAP": "\/thinks\/_rogue-one-first-thoughts.html",
+		"oAP": "\/thinks\/resolutions.html",
 		"oF": 0,
 		"oS": 0
-		},
-	"\/thinks\/about-growth.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/thinks\/about-growth.html",
-		"oF": 0
-		},
-	"\/thinks\/about-growth.md": {
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"eLB": 0,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 1,
-		"oAP": "\/thinks\/about-growth.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/thinks\/about-growth.pug": {
-		"cOD": 1,
-		"ft": 512,
-		"oA": 0,
-		"oAP": "\/thinks\/about-growth.html",
-		"oF": 1,
-		"oS": 0
-		},
-	"\/thinks\/rogue-one-first-thoughts.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/thinks\/rogue-one-first-thoughts.html",
-		"oF": 0
 		},
 	"\/thinks\/thought.pug": {
 		"cOD": 1,

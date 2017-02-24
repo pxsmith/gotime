@@ -1,0 +1,22 @@
+include ../source/_masthead
+
+doctype html
+html
+head
+  include ../source/_html-head
+  block html title
+    title
+body
+  style.
+    p {
+      margin-top: 1.618em;
+    }
+  .center.max-width
+    +masthead(page='blog')
+    article.blog-post.my2
+      header.blog-post--title.merriweather
+        block title
+      small
+        block date
+      block content
+  .mb6

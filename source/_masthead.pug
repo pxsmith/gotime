@@ -1,6 +1,13 @@
 mixin masthead
-	a(href='../index.html').no-underline.merriweather
-		.pv3.f0.fw9 philsmith<span class='gold fw1'>.me</span>
-			.dib.normal.gold.fw1(style='margin-left: -0.25em')= pageType
-				if attributes.page == 'blog'
-					pageType='/thinks'
+  .mv4
+    a(href='../index.html').no-underline.merriweather
+      .f0.fw9 philsmith<span class='gold fw1'>.me</span>
+        .dib.normal.gold.fw1(style='margin-left: -0.25em')= pageType
+          if attributes.page == 'blog'
+            pageType='/thinks'
+    small
+      a(href='http://twitter.com/philsmithdesign') Twitter
+      |  / 
+      a(href='http://instagram.com/philsmith1988') Instagram
+      |  / 
+      a(href='http://github.com/pxsmith') Github
