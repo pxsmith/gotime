@@ -15,7 +15,7 @@ head
   include _masthead
   
 body
-  main.center.max-width
+  main.center.max-width.ph3
     +masthead
 
     p.mb3 Hello! 👋 I&rsquo;m happy you&rsquo;ve made your way here. My name is Phil Smith. I&rsquo;m a product designer in <a href='http://vancouverisawesome.com'>Vancouver, BC</a> working for <a href='http://acl.com'>ACL</a>. I have experience branding, designing mobile and web apps, building prototypes, illustrating, and animating. I love good company, food, beer, music, and the great outdoors. If you want to chat about a side project (or anything else for that matter), let&rsquo;s grab a drink! 🍻 <a(href='https://twitter.com/philsmithdesign'>DM me on Twitter</a>.
@@ -26,4 +26,5 @@ body
     .merriweather.fw9.mt4 recent posts
     a.dib.f1.mb3(href='thinks/resolutions.html') Resolutions
 
-  include ga.js
+  script
+    include ga.js

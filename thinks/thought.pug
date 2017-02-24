@@ -11,7 +11,7 @@ body
     p {
       margin-top: 1.618em;
     }
-  .center.max-width
+  .center.max-width.ph3
     +masthead(page='blog')
     article.blog-post.my2
       header.blog-post--title.merriweather
@@ -20,4 +20,5 @@ body
         block date
       block content
   .mb6
-  include ../source/ga.js
+  script
+    include ../source/ga.js
