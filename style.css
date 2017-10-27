@@ -2,7 +2,8 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1rem; }
 
 a {
-  color: inherit; }
+  color: inherit;
+  text-decoration: none; }
 
 img {
   box-sizing: border-box; }
@@ -30,7 +31,7 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, span, a {
   background-color: whitesmoke;
   font-family: 'Inconsolata', monospace;
   font-size: 19px;
-  line-height: 1.35;
+  line-height: 1.5;
   color: #453e34; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -58,11 +59,9 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.618rem; }
 
 a {
-  -webkit-text-decoration-color: gold;
-  text-decoration-color: gold; }
+  border-bottom: 0.15em solid gold; }
   a:hover {
-    text-decoration: underline;
-    background-color: gold; }
+    background-color: rgba(255, 215, 0, 0.5); }
 
 small {
   opacity: 0.5; }
@@ -74,7 +73,8 @@ small {
   font-family: 'Inconsolata', monospace; }
 
 .max-width {
-  max-width: 36rem; }
+  max-width: 36rem;
+  max-width: 47rem; }
 
 ::selection {
-  background-color: gold; }
+  background-color: rgba(255, 215, 0, 0.85); }

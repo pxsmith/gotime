@@ -1,3 +1,5 @@
+// This project uses Tachyons. http://tachyons.io/docs/
+
 @import resets
 @import variables
 @import inverse-font-scale
@@ -7,7 +9,7 @@
 	background-color: whitesmoke
 	font-family: 'Inconsolata', monospace
 	font-size: $base-font-size
-	line-height: 1.35
+	line-height: 1.5
 	color: $dark
 
 h1, h2, h3, h4, h5, h6
@@ -42,16 +44,16 @@ h1, h2, h3, h4, h5, h6
 
 
 a
+	border-bottom: 0.15em solid $bright
 	&:hover
-		text-decoration: underline
-		background-color: $bright
-	-webkit-text-decoration-color: $bright
-	text-decoration-color: $bright
+		background-color: rgba($bright, 0.5)
 
 small
 	opacity: 0.5
 
-// Atomic classes
+
+
+// My atomic classes
 .merriweather
 	font-family: 'Merriweather', serif
 .inconsolata
@@ -59,6 +61,7 @@ small
 
 .max-width
 	max-width: 36rem
+	max-width: 47rem
 
 ::selection
-	background-color: gold
+	background-color: rgba($bright, 0.85)
