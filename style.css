@@ -78,3 +78,12 @@ small {
 
 ::selection {
   background-color: rgba(255, 215, 0, 0.85); }
+
+.airtable-embed {
+  display: none; }
+
+input[type=checkbox].checkbox-hack {
+  display: none; }
+
+input[type=checkbox].checkbox-hack:checked ~ .airtable-embed {
+  display: block; }

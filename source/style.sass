@@ -65,3 +65,16 @@ small
 
 ::selection
 	background-color: rgba($bright, 0.85)
+
+
+
+// Checkbox hack
+.airtable-embed
+	display: none
+input[type=checkbox].checkbox-hack
+	display: none
+	// position: absolute
+  // bottom: -9999px
+  // right: -9999px
+input[type=checkbox].checkbox-hack:checked ~ .airtable-embed
+   display: block
