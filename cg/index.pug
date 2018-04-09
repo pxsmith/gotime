@@ -1,13 +1,92 @@
+//- May consider https://www.addevent.com
 html
 head
-  title
+  title 🗓 Upcoming Events for CG
   link( rel="stylesheet" href="https://unpkg.com/tachyons@4.9.1/css/tachyons.min.css")
   link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=PT+Sans')
-  link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Inconsolata')
-  link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Merriweather')
-  link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Merriweather:400,400i,900,900i')
+  script(src='https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.js')
+  link(href='https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.css' rel='stylesheet')
+
+
   style
     include style.css
 
+
+mixin event(weekday, day, month, time, title, desc, link)
+  .event.mb6
+    .w-10.tc.fl.pv2
+      .ttu.tracked= weekday
+      .f2= day
+      .ttu.tracked= month
+
+    .w-80.fl.mt1.pl4
+      .f2.b= title
+      .ttu.tracked.mv2.o-50= time
+      .mv2.lh-copy= desc
+        a(href=link).pl2.black= link
+
+      //- figure.fl.mv2
+      //-   .w-50
+      //-   div(id='blenheim' style='width: 300px; height: 200px;').fr.mb2.bg-near-white
+      //-   figcaption.tc.f6.o-50
+      //-     a(href=link)
+      //-       p.black= location
+      //-   script
+      //-     include maps/blenheim.js
+    .cf
+
 body
-  p Hello World
+main.center.w-90
+  .w-10.fl &nbsp;
+  .fl.f1.mv5.pl4 Chris &amp; Skyler’s CG 🗓
+  .cf
+
+  +event(
+    'Mon',
+    9,
+    'Apr',
+    '8:00 PM – 9:30 PM',
+    'Guys’ Night',
+    'Every other Monday at Phil’s place.',
+    ''
+    )
+
+  +event(
+    'Wed',
+    11,
+    'Apr',
+    '6:30 PM – 9:00 PM',
+    'Men’s ½ of CG 🍻',
+    'Casual hangs at Blenheim Pub (3293 West 4th Ave).',
+    'http://www.blenheimpub.com/contact-us.html'
+    )
+
+  +event(
+    'Wed',
+    11,
+    'Apr',
+    '6:30 PM – 9:00 PM',
+    'Lady’s ½ of CG 💅',
+    'Casual hangs at Skyler’s place.',
+    ''
+    )
+
+  +event(
+    'Wed',
+    18,
+    'Apr',
+    '6:30 PM – 9:00 PM',
+    'Community Group',
+    'Every Wednesday night. Normal rhythm: snacks, read the Bible, discuss the sermon, pray together.',
+    ''
+    )
+
+  .o-20: +event(
+    'Sun',
+    'TBD',
+    'Apr',
+    '',
+    'Picnic at Kits Beach ☀️',
+    '',
+    ''
+    )
