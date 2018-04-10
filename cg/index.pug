@@ -14,7 +14,7 @@ head
 
 
 mixin event(weekday, day, month, time, title, desc, link)
-  .event.mb6
+  .event.mb5.pb4
     .w-10.tc.fl.pv2
       .ttu.tracked= weekday
       .f2= day
@@ -43,26 +43,6 @@ main.center.w-90
   .cf
 
   +event(
-    'Mon',
-    9,
-    'Apr',
-    '8:00 PM – 9:30 PM',
-    'Guys’ Night',
-    'Every other Monday at Phil’s place.',
-    ''
-    )
-
-  +event(
-    'Wed',
-    11,
-    'Apr',
-    '6:30 PM – 9:00 PM',
-    'Men’s ½ of CG 🍻',
-    'Casual hangs at Blenheim Pub (3293 West 4th Ave).',
-    'http://www.blenheimpub.com/contact-us.html'
-    )
-
-  +event(
     'Wed',
     11,
     'Apr',
@@ -74,11 +54,31 @@ main.center.w-90
 
   +event(
     'Wed',
+    11,
+    'Apr',
+    '6:30 PM – 9:00 PM',
+    'Men’s ½ of CG 🍻',
+    'Casual hangs at Blenheim Pub (3293 West 4th Ave). N64 at someone’s place after that.',
+    'http://www.blenheimpub.com/contact-us.html'
+    )
+
+  +event(
+    'Wed',
     18,
     'Apr',
     '6:30 PM – 9:00 PM',
     'Community Group',
     'Every Wednesday night. Normal rhythm: snacks, read the Bible, discuss the sermon, pray together.',
+    ''
+    )
+
+  +event(
+    'Mon',
+    23,
+    'Apr',
+    '8:00 PM – 9:30 PM',
+    'Guys’ Night',
+    'Every other Monday at Phil’s place.',
     ''
     )
 
