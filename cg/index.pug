@@ -1,12 +1,11 @@
 //- May consider https://www.addevent.com
 html
 head
-  title 🗓 Upcoming Events for CG
+  title 🗓 CG Calendar
   meta(name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no')
   link( rel="stylesheet" href="https://unpkg.com/tachyons@4.9.1/css/tachyons.min.css")
-  link(rel='stylesheet',href='https://fonts.googleapis.com/css?family=PT+Sans')
-  script(src='https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.js')
-  link(href='https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.css' rel='stylesheet')
+  //- script(src='https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.js')
+  //- link(href='https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.css' rel='stylesheet')
 
 
   style
@@ -14,14 +13,14 @@ head
 
 
 mixin event(weekday, day, month, time, title, desc, link)
-  .event.mb5.pb4
-    .w-10.tc.fl.pv2
-      .ttu.tracked= weekday
-      .f2= day
+  .event.mb4.pb4
+    .tc.fl.pa2(style='width: 80px')
+      P= weekday
+      .f2.fw5= day
       .ttu.tracked= month
 
-    .w-80.fl.mt1.pl4
-      .f2.b= title
+    .fl.mt1.ph3(style='width: calc(100vw - 80px); max-width: 65ch;')
+      .f4.fw9= title
       .ttu.tracked.mv2.o-50= time
       .mv2.lh-copy= desc
         a(href=link).pl2.black= link
@@ -37,55 +36,53 @@ mixin event(weekday, day, month, time, title, desc, link)
     .cf
 
 body
-main.center.w-90
-  .w-10.fl &nbsp;
-  .fl.f1.mv5.pl4 Chris &amp; Skylar’s CG 🗓
-  .cf
+main
+  .mb4.pa2.bg-near-black.white.fw9.tc Chris &amp; Skylar’s CG 🗓
 
   +event(
     'Wed',
-    11,
+    25,
     'Apr',
     '6:30 PM – 9:00 PM',
-    'Lady’s ½ of CG 💅',
-    'Casual hangs at Skylar’s place.',
+    'Community Group',
+    'Every Wednesday night. Normal rhythm: socialize, snacks, read the Bible, discuss the sermon, pray together.',
     ''
     )
 
   +event(
     'Wed',
-    11,
-    'Apr',
-    '6:30 PM – 9:00 PM',
-    'Men’s ½ of CG 🍻',
-    'Casual hangs at Blenheim Pub (3293 West 4th Ave). N64 at someone’s place after that.',
-    'http://www.blenheimpub.com/contact-us.html'
-    )
-
-  +event(
-    'Wed',
-    18,
-    'Apr',
+    2,
+    'May',
     '6:30 PM – 9:00 PM',
     'Community Group',
-    'Every Wednesday night. Normal rhythm: snacks, read the Bible, discuss the sermon, pray together.',
+    'Every Wednesday night. Normal rhythm: socialize, snacks, read the Bible, discuss the sermon, pray together.',
     ''
     )
 
   +event(
     'Mon',
-    23,
-    'Apr',
+    7,
+    'May',
     '8:00 PM – 9:30 PM',
     'Guys’ Night',
     'Every other Monday at Phil’s place.',
     ''
     )
 
+  +event(
+    'Wed',
+    9,
+    'May',
+    '6:30 PM – 9:00 PM',
+    'Community Group',
+    'Every Wednesday night. Normal rhythm: socialize, snacks, read the Bible, discuss the sermon, pray together.',
+    ''
+    )
+
   .o-20: +event(
-    'Sun',
+    '',
     'TBD',
-    'Apr',
+    '',
     '',
     'Picnic at Kits Beach ☀️',
     '',
