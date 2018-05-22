@@ -22,38 +22,56 @@ body
 
       hr.o-20.mh6.mv4
 
-    .day-2.mb5
-      .date-info
-        .fl.gold.b.merriweather Day 2
-        .fr.gold Sat. May 18, 2018
-        .cf
-      .f1.merriweather.mb2 First Sand Feels
-      p 
-      figure.mw6.mh0
-        img(src='sand-feels.jpg').br2.shadow-4
-        figcaption.o-40 &copy;2018 Phil Smith
+    mixin day(day_count, date, title, description, img_src, caption)
+      .day.mb5
+        .date-info
+          .fl.gold.b.merriweather Day #{day_count}
+          .fr.gold= date
+          .cf
+        .f1.merriweather.mb2!= title
+        p!= description
+        figure.mw6.mh0
+          img(src=img_src).br2.shadow-4
+          figcaption.o-40!= caption
 
-    .day-1.mb5
-      .date-info
-        .fl.gold.b.merriweather Day 1
-        .fr.gold Fri. May 17, 2018
-        .cf
-      .f1.merriweather.mb2 Made Sushi for the First Time
-      p It was both surprisingly delicious and surprisingly easy! 
-      figure.mw6.mh0
-        img(src='sushi.jpg').br2.shadow-4
-        figcaption.o-40 &copy;2018 Phil Smith
-    
-    .day-0.mb5
-      .date-info
-        .fl.gold.b.merriweather Day 0
-        .fr.gold Thu. May 16, 2018
-        .cf
-      .f1.merriweather.mb2 Raced in 
-        a(href='http://www.bigchop.ca') Big Chop
-      p 
-      figure.mw6.mh0
-        img(src='https://scontent.fcxh2-1.fna.fbcdn.net/v/t1.0-9/31949774_1904518729579973_7704269609230139392_o.jpg?_nc_cat=0&oh=8bd449201cb4df312d50c0a075eec9f0&oe=5B9A31C2').br2.shadow-4
-        figcaption.o-40 Photo source &amp; credit: 
-          a(href='https://www.facebook.com/thebigchop/photos/a.1904518109580035.1073741893.115008011864396/1904518726246640/?type=3&theater') Big Chop on Facebook
+    // +day(#, 'Sun. May 20, 2018', 'Title', 'Description', 'link.com', 'day_3')
 
+    // +day(
+    //   #, 'Sun. May 20, 2018', 
+    //   'Title', 'Description', 
+    //   'link.com', 'day_3'
+    //   )
+
+    - var copyright = "Photo &copy; 2018 Phil Smith"
+
+    +day(
+      4, 'Mon. May 21, 2018',
+      'Sword Fighting at Lighthouse Park', '(Victoria Day)',
+      'sword-fighting.jpg', copyright
+    )
+
+    +day(
+      3, 'Sun. May 20, 2018',
+      'Soaking in Prospect Point', null,
+      'prospect-point.jpg', copyright
+    )
+
+    +day(
+      2, 'Sat. May 19, 2018',
+      'First Sand Feels', null,
+      'sand-feels.jpg', copyright
+    )
+
+    +day(
+      1, 'Fri. May 18, 2018',
+      'Made Sushi for the First Time', 'It was both surprisingly delicious and surprisingly easy!',
+      'sushi.jpg', copyright
+    )
+
+    +day(
+      0, 'Thu. May 17, 2018',
+      'Big Chop',
+      'Raced in <a href="http://www.bigchop.ca">Big Chop</a>',
+      'https://scontent.fcxh2-1.fna.fbcdn.net/v/t1.0-9/31949774_1904518729579973_7704269609230139392_o.jpg?_nc_cat=0&oh=8bd449201cb4df312d50c0a075eec9f0&oe=5B9A31C2',
+      'Photo credit: <a href="https://www.facebook.com/thebigchop/photos/a.1904518109580035.1073741893.115008011864396/1904518726246640/?type=3&theater">Big Chop via Facebook</a>'
+    )
