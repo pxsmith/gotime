@@ -45,9 +45,9 @@ You can always grab the latest version with
 ```html
 <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
 ```
-You can also specify a specific version. The latest version is 4.6.1
+You can also specify a specific version. The latest version is 4.9.0
 ```html
-<link rel="stylesheet" href="https://unpkg.com/tachyons@4.6.1/css/tachyons.min.css">
+<link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.0/css/tachyons.min.css">
 ```
 
 ### Local Setup
@@ -85,7 +85,7 @@ If you want to check that a class hasn't been redefined or 'mutated' there is a 
 The tachyons docs located at http://tachyons.io are all open source and located at https://github.com/tachyons-css/tachyons-css.github.io
 
 You can clone the docs and use them as a template for documenting your own design system / patterns / components.
-While not everything is automated, the component library generation makes it extremely easy to 
+While not everything is automated, the component library generation makes it extremely easy to
 generate and organize the documentation for components as demonstrated at http://tachyons.io/components
 
 
@@ -93,81 +93,47 @@ generate and organize the documentation for components as demonstrated at http:/
 
 Please read our [code of conduct](https://github.com/tachyons-css/tachyons/blob/master/code-of-conduct.md) for contributors.
 
-## Websites that Use Tachyons
-(if you have a project that uses Tachyons feel free to make a PR to add it to this list)
+## Tachyons in Production
 
-* https://nicenice.co
+A longer list of sites that use tachyons in production can be found in sites.md
+We love letting the community see what people are building so please add your link to sites.md in a PR or by opening an issue if you're willing to share to your site or project.
+
+**Featured Sites**
+
+* https://interfacelovers.com
+* https://npmjs.com
+* https://womenwho.design
+* https://friendstalkfrontend.com
+* https://play.webvr.rocks
+* https://gohugo.io
 * https://coralproject.net
+* http://www.philipyoungg.com
+* https://gitpoint.co
+* https://2017.nodeconf.com.ar
 * https://goldenstaterecord.com
-* http://www.sogol.co
-* https://segment.com
 * http://hicuties.com
 * https://urlbox.io
-* https://community.algolia.com/wordpress/
-* http://studiocraft.cc
-* http://samueldregan.com
-* https://filmstrip.cf
-* https://voteplz.com
-* http://bluebottlecoffee.com
-* http://cyclelove.cc
-* http://topher.design
-* http://iheanyi.com/
-* http://johnotander.com
-* https://vimgifs.com
-* http://jon.gold/txt
-* http://rene.jon.gold
-* https://tinychime.github.io/jekyons/
-* http://prnt.cc
-* http://spenhar.com
-* http://randoma11y.com
-* http://www.csspurge.com
-* http://clrs.cc
-* https://cljsjs.github.io
-* https://www.getnoodl.es
-* https://natwelch.com
-* http://pesticide.io
-* http://zachhurd.com
-* http://gfffs.com
-* https://wordpress.org/themes/vanilla-milkshake/
-* http://comics.hongkonggong.com/
-* https://accessmyinfo.hk/#/
-* https://accessmyinfo.org/#/
-* http://rene.jon.gold
-* http://randoma11y.com
-* http://designbytyping.com
-* http://colepeters.com
-* https://atmin.github.io/funponent/
-* http://blog.colepeters.com
-* http://aboutlife.com
-* http://joinoneroom.com
-* http://filipaonunes.com
-* https://vakra.band
-* http://tylernford.com
-* https://adventuretron.org
-* https://uptimeumbrella.com
-* http://www.talbs.me
-* http://seanoshea.me
-* https://www.hiaida.com
-* http://maxogden.github.io/screencat/
-* http://numenta.com
-* https://windtoday.co
-* http://claudio.netlify.com
-* http://devday-ar.com
-* http://mrmrs.io/up
-* http://mrmrs.io/profile/
-* http://mrmrs.io/gradients
-* http://mrmrs.io/btns/
-* http://mrmrs.io/beats/
-* http://mrmrs.io/writing
-* http://mrmrs.cc
-* http://mn-ml.cc
+* https://fontawesome.com
+* https://purple3.herokuapp.com
+* http://blunt.af/tachy.app/
+* https://fenderdigital.github.io/css-utilities/intro/
+* https://play.cash
 
 And of course...
 * http://tachyons.io
 
+## Sponsors
+
+Development of Tachyons is supported by
+
+* [Digital Ocean](https://digitalocean.com)
+* [DWYL](https://dwyl.com)
+* [VTEX](https://lab.vtex.com)
+* [Manifold](https://manifold.co)
+
 ## Help
 
-If you have a question or need help feel free to open an issue here or jump into the [Tachyons slack channel](http://tachyons-slack-invite.herokuapp.com).
+If you have a question or need help feel free to [open an issue here](https://github.com/tachyons-css/tachyons/issues/new) or jump into the [Tachyons slack channel](http://tachyons-slack-invite.herokuapp.com).
 
 ## License
 

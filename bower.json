@@ -33,6 +33,7 @@
   ],
   "private": true,
   "dependencies": {
-    "tachyons": "^4.6.2"
+    "tachyons": "^4.6.2",
+    "riot": "^3.10.1"
   }
 }
