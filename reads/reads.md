@@ -4,3 +4,6 @@
 - *Artemis* by Andy Weir
 - *Exit West* by Mohsin Hamid
 - *Lincoln in the Bardo* by George Saunders
+- *Going Postal* by Terry Pratchett
+- *The Sacred Ennegram* by Christopher Heuertz
+- (in progress…) *Foulsham* by Edward Carey 
