@@ -13,6 +13,8 @@ head
   link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Merriweather:400,400i,900,900i')
 
   title Summer Challenge × Phil Smith
+  script(src="https://cdn.apple-livephotoskit.com/lpk/1/livephotoskit.js")
+
 body
   main.center.max-width.ph3
     a(href='http://philsmith.me') ← philsmith.me
@@ -22,8 +24,8 @@ body
 
       hr.o-20.mh6.mv4
 
-    mixin day(day_count, date, title, description, img_src, caption)
-      .day.mb5
+    mixin day(day_count, date, title, description, img_src, caption, live_photo)
+      .day.mb5(id=day_count)
         .date-info
           .fl.gold.b.merriweather Day #{day_count}
           .fr.gold= date
@@ -34,20 +36,58 @@ body
           img(src=img_src).br2.shadow-4
           figcaption.o-40!= caption
 
+
+
+    mixin day--live-photo(day_count, date, title, description, img_src, caption)
+      .day.mb5(id=day_count)
+        .date-info
+          .fl.gold.b.merriweather Day #{day_count}
+          .fr.gold= date
+          .cf
+        .f1.merriweather.mb2!= title
+        p!= description
+        figure.mh0
+          .live-photo.br2.shadow-4.mw6(
+            data-live-photo
+            data-photo-src=img_src + ".jpg"
+            data-video-src=img_src + ".mov"
+            style="width: 466px; max-width: 100%; height: 622px;")
+          figcaption.o-40!= caption
+
+    // 3024 × 4032
+
     // +day(#, 'Sun. May 20, 2018', 'Title', 'Description', 'link.com', 'day_3')
 
     // +day(
     //   #, 'Sun. May 20, 2018', 
     //   'Title', 'Description', 
-    //   'link.com', 'day_3'
+    //   'link.com', copyright
     //   )
 
     - var copyright = "Photo &copy; 2018 Phil Smith"
 
     +day(
+      7, 'Thu. May 24, 2018', 
+      'Spot Prawn Scampi', 'A true B.C. delicacy, spot prawns were the perfect way to celebrate my love’s birthday. Scampi was the right choice because the buttery, delicate flavour of the prawns was enhanced by the sauce.', 
+      'spot-prawns.jpg', copyright
+      )
+
+    +day(
+      6, 'Wed. May 23, 2018', 
+      'Discovered a New Playground by YVR ', undefined, 
+      undefined, undefined
+      )
+
+    +day--live-photo(
+      5, 'Tue. May 22, 2018', 
+      'Magic Observed', 'I was running around getting ready for sailing and paddling this summer when I looked up and noticed something in the air.', 
+      'magic', copyright
+      )
+
+    +day--live-photo(
       4, 'Mon. May 21, 2018',
       'Sword Fighting at Lighthouse Park', '(Victoria Day)',
-      'sword-fighting.jpg', copyright
+      'sword-fighting', copyright
     )
 
     +day(
@@ -56,10 +96,10 @@ body
       'prospect-point.jpg', copyright
     )
 
-    +day(
+    +day--live-photo(
       2, 'Sat. May 19, 2018',
-      'First Sand Feels', null,
-      'sand-feels.jpg', copyright
+      'First Sand Feels at Kits Beach', null,
+      'sand-feels', copyright
     )
 
     +day(
