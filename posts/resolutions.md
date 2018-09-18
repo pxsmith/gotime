@@ -1,6 +1,6 @@
 # It’s almost March, time to make some New Year’s resolutions.
 
-I’m like your typical type-A, only more driven. Proof: it’s the end of February, and I’m just now thinking about 2017 resolutions. (If my sarcasm hasn’t come through yet, I’m not type-A.)
+I’m like your typical type-A, only more driven. Proof: it’s the end of February, and I’m just now thinking about resolutions. (If my sarcasm hasn’t come through yet, I’m not type-A.)
 
 Resolutions in general are actually pretty shitty, not to mention long forgotten by March. Did you make any embarrassingly predictable resolutions this January? Perhaps you vowed to sweat off those extra holiday pounds? And perhaps you learned that the gym does not, in fact, have a refund policy (and that they’re happy to keep your money whether or not you show up)?
 
