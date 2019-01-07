@@ -1,0 +1,244 @@
+// Golden Ratio
+$g-13: 3px
+$g-12: 5px
+$g-11: 7px
+$g-10: 12px
+$g-9: 19px
+$g-8: 31px
+$g-7: 50px
+$g-6: 80px
+$g-5: 130px
+$g-4: 210px
+$g-3: 340px
+$g-2: 550px
+$g-1: 890px
+$g: 1440px
+
+
+
+// Font scale
+.f1
+  font-size: $g-8
+.f2
+  font-size: $g-9
+.f3
+  font-size: $g-10
+
+
+
+// Colour palette
+$c1: #3a3a3a
+$c2: #656565
+$c3: #9e9e9e
+$c4: #eaeaea
+
+
+
+// Colour utilities
+.c1
+  color: $c1
+.c2
+  color: $c2
+.c3
+  color: $c3
+.c4
+  color: $c4
+.bc1
+  background-color: $c1
+.bc2
+  background-color: $c2
+.bc3
+  background-color: $c3
+.bc4
+  background-color: $c4
+
+
+
+// Space utilities
+$s1: $g-11
+$s2: $g-10
+$s3: $g-9
+$s4: $g-8
+$s5: $g-7
+
+
+
+// Resets
+p
+  margin: 0
+
+
+// Variables
+$bio-width: $g-4
+$piece-width: $g-2
+$piece-height: $g-3
+$space: $s3
+
+
+
+
+// Global styles
+body
+  color: $c1
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  margin: 1rem
+
+
+
+.bio
+  display: block
+  max-width: $g-2
+  margin: 0 auto
+  margin-bottom: $space
+  padding-left: $s2
+  padding-right: $s2
+  > *
+    margin-bottom: $space/2
+  .pic
+    width: $g-5
+    transition: 2s
+    &:hover
+      transform: rotate(-360deg) 
+  .location
+    margin-top: -$s1
+
+
+
+.button
+  display: inline-block
+  color: $c4
+  background-color: $c1
+  font-weight: 900
+  text-decoration: none
+  padding: $s3
+  border-radius: $g-7
+  transition: 0.5s
+  box-shadow: 0 $g-11 $g-10 -$g-13 rgba($c2, 0.5), 0 $g-13 $g-13 0 rgba($c2, 0.5)
+  &:hover
+    transform: translateY(-$g-13)
+    box-shadow: 0 $g-10 $g-9 -$g-13 rgba($c2, 0.5), 0 $g-13 $g-13 0 rgba($c2, 0.5)
+
+@media (max-width: $bio-width + $piece-width*2 + $space*4)
+  .button
+    position: fixed
+    bottom: $space/2
+    right: $space
+
+
+.portfolio
+  max-width: $piece-width
+  margin: 0 auto
+.piece
+    margin-bottom: $space
+
+
+@media (max-width:  $piece-width + $space*2)
+  .portfolio .piece
+    width: 100% 
+    height: 55vw
+    .desc 
+      font-size: $g-10
+
+
+@media (min-width: $piece-width*2 + $space*3)
+  .portfolio
+    max-width: $piece-width*2 + $space
+  .piece
+    float: left
+    width: $piece-width
+    box-sizing: border-box
+    &:nth-of-type(2n)
+      margin-left: $space
+
+
+@media (min-width: $bio-width + $piece-width*2 + $space*4)
+  main
+    display: block
+    margin: 0 auto
+    width: $bio-width + $piece-width*2 + $space*2
+  .bio
+    width: $bio-width
+    float: left
+    margin-right: $space
+    position: fixed
+  .portfolio
+    max-width: $bio-width + $piece-width*2 + $space 
+    margin-left: $bio-width + $space
+
+
+
+@media (min-width: $bio-width + $piece-width*3 + $space*5)
+  main
+    width: $bio-width + $piece-width*3 + $space*3
+  .portfolio
+    max-width: $bio-width + $piece-width*3 + $space 
+  .piece:nth-of-type(2n)
+    margin-left: 0
+  .piece:nth-of-type(3n-1),.piece:nth-of-type(3n)
+    margin-left: $space
+
+
+
+.piece
+  background-color: $c4
+  height: $piece-height
+  width: $piece-width
+  border-radius: $g-13
+  background:
+    position: 50% 50%
+    size: cover
+
+  .desc
+    height: 100%
+    padding: $space
+    color: transparent
+    border-radius: $g-13
+    overflow: hidden
+    & p:first-of-type
+      font-weight: 900
+    & :note(p:first-of-type)
+      font-weight: 100
+    em
+      opacity: 0.618
+      padding-left: $s2
+
+    &:hover
+      color: $c4
+      background-color: rgba($c1, 0.9)
+      transition: 0.5
+
+    p:not(:last-of-type)
+      margin-bottom: $s2
+
+.piece--pin
+  background-image: url(../images/pin.png)
+.piece--launchpad
+  background-image: url(../images/launchpad.png)
+  background-color: #dfc57c
+.piece--triggers
+  background-image: url(../images/triggers.png)
+  background-color: #ca2918
+.piece--paprika
+  background-image: url(../images/paprika.png)
+.piece--sketch
+  background-image: url(../images/sketch.png)
+.piece--logs
+  background-image: url(../images/logs.png)
+.piece--kaizen
+  background-image: url(../images/kaizen.png)
+.piece--tokens
+  background-image: url(../images/tokens.png)
+  background-color: #276cf5
+.piece--timbersmith
+  background-image: url(../images/timbersmith.png)
+.piece--table
+  background-image: url(../images/table.png)
+.piece--thorson-law
+  background-image: url(../images/thorson-law.png)
+
+::-moz-selection
+  color: $c4
+  background: $c1
+::selection
+  color: $c4
+  background: $c1

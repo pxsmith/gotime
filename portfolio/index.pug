@@ -1,0 +1,90 @@
+<!-- Oh hai, whatcha doin’ there bud? 🍁 -->
+<!-- Peeking at my mostly-clean code, hey? 🇨🇦 -->
+<!-- Give me a chirp, why don’t’cha? 🐦 -->
+<!-- https://mobile.twitter.com/philsoutside 👋 -->
+html
+  head
+    link(rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css")
+    link(rel="stylesheet" href='css/style.css')
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    script.
+      window['_fs_debug'] = false;
+      window['_fs_host'] = 'fullstory.com';
+      window['_fs_org'] = 'GXSC4';
+      window['_fs_namespace'] = 'FS';
+      (function(m,n,e,t,l,o,g,y){
+          if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+          g=m[e]=function(a,b,s){g.q?g.q.push([a,b,s]):g._api(a,b,s);};g.q=[];
+          o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+          y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+          g.identify=function(i,v,s){g(l,{uid:i},s);if(v)g(l,v,s)};g.setUserVars=function(v,s){g(l,v,s)};g.event=function(i,v,s){g('event',{n:i,p:v},s)};
+          g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+          g.consent=function(a){g("consent",!arguments.length||a)};
+          g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+          g.clearUserCookie=function(){};
+      })(window,document,window['_fs_namespace'],'script','user');
+
+body.c1
+  main  
+    .bio.tc
+      img.pic(src='images/phil.png').br-100
+      p.name.f1.fw9 Phil Smith
+      p.location.f2.fw9.c3 Vancouver, BC
+      p.summary.c2 Designer working towards a world where tech empowers human flourishing. Self-taught with over 6 years of diverse experience. Born in the Midwest, Pacific Northwest at heart. 
+      a.button(href='https://airtable.com/shrTa6oXprNtNdCMI' target='_blank').f1 ✉️
+
+    .portfolio
+      .piece.piece--pin
+        .desc
+          p Enamel pin
+            em (primary designer, creative direction)
+          p Made to celebrate a big, Star Wars themed release that the whole product and engineering team delivered.
+
+      .piece.piece--launchpad
+        .desc
+          p Launchpad for platform of apps
+            em (primary designer)
+          p Starting place for users in an ecosystem of apps and services.
+      .piece.piece--triggers
+        .desc
+          p Automated workflow setup
+            em (primary designer)
+          p The app watches for important changes in data and triggers actions when those changes happen.
+      .piece.piece--paprika
+        .desc
+          p Paprika logo
+            em (primary designer, creative direction)
+          p Logo for an internal design system project which is called Paprika.
+      .piece.piece--kaizen
+        .desc 
+          p Kaizen process
+            em (designer)
+          p ‘Kaizen’ (改善) is the translation of a Japanese phrase: ‘change’ and ‘good’. On a regular basis, a small amount of time is taken to make improvements to the app. I helped introduce and promote this valuable process.
+      .piece.piece--sketch
+        .desc
+          p Design sprint process: lightning demo
+            em (participant, designer)
+          p An effective exercise from a more extensive, multi-day design sprint. Each sprint participant finds a relevant design pattern and presents it. All of the patterns are sketched together.
+      .piece.piece--tokens
+        .desc
+          p Design system: tokens
+            em (designer)
+          p I led the creation of a system of variables the helps increase consistency in an app ecosystem. Tokens are more than simple variables in that they are named intuitively based on their use (e.g. $popover-shadow).
+      .piece.piece--timbersmith
+        .desc
+          p Timbersmith brand identity
+            em (designer, creative direction)
+          p Brand identity for the craft furniture maker Timbersmith. Danish modern in style, built traditionally with unique, local materials.
+          p.f3: em Photo credit: Hooton Images
+      .piece.piece--table
+        .desc
+          p Dining room table
+            em (designer, producer)
+          p For my first woodworking project, I decided to take on something simple: a rectangle. Made out of cherry and finished with Danish oil, the resulting colour is stunning.
+      .piece.piece--thorson-law
+        .desc 
+          p Personal injury attorney logomark
+            em (designer, creative direction)
+          p Scott Thorson Law is an ethical personal injury attorney. This logomark is part of the brand identity I designed for the firm.
+      .cf
+      p.f3.tc © 2019 Phil Smith. All rights reserved.

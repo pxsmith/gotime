@@ -1,0 +1,196 @@
+.f1 {
+  font-size: 31px; }
+
+.f2 {
+  font-size: 19px; }
+
+.f3 {
+  font-size: 12px; }
+
+.c1 {
+  color: #3a3a3a; }
+
+.c2 {
+  color: #656565; }
+
+.c3 {
+  color: #9e9e9e; }
+
+.c4 {
+  color: #eaeaea; }
+
+.bc1 {
+  background-color: #3a3a3a; }
+
+.bc2 {
+  background-color: #656565; }
+
+.bc3 {
+  background-color: #9e9e9e; }
+
+.bc4 {
+  background-color: #eaeaea; }
+
+p {
+  margin: 0; }
+
+body {
+  color: #3a3a3a;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  margin: 1rem; }
+
+.bio {
+  display: block;
+  max-width: 550px;
+  margin: 0 auto;
+  margin-bottom: 19px;
+  padding-left: 12px;
+  padding-right: 12px; }
+  .bio > * {
+    margin-bottom: 9.5px; }
+  .bio .pic {
+    width: 130px;
+    transition: 2s; }
+    .bio .pic:hover {
+      transform: rotate(-360deg); }
+  .bio .location {
+    margin-top: -7px; }
+
+.button {
+  display: inline-block;
+  color: #eaeaea;
+  background-color: #3a3a3a;
+  font-weight: 900;
+  text-decoration: none;
+  padding: 19px;
+  border-radius: 50px;
+  transition: 0.5s;
+  box-shadow: 0 7px 9px rgba(101, 101, 101, 0.5), 0 3px 3px 0 rgba(101, 101, 101, 0.5); }
+  .button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 16px rgba(101, 101, 101, 0.5), 0 3px 3px 0 rgba(101, 101, 101, 0.5); }
+
+@media (max-width: 1386px) {
+  .button {
+    position: fixed;
+    bottom: 9.5px;
+    right: 19px; } }
+
+.portfolio {
+  max-width: 550px;
+  margin: 0 auto; }
+
+.piece {
+  margin-bottom: 19px; }
+
+@media (max-width: 588px) {
+  .portfolio .piece {
+    width: 100%;
+    height: 55vw; }
+    .portfolio .piece .desc {
+      font-size: 12px; } }
+
+@media (min-width: 1157px) {
+  .portfolio {
+    max-width: 1119px; }
+  .piece {
+    float: left;
+    width: 550px;
+    box-sizing: border-box; }
+    .piece:nth-of-type(2n) {
+      margin-left: 19px; } }
+
+@media (min-width: 1386px) {
+  main {
+    display: block;
+    margin: 0 auto;
+    width: 1348px; }
+  .bio {
+    width: 210px;
+    float: left;
+    margin-right: 19px;
+    position: fixed; }
+  .portfolio {
+    max-width: 1329px;
+    margin-left: 229px; } }
+
+@media (min-width: 1955px) {
+  main {
+    width: 1917px; }
+  .portfolio {
+    max-width: 1879px; }
+  .piece:nth-of-type(2n) {
+    margin-left: 0; }
+  .piece:nth-of-type(3n-1), .piece:nth-of-type(3n) {
+    margin-left: 19px; } }
+
+.piece {
+  background-color: #eaeaea;
+  height: 340px;
+  width: 550px;
+  border-radius: 3px;
+  background-position: 50% 50%;
+  background-size: cover; }
+  .piece .desc {
+    height: 100%;
+    padding: 19px;
+    color: transparent;
+    border-radius: 3px;
+    overflow: hidden; }
+    .piece .desc p:first-of-type {
+      font-weight: 900; }
+    .piece .desc :note(p:first-of-type) {
+      font-weight: 100; }
+    .piece .desc em {
+      opacity: 0.618;
+      padding-left: 12px; }
+    .piece .desc:hover {
+      color: #eaeaea;
+      background-color: rgba(58, 58, 58, 0.9);
+      transition: 0.5; }
+    .piece .desc p:not(:last-of-type) {
+      margin-bottom: 12px; }
+
+.piece--pin {
+  background-image: url(../images/pin.png); }
+
+.piece--launchpad {
+  background-image: url(../images/launchpad.png);
+  background-color: #dfc57c; }
+
+.piece--triggers {
+  background-image: url(../images/triggers.png);
+  background-color: #ca2918; }
+
+.piece--paprika {
+  background-image: url(../images/paprika.png); }
+
+.piece--sketch {
+  background-image: url(../images/sketch.png); }
+
+.piece--logs {
+  background-image: url(../images/logs.png); }
+
+.piece--kaizen {
+  background-image: url(../images/kaizen.png); }
+
+.piece--tokens {
+  background-image: url(../images/tokens.png);
+  background-color: #276cf5; }
+
+.piece--timbersmith {
+  background-image: url(../images/timbersmith.png); }
+
+.piece--table {
+  background-image: url(../images/table.png); }
+
+.piece--thorson-law {
+  background-image: url(../images/thorson-law.png); }
+
+::-moz-selection {
+  color: #eaeaea;
+  background: #3a3a3a; }
+
+::selection {
+  color: #eaeaea;
+  background: #3a3a3a; }
