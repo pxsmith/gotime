@@ -89,48 +89,6 @@ p
 
 
 
-// Animations
-@keyframes loading
-  from
-    opacity: 1
-  40%
-    opacity: 1
-  to
-    opacity: 0
-    display: none
-
-@keyframes wave
-  from
-    transform: rotate(25deg)
-  to
-    transform: rotate(0deg)
-
-.curtain p
-  animation: wave 0.3s infinite
-  animation-direction: alternate
-  animation-timing-function: linear
-
-// Curtain
-.curtain
-  display: 0
-  animation: loading 1.5s linear
-  animation-fill-mode: forwards
-  animation-iteration-count: 1
-  position: fixed
-  top: 0
-  left: 0
-  width: 100vw
-  height: 100vh
-  background-color: $c4
-  z-index: 1
-  p
-    margin-top: 45vh
-    font-size: $g-7
-    // background-color: salmon
-
-
-
-
 .bio
   display: block
   max-width: $g-2
