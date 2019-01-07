@@ -63,11 +63,6 @@ $s5: $g-7
 
 
 
-// Resets
-p
-  margin: 0
-
-
 // Variables
 $bio-width: $g-4
 $piece-width: $g-2
@@ -76,12 +71,63 @@ $space: $s3
 
 
 
-
 // Global styles
 body
   color: $c1
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   margin: 1rem
+::-moz-selection
+  color: $c4
+  background: $c1
+::selection
+  color: $c4
+  background: $c1
+
+// Resets
+p
+  margin: 0
+
+
+
+// Animations
+@keyframes loading
+  from
+    opacity: 1
+  40%
+    opacity: 1
+  to
+    opacity: 0
+    display: none
+
+@keyframes wave
+  from
+    transform: rotate(25deg)
+  to
+    transform: rotate(0deg)
+
+.curtain p
+  animation: wave 0.3s infinite
+  animation-direction: alternate
+  animation-timing-function: linear
+
+// Curtain
+.curtain
+  display: 0
+  animation: loading 1.5s linear
+  animation-fill-mode: forwards
+  animation-iteration-count: 1
+  position: fixed
+  top: 0
+  left: 0
+  width: 100vw
+  height: 100vh
+  background-color: $c4
+  z-index: 1
+  p
+    margin-top: 45vh
+    font-size: $g-7
+    // background-color: salmon
+
 
 
 
@@ -125,11 +171,13 @@ body
     right: $space
 
 
+
 .portfolio
   max-width: $piece-width
   margin: 0 auto
 .piece
     margin-bottom: $space
+
 
 
 @media (max-width:  $piece-width + $space*2)
@@ -138,6 +186,7 @@ body
     height: 55vw
     .desc 
       font-size: $g-10
+
 
 
 @media (min-width: $piece-width*2 + $space*3)
@@ -149,6 +198,7 @@ body
     box-sizing: border-box
     &:nth-of-type(2n)
       margin-left: $space
+
 
 
 @media (min-width: $bio-width + $piece-width*2 + $space*4)
@@ -205,7 +255,7 @@ body
     &:hover
       color: $c4
       background-color: rgba($c1, 0.9)
-      transition: 0.5
+      transition: 0.618s
 
     p:not(:last-of-type)
       margin-bottom: $s2
@@ -235,10 +285,3 @@ body
   background-image: url(../images/table.png)
 .piece--thorson-law
   background-image: url(../images/thorson-law.png)
-
-::-moz-selection
-  color: $c4
-  background: $c1
-::selection
-  color: $c4
-  background: $c1

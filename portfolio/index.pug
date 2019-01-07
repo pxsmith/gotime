@@ -4,9 +4,6 @@
 <!-- https://mobile.twitter.com/philsoutside 👋 -->
 html
   head
-    link(rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css")
-    link(rel="stylesheet" href='css/style.css')
-    meta(name="viewport" content="width=device-width, initial-scale=1")
     script.
       window['_fs_debug'] = false;
       window['_fs_host'] = 'fullstory.com';
@@ -24,7 +21,31 @@ html
           g.clearUserCookie=function(){};
       })(window,document,window['_fs_namespace'],'script','user');
 
+    link(rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css")
+    link(rel="stylesheet" href='css/style.css')
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+
+    title 💼 Phil Smith’s Design Portfolio
+    meta(name="title" content="💼 Phil Smith’s Design Portfolio")
+    meta(name="description" content="Designer working towards a world where tech empowers human flourishing. Self-taught with over 6 years of diverse experience. Born in the Midwest, Pacific Northwest at heart. ")
+
+    <!-- Open Graph / Facebook -->
+    meta(property="og:type" content="website")
+    meta(property="og:url" content="http://philsmith.me/portfolio/")
+    meta(property="og:title" content="💼 Phil Smith’s Design Portfolio")
+    meta(property="og:description" content="Designer working towards a world where tech empowers human flourishing. Self-taught with over 6 years of diverse experience. Born in the Midwest, Pacific Northwest at heart.")
+    meta(property="og:image" content="http://philsmith.me/portfolio/images/paprika.png")
+
+    <!-- Twitter -->
+    meta(property="twitter:card" content="summary_large_image")
+    meta(property="twitter:url" content="http://philsmith.me/portfolio/")
+    meta(property="twitter:title" content="💼 Phil Smith’s Design Portfolio")
+    meta(property="twitter:description" content="Designer working towards a world where tech empowers human flourishing. Self-taught with over 6 years of diverse experience. Born in the Midwest, Pacific Northwest at heart. ")
+    meta(property="twitter:image" content="http://philsmith.me/portfolio/images/paprika.png")
+
 body.c1
+  .curtain
+    p.tc 👋
   main  
     .bio.tc
       img.pic(src='images/phil.png').br-100

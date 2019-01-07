@@ -31,13 +31,57 @@
 .bc4 {
   background-color: #eaeaea; }
 
-p {
-  margin: 0; }
-
 body {
   color: #3a3a3a;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   margin: 1rem; }
+
+::-moz-selection {
+  color: #eaeaea;
+  background: #3a3a3a; }
+
+::selection {
+  color: #eaeaea;
+  background: #3a3a3a; }
+
+p {
+  margin: 0; }
+
+@keyframes loading {
+  from {
+    opacity: 1; }
+  40% {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    display: none; } }
+
+@keyframes wave {
+  from {
+    transform: rotate(25deg); }
+  to {
+    transform: rotate(0deg); } }
+
+.curtain p {
+  animation: wave 0.3s infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear; }
+
+.curtain {
+  display: 0;
+  animation: loading 1.5s linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #eaeaea;
+  z-index: 1; }
+  .curtain p {
+    margin-top: 45vh;
+    font-size: 50px; }
 
 .bio {
   display: block;
@@ -147,7 +191,7 @@ body {
     .piece .desc:hover {
       color: #eaeaea;
       background-color: rgba(58, 58, 58, 0.9);
-      transition: 0.5; }
+      transition: 0.618s; }
     .piece .desc p:not(:last-of-type) {
       margin-bottom: 12px; }
 
@@ -186,11 +230,3 @@ body {
 
 .piece--thorson-law {
   background-image: url(../images/thorson-law.png); }
-
-::-moz-selection {
-  color: #eaeaea;
-  background: #3a3a3a; }
-
-::selection {
-  color: #eaeaea;
-  background: #3a3a3a; }
