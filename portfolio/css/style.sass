@@ -89,6 +89,49 @@ p
 
 
 
+// Animations
+@keyframes loading
+  from
+    opacity: 1
+    visibility: visible
+  80%
+    opacity: 1
+  to
+    opacity: 0
+    visibility: collapse
+
+@keyframes wave
+  from
+    transform: rotate(15deg)
+  to
+    transform: rotate(-15deg) 
+
+.curtain .hand
+  transform-origin: 50% 100%
+  animation: wave 0.3s infinite
+  animation-direction: alternate
+  animation-timing-function: ease-in-out
+
+// Curtain
+.curtain
+  animation: loading 1.5s linear
+  animation-fill-mode: forwards
+  animation-iteration-count: 1
+  position: fixed
+  top: 0
+  left: 0
+  width: 100vw
+  height: 100vh
+  background-color: $c1
+  z-index: 1
+  p
+    margin-top: 45vh
+    font-size: $g-7
+    // background-color: salmon
+
+
+
+// Styles
 .bio
   display: block
   max-width: $g-2
@@ -208,11 +251,10 @@ p
     margin-left: $space/2
     margin-top: $space/2
     padding: $space/2
-    border-radius: $g-12
+    border-radius: $g-13
     background: rgba($c1, 0.9)
     color: white
     @extend .f3
-    box-shadow: 0 $g-11 $g-10 -$g-13 rgba(black, 0.15), 0 $g-13 $g-13 0 rgba(black, 0.15)
     p:not(:last-of-type)
       margin-bottom: $space/4
     & p:first-of-type

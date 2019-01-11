@@ -47,6 +47,43 @@ body {
 p {
   margin: 0; }
 
+@keyframes loading {
+  from {
+    opacity: 1;
+    visibility: visible; }
+  80% {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    visibility: collapse; } }
+
+@keyframes wave {
+  from {
+    transform: rotate(15deg); }
+  to {
+    transform: rotate(-15deg); } }
+
+.curtain .hand {
+  transform-origin: 50% 100%;
+  animation: wave 0.3s infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out; }
+
+.curtain {
+  animation: loading 1.5s linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #3a3a3a;
+  z-index: 1; }
+  .curtain p {
+    margin-top: 45vh;
+    font-size: 50px; }
+
 .bio {
   display: block;
   max-width: 550px;
@@ -152,10 +189,9 @@ p {
     margin-left: 9.5px;
     margin-top: 9.5px;
     padding: 9.5px;
-    border-radius: 5px;
+    border-radius: 3px;
     background: rgba(58, 58, 58, 0.9);
-    color: white;
-    box-shadow: 0 7px 9px rgba(0, 0, 0, 0.15), 0 3px 3px 0 rgba(0, 0, 0, 0.15); }
+    color: white; }
     .piece .tooltip p:not(:last-of-type) {
       margin-bottom: 4.75px; }
     .piece .tooltip p:first-of-type {
