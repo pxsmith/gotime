@@ -20,20 +20,7 @@
           g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
           g.clearUserCookie=function(){};
       })(window,document,window['_fs_namespace'],'script','user');
-    </script>
-    <script>
-       // Hover interaction for portfolio pieces
-var tooltip = document.querySelectorAll('.desc');
-
-document.addEventListener('mousemove', fn, false);
-
-function fn(e) {
-    for (var i=tooltip.length; i--;) {
-        tooltip[i].style.left = e.pageX + 'px';
-        tooltip[i].style.top = e.pageY + 'px';
-    }
-}
-
+      
     </script>
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
     <link rel="stylesheet" href="css/style.css"/>
@@ -54,91 +41,92 @@ function fn(e) {
   </head>
   <body class="c1">
     <main> 
-      <div class="bio tc"><img class="pic br-100" src="images/phil.png"/>
+      <div class="bio tc">
+        <div class="pic br-100"></div>
         <p class="name f1 fw9">Phil Smith</p>
         <p class="location f2 fw9 c3">Vancouver, BC</p>
         <p class="summary c2">Designer working towards a world where tech empowers human flourishing. Self-taught with over 6 years of diverse experience. Born in the Midwest, Pacific Northwest at heart. </p><a class="button f1" href="https://airtable.com/shrTa6oXprNtNdCMI" target="_blank">✉️</a>
       </div>
+      <div class="portfolio">
+        <div class="piece piece--pin">
+          <div class="tooltip">
+            <p>Enamel pin</p>
+            <p><em>primary designer, creative direction</em></p>
+            <p>Made to celebrate a big, Star Wars themed release that the whole product and engineering team delivered.</p>
+          </div>
+        </div>
+        <div class="piece piece--launchpad">
+          <div class="tooltip">
+            <p>App ecosystem launchpad</p>
+            <p><em>primary designer</em></p>
+            <p>Starting place for users in an ecosystem of apps and services.</p>
+          </div>
+        </div>
+        <div class="piece piece--triggers">
+          <div class="tooltip">
+            <p>Automated workflow setup</p>
+            <p><em>primary designer</em></p>
+            <p>The app watches for important changes in data and triggers actions when those changes happen.</p>
+          </div>
+        </div>
+        <div class="piece piece--paprika">
+          <div class="tooltip">
+            <p>Paprika logo</p>
+            <p><em>primary designer, creative direction</em></p>
+            <p>Logo for an internal design system project which is called Paprika.</p>
+          </div>
+        </div>
+        <div class="piece piece--kaizen">
+          <div class="tooltip"> 
+            <p>Kaizen process</p>
+            <p><em>designer</em></p>
+            <p>‘Kaizen’ (改善) is the translation of a Japanese phrase: ‘change’ and ‘good’. On a regular basis, a small amount of time is taken to make improvements to the app. I helped introduce and promote this valuable process.</p>
+          </div>
+        </div>
+        <div class="piece piece--sketch">
+          <div class="tooltip">
+            <p>Design sprint: lightning demo</p>
+            <p><em>participant, designer</em></p>
+            <p>An effective exercise from a more extensive, multi-day design sprint. Each sprint participant finds a relevant design pattern and presents it. All of the patterns are sketched together.</p>
+          </div>
+        </div>
+        <div class="piece piece--tokens">
+          <div class="tooltip">
+            <p>Design system: tokens</p>
+            <p><em>designer</em></p>
+            <p>I led the creation of a system of variables the helps increase consistency in an app ecosystem. Tokens are more than simple variables in that they are named intuitively based on their use (e.g. $popover-shadow).</p>
+          </div>
+        </div>
+        <div class="piece piece--timbersmith">
+          <div class="tooltip">
+            <p>Timbersmith brand identity</p>
+            <p><em>designer, creative direction</em></p>
+            <p>Brand identity for the craft furniture maker Timbersmith. Danish modern in style, built traditionally with unique, local materials.</p>
+            <p class="f3"><em>Photo credit: Hooton Images</em></p>
+          </div>
+        </div>
+        <div class="piece piece--table">
+          <div class="tooltip">
+            <p>Dining room table</p>
+            <p><em>designer, woodworker</em></p>
+            <p>For my first woodworking project, I decided to take on something simple: a rectangle. Made out of cherry and finished with Danish oil, the resulting colour is stunning.</p>
+          </div>
+        </div>
+        <div class="piece piece--thorson-law">
+          <div class="tooltip"> 
+            <p>Attorney’s logomark</p>
+            <p><em>designer, creative direction</em></p>
+            <p>Scott Thorson Law is an ethical personal injury attorney. This logomark is part of the brand identity I designed for the firm.</p>
+          </div>
+        </div>
+        <div class="cf"></div>
+        <p class="f3 tc">© 2019 Phil Smith. All rights reserved.</p>
+      </div>
     </main>
-    <div class="portfolio">
-      <div class="piece piece--pin">
-        <div class="desc">
-          <p>Enamel pin</p>
-          <p><em>primary designer, creative direction</em></p>
-          <p>Made to celebrate a big, Star Wars themed release that the whole product and engineering team delivered.</p>
-        </div>
-      </div>
-      <div class="piece piece--launchpad">
-        <div class="desc">
-          <p>App ecosystem launchpad</p>
-          <p><em>primary designer</em></p>
-          <p>Starting place for users in an ecosystem of apps and services.</p>
-        </div>
-      </div>
-      <div class="piece piece--triggers">
-        <div class="desc">
-          <p>Automated workflow setup</p>
-          <p><em>primary designer</em></p>
-          <p>The app watches for important changes in data and triggers actions when those changes happen.</p>
-        </div>
-      </div>
-      <div class="piece piece--paprika">
-        <div class="desc">
-          <p>Paprika logo</p>
-          <p><em>primary designer, creative direction</em></p>
-          <p>Logo for an internal design system project which is called Paprika.</p>
-        </div>
-      </div>
-      <div class="piece piece--kaizen">
-        <div class="desc"> 
-          <p>Kaizen process</p>
-          <p><em>designer</em></p>
-          <p>‘Kaizen’ (改善) is the translation of a Japanese phrase: ‘change’ and ‘good’. On a regular basis, a small amount of time is taken to make improvements to the app. I helped introduce and promote this valuable process.</p>
-        </div>
-      </div>
-      <div class="piece piece--sketch">
-        <div class="desc">
-          <p>Design sprint: lightning demo</p>
-          <p><em>participant, designer</em></p>
-          <p>An effective exercise from a more extensive, multi-day design sprint. Each sprint participant finds a relevant design pattern and presents it. All of the patterns are sketched together.</p>
-        </div>
-      </div>
-      <div class="piece piece--tokens">
-        <div class="desc">
-          <p>Design system: tokens</p>
-          <p><em>designer</em></p>
-          <p>I led the creation of a system of variables the helps increase consistency in an app ecosystem. Tokens are more than simple variables in that they are named intuitively based on their use (e.g. $popover-shadow).</p>
-        </div>
-      </div>
-      <div class="piece piece--timbersmith">
-        <div class="desc">
-          <p>Timbersmith brand identity</p>
-          <p><em>designer, creative direction</em></p>
-          <p>Brand identity for the craft furniture maker Timbersmith. Danish modern in style, built traditionally with unique, local materials.</p>
-          <p class="f3"><em>Photo credit: Hooton Images</em></p>
-        </div>
-      </div>
-      <div class="piece piece--table">
-        <div class="desc">
-          <p>Dining room table</p>
-          <p><em>designer, woodworker</em></p>
-          <p>For my first woodworking project, I decided to take on something simple: a rectangle. Made out of cherry and finished with Danish oil, the resulting colour is stunning.</p>
-        </div>
-      </div>
-      <div class="piece piece--thorson-law">
-        <div class="desc"> 
-          <p>Attorney’s logomark</p>
-          <p><em>designer, creative direction</em></p>
-          <p>Scott Thorson Law is an ethical personal injury attorney. This logomark is part of the brand identity I designed for the firm.</p>
-        </div>
-      </div>
-      <div class="cf"></div>
-      <p class="f3 tc">© 2019 Phil Smith. All rights reserved.</p>
-    </div>
   </body>
   <script>
      // Hover interaction for portfolio pieces
-var tooltip = document.querySelectorAll('.desc');
+var tooltip = document.querySelectorAll('.tooltip');
 
 document.addEventListener('mousemove', fn, false);
 

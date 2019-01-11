@@ -99,8 +99,14 @@ p
   > *
     margin-bottom: $space/2
   .pic
+    background-image: url(../images/phil.png)
+    background-size: 100%
     width: $g-5
-    transition: 2s
+    height: $g-5
+    display: block
+    margin-left: auto
+    margin-right: auto
+    transition: transform 2s
     &:hover
       transform: rotate(-360deg) 
   .location
@@ -195,8 +201,7 @@ p
   background:
     position: 50% 50%
     size: cover
-
-  .desc
+  .tooltip
     display: none
     position: absolute
     width: $g-4
@@ -217,7 +222,7 @@ p
     em
       opacity: 0.618
 
-  &:hover .desc
+  &:hover .tooltip
     display: block
 
 

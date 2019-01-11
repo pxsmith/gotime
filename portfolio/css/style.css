@@ -4,7 +4,7 @@
 .f2 {
   font-size: 19px; }
 
-.f3, .piece .desc {
+.f3, .piece .tooltip {
   font-size: 12px; }
 
 .c1 {
@@ -57,8 +57,14 @@ p {
   .bio > * {
     margin-bottom: 9.5px; }
   .bio .pic {
+    background-image: url(../images/phil.png);
+    background-size: 100%;
     width: 130px;
-    transition: 2s; }
+    height: 130px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 2s; }
     .bio .pic:hover {
       transform: rotate(-360deg); }
   .bio .location {
@@ -139,7 +145,7 @@ p {
   border-radius: 3px;
   background-position: 50% 50%;
   background-size: cover; }
-  .piece .desc {
+  .piece .tooltip {
     display: none;
     position: absolute;
     width: 210px;
@@ -150,15 +156,15 @@ p {
     background: rgba(58, 58, 58, 0.9);
     color: white;
     box-shadow: 0 7px 9px rgba(0, 0, 0, 0.15), 0 3px 3px 0 rgba(0, 0, 0, 0.15); }
-    .piece .desc p:not(:last-of-type) {
+    .piece .tooltip p:not(:last-of-type) {
       margin-bottom: 4.75px; }
-    .piece .desc p:first-of-type {
+    .piece .tooltip p:first-of-type {
       font-weight: 900; }
-    .piece .desc :not(p:first-of-type) {
+    .piece .tooltip :not(p:first-of-type) {
       font-weight: 100; }
-    .piece .desc em {
+    .piece .tooltip em {
       opacity: 0.618; }
-  .piece:hover .desc {
+  .piece:hover .tooltip {
     display: block; }
 
 .piece--pin {

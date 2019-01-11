@@ -1,5 +1,5 @@
 // Hover interaction for portfolio pieces
-var tooltip = document.querySelectorAll('.desc');
+var tooltip = document.querySelectorAll('.tooltip');
 
 document.addEventListener('mousemove', fn, false);
 
