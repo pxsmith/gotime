@@ -70,7 +70,7 @@ p {
   animation-timing-function: ease-in-out; }
 
 .curtain {
-  animation: loading 1.5s linear;
+  animation: loading 1.3s linear;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
   position: fixed;
@@ -110,16 +110,17 @@ p {
 .button {
   display: inline-block;
   color: #eaeaea;
-  background-color: #3a3a3a;
+  background: linear-gradient(to top right, #ff5263 0%, #ff7381 35%, #fcbd01 100%);
   font-weight: 900;
   text-decoration: none;
   padding: 19px;
   border-radius: 50px;
   transition: 0.5s;
-  box-shadow: 0 7px 9px rgba(101, 101, 101, 0.5), 0 3px 3px 0 rgba(101, 101, 101, 0.5); }
+  box-shadow: 0 7px 9px rgba(101, 101, 101, 0.15), 0 3px 3px 0 rgba(101, 101, 101, 0.15); }
   .button:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 16px rgba(101, 101, 101, 0.5), 0 3px 3px 0 rgba(101, 101, 101, 0.5); }
+    box-shadow: 0 12px 16px rgba(101, 101, 101, 0.25), 0 3px 3px 0 rgba(101, 101, 101, 0.25);
+    transform: scale(1.03); }
 
 @media (max-width: 1386px) {
   .button {
