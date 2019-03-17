@@ -110,7 +110,7 @@ p {
 .button {
   display: inline-block;
   color: #eaeaea;
-  background: linear-gradient(to top right, #ff5263 0%, #ff7381 35%, #fcbd01 100%);
+  background: #3a3a3a;
   font-weight: 900;
   text-decoration: none;
   padding: 19px;
