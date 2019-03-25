@@ -1,7 +1,5 @@
 <!-- Oh hai, whatcha doin’ there bud? 🍁 -->
 <!-- Peeking at my mostly-clean code, hey? 🇨🇦 -->
-<!-- Give me a chirp, why don’t’cha? 🐦 -->
-<!-- https://mobile.twitter.com/philsoutside 👋 -->
 html
   head
     script.
@@ -50,52 +48,59 @@ html
         .pic.br-100
         p.name.f1.fw9 Phil Smith
         p.location.f2.fw9.c3 Vancouver, BC
-        p.summary.c2 Designer working towards a world where tech empowers human flourishing. Self-taught with over 6 years of diverse experience. Born in the Midwest, Pacific Northwest at heart. 
+        p.summary.c2 Believing in a world where tech empowers human flourishing. Designer with over 6 years of diverse experience. Born in the Midwest, Pacific Northwest at heart. 
         a.button(href='https://airtable.com/shrTa6oXprNtNdCMI' target='_blank').f1 ✉️
 
       .portfolio
+        .piece.piece--launchpad
+          .tooltip
+            p App ecosystem launchpad
+            p: em primary designer
+            p Starting place for users in an ecosystem of apps and services.
+
+        .piece.piece--paprika
+          .tooltip
+            p Paprika logo
+            p: em primary designer, creative direction
+            p Logo for an internal design system project which is called Paprika.
+
         .piece.piece--pin
           .tooltip
             p Enamel pin
             p: em primary designer, creative direction
             p Made to celebrate a big, Star Wars themed release that the whole product and engineering team delivered.
 
-        .piece.piece--launchpad
-          .tooltip
-            p App ecosystem launchpad
-            p: em primary designer
-            p Starting place for users in an ecosystem of apps and services.
         .piece.piece--triggers
           .tooltip
             p Automated workflow setup
             p: em primary designer
             p The app watches for important changes in data and triggers actions when those changes happen.
-        .piece.piece--paprika
-          .tooltip
-            p Paprika logo
-            p: em primary designer, creative direction
-            p Logo for an internal design system project which is called Paprika.
+
         .piece.piece--sketch
           .tooltip
             p Design sprint: lightning demo
             p: em participant, designer
             p An effective exercise from a more extensive, multi-day design sprint. Each sprint participant finds a relevant design pattern and presents it. All of the patterns are sketched together.
+
         .piece.piece--tokens
           .tooltip
             p Design system: tokens
-            p: em designer
+            p: em designer, design systems
             p I led the creation of a system of variables the helps increase consistency in an app ecosystem. Tokens are more than simple variables in that they are named intuitively based on their use (e.g. $popover-shadow).
+
         .piece.piece--timbersmith
           .tooltip
             p Timbersmith brand identity
             p: em designer, creative direction
             p Brand identity for the craft furniture maker Timbersmith. Danish modern in style, built traditionally with unique, local materials.
-            p.f3: em Photo credit: Hooton Images
-        .piece.piece--table
-          .tooltip
-            p Dining room table
-            p: em designer, woodworker
-            p For my first woodworking project, I decided to take on something simple: a rectangle. Made out of cherry and finished with Danish oil, the resulting colour is stunning.
+            p: em P.S. I made this table!
+
+        //- .piece.piece--table
+        //-   .tooltip
+        //-     p Dining room table
+        //-     p: em designer, woodworker
+        //-     p For my first woodworking project, I decided to take on something simple: a rectangle. Made out of cherry and finished with Danish oil, the resulting colour is stunning.
+
         .piece.piece--thorson-law
           .tooltip 
             p Attorney’s logomark
