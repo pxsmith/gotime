@@ -1,7 +1,12 @@
 mixin masthead
+  .w-100.h-20.pa4.party
+    h2.fw9.merriweather philsmith.old is BORING. New Phil Smith dot me is launching Oct. 8. It’s gonna be a party – fun, weird, surprising, curious. 
+      form(action="https://airtable.com/shrBRXpykDzzqM0ut")
+        input(type="submit" value="Remind me when it launches" style='border: none').link.dim.ph3.pv2.mb2.white.bg-black.tac.w-100.mt4
+
   .mv4
     a(href='../index.html').no-underline.merriweather
-      .f0.fw9 philsmith<span class='gold fw1'>.me</span>
+      .f0.fw9 philsmith<span class='gold fw1'>.old</span>
         .dib.normal.gold.fw1(style='margin-left: -0.25em')= pageType
           if attributes.page == 'blog'
             pageType='/thinks'
