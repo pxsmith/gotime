@@ -1,0 +1,49 @@
+// https://css-tricks.com/pure-css-horizontal-scrolling/
+
+$finalHeight: 100vh
+$finalWidth: 100vw
+$scrollBarHeight: 0px
+
+::-webkit-scrollbar
+  width: $scrollBarHeight
+  height: $scrollBarHeight
+::-webkit-scrollbar-button
+  width: $scrollBarHeight
+  height: $scrollBarHeight
+
+div
+  box-sizing: border-box
+
+.horizontal-scroll-wrapper
+  position: absolute
+  display: block
+  top: 0
+  left: 0
+  width: calc(#{$finalHeight} + #{$scrollBarHeight})
+  max-height: $finalWidth
+  // margin: 0
+  padding-top: $scrollBarHeight
+  // background: #EEE
+  overflow-y: auto
+  overflow-x: hidden
+  transform: rotate(-90deg) translateY(-$finalHeight)
+  transform-origin: right top
+  & > .card
+    display: block
+    padding: 5px
+    background: whitesmoke
+    transform: rotate(90deg)
+    transform-origin: right top
+
+.horizontal-scroll-wrapper
+  padding: $finalHeight 0 0 0
+  & > .card 
+    width: $finalHeight
+    height: $finalHeight
+
+.card:nth-of-type(1)
+  background-color: aquamarine
+.card:nth-of-type(2)
+  background-color: turquoise
+.card:nth-of-type(3)
+  background-color: aqua

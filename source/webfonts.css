@@ -1,0 +1,77 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3820673, 2019-10-07T21:57:45-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Recoleta-RegularDEMO by Latinotype
+ * URL: https://www.myfonts.com/fonts/latinotype/recoleta/regular-demo/
+ * Licensed pageviews: Unlimited
+ * 
+ * Webfont: Recoleta-Black by Latinotype
+ * URL: https://www.myfonts.com/fonts/latinotype/recoleta/black/
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: Recoleta-Bold by Latinotype
+ * URL: https://www.myfonts.com/fonts/latinotype/recoleta/bold/
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: Recoleta-Medium by Latinotype
+ * URL: https://www.myfonts.com/fonts/latinotype/recoleta/medium/
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: Recoleta-Thin by Latinotype
+ * URL: https://www.myfonts.com/fonts/latinotype/recoleta/thin/
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: Recoleta-Light by Latinotype
+ * URL: https://www.myfonts.com/fonts/latinotype/recoleta/light/
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: Recoleta-Regular by Latinotype
+ * URL: https://www.myfonts.com/fonts/latinotype/recoleta/regular/
+ * Licensed pageviews: 10,000
+ * 
+ * Webfont: Recoleta-SemiBold by Latinotype
+ * URL: https://www.myfonts.com/fonts/latinotype/recoleta/sem-ibold/
+ * Licensed pageviews: 10,000
+ * 
+ * 
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3820673
+ * Webfonts copyright: Copyright &#x00A9; 2018 by Jorge Cisterna. All rights reserved.
+ * 
+ * © 2019 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/3a4c81");
+
+  
+@font-face {font-family: 'Recoleta-RegularDEMO';src: url('webfonts/3A4C81_0_0.eot');src: url('webfonts/3A4C81_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3A4C81_0_0.woff2') format('woff2'),url('webfonts/3A4C81_0_0.woff') format('woff'),url('webfonts/3A4C81_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'Recoleta-Black';src: url('webfonts/3A4C81_1_0.eot');src: url('webfonts/3A4C81_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3A4C81_1_0.woff2') format('woff2'),url('webfonts/3A4C81_1_0.woff') format('woff'),url('webfonts/3A4C81_1_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'Recoleta-Bold';src: url('webfonts/3A4C81_2_0.eot');src: url('webfonts/3A4C81_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3A4C81_2_0.woff2') format('woff2'),url('webfonts/3A4C81_2_0.woff') format('woff'),url('webfonts/3A4C81_2_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'Recoleta-Medium';src: url('webfonts/3A4C81_3_0.eot');src: url('webfonts/3A4C81_3_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3A4C81_3_0.woff2') format('woff2'),url('webfonts/3A4C81_3_0.woff') format('woff'),url('webfonts/3A4C81_3_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'Recoleta-Thin';src: url('webfonts/3A4C81_4_0.eot');src: url('webfonts/3A4C81_4_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3A4C81_4_0.woff2') format('woff2'),url('webfonts/3A4C81_4_0.woff') format('woff'),url('webfonts/3A4C81_4_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'Recoleta-Light';src: url('webfonts/3A4C81_5_0.eot');src: url('webfonts/3A4C81_5_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3A4C81_5_0.woff2') format('woff2'),url('webfonts/3A4C81_5_0.woff') format('woff'),url('webfonts/3A4C81_5_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'Recoleta-Regular';src: url('webfonts/3A4C81_6_0.eot');src: url('webfonts/3A4C81_6_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3A4C81_6_0.woff2') format('woff2'),url('webfonts/3A4C81_6_0.woff') format('woff'),url('webfonts/3A4C81_6_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'Recoleta-SemiBold';src: url('webfonts/3A4C81_7_0.eot');src: url('webfonts/3A4C81_7_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3A4C81_7_0.woff2') format('woff2'),url('webfonts/3A4C81_7_0.woff') format('woff'),url('webfonts/3A4C81_7_0.ttf') format('truetype');}
+ 
