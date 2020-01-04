@@ -1,15 +1,18 @@
 @import style.sass
 
 .music
-    @extend .h4
-    @extend .w4
-    background: pink
-    
-    .details
-        display: none
+    &:not(.is-open)
+        @extend .h4
+        @extend .w4
+        background: pink
+        
+        .details
+            display: none
 
     &.is-open
         width: 100vw
+        height: auto
         background: salmon
         .details
             display: block
+

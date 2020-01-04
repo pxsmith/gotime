@@ -1,13 +1,15 @@
-// Colours 
+// Colours
 $lime-green: #44D62C
 $dark-slate: #101820
 $old-lace: #F9F6E7
 $gold: #FFD635
 
-$black: $dark-slate
-$green: $lime-green
-$gradient: linear-gradient(175deg, adjust-hue($lime-green, 45deg) 0%, $lime-green 100%)
+🔥
+$highlight: #ff7222
+$dark: $dark-slate
+$light: $old-lace
 
+$gradient: linear-gradient(175deg, adjust-hue($lime-green, 45deg) 0%, $lime-green 100%)
 
 .bg-gradient
   background: $lime-green
@@ -20,42 +22,44 @@ $gradient: linear-gradient(175deg, adjust-hue($lime-green, 45deg) 0%, $lime-gree
 
 
 // Scale
-$g: 1.618
-$s: 30px
-$s1: $s * $g
-$s2: $s * $g * $g
-$s3: $s * $g * $g * $g
-$s4: $s * $g * $g * $g * $g
-$s5: $s * $g * $g * $g * $g * $g
-$s6: $s * $g * $g * $g * $g * $g * $g
-$s-1: $s / $g
-$s-2: $s / $g / $g
-$s-3: $s / $g / $g / $g
-$s-4: $s / $g / $g / $g / $g
+$golden-ratio: 1.618
+
+$ratio: $golden-ratio
+$s0: 30px
+$s1: $s0 * $ratio
+$s2: $s0 * $ratio * $ratio
+$s3: $s0 * $ratio * $ratio * $ratio
+$s4: $s0 * $ratio * $ratio * $ratio * $ratio
+$s5: $s0 * $ratio * $ratio * $ratio * $ratio * $ratio
+$s6: $s0 * $ratio * $ratio * $ratio * $ratio * $ratio * $ratio
+$s-1: $s0 / $ratio
+$s-2: $s0 / $ratio / $ratio
+$s-3: $s0 / $ratio / $ratio / $ratio
+$s-4: $s0 / $ratio / $ratio / $ratio / $ratio
 
 // Font scale
 .f
-  font-size: $s
-.f1
-  font-size: $s1
-.f2
-  font-size: $s2
-.f3
-  font-size: $s3
-.f4
-  font-size: $s4
-.f5
-  font-size: $s5
-.f-1
   font-size: $s-1
-.f-2
+.f1
+  font-size: $s0
+.f2
+  font-size: $s1
+.f3
+  font-size: $s2
+.f4
+  font-size: $s3
+.f5
+  font-size: $s4
+.f-1
   font-size: $s-2
-.f-3
+.f-2
   font-size: $s-3
+.f-3
+  font-size: $s-4
 
 // Dimensions scale
 .w
-  width: $s
+  width: $s0
 .w1
   width: $s1
 .w2
@@ -77,7 +81,7 @@ $s-4: $s / $g / $g / $g / $g
 .w-4
   width: $s-4
 .h
-  height: $s
+  height: $s0
 .h1
   height: $s1
 .h2
@@ -100,7 +104,7 @@ $s-4: $s / $g / $g / $g / $g
   height: $s-4
 // Layout scale
 .ma
-  margin: $s
+  margin: $s0
 .ma1
   margin: $s1
 .ma2
@@ -118,7 +122,7 @@ $s-4: $s / $g / $g / $g / $g
 .ma-3
   margin: $s-3
 .ml
-  margin-left: $s
+  margin-left: $s0
 .ml1
   margin-left: $s1
 .ml2
@@ -136,7 +140,7 @@ $s-4: $s / $g / $g / $g / $g
 .ml-3
   margin-left: $s-3
 .mr
-  margin-right: $s
+  margin-right: $s0
 .mr1
   margin-right: $s1
 .mr2
@@ -154,7 +158,7 @@ $s-4: $s / $g / $g / $g / $g
 .mr-3
   margin-right: $s-3
 .mt
-  margin-top: $s
+  margin-top: $s0
 .mt1
   margin-top: $s1
 .mt2
@@ -172,7 +176,7 @@ $s-4: $s / $g / $g / $g / $g
 .mt-3
   margin-top: $s-3
 .mb
-  margin-bottom: $s
+  margin-bottom: $s0
 .mb1
   margin-bottom: $s1
 .mb2
@@ -190,7 +194,7 @@ $s-4: $s / $g / $g / $g / $g
 .mb-3
   margin-bottom: $s-3
 .pa
-  padding: $s
+  padding: $s0
 .pa1
   padding: $s1
 .pa2
@@ -207,82 +211,85 @@ $s-4: $s / $g / $g / $g / $g
   padding: $s-2
 .pa-3
   padding: $s-3
-.ml
-  padding-left: $s
-.ml1
+.pl
+  padding-left: $s0
+.pl1
   padding-left: $s1
-.ml2
+.pl2
   padding-left: $s2
-.ml3
+.pl3
   padding-left: $s3
-.ml4
+.pl4
   padding-left: $s4
-.ml5
+.pl5
   padding-left: $s5
-.ml-1
+.pl-1
   padding-left: $s-1
-.ml-2
+.pl-2
   padding-left: $s-2
-.ml-3
+.pl-3
   padding-left: $s-3
-.mr
-  padding-right: $s
-.mr1
+.pr
+  padding-right: $s0
+.pr1
   padding-right: $s1
-.mr2
+.pr2
   padding-right: $s2
-.mr3
+.pr3
   padding-right: $s3
-.mr4
+.pr4
   padding-right: $s4
-.mr5
+.pr5
   padding-right: $s5
-.mr-1
+.pr-1
   padding-right: $s-1
-.mr-2
+.pr-2
   padding-right: $s-2
-.mr-3
+.pr-3
   padding-right: $s-3
-.mt
-  padding-top: $s
-.mt1
+.pt
+  padding-top: $s0
+.pt1
   padding-top: $s1
-.mt2
+.pt2
   padding-top: $s2
-.mt3
+.pt3
   padding-top: $s3
-.mt4
+.pt4
   padding-top: $s4
-.mt5
+.pt5
   padding-top: $s5
-.mt-1
+.pt-1
   padding-top: $s-1
-.mt-2
+.pt-2
   padding-top: $s-2
-.mt-3
+.pt-3
   padding-top: $s-3
-.mb
-  padding-bottom: $s
-.mb1
+.pb
+  padding-bottom: $s0
+.pb1
   padding-bottom: $s1
-.mb2
+.pb2
   padding-bottom: $s2
-.mb3
+.pb3
   padding-bottom: $s3
-.mb4
+.pb4
   padding-bottom: $s4
-.mb5
+.pb5
   padding-bottom: $s5
-.mb-1
+.pb-1
   padding-bottom: $s-1
-.mb-2
+.pb-2
   padding-bottom: $s-2
-.mb-3
+.pb-3
   padding-bottom: $s-3
 
 
 
 // Typefaces
+.fw9
+  @extend .fw7
+
 .fw7, .Recoleta-Black
   font-family: Recoleta-Black
   font-weight: normal
@@ -319,16 +326,12 @@ $s-4: $s / $g / $g / $g / $g
   font-style: normal
 
 
-
-
-
-// 
-body
-  background-color: $old-lace
-  color: $black
-
-// body, html, p, h1
-//   font-family: "Recoleta-Regular"
+// TK MOVE THIS INTO A SEPARATE FILE
+// Global style
+\:root
+  @extend .fw2
+  color: $dark
+  background-color: $light
 
 
 
@@ -348,6 +351,9 @@ $scrollBarHeight: 0px
 
 div
   box-sizing: border-box
+
+body, h1, h2, h3, h4, h5, h6
+  @extend .f1
 
 .horizontal-scroll-wrapper
   position: absolute
@@ -372,7 +378,7 @@ div
 
 .horizontal-scroll-wrapper
   padding: $finalHeight 0 0 0
-  & > .card 
+  & > .card
     width: $finalHeight
     height: $finalHeight
 
@@ -384,6 +390,114 @@ div
   background-color: aqua
 
 
+.case-study
+  display: inline-block
+  float: left
+  width: 50vw
+  @extend .pa
+  // min-height: 20vw
+@media (min-width: 800px)
+  .case-study
+    height: $s5
 
-.music
-  @extend .h1
+@media (max-width: 800px)
+  .case-study
+    width: 100vw
+
+.design
+  display: inline-block
+  // width: 33.33vw
+  // min-height: 33.33vw * 4 / 6
+  width: 50vw
+  min-height: 50vw * 4 / 6
+  background-size: 100%
+  background-position: 50% 50%
+
+
+.social-links a
+  border-bottom: $s-4 solid $highlight
+  transition: border 150ms, color 150ms
+  &:hover
+    color: $highlight
+    border-color: $dark-slate
+    border-color: rgba($highlight, 0.35)
+
+
+@keyframes fadeOut
+  0%
+    opacity: 0.5
+    transform: translateX(0em)
+  100%
+    opacity: 0.5
+    transform: translateX(-1em)
+
+
+a
+  animation: fadeOut 1s timing-function delay iteration-count direction fill-mode
+  text-decoration: none
+  color: $dark
+
+  // transition: border-bottom 100ms
+  // border-bottom: $s-4 solid $dark-slate
+  // &:hover
+  //   border-bottom: $s-3 solid $highlight
+
+.call-to-action
+  background-color: $highlight
+  color: white
+  @extend .pa-1
+  @extend .fw7
+  text-align: center
+  border-radius: $s-1
+  transition: transform 200ms, box-shadow 200ms
+  &:hover
+    // box-shadow: -$s-3 $s-3 (gold), -$s-1 $s-1 ($dark-slate), -$s0 $s0 ($highlight)
+    // box-shadow: -$s-3 $s-3 rgba(($gold),0.33), -$s-1 $s-1 rgba(($gold),0.25), -$s0 $s0 rgba(($gold),0.1)
+    background-color: $dark-slate
+    // box-shadow: -$s-3 $s-3 rgba(($dark-slate),0.25), -$s-1 $s-1 rgba(($dark-slate),0.2), -$s0 $s0 rgba(($dark-slate),0.15)
+    box-shadow: -$s-3 $s-3 rgba(($highlight),0.25), -$s-1 $s-1 rgba(($highlight),0.2), -$s0 $s0 rgba(($highlight),0.15)
+    transform: translate($s-3, -$s-3)
+
+  background-color: $dark-slate
+  color: white
+  &:hover
+    background-color: rgba($highlight, 0.95)
+    box-shadow: -$s-3 $s-3 rgba(($dark-slate),0.25), -$s-1 $s-1 rgba(($dark-slate),0.2), -$s0 $s0 rgba(($dark-slate),0.15)
+    box-shadow: -$s-3 $s-3 rgba(($dark-slate),0.25), -$s-1 $s-1 rgba(($dark-slate),0.2), -$s0 $s0 rgba(($dark-slate),0.15)
+
+    // background-color: $dark
+    // color: $highlight
+    box-shadow: -$s-3 $s-3 rgba($highlight, 0.25), -$s-1 $s-1 rgba($highlight, 0.2), -$s0 $s0 rgba($highlight, 0.15)
+
+
+@media (max-width: 800px)
+  #bio
+    .bio-copy
+      width: 70%
+
+
+.fancy-heading
+  @extend .fw7, .ma, .mt1
+  color: $dark-slate
+  $shadow: $highlight
+  text-shadow: -$s-3 $s-3 rgba($shadow,0.5), -$s-1 $s-1 rgba($shadow, 0.25), -$s0 $s0 rgba($shadow, 0.1)
+  text-shadow: -$s-4 $s-4 rgba($highlight, 0.66), -$s-3 $s-3 rgba($highlight, 0.33), -$s-2 $s-2 rgba($highlight, 0.15)
+  🔥
+
+
+.fancy-underline
+  border-bottom: $s-3 solid $highlight
+  box-shadow: 4px solid pink
+// #connect
+//   background-color: $highlight
+
+@keyframes fadeIn
+  0%
+    opacity: 0
+    transform: translateX(1em)
+  100%
+    opacity: 1
+    transform: translateX(0em)
+.fadeIn
+  animation: fadeIn 1000ms ease
+  // animation: name duration timing-function delay iteration-count direction fill-mode

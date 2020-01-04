@@ -1,38 +1,24 @@
-var app = new Vue({ 
-  el: '#app',
-  data: {
-      message: 'Hello Vue.js!'
-    },
-    methods: {
-      reverseMessage: function () {
-        this.message = this.message.split('').reverse().join('');
-        document.getElementById("app").classList.toggle("bg-red-500");
-        document.this.classList.toggle('active');
-        // alert("Oh… lol");
-        var person = {
-          firstName: "John",
-          lastName : "Doe",
-          id     : 5566,
-          fullName : function() {
-            return this.firstName + " " + this.lastName;
-          }
-        };
-      }
-    }
-});
+// let music = document.querySelector(".music");
+// music.nextElementSibling;
+// music.previousElementSibling;
+// music.parentElement;
+// console.log(music);
 
-// Define a new component called button-counter
-Vue.component('button-counter', {
-  data: function () {
-    return {
-      count: 0
-    }
-  },
-  template: '<button v-on:click="count++">You clicked me {{ count }} times.</button>'
-})
 
-Vue.component('music', {
-  template:
-})
+// Pug.js
+// mixin music(mood, albumArt, link)
+// .music-preview(onclick="musicOpen("+mood+")")
 
-new Vue({ el: '.components-demo' })
+function musicOpen(mood) {
+  // let id = mood
+  // let mood
+  // let id = mood
+  // let music = document.querySelector(id);
+
+  // console.log(music.parentNode.querySelector('.music'))
+  // console.log(music)
+
+  // let mood = document.querySelector("#"+this)
+  console.log("uhhh")
+  
+}
