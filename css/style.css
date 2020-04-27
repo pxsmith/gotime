@@ -370,7 +370,7 @@
 .pb-3 {
   padding-bottom: 7.082485644px; }
 
-.fw7, .fw9, .call-to-action, .fancy-heading, .Recoleta-Black {
+.fw7, .fancy-heading, .call-to-action, .fw9, .Recoleta-Black {
   font-family: Recoleta-Black;
   font-weight: normal;
   font-style: normal; }
@@ -457,7 +457,7 @@ div {
 .case-study {
   display: inline-block;
   float: left;
-  width: 50vw; }
+  width: 33.33vw; }
 
 @media (min-width: 800px) {
   .case-study {
