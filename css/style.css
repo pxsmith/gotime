@@ -13,7 +13,7 @@
 .f1, body, h1, h2, h3, h4, h5, h6 {
   font-size: 30px; }
 
-.f2 {
+.f2, .fancy-heading {
   font-size: 48.54px; }
 
 .f3 {
@@ -370,7 +370,7 @@
 .pb-3 {
   padding-bottom: 7.082485644px; }
 
-.fw7, .fancy-heading, .call-to-action, .fw9, .Recoleta-Black {
+.fw7, .call-to-action, .fw9, .Recoleta-Black {
   font-family: Recoleta-Black;
   font-weight: normal;
   font-style: normal; }
@@ -380,7 +380,7 @@
   font-weight: normal;
   font-style: normal; }
 
-.fw5, .Recoleta-SemiBold {
+.fw5, .fancy-heading, .Recoleta-SemiBold {
   font-family: Recoleta-SemiBold;
   font-weight: normal;
   font-style: normal; }
@@ -407,7 +407,7 @@
 
 :root {
   color: #101820;
-  background-color: #F9F6E7; }
+  background-color: #f9f9f9; }
 
 ::-webkit-scrollbar {
   width: 0px;
@@ -519,8 +519,8 @@ a {
 
 .fancy-heading {
   color: #101820;
-  text-shadow: -7.082485644px 7.082485644px rgba(255, 114, 34, 0.5), -18.5414091471px 18.5414091471px rgba(255, 114, 34, 0.25), -30px 30px rgba(255, 114, 34, 0.1);
-  text-shadow: -4.3773088035px 4.3773088035px rgba(255, 114, 34, 0.66), -7.082485644px 7.082485644px rgba(255, 114, 34, 0.33), -11.459461772px 11.459461772px rgba(255, 114, 34, 0.15); }
+  text-shadow: -4.3773088035px 4.3773088035px rgba(255, 114, 34, 0.66), -7.082485644px 7.082485644px rgba(255, 114, 34, 0.33), -11.459461772px 11.459461772px rgba(255, 114, 34, 0.15);
+  text-shadow: -4.3773088035px 4.3773088035px rgba(16, 24, 32, 0.2), -7.082485644px 7.082485644px rgba(16, 24, 32, 0.1), -11.459461772px 11.459461772px rgba(16, 24, 32, 0.05); }
 
 .fancy-underline {
   border-bottom: 7.082485644px solid #ff7222;
