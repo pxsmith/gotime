@@ -3,7 +3,6 @@ head
   link(rel="stylesheet" type="text/css" href="source/webfonts.css" preload)
   link(rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css")
   link(rel='stylesheet' href='css/style.css')
-  link(rel="stylesheet", href="css/music.css")
   //- base(href='https://philsmith.me')
 
   //- TK REPLACE THIS
@@ -16,7 +15,9 @@ head
 body
   main
     #bio
-      .bio-copy.w-80.fl.pa.pr1 <span class='fw7'>Phil Smith</span> is a product designer in Vancouver, BC focusing on UX & UI design for the past 5 years. As a Swiss Army knife of designers his experience includes brand strategy, illustration, print & apparel design, & front-end development.
+      .bio-copy.w-80.fl.pr1 
+        h1.fancy-heading Phil Smith
+        p.ma Product designer in Vancouver, BC focused on UX & UI design for the past 5 years. Creative generalist with experience including brand strategy, illustration, print & apparel design, & front-end development.
       
       .w-20.fr.pt.pr
         a.call-to-action(
@@ -35,7 +36,7 @@ body
         
     .cf
     #case-studies
-      h1.fancy-heading Case Studies
+      h1.fancy-heading Process
       a.case-study.dot-voting(
         href='https://medium.com/galvanize/dot-voting-remix-d21b93abfc92' 
         style='background-image: url(https://miro.medium.com/max/5464/1*iyvZLXK0_sHftO4jg9hUYw.jpeg)'
@@ -55,7 +56,7 @@ body
   
       a.case-study.retro(
         href='https://medium.com/galvanize/your-design-team-needs-a-story-retro-87f5b9e43827' 
-        style='background-image: linear-gradient(135deg,rgba(254, 243, 246, 0.98), rgba(233, 224, 226, 0.85)), url(https://miro.medium.com/max/2560/0*J25cg9prR4qzRbRg)'
+        style='background-image: linear-gradient(135deg,rgba(254, 243, 246, 0.80), rgba(233, 224, 226, 0.40)), url(https://miro.medium.com/max/2560/0*J25cg9prR4qzRbRg)'
         target='blank' 
         )
         .f1.fw5 Facilitation
@@ -73,9 +74,17 @@ body
     .cf
     #designs.mt2
       h1.fancy-heading Selected Designs
+      a.design(
+        href='https://dribbble.com/shots/11540814-Just-another-table' 
+        style='background-image: url(https://cdn.dribbble.com/users/543568/screenshots/11540814/media/eaf39ec96a88796dad918804de56d4b8.png)'
+        target='blank')
       a.design.daylight-savings(
-        href='https://dribbble.com/shots/7945704-Daylight-Savings-Strike' 
-        style='background-image: url(https://cdn.dribbble.com/users/543568/screenshots/7945704/image.png)'
+          href='https://dribbble.com/shots/7945704-Daylight-Savings-Strike' 
+          style='background-image: url(https://cdn.dribbble.com/users/543568/screenshots/7945704/image.png)'
+          target='blank')
+      a.design(
+        href='https://dribbble.com/shots/11145253-Take-a-Hike' 
+        style='background-image: url(https://cdn.dribbble.com/users/543568/screenshots/11145253/media/bde2c66f88c017c5105c44f62a0420e4.png)'
         target='blank')
       a.design(
         href='https://dribbble.com/shots/5943855-Paprika' 
@@ -89,36 +98,20 @@ body
         href='https://dribbble.com/shots/7892423-Timbersmith' 
         style='background-image: url(https://cdn.dribbble.com/users/543568/screenshots/7892423/media/9fa88b73e5fb61b443c64672ab2bd4f8.png)'
         target='blank')
-      //- a.design(
-      //-   href='' 
-      //-   style='background-image: url()'
-      //-   target='blank')
-      //- a.design(
-      //-   href='' 
-      //-   style='background-image: url()'
-      //-   target='blank')
-      //- a.design(
-      //-   href='' 
-      //-   style='background-image: url()'
-      //-   target='blank')
+
+
       
     h1.fancy-heading Philosophy 
-    h2.ma Great design—fire design—functions beautifully. Beauty and function are inseparable. If your product isn’t 🔥 you’re on the highway to obsolescence. 
-      
-    h1.fancy-heading Process
-    h2.ma Share early & often. 1. Discover → 2. Explore → 3. Design → 4. Test → 5. Ship
-    
-    //- h1.fancy-heading Services
-    //- .ma
-    //-   h2.dib.w-33 Brand Strategy
-    //-   h2.dib.w-33 Web & App Design
-    //-   h2.dib.w-33 Front-end Development
-    //-   h2.dib.w-33 Illustration
-    //-   h2.dib.w-33 Apparel Design
+    .ma
+      h2 Share early & often.  
+      h2 Great design functions beautifully.
+      h2 Beauty and function are inseparable. 
+  
     
     .fancy-heading
     a.call-to-action(href='https://airtable.com/shr5OfqlF5QetFVKe' target='blank').db.ma Connect now!
 
+    h1.fancy-heading Social
     .ma.social-links.fw5
       a(href='http://dribbble.com/philsmith' target='blank').mr1 Dribbble
       a(href='https://mobile.twitter.com/philsoutside' target='blank').mr1 Twitter
