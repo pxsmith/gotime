@@ -16,7 +16,7 @@
 .f2, .fancy-heading {
   font-size: 48.54px; }
 
-.f3 {
+.f3, .page-tite {
   font-size: 78.53772px; }
 
 .f4 {
@@ -385,7 +385,7 @@
   font-weight: normal;
   font-style: normal; }
 
-.fw4, .Recoleta-Medium {
+.fw4, .page-tite, .Recoleta-Medium {
   font-family: Recoleta-Medium;
   font-weight: normal;
   font-style: normal; }
