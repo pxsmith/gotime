@@ -9,722 +9,87 @@
 	],
 "creatorBuild": "32186",
 "files": {
-	"/bower_components/tachyons/.bower.json": {
-		"ft": 524288,
-		"oA": 2,
-		"oAP": "/bower_components/tachyons/.bower.json",
+	"/assets/android-chrome-192x192.png": {
+		"ft": 32768,
+		"iS": 40797,
+		"oA": 0,
+		"oAP": "/assets/android-chrome-192x192.png",
 		"oF": 0,
-		"oO": 0,
-		"oS": 1
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
-	"/bower_components/tachyons/bower.json": {
-		"ft": 524288,
-		"oA": 2,
-		"oAP": "/bower_components/tachyons/bower.json",
+	"/assets/android-chrome-512x512.png": {
+		"ft": 32768,
+		"iS": 205254,
+		"oA": 0,
+		"oAP": "/assets/android-chrome-512x512.png",
 		"oF": 0,
-		"oO": 0,
-		"oS": 1
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
-	"/bower_components/tachyons/code-of-conduct.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/bower_components/tachyons/code-of-conduct.md",
+	"/assets/apple-touch-icon.png": {
+		"ft": 32768,
+		"iS": 36648,
+		"oA": 0,
+		"oAP": "/assets/apple-touch-icon.png",
 		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
-	"/bower_components/tachyons/css/tachyons.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 2,
-		"oAP": "/bower_components/tachyons/css/tachyons.css",
+	"/assets/favicon-16x16.png": {
+		"ft": 32768,
+		"iS": 750,
+		"oA": 0,
+		"oAP": "/assets/favicon-16x16.png",
 		"oF": 0,
-		"oS": 3
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
-	"/bower_components/tachyons/css/tachyons.min.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 2,
-		"oAP": "/bower_components/tachyons/css/tachyons.min.css",
+	"/assets/favicon-32x32.png": {
+		"ft": 32768,
+		"iS": 1962,
+		"oA": 0,
+		"oAP": "/assets/favicon-32x32.png",
 		"oF": 0,
-		"oS": 3
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
-	"/bower_components/tachyons/index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/bower_components/tachyons/index.html",
-		"oF": 0
-		},
-	"/bower_components/tachyons/license": {
+	"/assets/favicon.ico": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 2,
-		"oAP": "/bower_components/tachyons/license",
+		"oA": 0,
+		"oAP": "/assets/favicon.ico",
 		"oF": 0
 		},
-	"/bower_components/tachyons/package.json": {
-		"ft": 524288,
-		"oA": 2,
-		"oAP": "/bower_components/tachyons/package.json",
+	"/assets/meta-image.png": {
+		"ft": 32768,
+		"iS": 705405,
+		"oA": 0,
+		"oAP": "/assets/meta-image.png",
 		"oF": 0,
-		"oO": 0,
-		"oS": 1
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
-	"/bower_components/tachyons/readme.md": {
+	"/assets/site.webmanifest": {
 		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
+		"ft": 8192,
 		"hM": 0,
-		"oA": 2,
-		"oAP": "/bower_components/tachyons/readme.md",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"/bower_components/tachyons/sites.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/bower_components/tachyons/sites.md",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"/bower_components/tachyons/src/_aspect-ratios.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_aspect-ratios.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_background-position.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_background-position.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_background-size.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_background-size.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_border-colors.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_border-colors.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_border-radius.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_border-radius.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_border-style.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_border-style.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_border-widths.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_border-widths.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_borders.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_borders.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_box-shadow.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_box-shadow.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_box-sizing.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_box-sizing.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_clears.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_clears.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_code.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_code.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_colors.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_colors.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_coordinates.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_coordinates.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_debug-children.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_debug-children.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_debug-grid.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_debug-grid.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_debug.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_debug.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_display.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_display.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_flexbox.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_flexbox.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_floats.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_floats.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_font-family.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_font-family.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_font-style.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_font-style.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_font-weight.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_font-weight.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_forms.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_forms.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_heights.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_heights.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_hovers.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_hovers.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_images.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_images.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_letter-spacing.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_letter-spacing.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_line-height.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_line-height.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_links.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_links.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_lists.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_lists.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_max-widths.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_max-widths.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_media-queries.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_media-queries.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_module-template.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_module-template.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_negative-margins.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_negative-margins.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_nested.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_nested.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_normalize.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_normalize.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_opacity.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_opacity.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_outlines.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_outlines.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_overflow.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_overflow.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_position.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_position.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_rotations.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_rotations.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_skins-pseudo.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_skins-pseudo.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_skins.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_skins.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_spacing.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_spacing.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_styles.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_styles.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_tables.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_tables.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_text-align.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_text-align.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_text-decoration.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_text-decoration.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_text-transform.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_text-transform.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_type-scale.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_type-scale.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_typography.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_typography.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_utilities.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_utilities.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_vertical-align.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_vertical-align.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_visibility.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_visibility.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_white-space.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_white-space.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_widths.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_widths.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_word-break.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_word-break.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/_z-index.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/bower_components/tachyons/src/_z-index.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/bower_components/tachyons/src/tachyons.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 2,
-		"oAP": "/bower_components/tachyons/src/tachyons.css",
-		"oF": 0,
-		"oS": 3
+		"oA": 0,
+		"oAP": "/assets/site.webmanifest",
+		"oF": 0
 		},
 	"/CNAME": {
 		"cB": 0,
@@ -733,16 +98,6 @@
 		"oA": 2,
 		"oAP": "/CNAME",
 		"oF": 0
-		},
-	"/css/music.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/css/music-min.css",
-		"oF": 0,
-		"oS": 3
 		},
 	"/css/style.css": {
 		"aP": 1,
@@ -760,25 +115,6 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/index.html",
-		"oF": 0
-		},
-	"/index.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/min/index-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/linkedin.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/linkedin.html",
 		"oF": 0
 		},
 	"/source/index.pug": {
@@ -1079,7 +415,7 @@
 	"creationDate": 503460403,
 	"displayValue": "bench",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "meme-karate",
+	"iconImageName": "/assets/apple-touch-icon.png",
 	"iconImageWasSetByUser": 0
 	},
 "projectSettings": {
