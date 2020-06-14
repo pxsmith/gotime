@@ -1,4 +1,5 @@
-// Colours
+// COLOURS
+
 $lime-green: #44D62C
 $dark-slate: #101820
 $old-lace: #F9F6E7
@@ -21,11 +22,14 @@ $gradient: linear-gradient(175deg, adjust-hue($lime-green, 45deg) 0%, $lime-gree
   -webkit-text-fill-color: transparent
 
 
-// Scale
+
+// SCALE
+
 $golden-ratio: 1.618
 
 $ratio: $golden-ratio
 $s0: 30px
+$s0: 26px
 $s1: $s0 * $ratio
 $s2: $s0 * $ratio * $ratio
 $s3: $s0 * $ratio * $ratio * $ratio
@@ -37,7 +41,11 @@ $s-2: $s0 / $ratio / $ratio
 $s-3: $s0 / $ratio / $ratio / $ratio
 $s-4: $s0 / $ratio / $ratio / $ratio / $ratio
 
-// Font scale
+
+
+
+// FONT SCALE
+
 .f
   font-size: $s-1
 .f1
@@ -57,7 +65,10 @@ $s-4: $s0 / $ratio / $ratio / $ratio / $ratio
 .f-3
   font-size: $s-4
 
-// Dimensions scale
+
+
+// HEIGHT & WIDTH
+
 .w
   width: $s0
 .w1
@@ -102,7 +113,187 @@ $s-4: $s0 / $ratio / $ratio / $ratio / $ratio
   height: $s-3
 .h-4
   height: $s-4
-// Layout scale
+
+.w-10
+  width: 10%
+.w-20
+  width: 20%
+.w-25
+  width: 25%
+.w-30
+  width: 30%
+.w-33
+  width: 33%
+.w-34
+  width: 34%
+.w-40
+  width: 40%
+.w-50
+  width: 50%
+.w-60
+  width: 60%
+.w-70
+  width: 70%
+.w-75
+  width: 75%
+.w-80
+  width: 80%
+.w-90
+  width: 90%
+.w-100
+  width: 100%
+
+.w-third
+  width: calc(100% / 3)
+.w-two-thirds
+  width: calc(100% / 1.5)
+.w-auto
+  width: auto
+
+@media (--breakpoint-not-small)
+  .w1-ns
+    width: 1rem
+  .w2-ns
+    width: 2rem
+  .w3-ns
+    width: 4rem
+  .w4-ns
+    width: 8rem
+  .w5-ns
+    width: 16rem
+  .w-10-ns
+    width: 10%
+  .w-20-ns
+    width: 20%
+  .w-25-ns
+    width: 25%
+  .w-30-ns
+    width: 30%
+  .w-33-ns
+    width: 33%
+  .w-34-ns
+    width: 34%
+  .w-40-ns
+    width: 40%
+  .w-50-ns
+    width: 50%
+  .w-60-ns
+    width: 60%
+  .w-70-ns
+    width: 70%
+  .w-75-ns
+    width: 75%
+  .w-80-ns
+    width: 80%
+  .w-90-ns
+    width: 90%
+  .w-100-ns
+    width: 100%
+  .w-third-ns
+    width: calc(100% / 3)
+  .w-two-thirds-ns
+    width: calc(100% / 1.5)
+  .w-auto-ns
+    width: auto
+
+@media (--breakpoint-medium)
+  .w1-m
+    width: 1rem
+  .w2-m
+    width: 2rem
+  .w3-m
+    width: 4rem
+  .w4-m
+    width: 8rem
+  .w5-m
+    width: 16rem
+  .w-10-m
+    width: 10%
+  .w-20-m
+    width: 20%
+  .w-25-m
+    width: 25%
+  .w-30-m
+    width: 30%
+  .w-33-m
+    width: 33%
+  .w-34-m
+    width: 34%
+  .w-40-m
+    width: 40%
+  .w-50-m
+    width: 50%
+  .w-60-m
+    width: 60%
+  .w-70-m
+    width: 70%
+  .w-75-m
+    width: 75%
+  .w-80-m
+    width: 80%
+  .w-90-m
+    width: 90%
+  .w-100-m
+    width: 100%
+  .w-third-m
+    width: calc(100% / 3)
+  .w-two-thirds-m
+    width: calc(100% / 1.5)
+  .w-auto-m
+    width: auto
+
+@media (--breakpoint-large)
+  .w1-l
+    width: 1rem
+  .w2-l
+    width: 2rem
+  .w3-l
+    width: 4rem
+  .w4-l
+    width: 8rem
+  .w5-l
+    width: 16rem
+  .w-10-l
+    width: 10%
+  .w-20-l
+    width: 20%
+  .w-25-l
+    width: 25%
+  .w-30-l
+    width: 30%
+  .w-33-l
+    width: 33%
+  .w-34-l
+    width: 34%
+  .w-40-l
+    width: 40%
+  .w-50-l
+    width: 50%
+  .w-60-l
+    width: 60%
+  .w-70-l
+    width: 70%
+  .w-75-l
+    width: 75%
+  .w-80-l
+    width: 80%
+  .w-90-l
+    width: 90%
+  .w-100-l
+    width: 100%
+  .w-third-l
+    width: calc(100% / 3)
+  .w-two-thirds-l
+    width: calc(100% / 1.5)
+  .w-auto-l
+    width: auto
+
+
+
+
+
+// MARGIN
+
 .ma
   margin: $s0
 .ma1
@@ -115,12 +306,15 @@ $s-4: $s0 / $ratio / $ratio / $ratio / $ratio
   margin: $s4
 .ma5
   margin: $s5
+.ma0
+  margin: 0
 .ma-1
   margin: $s-1
 .ma-2
   margin: $s-2
 .ma-3
   margin: $s-3
+
 .ml
   margin-left: $s0
 .ml1
@@ -133,12 +327,15 @@ $s-4: $s0 / $ratio / $ratio / $ratio / $ratio
   margin-left: $s4
 .ml5
   margin-left: $s5
+.ml0
+  margin-left: 0
 .ml-1
   margin-left: $s-1
 .ml-2
   margin-left: $s-2
 .ml-3
   margin-left: $s-3
+
 .mr
   margin-right: $s0
 .mr1
@@ -151,12 +348,15 @@ $s-4: $s0 / $ratio / $ratio / $ratio / $ratio
   margin-right: $s4
 .mr5
   margin-right: $s5
+.mr0
+  margin-right: 0
 .mr-1
   margin-right: $s-1
 .mr-2
   margin-right: $s-2
 .mr-3
   margin-right: $s-3
+
 .mt
   margin-top: $s0
 .mt1
@@ -169,12 +369,15 @@ $s-4: $s0 / $ratio / $ratio / $ratio / $ratio
   margin-top: $s4
 .mt5
   margin-top: $s5
+.mt0
+  margin-top: 0
 .mt-1
   margin-top: $s-1
 .mt-2
   margin-top: $s-2
 .mt-3
   margin-top: $s-3
+
 .mb
   margin-bottom: $s0
 .mb1
@@ -187,12 +390,19 @@ $s-4: $s0 / $ratio / $ratio / $ratio / $ratio
   margin-bottom: $s4
 .mb5
   margin-bottom: $s5
+.mb0
+  margin-bottom: 0
 .mb-1
   margin-bottom: $s-1
 .mb-2
   margin-bottom: $s-2
 .mb-3
   margin-bottom: $s-3
+
+
+
+// PADDING
+
 .pa
   padding: $s0
 .pa1
@@ -205,12 +415,15 @@ $s-4: $s0 / $ratio / $ratio / $ratio / $ratio
   padding: $s4
 .pa5
   padding: $s5
+.pa0
+  padding: 0
 .pa-1
   padding: $s-1
 .pa-2
   padding: $s-2
 .pa-3
   padding: $s-3
+
 .pl
   padding-left: $s0
 .pl1
@@ -223,12 +436,15 @@ $s-4: $s0 / $ratio / $ratio / $ratio / $ratio
   padding-left: $s4
 .pl5
   padding-left: $s5
+.pl0
+  padding-left: 0
 .pl-1
   padding-left: $s-1
 .pl-2
   padding-left: $s-2
 .pl-3
   padding-left: $s-3
+
 .pr
   padding-right: $s0
 .pr1
@@ -241,12 +457,15 @@ $s-4: $s0 / $ratio / $ratio / $ratio / $ratio
   padding-right: $s4
 .pr5
   padding-right: $s5
+.pr0
+  padding-right: 0
 .pr-1
   padding-right: $s-1
 .pr-2
   padding-right: $s-2
 .pr-3
   padding-right: $s-3
+
 .pt
   padding-top: $s0
 .pt1
@@ -259,12 +478,15 @@ $s-4: $s0 / $ratio / $ratio / $ratio / $ratio
   padding-top: $s4
 .pt5
   padding-top: $s5
+.pt0
+  padding-top: 0
 .pt-1
   padding-top: $s-1
 .pt-2
   padding-top: $s-2
 .pt-3
   padding-top: $s-3
+
 .pb
   padding-bottom: $s0
 .pb1
@@ -277,6 +499,8 @@ $s-4: $s0 / $ratio / $ratio / $ratio / $ratio
   padding-bottom: $s4
 .pb5
   padding-bottom: $s5
+.pb0
+  padding-bottom: 0
 .pb-1
   padding-bottom: $s-1
 .pb-2
@@ -286,8 +510,9 @@ $s-4: $s0 / $ratio / $ratio / $ratio / $ratio
 
 
 
-// Typefaces
-.fw9
+// TYPOGRAPHY
+
+.fw9, .fw8
   @extend .fw7
 
 .fw7, .Recoleta-Black
@@ -326,6 +551,7 @@ $s-4: $s0 / $ratio / $ratio / $ratio / $ratio
   font-style: normal
 
 
+
 // TK MOVE THIS INTO A SEPARATE FILE
 // Global style
 \:root
@@ -333,54 +559,15 @@ $s-4: $s0 / $ratio / $ratio / $ratio / $ratio
   color: $dark
   background-color: $light
 
-
-
-// Horizontal Scrolling
-// https://css-tricks.com/pure-css-horizontal-scrolling/
-
-$finalHeight: 100vh
-$finalWidth: 100vw
-$scrollBarHeight: 0px
-
-::-webkit-scrollbar
-  width: $scrollBarHeight
-  height: $scrollBarHeight
-::-webkit-scrollbar-button
-  width: $scrollBarHeight
-  height: $scrollBarHeight
-
 div
   box-sizing: border-box
 
 body, h1, h2, h3, h4, h5, h6
   @extend .f1
 
-.horizontal-scroll-wrapper
-  position: absolute
-  display: block
-  top: 0
-  left: 0
-  width: calc(#{$finalHeight} + #{$scrollBarHeight})
-  max-height: $finalWidth
-  // margin: 0
-  padding-top: $scrollBarHeight
-  // background: #EEE
-  overflow-y: auto
-  overflow-x: hidden
-  transform: rotate(-90deg) translateY(-$finalHeight)
-  transform-origin: right top
-  & > .card
-    display: block
-    padding: 5px
-    background: whitesmoke
-    transform: rotate(90deg)
-    transform-origin: right top
+body
+  margin: 0
 
-.horizontal-scroll-wrapper
-  padding: $finalHeight 0 0 0
-  & > .card
-    width: $finalHeight
-    height: $finalHeight
 
 .card:nth-of-type(1)
   background-color: aquamarine
@@ -390,29 +577,65 @@ body, h1, h2, h3, h4, h5, h6
   background-color: aqua
 
 
-.case-study
-  display: inline-block
-  float: left
-  width: 33.33vw
-  @extend .pa
-  // min-height: 20vw
-@media (min-width: 800px)
-  .case-study
-    height: $s5
-
+// .case-study
+//   display: inline-block
+//   float: left
+//   width: 33.33vw
+//   @extend .pa
+//   // min-height: 20vw
+// @media (min-width: 800px)
+//   .case-study
+//     height: $s5
+//
 @media (max-width: 800px)
-  .case-study
+  .design
     width: 100vw
+    color: pink
 
 .design
   display: inline-block
   // width: 33.33vw
   // min-height: 33.33vw * 4 / 6
+  float: left
   width: 50vw
-  min-height: 50vw * 4 / 6
+  min-height: 50vw * 4 / 5.35
   background-size: 100%
   background-position: 50% 50%
 
+.design-description
+  // @extend .fw7, .f1
+  // display: flex
+  // margin-top: $s-2
+  // margin-left: $s-2
+  padding: $s-3 $s-2
+  // border-radius: $s-3
+  background-color: rgba($dark-slate, 1)
+  color: white
+  position: relative
+  top: 0
+  right: 0
+
+  // transition: max-height 600ms ease-in-out
+  max-height: 1.6em
+  text-overflow: ellipsis
+  overflow: hidden
+
+.design
+  transition: background-size 500ms linear
+.design:hover
+  background-size: 105%
+
+  .design-description
+    max-height: 50vw * 4 / 6
+    transition: max-height 600ms ease-in-out
+
+
+
+.design-title
+  @extend .fw7
+.design-extra-info
+  @extend .fw2
+  display: inline-block
 
 .social-links a
   border-bottom: $s-4 solid $highlight
@@ -421,6 +644,18 @@ body, h1, h2, h3, h4, h5, h6
     color: $highlight
     border-color: $dark-slate
     border-color: rgba($highlight, 0.35)
+
+a.text
+  // @extend .fw4
+  border-bottom: 2.5px solid rgba($highlight, 0.3)
+  transition: border 150ms, color 150ms
+  background-color: rgba($highlight, 0.05)
+  &:hover
+    // color: $highlight
+    border-bottom: $s-4 solid $highlight
+    border-color: rgba($highlight, 1)
+    background-color: rgba($highlight, 0.2)
+
 
 
 @keyframes fadeOut
@@ -445,16 +680,13 @@ a
 .call-to-action
   background-color: $highlight
   color: white
-  @extend .pa-1
-  @extend .fw7
+  @extend .pa-1, .fw7, .f2
   text-align: center
   border-radius: $s-1
+  z-index: 1
   transition: transform 200ms, box-shadow 200ms
   &:hover
-    // box-shadow: -$s-3 $s-3 (gold), -$s-1 $s-1 ($dark-slate), -$s0 $s0 ($highlight)
-    // box-shadow: -$s-3 $s-3 rgba(($gold),0.33), -$s-1 $s-1 rgba(($gold),0.25), -$s0 $s0 rgba(($gold),0.1)
     background-color: $dark-slate
-    // box-shadow: -$s-3 $s-3 rgba(($dark-slate),0.25), -$s-1 $s-1 rgba(($dark-slate),0.2), -$s0 $s0 rgba(($dark-slate),0.15)
     box-shadow: -$s-3 $s-3 rgba(($highlight),0.25), -$s-1 $s-1 rgba(($highlight),0.2), -$s0 $s0 rgba(($highlight),0.15)
     transform: translate($s-3, -$s-3)
 
@@ -469,11 +701,18 @@ a
     // color: $highlight
     box-shadow: -$s-3 $s-3 rgba($highlight, 0.25), -$s-1 $s-1 rgba($highlight, 0.2), -$s0 $s0 rgba($highlight, 0.15)
 
+// Fix button to the top
+.call-to-action
+  position: fixed
+  bottom: 0
+  right: 0
 
-@media (max-width: 800px)
-  #bio
-    .bio-copy
-      width: 70%
+
+
+// @media (max-width: 800px)
+//   #bio
+//     .bio-copy
+//       width: 70%
 
 
 .fancy-heading
@@ -484,8 +723,10 @@ a
   text-shadow: -$s-4 $s-4 rgba($dark-slate, 0.20), -$s-3 $s-3 rgba($dark-slate, 0.10), -$s-2 $s-2 rgba($dark-slate, 0.05)
   🔥
 
-.page-tite
-  @extend .f3, .fw4
+.page-title
+  @extend .f3, .fw7
+  text-align: center
+  // color: $highlight
 
 
 .fancy-underline
@@ -493,6 +734,14 @@ a
   box-shadow: 4px solid pink
 // #connect
 //   background-color: $highlight
+
+
+// fancy hover
+.bio-copy .fw7
+  transition: color 200ms ease-out
+  &:hover
+    color: $highlight
+
 
 @keyframes fadeIn
   0%
@@ -504,3 +753,17 @@ a
 .fadeIn
   animation: fadeIn 1000ms ease
   // animation: name duration timing-function delay iteration-count direction fill-mode
+
+
+// CLEARFIX
+
+/* Nicolas Gallaghers Clearfix solution
+   Ref: http://nicolasgallagher.com/micro-clearfix-hack/ */
+
+.cf:before, .cf:after
+  content: " "
+  display: table
+.cf:after
+  clear: both
+.cf
+  *zoom: 1
