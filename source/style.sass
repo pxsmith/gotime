@@ -6,7 +6,8 @@ $old-lace: #F9F6E7
 $gold: #FFD635
 
 🔥
-$highlight: #ff7222
+$highlight: #f47b72
+$highlight-alt: #B97D78
 $dark: $dark-slate
 $light: #f9f9f9
 
@@ -28,7 +29,7 @@ $gradient: linear-gradient(175deg, adjust-hue($lime-green, 45deg) 0%, $lime-gree
 $golden-ratio: 1.618
 
 $ratio: $golden-ratio
-$s0: 30px
+// $s0: 30px
 $s0: 26px
 $s1: $s0 * $ratio
 $s2: $s0 * $ratio * $ratio
@@ -512,6 +513,10 @@ $s-4: $s0 / $ratio / $ratio / $ratio / $ratio
 
 // TYPOGRAPHY
 
+p
+  margin: 0
+  padding: 0
+
 .fw9, .fw8
   @extend .fw7
 
@@ -550,6 +555,10 @@ $s-4: $s0 / $ratio / $ratio / $ratio / $ratio
   font-weight: normal
   font-style: normal
 
+.tl
+  text-align: left
+.tc
+  text-align: center
 
 
 // TK MOVE THIS INTO A SEPARATE FILE
@@ -592,6 +601,8 @@ body
     width: 100vw
     color: pink
 
+
+
 .design
   display: inline-block
   // width: 33.33vw
@@ -601,6 +612,7 @@ body
   min-height: 50vw * 4 / 5.35
   background-size: 100%
   background-position: 50% 50%
+
 
 .design-description
   // @extend .fw7, .f1
@@ -680,9 +692,9 @@ a
 .call-to-action
   background-color: $highlight
   color: white
-  @extend .pa-1, .fw7, .f2
-  text-align: center
+  @extend .pa-1, .pl1, .pr1, .ma-1, .fw5, .f1
   border-radius: $s-1
+  display: inline-block
   z-index: 1
   transition: transform 200ms, box-shadow 200ms
   &:hover
@@ -690,7 +702,7 @@ a
     box-shadow: -$s-3 $s-3 rgba(($highlight),0.25), -$s-1 $s-1 rgba(($highlight),0.2), -$s0 $s0 rgba(($highlight),0.15)
     transform: translate($s-3, -$s-3)
 
-  background-color: $dark-slate
+  // background-color: $dark-slate
   color: white
   &:hover
     background-color: rgba($highlight, 0.95)
@@ -701,18 +713,7 @@ a
     // color: $highlight
     box-shadow: -$s-3 $s-3 rgba($highlight, 0.25), -$s-1 $s-1 rgba($highlight, 0.2), -$s0 $s0 rgba($highlight, 0.15)
 
-// Fix button to the top
-.call-to-action
-  position: fixed
-  bottom: 0
-  right: 0
 
-
-
-// @media (max-width: 800px)
-//   #bio
-//     .bio-copy
-//       width: 70%
 
 
 .fancy-heading
@@ -725,8 +726,8 @@ a
 
 .page-title
   @extend .f3, .fw7
-  text-align: center
-  // color: $highlight
+  color: $highlight
+  line-height: 100%
 
 
 .fancy-underline

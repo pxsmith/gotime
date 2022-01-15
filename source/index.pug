@@ -3,6 +3,7 @@ head
   link(rel="stylesheet" type="text/css" href="source/webfonts.css" preload)
   //- link(rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css")
   link(rel='stylesheet' href='css/style.css')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css')
   //- base(href='https://philsmith.me')
 
   // Primary Meta Tags
@@ -12,13 +13,13 @@ head
   // Open Graph / Facebook
   meta(property='og:type' content='website')
   meta(property='og:url' content='https://philsmith.me/')
-  meta(property='og:title' content='Phil Smith → making ideas come to life')
+  meta(property='og:title' content='Limitless design for startups')
   meta(property='og:description' content='Product designer in tech for 5 years and creative generalist for 8 years. UX & UI design, facilitation, design sprints, brand strategy, illustration, print & apparel design, writing, & front-end development. ')
   meta(property='og:image' content='/assets/meta-image.png')
   // Twitter
   meta(property='twitter:card' content='assets/meta-image.png')
   meta(property='twitter:url' content='https://philsmith.me/')
-  meta(property='twitter:title' content='Phil Smith → making ideas come to life')
+  meta(property='twitter:title' content='Limitless design for startups')
   meta(property='twitter:description' content='Product designer in tech for 5 years and creative generalist for 8 years. UX & UI design, facilitation, design sprints, brand strategy, illustration, print & apparel design, writing, & front-end development. ')
   meta(property='twitter:image' content='assets/meta-image.png')
 
@@ -36,18 +37,20 @@ head
 
 body
   main
-    #bio
-      h1.fancy-heading.page-title Phil Smith
-      .bio-copy.fl.ma.mt0
-        p Greetings! I’m a #[span.fw9 product designer] in tech (5 years) and a #[span.fw9 creative generalist] (8 years). My experience spans UX & UI design, facilitating design sprints, brand strategy, illustration, print & apparel design, writing, & front-end development. 
-        p.fw9 I make ideas come to life.
-        p Full-time I design software to #[a.text(href='https://piedpiper.results.highbond.com/storyboard_links/HVxzMAwC8xduDP1ByFyf' target='_blank') help organizations navigate COVID-19]. On the side I lead a video project called #[a.text(href='http://becomingfoodies.com' target='_blank') Becoming Foodies]. #[a.text(href='https://www.instagram.com/becomingfoodies') Watch my chef wife teach our comedian friend how to cook] as part of it. I am always learning and #[a.text(href='https://philsoutside.substack.com' target='_blank') share the good things I find]. I #[a.text(href='https://www.certifiedfire.club' target='_blank') curate the best new music].
-      
-      a.call-to-action.ma(
+    #hero.tc.mt4.mb5
+      h1.page-title.mb0.animate__animated.animate__fadeInDown Limitless design for #[br] <u>ambitious startups</u>
+      .hero-subtext.f1.mt-1.animate__animated.animate__fadeIn.animate__delay-1s 
+        p Unblock your team this week. Get continuous designs for 
+        p a flat-rate subscription. Join over 40 startups.
+        .mt-1
+        a.f1.call-to-action(href='https://airtable.com/shr5OfqlF5QetFVKe' target='blank') Learn more
+
+
+      // a.call-to-action.call-to-action-fixed.ma.tc(
         href='https://airtable.com/shr5OfqlF5QetFVKe' 
         target='blank').fr.db Connect now!
         
-    #designs
+    #designs.animate__animated.animate__fadeInUp.animate__delay-2s
 
       a.design(
         href='https://medium.com/galvanize/dot-voting-remix-d21b93abfc92'
