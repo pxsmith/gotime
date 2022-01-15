@@ -83,6 +83,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/assets/philsmith.jpg": {
+		"ft": 16384,
+		"iS": 132729,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/philsmith.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/assets/site.webmanifest": {
 		"cB": 0,
 		"ft": 8192,
@@ -98,6 +109,16 @@
 		"oA": 2,
 		"oAP": "/CNAME",
 		"oF": 0
+		},
+	"/css/functional.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/css/functional-min.css",
+		"oF": 0,
+		"oS": 3
 		},
 	"/css/style.css": {
 		"aP": 1,
@@ -116,6 +137,19 @@
 		"oA": 0,
 		"oAP": "/index.html",
 		"oF": 0
+		},
+	"/source/functional.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/css/functional.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
 		},
 	"/source/index.pug": {
 		"cB": 0,
@@ -139,6 +173,16 @@
 		"oF": 1,
 		"oS": 0,
 		"sct": 1
+		},
+	"/source/webfonts-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/source/webfonts-min-min.css",
+		"oF": 0,
+		"oS": 3
 		},
 	"/source/webfonts.css": {
 		"aP": 1,
