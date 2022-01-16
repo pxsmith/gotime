@@ -42,6 +42,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/assets/bg-hero-left.png": {
+		"ft": 32768,
+		"iS": 123590,
+		"oA": 0,
+		"oAP": "/assets/bg-hero-left.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/assets/favicon-16x16.png": {
 		"ft": 32768,
 		"iS": 750,

@@ -56,10 +56,20 @@ html
 .hero h1
   max-width: 19ch
   margin: auto
+  @extend .f3, .fw7
+  color: $highlight
+  line-height: 100%
 .hero p
   max-width: 37ch
   margin: auto
 // Character widthes specific to copywriting
+
+// Hero background image
+.hero
+  background: url(/assets/bg-hero-left.png) no-repeat calc(0% - 20px) calc(100%), url(/assets/bg-hero-right.png) no-repeat right top
+@media (max-width: 800px)
+  .hero
+    background: url(/assets/bg-hero-left.png) no-repeat calc(0% - 140px) top, url(/assets/bg-hero-right.png) no-repeat calc(100% + 120px) center
 
 
 
@@ -230,11 +240,6 @@ a
 
 
 
-
-.hero h1
-  @extend .f3, .fw7
-  color: $highlight
-  line-height: 100%
 
 
 .fancy-underline
