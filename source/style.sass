@@ -1,3 +1,5 @@
+@import functional
+
 // COLOURS
 
 $lime-green: #44D62C
@@ -5,16 +7,16 @@ $dark-slate: #101820
 $old-lace: #F9F6E7
 $gold: #FFD635
 
-🔥
+// 🔥
 $highlight: #f47b72
 $highlight-alt: #B97D78
 $dark: $dark-slate
 $light: #f9f9f9
 
-$gradient: linear-gradient(175deg, adjust-hue($lime-green, 45deg) 0%, $lime-green 100%)
+$gradient: linear-gradient(165deg, adjust-color($highlight, $hue: 18deg) 0%, adjust-color($highlight, $lightness: -8%) 100%)
 
 .bg-gradient
-  background: $lime-green
+  background: $highlight
   background: $gradient
 
 .f-gradient
@@ -24,499 +26,68 @@ $gradient: linear-gradient(175deg, adjust-hue($lime-green, 45deg) 0%, $lime-gree
 
 
 
-// SCALE
+// GLOBAL STYLE
+\:root
+  @extend .fw2
+  color: $dark
+  background-color: $light
 
-$golden-ratio: 1.618
+div
+  box-sizing: border-box
 
-$ratio: $golden-ratio
-// $s0: 30px
-$s0: 26px
-$s1: $s0 * $ratio
-$s2: $s0 * $ratio * $ratio
-$s3: $s0 * $ratio * $ratio * $ratio
-$s4: $s0 * $ratio * $ratio * $ratio * $ratio
-$s5: $s0 * $ratio * $ratio * $ratio * $ratio * $ratio
-$s6: $s0 * $ratio * $ratio * $ratio * $ratio * $ratio * $ratio
-$s-1: $s0 / $ratio
-$s-2: $s0 / $ratio / $ratio
-$s-3: $s0 / $ratio / $ratio / $ratio
-$s-4: $s0 / $ratio / $ratio / $ratio / $ratio
+body, h1, h2, h3, h4, h5, h6
+  @extend .f1
 
+body
+  margin: 0
 
 
 
 // FONT SCALE
 
-.f
-  font-size: $s-1
-.f1
-  font-size: $s0
-.f2
-  font-size: $s1
-.f3
-  font-size: $s2
-.f4
-  font-size: $s3
-.f5
-  font-size: $s4
-.f-1
-  font-size: $s-2
-.f-2
-  font-size: $s-3
-.f-3
-  font-size: $s-4
+// Respnsive type using ems
+html
+  font-size: 26px
+@media (max-device-width: 480px)
+  html
+    font-size: 21px
+
+// Hero typgography
+.hero h1
+  max-width: 19ch
+  margin: auto
+  @extend .f3, .fw7
+  color: $highlight
+  line-height: 100%
+.hero p
+  max-width: 37ch
+  margin: auto
+// Character widthes specific to copywriting
+
+// Hero background image
+.hero
+  background: url(/assets/bg-hero-left.png) no-repeat calc(0% - 20px) calc(100%), url(/assets/bg-hero-right.png) no-repeat right top
+@media (max-width: 800px)
+  .hero
+    background: url(/assets/bg-hero-left.png) no-repeat calc(0% - 140px) top, url(/assets/bg-hero-right.png) no-repeat calc(100% + 120px) center
 
 
 
-// HEIGHT & WIDTH
-
-.w
-  width: $s0
-.w1
-  width: $s1
-.w2
-  width: $s2
-.w3
-  width: $s3
-.w4
-  width: $s4
-.w5
-  width: $s5
-.w6
-  width: $s6
-.w-1
-  width: $s-1
-.w-2
-  width: $s-2
-.w-3
-  width: $s-3
-.w-4
-  width: $s-4
-.h
-  height: $s0
-.h1
-  height: $s1
-.h2
-  height: $s2
-.h3
-  height: $s3
-.h4
-  height: $s4
-.h5
-  height: $s5
-.h6
-  height: $s6
-.h-1
-  height: $s-1
-.h-2
-  height: $s-2
-.h-3
-  height: $s-3
-.h-4
-  height: $s-4
-
-.w-10
-  width: 10%
-.w-20
-  width: 20%
-.w-25
-  width: 25%
-.w-30
-  width: 30%
-.w-33
-  width: 33%
-.w-34
-  width: 34%
-.w-40
-  width: 40%
-.w-50
-  width: 50%
-.w-60
-  width: 60%
-.w-70
-  width: 70%
-.w-75
-  width: 75%
-.w-80
-  width: 80%
-.w-90
-  width: 90%
-.w-100
-  width: 100%
-
-.w-third
-  width: calc(100% / 3)
-.w-two-thirds
-  width: calc(100% / 1.5)
-.w-auto
-  width: auto
-
-@media (--breakpoint-not-small)
-  .w1-ns
-    width: 1rem
-  .w2-ns
-    width: 2rem
-  .w3-ns
-    width: 4rem
-  .w4-ns
-    width: 8rem
-  .w5-ns
-    width: 16rem
-  .w-10-ns
-    width: 10%
-  .w-20-ns
-    width: 20%
-  .w-25-ns
-    width: 25%
-  .w-30-ns
-    width: 30%
-  .w-33-ns
-    width: 33%
-  .w-34-ns
-    width: 34%
-  .w-40-ns
-    width: 40%
-  .w-50-ns
-    width: 50%
-  .w-60-ns
-    width: 60%
-  .w-70-ns
-    width: 70%
-  .w-75-ns
-    width: 75%
-  .w-80-ns
-    width: 80%
-  .w-90-ns
-    width: 90%
-  .w-100-ns
-    width: 100%
-  .w-third-ns
-    width: calc(100% / 3)
-  .w-two-thirds-ns
-    width: calc(100% / 1.5)
-  .w-auto-ns
-    width: auto
-
-@media (--breakpoint-medium)
-  .w1-m
-    width: 1rem
-  .w2-m
-    width: 2rem
-  .w3-m
-    width: 4rem
-  .w4-m
-    width: 8rem
-  .w5-m
-    width: 16rem
-  .w-10-m
-    width: 10%
-  .w-20-m
-    width: 20%
-  .w-25-m
-    width: 25%
-  .w-30-m
-    width: 30%
-  .w-33-m
-    width: 33%
-  .w-34-m
-    width: 34%
-  .w-40-m
-    width: 40%
-  .w-50-m
-    width: 50%
-  .w-60-m
-    width: 60%
-  .w-70-m
-    width: 70%
-  .w-75-m
-    width: 75%
-  .w-80-m
-    width: 80%
-  .w-90-m
-    width: 90%
-  .w-100-m
-    width: 100%
-  .w-third-m
-    width: calc(100% / 3)
-  .w-two-thirds-m
-    width: calc(100% / 1.5)
-  .w-auto-m
-    width: auto
-
-@media (--breakpoint-large)
-  .w1-l
-    width: 1rem
-  .w2-l
-    width: 2rem
-  .w3-l
-    width: 4rem
-  .w4-l
-    width: 8rem
-  .w5-l
-    width: 16rem
-  .w-10-l
-    width: 10%
-  .w-20-l
-    width: 20%
-  .w-25-l
-    width: 25%
-  .w-30-l
-    width: 30%
-  .w-33-l
-    width: 33%
-  .w-34-l
-    width: 34%
-  .w-40-l
-    width: 40%
-  .w-50-l
-    width: 50%
-  .w-60-l
-    width: 60%
-  .w-70-l
-    width: 70%
-  .w-75-l
-    width: 75%
-  .w-80-l
-    width: 80%
-  .w-90-l
-    width: 90%
-  .w-100-l
-    width: 100%
-  .w-third-l
-    width: calc(100% / 3)
-  .w-two-thirds-l
-    width: calc(100% / 1.5)
-  .w-auto-l
-    width: auto
-
-
-
-
-
-// MARGIN
-
-.ma
-  margin: $s0
-.ma1
-  margin: $s1
-.ma2
-  margin: $s2
-.ma3
-  margin: $s3
-.ma4
-  margin: $s4
-.ma5
-  margin: $s5
-.ma0
-  margin: 0
-.ma-1
-  margin: $s-1
-.ma-2
-  margin: $s-2
-.ma-3
-  margin: $s-3
-
-.ml
-  margin-left: $s0
-.ml1
-  margin-left: $s1
-.ml2
-  margin-left: $s2
-.ml3
-  margin-left: $s3
-.ml4
-  margin-left: $s4
-.ml5
-  margin-left: $s5
-.ml0
-  margin-left: 0
-.ml-1
-  margin-left: $s-1
-.ml-2
-  margin-left: $s-2
-.ml-3
-  margin-left: $s-3
-
-.mr
-  margin-right: $s0
-.mr1
-  margin-right: $s1
-.mr2
-  margin-right: $s2
-.mr3
-  margin-right: $s3
-.mr4
-  margin-right: $s4
-.mr5
-  margin-right: $s5
-.mr0
-  margin-right: 0
-.mr-1
-  margin-right: $s-1
-.mr-2
-  margin-right: $s-2
-.mr-3
-  margin-right: $s-3
-
-.mt
-  margin-top: $s0
-.mt1
-  margin-top: $s1
-.mt2
-  margin-top: $s2
-.mt3
-  margin-top: $s3
-.mt4
-  margin-top: $s4
-.mt5
-  margin-top: $s5
-.mt0
-  margin-top: 0
-.mt-1
-  margin-top: $s-1
-.mt-2
-  margin-top: $s-2
-.mt-3
-  margin-top: $s-3
-
-.mb
-  margin-bottom: $s0
-.mb1
-  margin-bottom: $s1
-.mb2
-  margin-bottom: $s2
-.mb3
-  margin-bottom: $s3
-.mb4
-  margin-bottom: $s4
-.mb5
-  margin-bottom: $s5
-.mb0
-  margin-bottom: 0
-.mb-1
-  margin-bottom: $s-1
-.mb-2
-  margin-bottom: $s-2
-.mb-3
-  margin-bottom: $s-3
-
-
-
-// PADDING
-
-.pa
-  padding: $s0
-.pa1
-  padding: $s1
-.pa2
-  padding: $s2
-.pa3
-  padding: $s3
-.pa4
-  padding: $s4
-.pa5
-  padding: $s5
-.pa0
-  padding: 0
-.pa-1
-  padding: $s-1
-.pa-2
-  padding: $s-2
-.pa-3
-  padding: $s-3
-
-.pl
-  padding-left: $s0
-.pl1
-  padding-left: $s1
-.pl2
-  padding-left: $s2
-.pl3
-  padding-left: $s3
-.pl4
-  padding-left: $s4
-.pl5
-  padding-left: $s5
-.pl0
-  padding-left: 0
-.pl-1
-  padding-left: $s-1
-.pl-2
-  padding-left: $s-2
-.pl-3
-  padding-left: $s-3
-
-.pr
-  padding-right: $s0
-.pr1
-  padding-right: $s1
-.pr2
-  padding-right: $s2
-.pr3
-  padding-right: $s3
-.pr4
-  padding-right: $s4
-.pr5
-  padding-right: $s5
-.pr0
-  padding-right: 0
-.pr-1
-  padding-right: $s-1
-.pr-2
-  padding-right: $s-2
-.pr-3
-  padding-right: $s-3
-
-.pt
-  padding-top: $s0
-.pt1
-  padding-top: $s1
-.pt2
-  padding-top: $s2
-.pt3
-  padding-top: $s3
-.pt4
-  padding-top: $s4
-.pt5
-  padding-top: $s5
-.pt0
-  padding-top: 0
-.pt-1
-  padding-top: $s-1
-.pt-2
-  padding-top: $s-2
-.pt-3
-  padding-top: $s-3
-
-.pb
-  padding-bottom: $s0
-.pb1
-  padding-bottom: $s1
-.pb2
-  padding-bottom: $s2
-.pb3
-  padding-bottom: $s3
-.pb4
-  padding-bottom: $s4
-.pb5
-  padding-bottom: $s5
-.pb0
-  padding-bottom: 0
-.pb-1
-  padding-bottom: $s-1
-.pb-2
-  padding-bottom: $s-2
-.pb-3
-  padding-bottom: $s-3
+// MOBILE
+@media (max-device-width: 480px)
+  .hero
+    padding-top: $s0
+    padding-bottom: $s1
+  .hero h1
+    padding-top: $s-2
+  .hero p
+    padding-left: $s-2
+    padding-right: $s-2
+    font-size: 1.2em
 
 
 
 // TYPOGRAPHY
-
-p
-  margin: 0
-  padding: 0
-
 .fw9, .fw8
   @extend .fw7
 
@@ -561,21 +132,8 @@ p
   text-align: center
 
 
-// TK MOVE THIS INTO A SEPARATE FILE
-// Global style
-\:root
-  @extend .fw2
-  color: $dark
-  background-color: $light
 
-div
-  box-sizing: border-box
 
-body, h1, h2, h3, h4, h5, h6
-  @extend .f1
-
-body
-  margin: 0
 
 
 .card:nth-of-type(1)
@@ -586,27 +144,10 @@ body
   background-color: aqua
 
 
-// .case-study
-//   display: inline-block
-//   float: left
-//   width: 33.33vw
-//   @extend .pa
-//   // min-height: 20vw
-// @media (min-width: 800px)
-//   .case-study
-//     height: $s5
-//
-@media (max-width: 800px)
-  .design
-    width: 100vw
-    color: pink
-
 
 
 .design
   display: inline-block
-  // width: 33.33vw
-  // min-height: 33.33vw * 4 / 6
   float: left
   width: 50vw
   min-height: 50vw * 4 / 5.35
@@ -615,19 +156,13 @@ body
 
 
 .design-description
-  // @extend .fw7, .f1
-  // display: flex
-  // margin-top: $s-2
-  // margin-left: $s-2
   padding: $s-3 $s-2
-  // border-radius: $s-3
   background-color: rgba($dark-slate, 1)
   color: white
   position: relative
   top: 0
   right: 0
 
-  // transition: max-height 600ms ease-in-out
   max-height: 1.6em
   text-overflow: ellipsis
   overflow: hidden
@@ -658,12 +193,10 @@ body
     border-color: rgba($highlight, 0.35)
 
 a.text
-  // @extend .fw4
   border-bottom: 2.5px solid rgba($highlight, 0.3)
   transition: border 150ms, color 150ms
   background-color: rgba($highlight, 0.05)
   &:hover
-    // color: $highlight
     border-bottom: $s-4 solid $highlight
     border-color: rgba($highlight, 1)
     background-color: rgba($highlight, 0.2)
@@ -684,15 +217,12 @@ a
   text-decoration: none
   color: $dark
 
-  // transition: border-bottom 100ms
-  // border-bottom: $s-4 solid $dark-slate
-  // &:hover
-  //   border-bottom: $s-3 solid $highlight
+
 
 .call-to-action
   background-color: $highlight
   color: white
-  @extend .pa-1, .pl1, .pr1, .ma-1, .fw5, .f1
+  @extend .ma1, .pa-1, .pl1, .pr1, .fw5, .f1
   border-radius: $s-1
   display: inline-block
   z-index: 1
@@ -702,39 +232,19 @@ a
     box-shadow: -$s-3 $s-3 rgba(($highlight),0.25), -$s-1 $s-1 rgba(($highlight),0.2), -$s0 $s0 rgba(($highlight),0.15)
     transform: translate($s-3, -$s-3)
 
-  // background-color: $dark-slate
+
   color: white
   &:hover
     background-color: rgba($highlight, 0.95)
-    box-shadow: -$s-3 $s-3 rgba(($dark-slate),0.25), -$s-1 $s-1 rgba(($dark-slate),0.2), -$s0 $s0 rgba(($dark-slate),0.15)
-    box-shadow: -$s-3 $s-3 rgba(($dark-slate),0.25), -$s-1 $s-1 rgba(($dark-slate),0.2), -$s0 $s0 rgba(($dark-slate),0.15)
-
-    // background-color: $dark
-    // color: $highlight
     box-shadow: -$s-3 $s-3 rgba($highlight, 0.25), -$s-1 $s-1 rgba($highlight, 0.2), -$s0 $s0 rgba($highlight, 0.15)
 
 
 
 
-.fancy-heading
-  @extend .f2, .fw5, .ma, .mt1
-  color: $dark-slate
-  $shadow: $highlight
-  text-shadow: -$s-4 $s-4 rgba($highlight, 0.66), -$s-3 $s-3 rgba($highlight, 0.33), -$s-2 $s-2 rgba($highlight, 0.15)
-  text-shadow: -$s-4 $s-4 rgba($dark-slate, 0.20), -$s-3 $s-3 rgba($dark-slate, 0.10), -$s-2 $s-2 rgba($dark-slate, 0.05)
-  🔥
-
-.page-title
-  @extend .f3, .fw7
-  color: $highlight
-  line-height: 100%
-
 
 .fancy-underline
   border-bottom: $s-3 solid $highlight
   box-shadow: 4px solid pink
-// #connect
-//   background-color: $highlight
 
 
 // fancy hover
@@ -754,17 +264,3 @@ a
 .fadeIn
   animation: fadeIn 1000ms ease
   // animation: name duration timing-function delay iteration-count direction fill-mode
-
-
-// CLEARFIX
-
-/* Nicolas Gallaghers Clearfix solution
-   Ref: http://nicolasgallagher.com/micro-clearfix-hack/ */
-
-.cf:before, .cf:after
-  content: " "
-  display: table
-.cf:after
-  clear: both
-.cf
-  *zoom: 1

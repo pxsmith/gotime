@@ -1,32 +1,38 @@
 head
-  link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css")
-  link(rel="stylesheet" type="text/css" href="source/webfonts.css" preload)
+  link(rel="stylesheet" type="text/css" href="source/webfonts-min.css" preload)
+  link(rel='stylesheet' href='css/style.css' preload)
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css' preload)
   //- link(rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css")
-  link(rel='stylesheet' href='css/style.css')
-  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css')
   //- base(href='https://philsmith.me')
+  meta(name="viewport" content="width=device-width, initial-scale=1")
+
+
 
   // Primary Meta Tags
-  title Phil Smith &rarr; making ideas come to life
-  meta(name='title' content='Phil Smith → making ideas come to life')
-  meta(name='description' content='Product designer in tech for 5 years and creative generalist for 8 years. UX & UI design, facilitation, design sprints, brand strategy, illustration, print & apparel design, writing, & front-end development. ')
+  // https://metatags.io
+
+  title Limitless design for ambitious startups
+  meta(name='title' content='Limitless design for ambitious startups')
+  meta(name='description' content='Unblock your team this week. Get continuous designs for a flat-rate subscription. Join over 40 startups.')
   // Open Graph / Facebook
   meta(property='og:type' content='website')
   meta(property='og:url' content='https://philsmith.me/')
   meta(property='og:title' content='Limitless design for startups')
-  meta(property='og:description' content='Product designer in tech for 5 years and creative generalist for 8 years. UX & UI design, facilitation, design sprints, brand strategy, illustration, print & apparel design, writing, & front-end development. ')
-  meta(property='og:image' content='/assets/meta-image.png')
+  meta(property='og:description' content='Unblock your team this week. Get continuous designs for a flat-rate subscription. Join over 40 startups.')
+  meta(property='og:image' content='/assets/philsmith.jpg')
   // Twitter
-  meta(property='twitter:card' content='assets/meta-image.png')
+  meta(property='twitter:card' content='assets/philsmith.jpg')
   meta(property='twitter:url' content='https://philsmith.me/')
   meta(property='twitter:title' content='Limitless design for startups')
-  meta(property='twitter:description' content='Product designer in tech for 5 years and creative generalist for 8 years. UX & UI design, facilitation, design sprints, brand strategy, illustration, print & apparel design, writing, & front-end development. ')
-  meta(property='twitter:image' content='assets/meta-image.png')
+  meta(property='twitter:description' content='Unblock your team this week. Get continuous designs for a flat-rate subscription. Join over 40 startups.')
+  meta(property='twitter:image' content='assets/philsmith.jpg')
 
   link(rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png")
   link(rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png")
   link(rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png")
   link(rel="manifest" href="images/site.webmanifest")
+
+
   
   //- https://favicon.io
   
@@ -35,20 +41,18 @@ head
   link(rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png")
   link(rel="manifest" href="assets/site.webmanifest")
 
+
+
 body
   main
-    #hero.tc.mt4.mb5
-      h1.page-title.mb0.animate__animated.animate__fadeInDown Limitless design for #[br] <u>ambitious startups</u>
-      .hero-subtext.f1.mt-1.animate__animated.animate__fadeIn.animate__delay-1s 
-        p Unblock your team this week. Get continuous designs for 
-        p a flat-rate subscription. Join over 40 startups.
-        .mt-1
-        a.f1.call-to-action(href='https://airtable.com/shr5OfqlF5QetFVKe' target='blank') Learn more
+    .hero.tc.pa-1.pt4.pb4
+      h1.f-gradient.animate__animated.animate__fadeInDown Limitless design for ambitious startups
+      .f1.mt-1.animate__animated.animate__fadeIn.animate__delay-1s 
+        p Unblock your team this week. Get continuous designs for a flat-rate subscription. Join over 40 startups.
+        a.f1.call-to-action.bg-gradient(href='https://airtable.com/shr5OfqlF5QetFVKe' target='blank') Learn more
 
 
-      // a.call-to-action.call-to-action-fixed.ma.tc(
-        href='https://airtable.com/shr5OfqlF5QetFVKe' 
-        target='blank').fr.db Connect now!
+    
         
     #designs.animate__animated.animate__fadeInUp.animate__delay-2s
 
