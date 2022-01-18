@@ -44,9 +44,42 @@
 		},
 	"/assets/bg-hero-left.png": {
 		"ft": 32768,
-		"iS": 123590,
+		"iS": 179943,
 		"oA": 0,
 		"oAP": "/assets/bg-hero-left.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/bg-hero-right.png": {
+		"ft": 32768,
+		"iS": 129515,
+		"oA": 0,
+		"oAP": "/assets/bg-hero-right.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/design-birdsong.png": {
+		"ft": 32768,
+		"iS": 90035,
+		"oA": 0,
+		"oAP": "/assets/design-birdsong.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/design-recycying.png": {
+		"ft": 32768,
+		"iS": 180295,
+		"oA": 0,
+		"oAP": "/assets/design-recycying.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -82,6 +115,16 @@
 		"oA": 0,
 		"oAP": "/assets/favicon.ico",
 		"oF": 0
+		},
+	"/assets/icon-link.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/icon-link.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
 		},
 	"/assets/meta-image.png": {
 		"ft": 32768,

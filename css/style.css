@@ -1,9 +1,18 @@
+.delete, .hide {
+  display: none !important; }
+
 p, h1, h2, h3, h4, h5, h6, strong, em {
   margin: 0;
   padding: 0; }
 
+body {
+  margin: 0; }
+
 html, body {
   overflow-x: hidden; }
+
+div {
+  box-sizing: border-box; }
 
 .cf:before, .cf:after {
   content: " ";
@@ -15,7 +24,14 @@ html, body {
 .cf {
   *zoom: 1; }
 
-.f {
+html {
+  font-size: 26px; }
+
+@media (max-device-width: 480px) {
+  html {
+    font-size: 21px; } }
+
+.f, .design-description {
   font-size: 0.6180469716em; }
 
 .f1, .call-to-action, body, h1, h2, h3, h4, h5, h6 {
@@ -468,52 +484,19 @@ html, body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
-:root {
-  color: #101820;
-  background-color: #f9f9f9; }
+.f-contrast {
+  color: #101820; }
 
-div {
-  box-sizing: border-box; }
+.f-default, :root {
+  color: rgba(16, 24, 32, 0.8); }
 
-body {
-  margin: 0; }
+.f-subtle {
+  color: rgba(16, 24, 32, 0.65); }
 
-html {
-  font-size: 26px; }
+.f-nonessential, .design-description {
+  color: rgba(16, 24, 32, 0.4); }
 
-@media (max-device-width: 480px) {
-  html {
-    font-size: 21px; } }
-
-.hero h1 {
-  max-width: 19ch;
-  margin: auto;
-  color: #f47b72;
-  line-height: 100%; }
-
-.hero p {
-  max-width: 37ch;
-  margin: auto; }
-
-.hero {
-  background: url(/assets/bg-hero-left.png) no-repeat calc(0% - 20px) calc(100%), url(/assets/bg-hero-right.png) no-repeat right top; }
-
-@media (max-width: 800px) {
-  .hero {
-    background: url(/assets/bg-hero-left.png) no-repeat calc(0% - 140px) top, url(/assets/bg-hero-right.png) no-repeat calc(100% + 120px) center; } }
-
-@media (max-device-width: 480px) {
-  .hero {
-    padding-top: 1em;
-    padding-bottom: 1.618em; }
-  .hero h1 {
-    padding-top: 0.3819820591em; }
-  .hero p {
-    padding-left: 0.3819820591em;
-    padding-right: 0.3819820591em;
-    font-size: 1.2em; } }
-
-.fw7, .design-title, .hero h1, .fw9, .fw8, .Recoleta-Black {
+.fw7, .hero h1, .fw9, .fw8, .Recoleta-Black {
   font-family: Recoleta-Black;
   font-weight: normal;
   font-style: normal; }
@@ -528,7 +511,7 @@ html {
   font-weight: normal;
   font-style: normal; }
 
-.fw4, .Recoleta-Medium {
+.fw4, .design-description, .Recoleta-Medium {
   font-family: Recoleta-Medium;
   font-weight: normal;
   font-style: normal; }
@@ -538,7 +521,7 @@ html {
   font-weight: normal;
   font-style: normal; }
 
-.fw2, .design-extra-info, :root, .Recoleta-Light {
+.fw2, :root, .Recoleta-Light {
   font-family: Recoleta-Light;
   font-weight: normal;
   font-style: normal; }
@@ -554,44 +537,81 @@ html {
 .tc {
   text-align: center; }
 
-.card:nth-of-type(1) {
-  background-color: aquamarine; }
+.hero h1 {
+  max-width: 19ch;
+  margin: auto;
+  color: #f47b72;
+  line-height: 100%; }
 
-.card:nth-of-type(2) {
-  background-color: turquoise; }
+.hero p {
+  max-width: 37ch;
+  margin: auto; }
 
-.card:nth-of-type(3) {
-  background-color: aqua; }
+html {
+  overflow-y: visible; }
+
+body {
+  background: url(/assets/bg-hero-left.png) no-repeat calc(0% - 20px) calc(0% - 250px), url(/assets/bg-hero-right.png) no-repeat right calc(0% - 250px) #f9f9f9; }
+
+@media (max-width: 800px) {
+  body {
+    background: url(/assets/bg-hero-left.png) no-repeat calc(0% - 140px) calc(0% - 250px), url(/assets/bg-hero-right.png) no-repeat calc(100% + 120px) calc(0% - 450px) #f9f9f9; } }
+
+@media (max-device-width: 480px) {
+  .hero {
+    padding-top: 1em;
+    padding-bottom: 1.618em; }
+  .hero h1 {
+    padding-top: 0.3819820591em; }
+  .hero p {
+    padding-left: 0.3819820591em;
+    padding-right: 0.3819820591em;
+    font-size: 1.2em; } }
+
+.designs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1.618em;
+  row-gap: 1.618em;
+  padding: 1em 4.235801032em; }
+
+@media (max-width: 1300px) {
+  .designs {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0.2360828548em;
+    row-gap: 0.6180469716em;
+    padding: 1em 0.6180469716em; } }
+
+@media (max-width: 800px) {
+  .designs {
+    grid-template-columns: 1fr;
+    column-gap: 0.2360828548em;
+    row-gap: 0.6180469716em;
+    padding: 1em 0.6180469716em; } }
+
+.design-card {
+  padding: 0.2360828548em;
+  background: white;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.03), 0px 0px 13px 1px rgba(0, 0, 0, 0.04);
+  border-radius: 0.3819820591em; }
 
 .design {
-  display: inline-block;
-  float: left;
-  width: 50vw;
-  min-height: 37.3831775701vw;
-  background-size: 100%;
-  background-position: 50% 50%; }
+  width: 100%;
+  padding-top: 80%;
+  position: relative;
+  border-radius: 4px;
+  border: 1px solid rgba(158, 158, 158, 0.1);
+  background-color: rgba(158, 158, 158, 0.1);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
 
 .design-description {
-  padding: 0.2360828548em 0.3819820591em;
-  background-color: #101820;
-  color: white;
-  position: relative;
-  top: 0;
-  right: 0;
-  max-height: 1.6em;
-  text-overflow: ellipsis;
-  overflow: hidden; }
+  padding-top: 0.3819820591em;
+  text-align: center; }
 
-.design {
-  transition: background-size 500ms linear; }
-
-.design:hover {
-  background-size: 105%; }
-  .design:hover .design-description {
-    max-height: 33.3333333333vw;
-    transition: max-height 600ms ease-in-out; }
-
-.design-extra-info {
+.social-links {
+  margin-left: 33%;
   display: inline-block; }
 
 .social-links a {
@@ -601,15 +621,6 @@ html {
     color: #f47b72;
     border-color: #101820;
     border-color: rgba(244, 123, 114, 0.35); }
-
-a.text {
-  border-bottom: 2.5px solid rgba(244, 123, 114, 0.3);
-  transition: border 150ms, color 150ms;
-  background-color: rgba(244, 123, 114, 0.05); }
-  a.text:hover {
-    border-bottom: 0.1459102934em solid #f47b72;
-    border-color: #f47b72;
-    background-color: rgba(244, 123, 114, 0.2); }
 
 @keyframes fadeOut {
   0% {
@@ -639,15 +650,6 @@ a {
   .call-to-action:hover {
     background-color: rgba(244, 123, 114, 0.95);
     box-shadow: -0.2360828548em 0.2360828548em rgba(244, 123, 114, 0.25), -0.6180469716em 0.6180469716em rgba(244, 123, 114, 0.2), -1em 1em rgba(244, 123, 114, 0.15); }
-
-.fancy-underline {
-  border-bottom: 0.2360828548em solid #f47b72;
-  box-shadow: 4px solid pink; }
-
-.bio-copy .fw7, .bio-copy .hero h1, .hero .bio-copy h1, .bio-copy .fw9, .bio-copy .fw8, .bio-copy .design-title {
-  transition: color 200ms ease-out; }
-  .bio-copy .fw7:hover, .bio-copy .hero h1:hover, .hero .bio-copy h1:hover, .bio-copy .fw9:hover, .bio-copy .fw8:hover, .bio-copy .design-title:hover {
-    color: #f47b72; }
 
 @keyframes fadeIn {
   0% {

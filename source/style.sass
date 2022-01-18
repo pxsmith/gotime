@@ -1,19 +1,20 @@
+// TK delete class
+.delete, .hide
+  display: none !important
+
 @import functional
 
+
+
 // COLOURS
-
-$lime-green: #44D62C
-$dark-slate: #101820
-$old-lace: #F9F6E7
-$gold: #FFD635
-
-// 🔥
 $highlight: #f47b72
-$highlight-alt: #B97D78
+$dark-slate: #101820
 $dark: $dark-slate
 $light: #f9f9f9
+$grey: #9e9e9e
 
 $gradient: linear-gradient(165deg, adjust-color($highlight, $hue: 18deg) 0%, adjust-color($highlight, $lightness: -8%) 100%)
+$shadow: 0px 0px 13px 1px rgba(0, 0, 0, 0.04) 0px 0px 1px 1px rgba(0, 0, 0, 0.03)
 
 .bg-gradient
   background: $highlight
@@ -23,67 +24,15 @@ $gradient: linear-gradient(165deg, adjust-color($highlight, $hue: 18deg) 0%, adj
   background: $gradient
   -webkit-background-clip: text
   -webkit-text-fill-color: transparent
+.f-contrast
+  color: $dark-slate
+.f-default
+  color: rgba($dark-slate, 0.8)
+.f-subtle
+  color: rgba($dark-slate, 0.65)
+.f-nonessential
+  color: rgba($dark-slate, 0.4)
 
-
-
-// GLOBAL STYLE
-\:root
-  @extend .fw2
-  color: $dark
-  background-color: $light
-
-div
-  box-sizing: border-box
-
-body, h1, h2, h3, h4, h5, h6
-  @extend .f1
-
-body
-  margin: 0
-
-
-
-// FONT SCALE
-
-// Respnsive type using ems
-html
-  font-size: 26px
-@media (max-device-width: 480px)
-  html
-    font-size: 21px
-
-// Hero typgography
-.hero h1
-  max-width: 19ch
-  margin: auto
-  @extend .f3, .fw7
-  color: $highlight
-  line-height: 100%
-.hero p
-  max-width: 37ch
-  margin: auto
-// Character widthes specific to copywriting
-
-// Hero background image
-.hero
-  background: url(/assets/bg-hero-left.png) no-repeat calc(0% - 20px) calc(100%), url(/assets/bg-hero-right.png) no-repeat right top
-@media (max-width: 800px)
-  .hero
-    background: url(/assets/bg-hero-left.png) no-repeat calc(0% - 140px) top, url(/assets/bg-hero-right.png) no-repeat calc(100% + 120px) center
-
-
-
-// MOBILE
-@media (max-device-width: 480px)
-  .hero
-    padding-top: $s0
-    padding-bottom: $s1
-  .hero h1
-    padding-top: $s-2
-  .hero p
-    padding-left: $s-2
-    padding-right: $s-2
-    font-size: 1.2em
 
 
 
@@ -136,54 +85,170 @@ html
 
 
 
-.card:nth-of-type(1)
-  background-color: aquamarine
-.card:nth-of-type(2)
-  background-color: turquoise
-.card:nth-of-type(3)
-  background-color: aqua
+
+// GLOBAL STYLE
+\:root
+  @extend .fw2
+  @extend .f-default
+
+body, h1, h2, h3, h4, h5, h6
+  @extend .f1
 
 
 
+
+
+// STYLE - HERO
+
+// Respnsive type using ems in functional.sass
+// Hero typgography
+.hero h1
+  max-width: 19ch
+  margin: auto
+  @extend .f3, .fw7
+  color: $highlight
+  line-height: 100%
+.hero p
+  max-width: 37ch
+  margin: auto
+// Character widthes specific to copywriting
+
+// Hero background image
+html
+  overflow-y: visible
+body
+  background: url(/assets/bg-hero-left.png) no-repeat calc(0% - 20px) calc(0% - 250px), url(/assets/bg-hero-right.png) no-repeat right calc(0% - 250px) $light
+@media (max-width: 800px)
+  body
+    background: url(/assets/bg-hero-left.png) no-repeat calc(0% - 140px) calc(0% - 250px), url(/assets/bg-hero-right.png) no-repeat calc(100% + 120px) calc(0% - 450px) $light
+  // .hero
+  //   background: url(/assets/bg-hero-left.png) no-repeat calc(0% - 140px) top, url(/assets/bg-hero-right.png) no-repeat calc(100% + 120px) center
+
+// MOBILE
+
+@media (max-device-width: 480px)
+  .hero
+    padding-top: $s0
+    padding-bottom: $s1
+  .hero h1
+    padding-top: $s-2
+  .hero p
+    padding-left: $s-2
+    padding-right: $s-2
+    font-size: 1.2em
+
+
+
+
+
+// STYLE - DESIGNS
+
+.designs
+  // Applies grid to the children
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr
+  column-gap: $s1
+  row-gap: $s1
+
+  // Spacing
+  padding: $s0 $s3
+
+// Responsive layout
+@media (max-width: 1300px)
+  .designs
+    grid-template-columns: 1fr 1fr
+    column-gap: $s-3
+    row-gap: $s-1
+    padding: $s0 $s-1
+
+@media (max-width: 800px)
+  .designs
+    grid-template-columns: 1fr
+    column-gap: $s-3
+    row-gap: $s-1
+    padding: $s0 $s-1
+
+
+
+
+.design-card
+  padding: $s-3
+  background: white
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.03),  0px 0px 13px 1px rgba(0, 0, 0, 0.04)
+  border-radius: $s-2
 
 .design
-  display: inline-block
-  float: left
-  width: 50vw
-  min-height: 50vw * 4 / 5.35
-  background-size: 100%
-  background-position: 50% 50%
-
+  width: 100%
+  padding-top: 80%
+  position: relative
+  border-radius: 4px
+  border: 1px solid rgba($grey, 0.1)
+  background-color: rgba($grey, 0.1)
+  background-size: cover
+  background-position: center center
+  background-repeat: no-repeat
 
 .design-description
-  padding: $s-3 $s-2
-  background-color: rgba($dark-slate, 1)
-  color: white
-  position: relative
-  top: 0
-  right: 0
-
-  max-height: 1.6em
-  text-overflow: ellipsis
-  overflow: hidden
-
-.design
-  transition: background-size 500ms linear
-.design:hover
-  background-size: 105%
-
-  .design-description
-    max-height: 50vw * 4 / 6
-    transition: max-height 600ms ease-in-out
+  padding-top: $s-2
+  text-align: center
+  @extend .f, .fw4, .f-nonessential
 
 
 
-.design-title
-  @extend .fw7
-.design-extra-info
-  @extend .fw2
+
+
+// .card:nth-of-type(1)
+//   background-color: aquamarine
+// .card:nth-of-type(2)
+//   background-color: turquoise
+// .card:nth-of-type(3)
+//   background-color: aqua
+//
+//
+//
+//
+// .design
+//   display: inline-block
+//   float: left
+//   width: 50vw
+//   min-height: 50vw * 4 / 5.35
+//   background-size: 100%
+//   background-position: 50% 50%
+//
+//
+// .design-description
+//   padding: $s-3 $s-2
+//   background-color: rgba($dark-slate, 1)
+//   color: white
+//   position: relative
+//   top: 0
+//   right: 0
+//
+//   max-height: 1.6em
+//   text-overflow: ellipsis
+//   overflow: hidden
+//
+// .design
+//   transition: background-size 500ms linear
+// .design:hover
+//   background-size: 105%
+//
+//   .design-description
+//     max-height: 50vw * 4 / 6
+//     transition: max-height 600ms ease-in-out
+//
+//
+//
+// .design-title
+//   @extend .fw7
+// .design-extra-info
+//   @extend .fw2
+//   display: inline-block
+//
+
+.social-links
+  margin-left: 33%
   display: inline-block
-
 .social-links a
   border-bottom: $s-4 solid $highlight
   transition: border 150ms, color 150ms
@@ -191,16 +256,16 @@ html
     color: $highlight
     border-color: $dark-slate
     border-color: rgba($highlight, 0.35)
-
-a.text
-  border-bottom: 2.5px solid rgba($highlight, 0.3)
-  transition: border 150ms, color 150ms
-  background-color: rgba($highlight, 0.05)
-  &:hover
-    border-bottom: $s-4 solid $highlight
-    border-color: rgba($highlight, 1)
-    background-color: rgba($highlight, 0.2)
-
+//
+// a.text
+//   border-bottom: 2.5px solid rgba($highlight, 0.3)
+//   transition: border 150ms, color 150ms
+//   background-color: rgba($highlight, 0.05)
+//   &:hover
+//     border-bottom: $s-4 solid $highlight
+//     border-color: rgba($highlight, 1)
+//     background-color: rgba($highlight, 0.2)
+//
 
 
 @keyframes fadeOut
@@ -219,6 +284,8 @@ a
 
 
 
+// STYLE - BUTTON
+
 .call-to-action
   background-color: $highlight
   color: white
@@ -232,26 +299,20 @@ a
     box-shadow: -$s-3 $s-3 rgba(($highlight),0.25), -$s-1 $s-1 rgba(($highlight),0.2), -$s0 $s0 rgba(($highlight),0.15)
     transform: translate($s-3, -$s-3)
 
-
   color: white
   &:hover
     background-color: rgba($highlight, 0.95)
     box-shadow: -$s-3 $s-3 rgba($highlight, 0.25), -$s-1 $s-1 rgba($highlight, 0.2), -$s0 $s0 rgba($highlight, 0.15)
 
-
-
-
-
-.fancy-underline
-  border-bottom: $s-3 solid $highlight
-  box-shadow: 4px solid pink
-
-
-// fancy hover
-.bio-copy .fw7
-  transition: color 200ms ease-out
-  &:hover
-    color: $highlight
+// .fancy-underline
+//   border-bottom: $s-3 solid $highlight
+//   box-shadow: 4px solid pink
+//
+// // fancy hover
+// .bio-copy .fw7
+//   transition: color 200ms ease-out
+//   &:hover
+//     color: $highlight
 
 
 @keyframes fadeIn

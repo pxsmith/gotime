@@ -3,8 +3,12 @@
 p, h1, h2, h3, h4, h5, h6, strong, em
   margin: 0
   padding: 0
+body
+  margin: 0
 html, body
   overflow-x: hidden
+div
+  box-sizing: border-box
 
 // Nicolas Gallagher’s Clearfix solution: http://nicolasgallagher.com/micro-clearfix-hack/
 .cf:before, .cf:after
@@ -20,10 +24,16 @@ html, body
 // SCALE
 
 $golden-ratio: 1.618
-
 $ratio: $golden-ratio
 // $s0: 30px
 // $s0: 26px
+
+// Respnsive type using ems
+html
+  font-size: 26px
+@media (max-device-width: 480px)
+  html
+    font-size: 21px
 
 $s0: 1em
 $s1: $s0 * $ratio
@@ -362,4 +372,3 @@ $s-4: $s0 / $ratio / $ratio / $ratio / $ratio
   padding-bottom: $s-2
 .pb-3
   padding-bottom: $s-3
-  
