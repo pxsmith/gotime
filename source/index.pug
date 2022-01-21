@@ -19,13 +19,13 @@ head
   meta(property='og:url' content='https://philsmith.me/')
   meta(property='og:title' content='Limitless design for startups')
   meta(property='og:description' content='Unblock your team this week. Get continuous designs for a flat-rate subscription. Join over 40 startups.')
-  meta(property='og:image' content='/assets/philsmith.jpg')
+  meta(property='og:image' content='/assets/social-preview.png')
   // Twitter
-  meta(property='twitter:card' content='assets/philsmith.jpg')
+  meta(property='twitter:card' content='assets/social-preview.png')
   meta(property='twitter:url' content='https://philsmith.me/')
   meta(property='twitter:title' content='Limitless design for startups')
   meta(property='twitter:description' content='Unblock your team this week. Get continuous designs for a flat-rate subscription. Join over 40 startups.')
-  meta(property='twitter:image' content='assets/philsmith.jpg')
+  meta(property='twitter:image' content='assets/social-preview.png')
 
   link(rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png")
   link(rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png")
@@ -54,7 +54,7 @@ body
     section
       header.animate__animated.animate__fadeInUp.animate__delay-2s 
         h1.f2.fw3.tc Selected work
-        p.tc.f-nonessential (Most recent work is secret and can&rsquo;t be shared here)
+        p.tc.f-nonessential.pl1.pr1 (Most recent work is secret and can&rsquo;t be shared here)
 
       .designs.animate__animated.animate__fadeInUp.animate__delay-3s 
         mixin design(title, desc, href, bgimg)
@@ -63,6 +63,12 @@ body
             .design-description
               p= desc
 
+
+
+        // +design("Title", "description", "http")(bgimg="background-image: url()")
+        +design("Zuddl", "virtual conference experience", null)(bgimg="background-image: url(assets/design-zuddl.jpg)")
+        +design("Shelflife", "responsive landing page", null)(bgimg="background-image: url(assets/design-shelflife.jpg)")
+        +design("Solve", "mortgage calculator app", null)(bgimg="background-image: url(assets/design-solve-app.jpg)")
         +design("Bird Song", "mobile - bird song", "https://dribbble.com/shots/11715056-Bird-Song-Radar")(bgimg="background-image: url(assets/design-birdsong.png)")
         +design("Dunder Mifflin", "product design - dashoard", "https://dribbble.com/shots/11674598-Dunder-Mifflin-Ice-Cream-Co")(bgimg="background-image: url(https://cdn.dribbble.com/users/543568/screenshots/11674598/media/b8693e6c8c5767b85212ea95e5cfc686.png)")
         +design("Becoming Bartenders", "branding - cocktail class", "https://dribbble.com/shots/14706602-Becoming-Bartenders-Cocktail-Class")(bgimg="background-image: url(https://cdn.dribbble.com/users/543568/screenshots/14706602/media/c1c30d5690236e81b535f53973a735b5.jpg?compress=1&resize=1600x1200&vertical=top)")
@@ -74,7 +80,7 @@ body
         +design("Patagonia", "web design", "https://dribbble.com/shots/11705499-How-might-we-fight-climate-change")(bgimg="background-image: url(https://cdn.dribbble.com/users/543568/screenshots/11705499/media/1ccb6ae630779dc8b3026d4b895d608c.png?compress=1&resize=1600x1200&vertical=top)")
         +design("Sticky Note Kit", "figma community file", "https://www.figma.com/community/file/829850832311290824/Sticky-Note-Kit")(bgimg="background-image: url(https://cdn.dribbble.com/users/543568/screenshots/10987908/media/8af176e86bcbf435dfdc3405161bf173.png?compress=1&resize=1600x1200&vertical=top)")
         +design("Timbersmith", "branding - furniture maker", "https://dribbble.com/shots/7892423-Timbersmith")(bgimg="background-image: url(https://cdn.dribbble.com/users/543568/screenshots/7892423/media/9fa88b73e5fb61b443c64672ab2bd4f8.png?compress=1&resize=1600x1200&vertical=top)")
-        // +design("Title", "description", "http")(bgimg="background-image: url()")
+
 
         
         
