@@ -490,10 +490,10 @@ html {
 .f-default, :root {
   color: rgba(16, 24, 32, 0.8); }
 
-.f-subtle {
+.f-subtle, .design-description {
   color: rgba(16, 24, 32, 0.65); }
 
-.f-nonessential, .design-description {
+.f-nonessential {
   color: rgba(16, 24, 32, 0.4); }
 
 .fw7, .hero h1, .fw9, .fw8, .Recoleta-Black {
@@ -511,12 +511,12 @@ html {
   font-weight: normal;
   font-style: normal; }
 
-.fw4, .design-description, .Recoleta-Medium {
+.fw4, .Recoleta-Medium {
   font-family: Recoleta-Medium;
   font-weight: normal;
   font-style: normal; }
 
-.fw3, .Recoleta-Regular {
+.fw3, .design-description, .Recoleta-Regular {
   font-family: Recoleta-Regular;
   font-weight: normal;
   font-style: normal; }
