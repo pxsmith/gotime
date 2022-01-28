@@ -496,6 +496,9 @@ html {
 .f-nonessential {
   color: rgba(16, 24, 32, 0.4); }
 
+.tu {
+  text-decoration: underline; }
+
 .fw7, .hero h1, .fw9, .fw8, .Recoleta-Black {
   font-family: Recoleta-Black;
   font-weight: normal;
@@ -611,8 +614,7 @@ body {
   text-align: center; }
 
 .social-links {
-  margin-left: 33%;
-  display: inline-block; }
+  margin: 0 auto; }
 
 .social-links a {
   border-bottom: 0.1459102934em solid #f47b72;
