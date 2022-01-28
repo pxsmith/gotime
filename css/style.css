@@ -614,8 +614,7 @@ body {
   text-align: center; }
 
 .social-links {
-  margin-left: 33%;
-  display: inline-block; }
+  margin: 0 auto; }
 
 .social-links a {
   border-bottom: 0.1459102934em solid #f47b72;
