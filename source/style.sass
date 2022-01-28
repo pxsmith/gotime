@@ -33,6 +33,8 @@ $shadow: 0px 0px 13px 1px rgba(0, 0, 0, 0.04) 0px 0px 1px 1px rgba(0, 0, 0, 0.03
 .f-nonessential
   color: rgba($dark-slate, 0.4)
 
+.tu
+  text-decoration: underline
 
 
 
@@ -196,56 +198,6 @@ body
 
 
 
-
-// .card:nth-of-type(1)
-//   background-color: aquamarine
-// .card:nth-of-type(2)
-//   background-color: turquoise
-// .card:nth-of-type(3)
-//   background-color: aqua
-//
-//
-//
-//
-// .design
-//   display: inline-block
-//   float: left
-//   width: 50vw
-//   min-height: 50vw * 4 / 5.35
-//   background-size: 100%
-//   background-position: 50% 50%
-//
-//
-// .design-description
-//   padding: $s-3 $s-2
-//   background-color: rgba($dark-slate, 1)
-//   color: white
-//   position: relative
-//   top: 0
-//   right: 0
-//
-//   max-height: 1.6em
-//   text-overflow: ellipsis
-//   overflow: hidden
-//
-// .design
-//   transition: background-size 500ms linear
-// .design:hover
-//   background-size: 105%
-//
-//   .design-description
-//     max-height: 50vw * 4 / 6
-//     transition: max-height 600ms ease-in-out
-//
-//
-//
-// .design-title
-//   @extend .fw7
-// .design-extra-info
-//   @extend .fw2
-//   display: inline-block
-//
-
 .social-links
   margin-left: 33%
   display: inline-block
@@ -256,16 +208,8 @@ body
     color: $highlight
     border-color: $dark-slate
     border-color: rgba($highlight, 0.35)
-//
-// a.text
-//   border-bottom: 2.5px solid rgba($highlight, 0.3)
-//   transition: border 150ms, color 150ms
-//   background-color: rgba($highlight, 0.05)
-//   &:hover
-//     border-bottom: $s-4 solid $highlight
-//     border-color: rgba($highlight, 1)
-//     background-color: rgba($highlight, 0.2)
-//
+
+
 
 
 @keyframes fadeOut
@@ -304,15 +248,6 @@ a
     background-color: rgba($highlight, 0.95)
     box-shadow: -$s-3 $s-3 rgba($highlight, 0.25), -$s-1 $s-1 rgba($highlight, 0.2), -$s0 $s0 rgba($highlight, 0.15)
 
-// .fancy-underline
-//   border-bottom: $s-3 solid $highlight
-//   box-shadow: 4px solid pink
-//
-// // fancy hover
-// .bio-copy .fw7
-//   transition: color 200ms ease-out
-//   &:hover
-//     color: $highlight
 
 
 @keyframes fadeIn
@@ -324,4 +259,3 @@ a
     transform: translateX(0em)
 .fadeIn
   animation: fadeIn 1000ms ease
-  // animation: name duration timing-function delay iteration-count direction fill-mode
