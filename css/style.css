@@ -178,7 +178,7 @@ html {
 .ma {
   margin: 1em; }
 
-.ma1, .call-to-action {
+.ma1, .button-group {
   margin: 1.618em; }
 
 .ma2 {
@@ -229,7 +229,7 @@ html {
 .ml-1 {
   margin-left: 0.6180469716em; }
 
-.ml-2 {
+.ml-2, .call-to-action {
   margin-left: 0.3819820591em; }
 
 .ml-3 {
@@ -259,7 +259,7 @@ html {
 .mr-1 {
   margin-right: 0.6180469716em; }
 
-.mr-2 {
+.mr-2, .call-to-action {
   margin-right: 0.3819820591em; }
 
 .mr-3 {
@@ -613,25 +613,6 @@ body {
   padding-top: 0.3819820591em;
   text-align: center; }
 
-.social-links {
-  margin: 0 auto; }
-
-.social-links a {
-  border-bottom: 0.1459102934em solid #f47b72;
-  transition: border 150ms, color 150ms; }
-  .social-links a:hover {
-    color: #f47b72;
-    border-color: #101820;
-    border-color: rgba(244, 123, 114, 0.35); }
-
-@keyframes fadeOut {
-  0% {
-    opacity: 0.5;
-    transform: translateX(0em); }
-  100% {
-    opacity: 0.5;
-    transform: translateX(-1em); } }
-
 a {
   animation: fadeOut 1s timing-function delay iteration-count direction fill-mode;
   text-decoration: none;
@@ -643,15 +624,31 @@ a {
   border-radius: 0.6180469716em;
   display: inline-block;
   z-index: 1;
-  transition: transform 200ms, box-shadow 200ms;
-  color: white; }
-  .call-to-action:hover {
-    background-color: #101820;
-    box-shadow: -0.2360828548em 0.2360828548em rgba(244, 123, 114, 0.25), -0.6180469716em 0.6180469716em rgba(244, 123, 114, 0.2), -1em 1em rgba(244, 123, 114, 0.15);
-    transform: translate(0.2360828548em, -0.2360828548em); }
-  .call-to-action:hover {
+  transition: transform 200ms, box-shadow 200ms; }
+  .call-to-action.primary:hover {
+    transform: translate(0.2360828548em, -0.2360828548em);
     background-color: rgba(244, 123, 114, 0.95);
     box-shadow: -0.2360828548em 0.2360828548em rgba(244, 123, 114, 0.25), -0.6180469716em 0.6180469716em rgba(244, 123, 114, 0.2), -1em 1em rgba(244, 123, 114, 0.15); }
+  .call-to-action.secondary {
+    color: #f47b72;
+    background: rgba(244, 123, 114, 0.1); }
+    .call-to-action.secondary:hover {
+      box-shadow: 0 0 0 0.1459102934em rgba(244, 123, 114, 0.35); }
+
+.social-links {
+  display: flex;
+  justify-content: center; }
+
+.social-links a {
+  color: #101820;
+  opacity: 0.9;
+  border-bottom: 0.1459102934em solid #f47b72;
+  transition: border 150ms, color 150ms; }
+  .social-links a:hover {
+    color: #f47b72;
+    opacity: 1;
+    border-color: #101820;
+    border-color: rgba(244, 123, 114, 0.35); }
 
 @keyframes fadeIn {
   0% {
@@ -663,3 +660,11 @@ a {
 
 .fadeIn {
   animation: fadeIn 1000ms ease; }
+
+@keyframes fadeOut {
+  0% {
+    opacity: 0.5;
+    transform: translateX(0em); }
+  100% {
+    opacity: 0.5;
+    transform: translateX(-1em); } }
