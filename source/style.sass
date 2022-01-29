@@ -172,12 +172,16 @@ body
 
 
 
-
 .design-card
   padding: $s-3
   background: white
   box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.03),  0px 0px 13px 1px rgba(0, 0, 0, 0.04)
   border-radius: $s-2
+  // transition: box-shadow 200ms
+  // &:hover
+  //   z-index: 1
+  //   box-shadow: 0px 0px 1000px 10000px rgba($light, .2)
+  //   transition: box-shadow 100ms ease-in
 
 .design
   width: 100%
@@ -198,30 +202,6 @@ body
 
 
 
-.social-links
-  //   margin-left: 33%
-  //   display: inline-block
-  margin: 0 auto
-.social-links a
-  border-bottom: $s-4 solid $highlight
-  transition: border 150ms, color 150ms
-  &:hover
-    color: $highlight
-    border-color: $dark-slate
-    border-color: rgba($highlight, 0.35)
-
-
-
-
-@keyframes fadeOut
-  0%
-    opacity: 0.5
-    transform: translateX(0em)
-  100%
-    opacity: 0.5
-    transform: translateX(-1em)
-
-
 a
   animation: fadeOut 1s timing-function delay iteration-count direction fill-mode
   text-decoration: none
@@ -230,25 +210,44 @@ a
 
 
 // STYLE - BUTTON
+.button-group
+  @extend .ma1
 
 .call-to-action
   background-color: $highlight
   color: white
-  @extend .ma1, .pa-1, .pl1, .pr1, .fw5, .f1
+  @extend .fw5, .f1, .ml-2, .mr-2, .pa-1, .pl1, .pr1
   border-radius: $s-1
   display: inline-block
   z-index: 1
   transition: transform 200ms, box-shadow 200ms
-  &:hover
-    background-color: $dark-slate
-    box-shadow: -$s-3 $s-3 rgba(($highlight),0.25), -$s-1 $s-1 rgba(($highlight),0.2), -$s0 $s0 rgba(($highlight),0.15)
-    transform: translate($s-3, -$s-3)
 
-  color: white
-  &:hover
+  &.primary:hover
+    transform: translate($s-3, -$s-3)
     background-color: rgba($highlight, 0.95)
     box-shadow: -$s-3 $s-3 rgba($highlight, 0.25), -$s-1 $s-1 rgba($highlight, 0.2), -$s0 $s0 rgba($highlight, 0.15)
 
+  &.secondary
+    color: $highlight
+    background: rgba($highlight, 0.1)
+    &:hover
+      box-shadow: 0 0 0 $s-4 rgba($highlight, 0.35)
+
+
+
+.social-links
+  display: flex
+  justify-content: center
+.social-links a
+  color: $dark
+  opacity: 0.9
+  border-bottom: $s-4 solid $highlight
+  transition: border 150ms, color 150ms
+  &:hover
+    color: $highlight
+    opacity: 1
+    border-color: $dark-slate
+    border-color: rgba($highlight, 0.35)
 
 
 @keyframes fadeIn
@@ -260,3 +259,11 @@ a
     transform: translateX(0em)
 .fadeIn
   animation: fadeIn 1000ms ease
+
+@keyframes fadeOut
+  0%
+    opacity: 0.5
+    transform: translateX(0em)
+  100%
+    opacity: 0.5
+    transform: translateX(-1em)
