@@ -123,12 +123,12 @@ body
 @media (max-width: 800px)
   body
     background: url(/assets/bg-hero-left.png) no-repeat calc(0% - 140px) calc(0% - 250px), url(/assets/bg-hero-right.png) no-repeat calc(100% + 120px) calc(0% - 450px) $light
-  // .hero
-  //   background: url(/assets/bg-hero-left.png) no-repeat calc(0% - 140px) top, url(/assets/bg-hero-right.png) no-repeat calc(100% + 120px) center
+
+
 
 // MOBILE
 
-@media (max-device-width: 480px)
+@media (max-width: 480px)
   .hero
     padding-top: $s0
     padding-bottom: $s1
@@ -138,8 +138,12 @@ body
     padding-left: $s-2
     padding-right: $s-2
     font-size: 1.2em
+  .hero-2 h1
+    font-size: $s1
 
-
+@media (max-width: 680px)
+  .hero-2 p
+    max-width: 25ch
 
 
 
@@ -216,7 +220,7 @@ a
 .call-to-action
   background-color: $highlight
   color: white
-  @extend .fw5, .f1, .ml-2, .mr-2, .pa-1, .pl1, .pr1
+  @extend .fw5, .f1, .ma-2, .pa-1, .pl1, .pr1
   border-radius: $s-1
   display: inline-block
   z-index: 1
