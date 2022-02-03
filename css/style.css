@@ -27,7 +27,7 @@ div {
 html {
   font-size: 26px; }
 
-@media (max-device-width: 480px) {
+@media (max-width: 480px) {
   html {
     font-size: 21px; } }
 
@@ -199,7 +199,7 @@ html {
 .ma-1 {
   margin: 0.6180469716em; }
 
-.ma-2 {
+.ma-2, .call-to-action {
   margin: 0.3819820591em; }
 
 .ma-3 {
@@ -229,7 +229,7 @@ html {
 .ml-1 {
   margin-left: 0.6180469716em; }
 
-.ml-2, .call-to-action {
+.ml-2 {
   margin-left: 0.3819820591em; }
 
 .ml-3 {
@@ -259,7 +259,7 @@ html {
 .mr-1 {
   margin-right: 0.6180469716em; }
 
-.mr-2, .call-to-action {
+.mr-2 {
   margin-right: 0.3819820591em; }
 
 .mr-3 {
@@ -560,7 +560,7 @@ body {
   body {
     background: url(/assets/bg-hero-left.png) no-repeat calc(0% - 140px) calc(0% - 250px), url(/assets/bg-hero-right.png) no-repeat calc(100% + 120px) calc(0% - 450px) #f9f9f9; } }
 
-@media (max-device-width: 480px) {
+@media (max-width: 480px) {
   .hero {
     padding-top: 1em;
     padding-bottom: 1.618em; }
@@ -569,7 +569,13 @@ body {
   .hero p {
     padding-left: 0.3819820591em;
     padding-right: 0.3819820591em;
-    font-size: 1.2em; } }
+    font-size: 1.2em; }
+  .hero-2 h1 {
+    font-size: 1.618em; } }
+
+@media (max-width: 680px) {
+  .hero-2 p {
+    max-width: 25ch; } }
 
 .designs {
   display: grid;

@@ -38,6 +38,10 @@ head
   link(rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png")
   link(rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png")
   link(rel="manifest" href="assets/site.webmanifest")
+  
+  //- Drift integration
+  
+  script(src="/source/drift-snippet.js" type="text/javascript" async)
 
 
 
@@ -55,7 +59,7 @@ body
     section
       header.animate__animated.animate__fadeInUp.animate__delay-2s 
         h1.f2.fw3.tc Selected work
-        p.tc.f-nonessential.pl1.pr1 (Most recent work is secret and can&rsquo;t be shared here)
+        p.tc.f-nonessential.pl1.pr1 (Most recent work is secret and can&rsquo;t be shared here.)
 
       .designs.animate__animated.animate__fadeInUp.animate__delay-3s 
         mixin design(title, desc, href, bgimg)
@@ -88,10 +92,10 @@ body
         +design("Timbersmith", "branding - furniture maker", "https://dribbble.com/shots/7892423-Timbersmith")(bgimg="background-image: url(https://cdn.dribbble.com/users/543568/screenshots/7892423/media/9fa88b73e5fb61b443c64672ab2bd4f8.png?compress=1&resize=1600x1200&vertical=top)")
 
 
-    section.hero.tc.pa-1.pt3.pb2
-      h1.f-gradient Get continuous design #[br] services for a flat fee
+    section.hero.hero-2.tc.pa-1.pt3.pb2
+      h1.f-gradient Get continuous design services for a flat fee
       .f1.mt-1
-        p What are you waiting for? Getting started is fast and easy. Feel free to ask any questions&ndash;I&rsquo;m here to help!
+        p What are you waiting for? Getting started is fast &amp; easy.
         .button-group
           a.f1.call-to-action.bg-gradient.secondary(href='https://bit.ly/designsub1pager' target="_blank") Learn more
           a.f1.call-to-action.bg-gradient.primary(href='https://bit.ly/startdesignsub' target='blank') Get started
@@ -107,3 +111,4 @@ body
     .blah-blah-blurb.pa-1.f.f-nonessential.tc &copy;1988-2088, Every Single Right Reserved
     
     script(data-host="https://microanalytics.io" data-dnt="false" src="https://microanalytics.io/js/script.js" id="ZwSg9rf6GA" async defer)
+    
