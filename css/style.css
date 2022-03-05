@@ -80,10 +80,10 @@ p {
 a, .link, .button {
   cursor: pointer; }
 
-.b, .button {
+.b, .button, .hero .visuals .photo-f1, .hero .visuals .photo-dirt-bikes, .hero .visuals .photo-sprinter {
   border: 2px solid white; }
 
-.bt {
+.bt, .navbar {
   border-top: 2px solid white; }
 
 .br, .navbar .link, .navbar .scroller, .navbar .logo {
@@ -97,7 +97,9 @@ a, .link, .button {
 
 .navbar {
   height: 76px;
-  display: flex; }
+  display: flex;
+  position: sticky;
+  top: 0; }
 
 .navbar > * {
   display: flex;
@@ -111,7 +113,8 @@ a, .link, .button {
 
 .navbar .scroller {
   flex: 1 1 auto;
-  overflow: hidden; }
+  overflow: hidden;
+  background: #120404; }
   .navbar .scroller img {
     position: relative;
     left: -100px; }
@@ -119,7 +122,8 @@ a, .link, .button {
 .navbar .link {
   flex: 0 0 auto;
   padding-left: 47px;
-  padding-right: 47px; }
+  padding-right: 47px;
+  background: #120404; }
 
 .navbar .cta {
   flex: 0 0 auto;
@@ -127,9 +131,35 @@ a, .link, .button {
   padding-left: 47px;
   padding-right: 47px; }
 
-.hero .subheader {
-  margin-top: 29px;
-  margin-bottom: 47px; }
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px; }
+  .hero .copy {
+    padding-left: 76px; }
+  .hero .header {
+    letter-spacing: -0.02em; }
+  .hero .subheader {
+    margin-top: 29px;
+    margin-bottom: 47px;
+    max-width: 60ch; }
+
+.hero {
+  background: url(/source/images/vector-grid.svg) 645px top no-repeat; }
+
+.hero .visuals .photo-f1, .hero .visuals .photo-dirt-bikes, .hero .visuals .photo-sprinter {
+  position: absolute; }
+
+.hero .visuals .photo-f1 {
+  top: 446px;
+  left: 921px; }
+
+.hero .visuals .photo-sprinter {
+  top: 123px;
+  left: 845px; }
+
+.hero .visuals .photo-dirt-bikes {
+  top: 170px;
+  left: 1168px; }
 
 .button {
   padding: 11px 47px;
@@ -162,8 +192,3 @@ a, .link, .button {
   [data-tooltip]:hover:before, [data-tooltip]:hover:after {
     visibility: visible;
     opacity: 1; }
-
-/* Hide the tooltip content by default */
-/* Position tooltip above the element */
-/* Triangle hack to make tooltip look like a speech bubble */
-/* Show tooltip content on hover */

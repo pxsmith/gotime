@@ -62,15 +62,7 @@ a
 $dark: #120404
 $accent: #DC2626
 
-$s-2: 7px
-$s-1: 11px
-$s0: 18px
-$s1: 29px
-$s2: 47px
-$s3: 76px
-$s4: 123px
-$s5: 200px
-$s6: 323px
+
 
 $s-2--7: 7px
 $s-1--11: 11px
@@ -81,6 +73,9 @@ $s3--76: 76px
 $s4--123: 123px
 $s5--200: 200px
 $s6--323: 323px
+$s7--523: 523px
+$s8--845: 845px
+$s9--1368: 1368px
 
 .fs1
   font-size: $s1--29
@@ -124,7 +119,7 @@ html, body
   background: $dark
   color: white
   font-family: "Covik_Sans-Regular"
-  font-size: $s0
+  font-size: $s0--18
 html, body > *
   box-sizing: border-box
 p
@@ -150,12 +145,16 @@ a, .link, .button
 
 
 // NAVBAR
+// flexbox guide https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 .navbar
   height: $s3--76
+  @extend .bt
   @extend .bb
   @extend .fs1
   display: flex
+  position: sticky
+  top: 0
 
 // Center the text in the navbar
 .navbar > *
@@ -175,6 +174,8 @@ a, .link, .button
   flex: 1 1 auto
   @extend .br
   overflow: hidden
+  background: $dark
+
   img
     position: relative
     left: -100px
@@ -184,6 +185,7 @@ a, .link, .button
   @extend .br
   padding-left: $s2--47
   padding-right: $s2--47
+  background: $dark
 
 .navbar .cta
   flex: 0 0 auto
@@ -194,24 +196,60 @@ a, .link, .button
 
 
 
+// HERO COPY
 
 .hero
+  padding-top: $s5--200
+  padding-bottom: $s5--200
+
+  .copy
+    padding-left: $s3--76
+
   .header
     @extend .fs3
+    letter-spacing: -0.02em
+
   .subheader
-    margin-top: $s1
-    margin-bottom: $s2
+    margin-top: $s1--29
+    margin-bottom: $s2--47
+    max-width: 60ch
+
+
+
+// HERO VISUALS
+// desktop view
+
+.hero
+  background: url(/source/images/vector-grid.svg) ($s8--845 - $s5--200 ) top no-repeat
+
+.hero .visuals
+
+  .photo-f1, .photo-dirt-bikes, .photo-sprinter
+    @extend .b
+    position: absolute
+
+  .photo-f1
+    top: $s6--323 + $s4--123
+    left: $s8--845 + $s3--76
+
+  .photo-sprinter
+    top: $s4--123
+    left: $s8--845
+
+  .photo-dirt-bikes
+    top: $s4--123 + $s2--47
+    left: $s8--845 + $s6--323
 
 .button
-  padding: $s-1 $s2
+  padding: $s-1--11 $s2--47
   @extend .fs1
   background: $accent
   @extend .b
 
 
-
+// TOOLTIP
+// source: https://chrisbracco.com/a-simple-css-tooltip/
 /* Add this attribute to the element that needs a tooltip
-
 [data-tooltip]
   position: relative
   z-index: 2
@@ -229,10 +267,6 @@ a, .link, .button
     margin-bottom: 5px
     margin-left: -80px
     padding: 7px
-    // width: 160px
-    // -webkit-border-radius: 3px
-    // -moz-border-radius: 3px
-    // border-radius: 3px
     background-color: $accent
     color: $dark
     content: attr(data-tooltip)
@@ -242,29 +276,9 @@ a, .link, .button
     font-size: $s0--18
     line-height: 1
 
-  // &:after
-  //   position: absolute
-  //   bottom: -40%
-  //   left: 50%
-  //   margin-left: -5px
-  //   width: 0
-  //   border-top: 5px solid #000
-  //   border-top: 5px solid hsla(0, 0%, 20%, 0.9)
-  //   border-right: 5px solid transparent
-  //   border-left: 5px solid transparent
-  //   content: " "
-  //   font-size: 0
-  //   line-height: 0
-
   &:hover
     &:before, &:after
       visibility: visible
       opacity: 1
 
-/* Hide the tooltip content by default
-
-/* Position tooltip above the element
-
-/* Triangle hack to make tooltip look like a speech bubble
-
-/* Show tooltip content on hover
+// TK animate the arrows https://ricardometring.com/infinite-animation-in-css
