@@ -53,19 +53,100 @@ a {
   clear: both;
   display: table; }
 
-.fs1, .button, .navbar {
+.fs1--29, .button, .navbar {
   font-size: 29px; }
 
-.fs2 {
+.fs2--47, .how-it-works .content .header {
   font-size: 47px; }
 
-.fs3, .hero .header {
+.fs3--76, .hero .header {
   font-size: 76px; }
 
-.fs4 {
+.fs4--47 {
   font-size: 47px; }
 
-html, body {
+.f-mono-800-black {
+  font-family: "Covik_Sans_Mono-Black"; }
+
+.f-mono-800-black-italic {
+  font-family: "Covik_Sans_Mono-Black_Italic"; }
+
+.f-mono-700-bold {
+  font-family: "Covik_Sans_Mono-Bold"; }
+
+.f-mono-700-bold-italic {
+  font-family: "Covik_Sans_Mono-Bold_Italic"; }
+
+.f-mono-600-semibold {
+  font-family: "Covik_Sans_Mono-Semibold_Italic"; }
+
+.f-mono-600-semibold-italic {
+  font-family: "Covik_Sans_Mono-Semibold"; }
+
+.f-mono-500-medium {
+  font-family: "Covik_Sans_Mono-Medium"; }
+
+.f-mono-500-medium-italic {
+  font-family: "Covik_Sans_Mono-Medium_Italic"; }
+
+.f-mono-400-regular, .social-proof .header {
+  font-family: "Covik_Sans_Mono-Regular"; }
+
+.f-mono-400-regular-italic {
+  font-family: "Covik_Sans_Mono-Italic"; }
+
+.f-sans-800-black, .how-it-works .content .header {
+  font-family: "Covik_Sans-Black"; }
+
+.f-sans-800-black-italic {
+  font-family: "Covik_Sans-Black_Italic"; }
+
+.f-sans-700-bold {
+  font-family: "Covik_Sans-Bold"; }
+
+.f-sans-700-bold-italic {
+  font-family: "Covik_Sans-Bold_Italic"; }
+
+.f-sans-600-semibold {
+  font-family: "Covik_Sans-Semibold"; }
+
+.f-sans-600-semibold--italic {
+  font-family: "Covik_Sans-Semibold_Italic"; }
+
+.f-sans-500-medium {
+  font-family: "Covik_Sans-Medium"; }
+
+.f-sans-500-medium-italic {
+  font-family: "Covik_Sans-Medium_Italic"; }
+
+.f-sans-400-regular {
+  font-family: "Covik_Sans-Regular"; }
+
+.f-sans-400-regular-italic {
+  font-family: "Covik_Sans-Italic"; }
+
+.z-0 {
+  z-index: 0; }
+
+.z-10 {
+  z-index: 10; }
+
+.z-20 {
+  z-index: 20; }
+
+.z-30 {
+  z-index: 30; }
+
+.z-40 {
+  z-index: 40; }
+
+.z-50 {
+  z-index: 50; }
+
+.z-auto {
+  z-index: auto; }
+
+html {
   background: #120404;
   color: white;
   font-family: "Covik_Sans-Regular";
@@ -80,7 +161,7 @@ p {
 a, .link, .button {
   cursor: pointer; }
 
-.b, .button, .hero .visuals .photo-f1, .hero .visuals .photo-dirt-bikes, .hero .visuals .photo-sprinter {
+.b, .how-it-works .content, .button {
   border: 2px solid white; }
 
 .bt, .navbar {
@@ -98,8 +179,8 @@ a, .link, .button {
 .navbar {
   height: 76px;
   display: flex;
-  position: sticky;
-  top: 0; }
+  top: 0;
+  z-index: 1; }
 
 .navbar > * {
   display: flex;
@@ -137,33 +218,85 @@ a, .link, .button {
   .hero .copy {
     padding-left: 76px; }
   .hero .header {
-    letter-spacing: -0.02em; }
+    letter-spacing: -0.02em;
+    max-width: 15ch; }
+    .hero .header u {
+      text-decoration: underline;
+      text-decoration-color: #DC2626; }
   .hero .subheader {
-    margin-top: 29px;
+    margin-top: 18px;
     margin-bottom: 47px;
     max-width: 60ch; }
+
+.button {
+  display: inline-block;
+  padding: 18px 47px;
+  text-align: center;
+  background: #DC2626; }
 
 .hero {
   background: url(/source/images/vector-grid.svg) 645px top no-repeat; }
 
-.hero .visuals .photo-f1, .hero .visuals .photo-dirt-bikes, .hero .visuals .photo-sprinter {
+.hero .visuals .photo-f1, .hero .visuals .photo-sprinter, .hero .visuals .photo-dirt-bikes {
+  transform: scale(0.5, 0.5);
+  border: 4px solid white;
   position: absolute; }
 
 .hero .visuals .photo-f1 {
-  top: 446px;
-  left: 921px; }
+  top: 300px;
+  left: 800px; }
 
 .hero .visuals .photo-sprinter {
-  top: 123px;
-  left: 845px; }
+  top: -100px;
+  left: 700px; }
 
 .hero .visuals .photo-dirt-bikes {
-  top: 170px;
-  left: 1168px; }
+  top: 0;
+  left: 850px; }
 
-.button {
-  padding: 11px 47px;
-  background: #DC2626; }
+.social-proof {
+  padding-top: 47px; }
+  .social-proof .header {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    text-align: center; }
+  .social-proof .logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.5, 0.5);
+    gap: 123px; }
+
+.how-it-works .content {
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+  background: #120404;
+  margin: 0 auto;
+  margin-top: 76px;
+  padding: 47px 123px 76px 123px; }
+  .how-it-works .content .header {
+    display: block;
+    margin-bottom: 29px;
+    text-align: center; }
+  .how-it-works .content .steps {
+    display: flex;
+    gap: 29px; }
+  .how-it-works .content .step-1, .how-it-works .content .step-2, .how-it-works .content .step-3 {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    gap: 29px; }
+
+.divider {
+  position: relative;
+  left: -50px;
+  top: -130px;
+  z-index: -1; }
+
+.testimonials {
+  height: 100vh;
+  width: 100vw; }
 
 /* Add this attribute to the element that needs a tooltip */
 [data-tooltip] {

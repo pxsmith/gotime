@@ -62,8 +62,6 @@ a
 $dark: #120404
 $accent: #DC2626
 
-
-
 $s-2--7: 7px
 $s-1--11: 11px
 $s0--18: 18px
@@ -77,45 +75,94 @@ $s7--523: 523px
 $s8--845: 845px
 $s9--1368: 1368px
 
-.fs1
+.fs1--29
   font-size: $s1--29
-.fs2
+.fs2--47
   font-size: $s2--47
-.fs3
+.fs3--76
   font-size: $s3--76
-.fs4
+.fs4--47
   font-size: $s2--47
 
 
-// FONTS
-  Covik_Sans_Mono-Black_Italic
-  Covik_Sans_Mono-Black
-  Covik_Sans_Mono-Bold_Italic
-  Covik_Sans_Mono-Bold
-  Covik_Sans_Mono-Italic
-  Covik_Sans_Mono-Medium_Italic
-  Covik_Sans_Mono-Medium
-  Covik_Sans_Mono-Regular
-  Covik_Sans_Mono-Semibold_Italic
-  Covik_Sans_Mono-Semibold
-  Covik_Sans-Black_Italic
-  Covik_Sans-Black
-  Covik_Sans-Bold_Italic
-  Covik_Sans-Bold
-  Covik_Sans-Italic
-  Covik_Sans-Medium_Italic
-  Covik_Sans-Medium
-  Covik_Sans-Regular
-  Covik_Sans-Semibold_Italic
-  Covik_Sans-Semibold
+
+
+// COVIK SANS
+.f-mono-800-black
+  font-family: "Covik_Sans_Mono-Black"
+.f-mono-800-black-italic
+  font-family: "Covik_Sans_Mono-Black_Italic"
+
+.f-mono-700-bold
+  font-family: "Covik_Sans_Mono-Bold"
+.f-mono-700-bold-italic
+  font-family: "Covik_Sans_Mono-Bold_Italic"
+
+.f-mono-600-semibold
+  font-family: "Covik_Sans_Mono-Semibold_Italic"
+.f-mono-600-semibold-italic
+  font-family: "Covik_Sans_Mono-Semibold"
+
+.f-mono-500-medium
+  font-family: "Covik_Sans_Mono-Medium"
+.f-mono-500-medium-italic
+  font-family: "Covik_Sans_Mono-Medium_Italic"
+
+.f-mono-400-regular
+  font-family: "Covik_Sans_Mono-Regular"
+.f-mono-400-regular-italic
+  font-family: "Covik_Sans_Mono-Italic"
+
+
+// COVIK MONO
+.f-sans-800-black
+  font-family: "Covik_Sans-Black"
+.f-sans-800-black-italic
+  font-family: "Covik_Sans-Black_Italic"
+
+.f-sans-700-bold
+  font-family: "Covik_Sans-Bold"
+.f-sans-700-bold-italic
+  font-family: "Covik_Sans-Bold_Italic"
+
+.f-sans-600-semibold
+  font-family: "Covik_Sans-Semibold"
+.f-sans-600-semibold--italic
+  font-family: "Covik_Sans-Semibold_Italic"
+
+.f-sans-500-medium
+  font-family: "Covik_Sans-Medium"
+.f-sans-500-medium-italic
+  font-family: "Covik_Sans-Medium_Italic"
+
+.f-sans-400-regular
+  font-family: "Covik_Sans-Regular"
+.f-sans-400-regular-italic
+  font-family: "Covik_Sans-Italic"
+
+
+.z-0
+  z-index: 0
+.z-10
+  z-index: 10
+.z-20
+  z-index: 20
+.z-30
+  z-index: 30
+.z-40
+  z-index: 40
+.z-50
+  z-index: 50
+.z-auto
+  z-index: auto
+
+
 
 
 
 // STYLE (all)
 
-
-
-html, body
+html
   background: $dark
   color: white
   font-family: "Covik_Sans-Regular"
@@ -144,6 +191,7 @@ a, .link, .button
 
 
 
+
 // NAVBAR
 // flexbox guide https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
@@ -151,14 +199,14 @@ a, .link, .button
   height: $s3--76
   @extend .bt
   @extend .bb
-  @extend .fs1
+  @extend .fs1--29
   display: flex
-  position: sticky
+  // position: sticky
   top: 0
+  z-index: 1
 
 // Center the text in the navbar
 .navbar > *
-  // height: 100%
   display: flex
   align-items: center
 
@@ -206,14 +254,25 @@ a, .link, .button
     padding-left: $s3--76
 
   .header
-    @extend .fs3
+    @extend .fs3--76
     letter-spacing: -0.02em
+    max-width: 15ch
+    u
+      text-decoration: underline
+      text-decoration-color: $accent
 
   .subheader
-    margin-top: $s1--29
+    margin-top: $s0--18
     margin-bottom: $s2--47
     max-width: 60ch
 
+.button
+  display: inline-block
+  padding: $s0--18 $s2--47
+  text-align: center
+  @extend .fs1--29
+  background: $accent
+  @extend .b
 
 
 // HERO VISUALS
@@ -223,28 +282,93 @@ a, .link, .button
   background: url(/source/images/vector-grid.svg) ($s8--845 - $s5--200 ) top no-repeat
 
 .hero .visuals
-
-  .photo-f1, .photo-dirt-bikes, .photo-sprinter
-    @extend .b
+  .photo-f1, .photo-sprinter, .photo-dirt-bikes
+    transform: scale(0.5, 0.5)
+    border: 4px solid white
     position: absolute
 
   .photo-f1
-    top: $s6--323 + $s4--123
-    left: $s8--845 + $s3--76
+    top: 300px
+    left: 800px
 
   .photo-sprinter
-    top: $s4--123
-    left: $s8--845
+    top: -100px
+    left: 700px
 
   .photo-dirt-bikes
-    top: $s4--123 + $s2--47
-    left: $s8--845 + $s6--323
+    top: 0
+    left: 850px
 
-.button
-  padding: $s-1--11 $s2--47
-  @extend .fs1
-  background: $accent
+
+
+
+
+// SOCIAL PROOF
+.social-proof
+  padding-top: $s2--47
+
+  .header
+    @extend .f-mono-400-regular
+    text-transform: uppercase
+    letter-spacing: 0.08em
+    text-align: center
+  .logos
+    display: flex
+    justify-content: center
+    align-items: center
+    transform: scale(0.5, 0.5)
+    gap: $s4--123
+
+
+
+// HOW IT WORKS
+
+.how-it-works .content
+  display: flex
+  flex-direction: column
+  width: 900px
+  background: $dark
+
+  margin: 0 auto
+  margin-top: $s3--76
   @extend .b
+  padding: $s2--47  $s4--123  $s3--76 $s4--123
+
+  .header
+    display: block
+    margin-bottom: $s1--29
+    text-align: center
+    @extend .f-sans-800-black
+    @extend .fs2--47
+
+  .steps
+    display: flex
+    gap: $s1--29
+
+  .step-1, .step-2, .step-3
+    display: flex
+    flex-direction: row
+    flex-grow: 1
+    gap: $s1--29
+
+
+
+// DIVIDER
+.divider
+  position: relative
+  left: -50px
+  top: -130px
+  z-index: -1
+
+
+
+
+.testimonials
+  height: 100vh
+  width: 100vw
+
+
+
 
 
 // TOOLTIP
