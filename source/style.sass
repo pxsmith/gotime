@@ -83,7 +83,17 @@ $s9--1368: 1368px
   font-size: $s3--76
 .fs4--47
   font-size: $s2--47
+.fs5--76
+  font-size: $s3--76
+.fs6--123
+  font-size: $s4--123
 
+.text-contrast
+	color: white
+.text-default
+	color: rgba(white, 0.8)
+.text-subtle
+	color: rgba(white, 0.65)
 
 
 
@@ -141,23 +151,6 @@ $s9--1368: 1368px
   font-family: "Covik_Sans-Italic"
 
 
-.z-0
-  z-index: 0
-.z-10
-  z-index: 10
-.z-20
-  z-index: 20
-.z-30
-  z-index: 30
-.z-40
-  z-index: 40
-.z-50
-  z-index: 50
-.z-auto
-  z-index: auto
-
-
-
 
 
 // STYLE (all)
@@ -173,6 +166,9 @@ p
   line-height: 1.5
 a, .link, .button
   cursor: pointer
+
+::selection
+  background-color: $accent
 
 
 // BORDERS
@@ -305,24 +301,24 @@ a, .link, .button
 
 // SOCIAL PROOF
 .social-proof
-  padding-top: $s2--47
+	padding-top: $s2--47
+	@extend .text-contrast
 
-  .header
-    @extend .f-mono-400-regular
-    text-transform: uppercase
-    letter-spacing: 0.08em
-    text-align: center
-  .logos
-    display: flex
-    justify-content: center
-    align-items: center
-    transform: scale(0.5, 0.5)
-    gap: $s4--123
+	.header
+		@extend .f-mono-400-regular
+		text-transform: uppercase
+		letter-spacing: 0.08em
+		text-align: center
+	.logos
+		display: flex
+		justify-content: center
+		align-items: center
+		transform: scale(0.5, 0.5)
+		gap: $s4--123
 
 
 
 // HOW IT WORKS
-
 .how-it-works .content
   display: flex
   flex-direction: column
@@ -351,25 +347,58 @@ a, .link, .button
     flex-grow: 1
     gap: $s1--29
 
-
-
 // DIVIDER
 .divider
   position: relative
-  left: -50px
   top: -130px
   z-index: -1
-
+  max-width: 100vw !important
+  overflow: hidden
+  img
+    position: relative
+    left: -50px
 
 
 
 .testimonials
-  height: 100vh
-  width: 100vw
+	display: flex
+	gap: $s3--76
+	margin-left: $s3--76
+	margin-right: $s3--76
+	align-content: stretch
 
+	.quote
+		flex-grow: 1
+		flex-basis: 0
 
+	.quotation-mark
+		@extend .f-mono-400-regular
+		@extend .fs6--123
+		color: $accent
 
+	.quote-body
+		margin-top: - $s2--47
+		@extend .text-default
+		line-height: 1.65
 
+	.portrait
+		width: $s3--76
+		height: $s3--76
+		border-radius: 100%
+		@extend .b
+
+	.person
+		margin-top: $s1--29
+		display: flex
+		gap: $s0--18
+		align-items: center
+
+	.name
+		// @extend .f-sans-800-black
+		font-size: 20px
+	.job-title
+		@extend .text-subtle
+		line-height: 1
 
 // TOOLTIP
 // source: https://chrisbracco.com/a-simple-css-tooltip/
