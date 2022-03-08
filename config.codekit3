@@ -251,6 +251,19 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/source\/images\/photo-dina.jpg" : {
+      "ft" : 16384,
+      "iS" : 87499,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/source\/images\/photo-dina.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/source\/images\/photo-dirt-bikes.jpg" : {
       "ft" : 16384,
       "iS" : 254993,
@@ -277,12 +290,38 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/source\/images\/photo-jeffy.jpg" : {
+      "ft" : 16384,
+      "iS" : 107214,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/source\/images\/photo-jeffy.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/source\/images\/photo-kyler.jpeg" : {
       "ft" : 16384,
       "iS" : 23705,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/source\/images\/photo-kyler.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/source\/images\/photo-skiier.jpg" : {
+      "ft" : 16384,
+      "iS" : 222328,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/source\/images\/photo-skiier.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -321,6 +360,16 @@
       "miP" : 0,
       "oA" : 2,
       "oAP" : "\/source\/images\/vector-arrows.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/source\/images\/vector-grid v1.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/source\/images\/vector-grid v1.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
