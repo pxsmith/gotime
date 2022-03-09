@@ -428,7 +428,7 @@ h3 {
   .services .col {
     display: flex;
     flex-direction: column;
-    gap: 11px; }
+    gap: 7px; }
 
 @media (max-width: 900px) {
   .services .header {
@@ -444,7 +444,10 @@ h3 {
     justify-content: flex-start;
     flex-direction: column; }
   .services .list {
-    flex-direction: column; } }
+    flex-direction: column;
+    gap: 18px; }
+  .services .col {
+    gap: 0px; } }
 
 section.process {
   display: flex;
