@@ -53,93 +53,6 @@ a {
   clear: both;
   display: table; }
 
-.fs1--29, h3, .how-it-works .content p, .button, .navbar {
-  font-size: 29px; }
-
-.fs2--47, h2, section.pricing h2.header, .how-it-works .content h2.header {
-  font-size: 47px; }
-
-.fs3--76, h1 {
-  font-size: 76px; }
-
-.fs4--47 {
-  font-size: 47px; }
-
-.fs5--76 {
-  font-size: 76px; }
-
-.fs6--123, .testimonials .quotation-mark {
-  font-size: 123px; }
-
-.text-contrast, .testimonials .name, .social-proof {
-  color: white; }
-
-.text-default, .testimonials .quote-body, p {
-  color: rgba(255, 255, 255, 0.8); }
-
-.text-subtle, .services .list p:not(.title), .testimonials .job-title {
-  color: rgba(255, 255, 255, 0.65); }
-
-.f-mono-800-black {
-  font-family: "Covik_Sans_Mono-Black"; }
-
-.f-mono-800-black-italic {
-  font-family: "Covik_Sans_Mono-Black_Italic"; }
-
-.f-mono-700-bold {
-  font-family: "Covik_Sans_Mono-Bold"; }
-
-.f-mono-700-bold-italic {
-  font-family: "Covik_Sans_Mono-Bold_Italic"; }
-
-.f-mono-600-semibold {
-  font-family: "Covik_Sans_Mono-Semibold_Italic"; }
-
-.f-mono-600-semibold-italic {
-  font-family: "Covik_Sans_Mono-Semibold"; }
-
-.f-mono-500-medium {
-  font-family: "Covik_Sans_Mono-Medium"; }
-
-.f-mono-500-medium-italic {
-  font-family: "Covik_Sans_Mono-Medium_Italic"; }
-
-.f-mono-400-regular, .testimonials .quotation-mark, .social-proof .header {
-  font-family: "Covik_Sans_Mono-Regular"; }
-
-.f-mono-400-regular-italic {
-  font-family: "Covik_Sans_Mono-Italic"; }
-
-.f-sans-800-black, .services .col .title, h2, section.pricing h2.header, .how-it-works .content h2.header {
-  font-family: "Covik_Sans-Black"; }
-
-.f-sans-800-black-italic {
-  font-family: "Covik_Sans-Black_Italic"; }
-
-.f-sans-700-bold, h3 {
-  font-family: "Covik_Sans-Bold"; }
-
-.f-sans-700-bold-italic {
-  font-family: "Covik_Sans-Bold_Italic"; }
-
-.f-sans-600-semibold {
-  font-family: "Covik_Sans-Semibold"; }
-
-.f-sans-600-semibold--italic {
-  font-family: "Covik_Sans-Semibold_Italic"; }
-
-.f-sans-500-medium, .testimonials .name {
-  font-family: "Covik_Sans-Medium"; }
-
-.f-sans-500-medium-italic {
-  font-family: "Covik_Sans-Medium_Italic"; }
-
-.f-sans-400-regular {
-  font-family: "Covik_Sans-Regular"; }
-
-.f-sans-400-regular-italic {
-  font-family: "Covik_Sans-Italic"; }
-
 html {
   background: #120404;
   color: white;
@@ -150,7 +63,8 @@ html, body > * {
   box-sizing: border-box; }
 
 p {
-  line-height: 1.7; }
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.8); }
 
 a, .link, .button {
   cursor: pointer; }
@@ -162,23 +76,19 @@ u {
   text-decoration: underline;
   text-decoration-color: #DC2626; }
 
-.b, section.cta .container, section.pricing .container, .testimonials .portrait, .how-it-works .content, .button {
+.button {
+  display: inline-block;
+  padding: 18px 47px;
+  text-align: center;
+  font-size: 29px;
+  background: #DC2626;
   border: 2px solid white; }
-
-.bt, section.cta, section.process, section.pricing, .navbar {
-  border-top: 2px solid white; }
-
-.br, section.process .photo, .services .header, .navbar .link, .navbar .scroller, .navbar .logo {
-  border-right: 2px solid white; }
-
-.bb, section.cta, .services, section.pricing, .navbar {
-  border-bottom: 2px solid white; }
-
-.bl {
-  border-left: 2px solid white; }
 
 .navbar {
   height: 76px;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  font-size: 29px;
   display: flex;
   top: 0;
   z-index: 1; }
@@ -191,10 +101,12 @@ u {
   flex: 0 0 auto;
   padding-left: 18px;
   padding-right: 18px;
+  border-right: 2px solid white;
   background: #120404; }
 
 .navbar .scroller {
   flex: 1 1 auto;
+  border-right: 2px solid white;
   overflow: hidden;
   background: #120404; }
   .navbar .scroller img {
@@ -203,6 +115,7 @@ u {
 
 .navbar .link {
   flex: 0 0 auto;
+  border-right: 2px solid white;
   padding-left: 47px;
   padding-right: 47px;
   background: #120404; }
@@ -212,6 +125,24 @@ u {
   background: #DC2626;
   padding-left: 47px;
   padding-right: 47px; }
+
+@media (max-width: 768px) {
+  .navbar {
+    height: 47px;
+    font-size: 18px; }
+    .navbar .logo {
+      padding: 0; }
+    .navbar .logo img {
+      transform: scale(0.8); }
+    .navbar .scroller img {
+      opacity: 0.1; }
+    .navbar .link {
+      display: none; }
+    .navbar .link, .navbar .cta {
+      padding-left: 18px;
+      padding-right: 18px; }
+    .navbar .cta {
+      font-family: "Covik_Sans-Semibold"; } }
 
 .hero {
   padding-top: 200px;
@@ -225,55 +156,91 @@ u {
     margin-bottom: 47px;
     max-width: 60ch; }
 
-.button {
-  display: inline-block;
-  padding: 18px 47px;
-  text-align: center;
-  background: #DC2626; }
-
-.hero {
-  background: url(/source/images/vector-grid.svg) 645px top no-repeat; }
-
-.hero .visuals .photo-f1, .hero .visuals .photo-sprinter, .hero .visuals .photo-dirt-bikes {
-  transform: scale(0.5, 0.5);
-  border: 4px solid white;
-  position: absolute; }
-
-.hero .visuals .photo-f1 {
-  top: 300px;
-  left: 800px; }
-
-.hero .visuals .photo-sprinter {
-  top: -100px;
-  left: 700px; }
-
-.hero .visuals .photo-dirt-bikes {
+.hero .visuals {
+  background: url(/source/images/vector-grid.svg) 645px top no-repeat;
+  overflow-x: hidden;
+  position: absolute;
   top: 0;
-  left: 850px; }
+  left: 0;
+  z-index: -1;
+  height: 100vh;
+  width: 100vw; }
+  .hero .visuals .photo-f1, .hero .visuals .photo-sprinter, .hero .visuals .photo-dirt-bikes {
+    transform: scale(0.5, 0.5);
+    border: 4px solid white;
+    position: absolute; }
+  .hero .visuals .photo-f1 {
+    top: 323px;
+    left: 723px; }
+  .hero .visuals .photo-sprinter {
+    top: -123px;
+    left: 646px; }
+  .hero .visuals .photo-dirt-bikes {
+    top: -29px;
+    left: 798px; }
+
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 47px;
+    padding-bottom: 123px; }
+    .hero .header {
+      font-size: 47px;
+      max-width: 10ch; }
+    .hero .copy {
+      padding-left: 29px;
+      padding-right: 29px; }
+    .hero .subheader {
+      margin-top: 18px;
+      margin-bottom: 29px;
+      max-width: 24ch; }
+    .hero .button {
+      font-size: 18px;
+      font-family: "Covik_Sans-Semibold";
+      padding: 11px 18px; }
+  .hero .visuals {
+    background: url(/source/images/vector-grid.svg) 323px -200px no-repeat;
+    overflow-x: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; }
+    .hero .visuals .photo-f1 {
+      top: 150px;
+      left: 100px; }
+    .hero .visuals .photo-sprinter {
+      top: -250px;
+      left: 200px; }
+    .hero .visuals .photo-dirt-bikes {
+      top: -150px;
+      left: 150px; } }
 
 .social-proof {
-  padding-top: 47px; }
+  padding-top: 47px;
+  color: white; }
   .social-proof .header {
+    font-family: "Covik_Sans_Mono-Regular";
     text-transform: uppercase;
     letter-spacing: 0.08em;
     text-align: center; }
   .social-proof .logos {
+    padding: 29px;
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: scale(0.5, 0.5);
-    gap: 123px; }
+    gap: 18px 47px;
+    flex-wrap: wrap; }
 
 .how-it-works .content {
   display: flex;
   flex-direction: column;
   width: 1000px;
+  max-width: 80vw;
   background: #120404;
   margin: 0 auto;
   margin-top: 76px;
+  border: 2px solid white;
   padding: 47px 76px 76px 76px; }
   .how-it-works .content h2.header {
-    display: block;
     margin-bottom: 29px;
     text-align: center; }
   .how-it-works .content .steps {
@@ -286,11 +253,33 @@ u {
     flex-basis: 0;
     gap: 18px; }
   .how-it-works .content p {
+    font-size: 29px;
     line-height: 1.2;
     text-align: center; }
 
 .how-it-works .divider {
   top: -130px; }
+
+@media (max-width: 1150px) {
+  .how-it-works .content {
+    margin-top: 47px;
+    padding: 29px 47px 47px 47px; }
+    .how-it-works .content h2.header {
+      margin-bottom: 18px; }
+    .how-it-works .content .steps {
+      gap: 18px; }
+    .how-it-works .content .step-1, .how-it-works .content .step-2, .how-it-works .content .step-3 {
+      gap: 18px; }
+    .how-it-works .content p {
+      font-size: 18px; } }
+
+@media (max-width: 560px) {
+  .how-it-works .steps {
+    flex-direction: column; }
+  .how-it-works .content {
+    max-width: 50vw; }
+  .how-it-works .divider {
+    top: -470px; } }
 
 .divider {
   position: relative;
@@ -303,49 +292,65 @@ u {
 .testimonials {
   display: flex;
   gap: 76px;
-  margin-left: 76px;
-  margin-right: 76px;
+  margin: 76px;
   align-content: stretch; }
   .testimonials .quote {
     flex-grow: 1;
     flex-basis: 0; }
   .testimonials .quotation-mark {
+    font-family: "Covik_Sans_Mono-Regular";
+    font-size: 123px;
     color: #DC2626; }
   .testimonials .quote-body {
-    margin-top: -47px; }
+    margin-top: -47px;
+    color: rgba(255, 255, 255, 0.8); }
   .testimonials .portrait {
     width: 76px;
     height: 76px;
-    border-radius: 100%; }
+    border-radius: 100%;
+    border: 2px solid white; }
   .testimonials .person {
     margin-top: 29px;
     display: flex;
     gap: 18px;
     align-items: center; }
   .testimonials .name {
-    font-size: 20px; }
+    font-family: "Covik_Sans-Medium";
+    color: white;
+    font-size: 20px;
+    line-height: 1.2; }
   .testimonials .job-title {
-    line-height: 1; }
+    color: rgba(255, 255, 255, 0.65);
+    line-height: 1.2; }
 
-.bg-grid, section.cta, section.pricing {
-  background: url(/source/images/vector-grid.svg);
-  background-attachment: fixed; }
+@media (max-width: 1150px) {
+  .testimonials {
+    flex-direction: column;
+    margin: 29px; }
+  .quotation-mark {
+    margin-top: -47px;
+    height: 175px; } }
 
 section.pricing {
   display: flex;
   justify-content: center;
   margin-top: 123px;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
   padding-top: 76px;
   padding-bottom: 76px;
+  background: url(/source/images/vector-grid.svg);
+  background-attachment: fixed;
   text-align: center; }
   section.pricing .container {
+    border: 2px solid white;
     padding: 76px;
     padding-top: 47px;
     background: #120404;
     max-width: 950px; }
-  section.pricing h2.header {
+  section.pricing .header {
     text-align: center;
-    line-height: 1.5; }
+    margin-bottom: 7px; }
   section.pricing .title {
     display: flex;
     gap: 18px;
@@ -363,36 +368,90 @@ section.pricing {
   section.pricing hr {
     border: 2px solid rgba(255, 255, 255, 0.2); }
 
+@media (max-width: 800px) {
+  section.pricing .prices {
+    flex-direction: column;
+    gap: 47px; }
+  section.pricing hr {
+    display: none; }
+  section.pricing .container {
+    padding: 29px; } }
+
 h1 {
+  font-size: 76px;
   letter-spacing: -0.02em;
   line-height: 1; }
 
+@media (max-width: 768px) {
+  h1 {
+    font-size: 47px; } }
+
 h2 {
+  font-size: 47px;
+  font-family: "Covik_Sans-Black";
   line-height: 1.2; }
 
+@media (max-width: 768px) {
+  h2 {
+    font-size: 29px; } }
+
+h3 {
+  font-size: 29px;
+  font-family: "Covik_Sans-Bold"; }
+
+@media (max-width: 768px) {
+  h3 {
+    font-family: "Covik_Sans-Regular";
+    color: white; } }
+
 .services {
-  display: flex; }
+  display: flex;
+  border-bottom: 2px solid white; }
   .services .header {
     display: flex;
     align-items: center;
-    padding: 76px; }
+    padding: 76px;
+    border-right: 2px solid white; }
   .services .list {
     display: flex;
-    padding: 47px 76px;
+    padding: 47px 29px;
     justify-content: space-evenly;
     flex: 1 1 auto;
     gap: 18px; }
+    .services .list p:not(.title) {
+      color: rgba(255, 255, 255, 0.65); }
+  .services .col .title {
+    font-family: "Covik_Sans-Black";
+    color: white; }
   .services .col {
     display: flex;
     flex-direction: column;
     gap: 11px; }
 
+@media (max-width: 900px) {
+  .services .header {
+    padding: 29px; }
+  .services .list {
+    padding: 29px 47px;
+    flex-wrap: wrap;
+    justify-content: flex-start; } }
+
+@media (max-width: 647px) {
+  .services .header {
+    flex: 1 1 auto;
+    justify-content: flex-start;
+    flex-direction: column; }
+  .services .list {
+    flex-direction: column; } }
+
 section.process {
   display: flex;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  border-top: 2px solid white; }
   section.process .photo {
-    background: url("/source/images/photo-skiier.jpg") center center no-repeat;
+    background: url("/source/images/photo-skiier.jpg") 33% center no-repeat;
     background-size: cover;
+    border-right: 2px solid white;
     flex-grow: 1;
     flex-basis: 0; }
   section.process .content {
@@ -403,27 +462,49 @@ section.process {
     padding: 76px;
     gap: 18px; }
 
+@media (max-width: 950px) {
+  section.process .content {
+    padding: 29px; } }
+
+@media (max-width: 500px) {
+  section.process {
+    flex-direction: column; } }
+
 section.cta {
   display: flex;
   justify-content: center;
+  align-content: center;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
   padding-top: 76px;
   padding-bottom: 76px;
+  background: url(/source/images/vector-grid.svg);
+  background-attachment: fixed;
   text-align: center; }
   section.cta .container {
     padding: 47px 123px;
-    background: #120404; }
+    background: #120404;
+    border: 2px solid white; }
   section.cta .header {
-    margin-bottom: 11px; }
+    margin-bottom: 11px;
+    max-width: 14ch;
+    margin-left: auto;
+    margin-right: auto; }
   section.cta .subheader {
-    margin-bottom: 29px; }
-  section.cta .prices {
-    display: flex;
-    margin-top: 47px;
-    gap: 76px; }
-  section.cta .price {
-    display: flex;
-    flex-direction: column;
-    gap: 18px; }
+    margin-bottom: 29px;
+    max-width: 35ch;
+    margin-left: auto;
+    margin-right: auto; }
+
+@media (max-width: 800px) {
+  section.cta .header {
+    margin: null auto; }
+  section.cta .container {
+    padding: 47px 29px; }
+  section.cta .button {
+    font-size: 18px;
+    font-family: "Covik_Sans-Semibold";
+    padding: 11px 76px; } }
 
 .footer {
   text-align: center;

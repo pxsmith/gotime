@@ -74,81 +74,102 @@ $s7--523: 523px
 $s8--845: 845px
 $s9--1368: 1368px
 
-.fs1--29
-  font-size: $s1--29
-.fs2--47
-  font-size: $s2--47
-.fs3--76
-  font-size: $s3--76
-.fs4--47
-  font-size: $s2--47
-.fs5--76
-  font-size: $s3--76
-.fs6--123
-  font-size: $s4--123
 
-.text-contrast
-	color: white
-.text-default
-	color: rgba(white, 0.8)
-.text-subtle
-	color: rgba(white, 0.65)
+
+@mixin fs0--18
+  font-size: $s0--18
+@mixin fs1--29
+  font-size: $s1--29
+@mixin fs2--47
+  font-size: $s2--47
+@mixin fs3--76
+  font-size: $s3--76
+@mixin fs4--123
+  font-size: $s4--123
+@mixin fs5--200
+  font-size: $s5--200
+@mixin fs6--323
+  font-size: $s6--323
+
+
+
+
+
 
 
 
 // COVIK SANS
-.f-mono-800-black
+@mixin f-mono-800-black
   font-family: "Covik_Sans_Mono-Black"
-.f-mono-800-black-italic
+@mixin f-mono-800-black-italic
   font-family: "Covik_Sans_Mono-Black_Italic"
 
-.f-mono-700-bold
+@mixin f-mono-700-bold
   font-family: "Covik_Sans_Mono-Bold"
-.f-mono-700-bold-italic
+@mixin f-mono-700-bold-italic
   font-family: "Covik_Sans_Mono-Bold_Italic"
 
-.f-mono-600-semibold
+@mixin f-mono-600-semibold
   font-family: "Covik_Sans_Mono-Semibold_Italic"
-.f-mono-600-semibold-italic
+@mixin f-mono-600-semibold-italic
   font-family: "Covik_Sans_Mono-Semibold"
 
-.f-mono-500-medium
+@mixin f-mono-500-medium
   font-family: "Covik_Sans_Mono-Medium"
-.f-mono-500-medium-italic
+@mixin f-mono-500-medium-italic
   font-family: "Covik_Sans_Mono-Medium_Italic"
 
-.f-mono-400-regular
+@mixin f-mono-400-regular
   font-family: "Covik_Sans_Mono-Regular"
-.f-mono-400-regular-italic
+@mixin f-mono-400-regular-italic
   font-family: "Covik_Sans_Mono-Italic"
 
-
 // COVIK MONO
-.f-sans-800-black
+@mixin f-sans-800-black
   font-family: "Covik_Sans-Black"
-.f-sans-800-black-italic
+@mixin f-sans-800-black-italic
   font-family: "Covik_Sans-Black_Italic"
 
-.f-sans-700-bold
+@mixin f-sans-700-bold
   font-family: "Covik_Sans-Bold"
-.f-sans-700-bold-italic
+@mixin f-sans-700-bold-italic
   font-family: "Covik_Sans-Bold_Italic"
 
-.f-sans-600-semibold
+@mixin f-sans-600-semibold
   font-family: "Covik_Sans-Semibold"
-.f-sans-600-semibold--italic
+@mixin f-sans-600-semibold--italic
   font-family: "Covik_Sans-Semibold_Italic"
 
-.f-sans-500-medium
+@mixin f-sans-500-medium
   font-family: "Covik_Sans-Medium"
-.f-sans-500-medium-italic
+@mixin f-sans-500-medium-italic
   font-family: "Covik_Sans-Medium_Italic"
 
-.f-sans-400-regular
+@mixin f-sans-400-regular
   font-family: "Covik_Sans-Regular"
-.f-sans-400-regular-italic
+@mixin f-sans-400-regular-italic
   font-family: "Covik_Sans-Italic"
 
+@mixin text-contrast
+	color: white
+@mixin text-default
+	color: rgba(white, 0.8)
+@mixin text-subtle
+	color: rgba(white, 0.65)
+
+
+// BORDERS
+
+@mixin b
+  border: 2px solid white
+@mixin bt
+  border-top: 2px solid white
+@mixin br
+  border-right: 2px solid white
+@mixin bb
+  border-bottom: 2px solid white
+@mixin bl
+  border-left: 2px solid white
 
 
 
@@ -163,7 +184,7 @@ html, body > *
   box-sizing: border-box
 p
 	line-height: 1.7
-	@extend .text-default
+	@include text-default
 a, .link, .button
   cursor: pointer
 
@@ -174,21 +195,13 @@ u
   text-decoration: underline
   text-decoration-color: $accent
 
-
-// BORDERS
-
-.b
-  border: 2px solid white
-.bt
-  border-top: 2px solid white
-.br
-  border-right: 2px solid white
-.bb
-  border-bottom: 2px solid white
-.bl
-  border-left: 2px solid white
-
-
+.button
+  display: inline-block
+  padding: $s0--18 $s2--47
+  text-align: center
+  @include fs1--29
+  background: $accent
+  @include b
 
 
 
@@ -197,9 +210,9 @@ u
 
 .navbar
   height: $s3--76
-  @extend .bt
-  @extend .bb
-  @extend .fs1--29
+  @include bt
+  @include bb
+  @include fs1--29
   display: flex
   // position: sticky
   top: 0
@@ -215,12 +228,12 @@ u
   flex: 0 0 auto
   padding-left: $s0--18
   padding-right: $s0--18
-  @extend .br
+  @include br
   background: $dark
 
 .navbar .scroller
   flex: 1 1 auto
-  @extend .br
+  @include br
   overflow: hidden
   background: $dark
 
@@ -230,7 +243,7 @@ u
 
 .navbar .link
   flex: 0 0 auto
-  @extend .br
+  @include br
   padding-left: $s2--47
   padding-right: $s2--47
   background: $dark
@@ -243,9 +256,35 @@ u
 
 
 
+// NAVBAR MOBILE
+@media (max-width: 768px)
+	.navbar
+		height: $s2--47
+		@include fs0--18
+
+		.logo
+			padding: 0
+
+		.logo img
+			transform: scale(0.8)
+
+		.scroller img
+			opacity: 0.1
+
+		.link
+			display: none
+
+		.link, .cta
+			padding-left: $s0--18
+			padding-right: $s0--18
+
+		.cta
+			@include f-sans-600-semibold
+
+
+
 
 // HERO COPY
-
 .hero
 	padding-top: $s5--200
 	padding-bottom: $s5--200
@@ -263,38 +302,85 @@ u
 
 
 
-.button
-  display: inline-block
-  padding: $s0--18 $s2--47
-  text-align: center
-  @extend .fs1--29
-  background: $accent
-  @extend .b
 
 
 // HERO VISUALS
 // desktop view
 
-.hero
-  background: url(/source/images/vector-grid.svg) ($s8--845 - $s5--200 ) top no-repeat
 
 .hero .visuals
-  .photo-f1, .photo-sprinter, .photo-dirt-bikes
-    transform: scale(0.5, 0.5)
-    border: 4px solid white
-    position: absolute
+	background: url(/source/images/vector-grid.svg) ($s8--845 - $s5--200 ) top no-repeat
+	overflow-x: hidden
+	position: absolute
+	top: 0
+	left: 0
+	z-index: -1
+	height: 100vh
+	width: 100vw
 
-  .photo-f1
-    top: 300px
-    left: 800px
+	.photo-f1, .photo-sprinter, .photo-dirt-bikes
+		transform: scale(0.5, 0.5)
+		border: 4px solid white
+		position: absolute
 
-  .photo-sprinter
-    top: -100px
-    left: 700px
+	.photo-f1
+		top: $s6--323
+		left: $s7--523 + $s5--200
 
-  .photo-dirt-bikes
-    top: 0
-    left: 850px
+	.photo-sprinter
+		top: - $s4--123
+		left: $s7--523 + $s4--123
+
+	.photo-dirt-bikes
+		top: - $s1--29
+		left: $s8--845 - $s2--47
+
+
+
+// HERO TABLET & MOBILE
+@media (max-width: 768px)
+	.hero
+		padding-top: $s2--47
+		padding-bottom: $s4--123
+
+		.header
+			@include fs2--47
+			max-width: 10ch
+
+		.copy
+			padding-left: $s1--29
+			padding-right: $s1--29
+
+		.subheader
+			margin-top: $s0--18
+			margin-bottom: $s1--29
+			max-width: 24ch
+
+		.button
+			@include fs0--18
+			@include f-sans-600-semibold
+			padding: $s-1--11 $s0--18
+
+	// VISUALS TABLET
+	.hero .visuals
+		background: url(/source/images/vector-grid.svg) $s6--323 (- $s5--200) no-repeat
+		overflow-x: hidden
+		position: absolute
+		top: 0
+		left: 0
+		z-index: -1
+
+		.photo-f1
+			top: 150px
+			left: 100px
+
+		.photo-sprinter
+			top: -250px
+			left: 200px
+
+		.photo-dirt-bikes
+			top: -150px
+			left: 150px
 
 
 
@@ -303,19 +389,22 @@ u
 // SOCIAL PROOF
 .social-proof
 	padding-top: $s2--47
-	@extend .text-contrast
+	@include text-contrast
 
 	.header
-		@extend .f-mono-400-regular
+		@include f-mono-400-regular
 		text-transform: uppercase
 		letter-spacing: 0.08em
 		text-align: center
+
 	.logos
+		padding: null $s1--29
 		display: flex
 		justify-content: center
 		align-items: center
-		transform: scale(0.5, 0.5)
-		gap: $s4--123
+		gap: $s0--18 $s2--47
+		flex-wrap: wrap
+
 
 
 
@@ -324,19 +413,17 @@ u
 	display: flex
 	flex-direction: column
 	width: 1000px
+	max-width: 80vw
 	background: $dark
 
 	margin: 0 auto
 	margin-top: $s3--76
-	@extend .b
+	@include b
 	padding: $s2--47  $s3--76  $s3--76 $s3--76
 
 	h2.header
-		display: block
 		margin-bottom: $s1--29
 		text-align: center
-		@extend .f-sans-800-black
-		@extend .fs2--47
 
 	.steps
 		display: flex
@@ -348,14 +435,43 @@ u
 		flex-grow: 1
 		flex-basis: 0
 		gap: $s0--18
-		// background: orange
+
 	p
-		@extend .fs1--29
+		@include fs1--29
 		line-height: 1.2
 		text-align: center
 
 .how-it-works .divider
 	top: -130px
+
+// HOW IT WORKS TABLET
+@media (max-width: 1150px)
+	.how-it-works .content
+		margin-top: $s2--47
+		padding: $s1--29  $s2--47  $s2--47 $s2--47
+
+		h2.header
+			margin-bottom: $s0--18
+
+		.steps
+			gap: $s0--18
+
+		.step-1, .step-2, .step-3
+			gap: $s0--18
+		p
+			@include fs0--18
+
+@media (max-width: 560px)
+	.how-it-works
+		.steps
+			flex-direction: column
+
+	.how-it-works .content
+		max-width: 50vw
+
+	.how-it-works .divider
+		top: -470px
+
 
 
 
@@ -370,11 +486,12 @@ u
 
 
 
+
+
 .testimonials
 	display: flex
 	gap: $s3--76
-	margin-left: $s3--76
-	margin-right: $s3--76
+	margin: null $s3--76
 	align-content: stretch
 
 	.quote
@@ -382,19 +499,19 @@ u
 		flex-basis: 0
 
 	.quotation-mark
-		@extend .f-mono-400-regular
-		@extend .fs6--123
+		@include f-mono-400-regular
+		@include fs4--123
 		color: $accent
 
 	.quote-body
 		margin-top: - $s2--47
-		@extend .text-default
+		@include text-default
 
 	.portrait
 		width: $s3--76
 		height: $s3--76
 		border-radius: 100%
-		@extend .b
+		@include b
 
 	.person
 		margin-top: $s1--29
@@ -403,15 +520,29 @@ u
 		align-items: center
 
 	.name
-		@extend .f-sans-500-medium
-		@extend .text-contrast
+		@include f-sans-500-medium
+		@include text-contrast
 		font-size: 20px
+		line-height: 1.2
 	.job-title
-		@extend .text-subtle
-		line-height: 1
+		@include text-subtle
+		line-height: 1.2
+
+// TESTIMONIALS RESPONSIVE
+@media (max-width: 1150px)
+	.testimonials
+		flex-direction: column
+		margin: null $s1--29
+
+	.quotation-mark
+		margin-top: - $s2--47
+		height: 175px
 
 
-.bg-grid
+
+
+
+@mixin bg-grid
 	background: url(/source/images/vector-grid.svg)
 	background-attachment: fixed
 
@@ -420,26 +551,26 @@ section.pricing
 	display: flex
 	justify-content: center
 	margin-top: $s4--123
-	@extend .bt
-	@extend .bb
+	@include bt
+	@include bb
+
 	padding-top: $s3--76
 	padding-bottom: $s3--76
-	@extend .bg-grid
+	@include bg-grid
 
 	text-align: center
 
 	.container
-		@extend .b
+		@include b
 		padding: $s3--76
 		padding-top: $s2--47
 		background: $dark
 		max-width: 950px
 
-	h2.header
+	.header
 		text-align: center
-		line-height: 1.5
-		@extend .f-sans-800-black
-		@extend .fs2--47
+		margin-bottom: $s-2--7
+
 
 	.title
 		display: flex
@@ -460,26 +591,55 @@ section.pricing
 		align-items: flex-start
 		gap: $s0--18
 
-
 	hr
 		border: 2px solid rgba(white, 0.2)
 
+@media (max-width: 800px)
+	section.pricing
+		.prices
+			flex-direction: column
+			gap: $s2--47
 
+		hr
+			display: none
+
+		.container
+			padding: $s1--29
+
+
+
+
+
+// TYPOGRAPHY
 
 h1
-	@extend .fs3--76
+	@include fs3--76
 	letter-spacing: -0.02em
 	line-height: 1
 
+@media (max-width: 768px)
+	h1
+		@include fs2--47
+
+
 h2
-	@extend .fs2--47
-	@extend .f-sans-800-black
+	@include fs2--47
+	@include f-sans-800-black
 	line-height: 1.2
 
-h3
-	@extend .fs1--29
-	@extend .f-sans-700-bold
+@media (max-width: 768px)
+	h2
+		@include fs1--29
 
+
+h3
+	@include fs1--29
+	@include f-sans-700-bold
+
+@media (max-width: 768px)
+	h3
+		@include f-sans-400-regular
+		@include text-contrast
 
 
 
@@ -488,48 +648,68 @@ h3
 
 .services
 	display: flex
-	@extend .bb
+	@include bb
 
 	.header
 		display: flex
 		align-items: center
 
 		padding: $s3--76
-		@extend .br
+		@include br
 
 	.list
 		display: flex
-		padding: $s2--47 $s3--76
+		padding: $s2--47 $s1--29
 		justify-content: space-evenly
 		flex: 1 1 auto
 		gap: $s0--18
 
 
 		p:not(.title)
-			@extend .text-subtle
+			@include text-subtle
 
 	.col .title
-		@extend .f-sans-800-black
+		@include f-sans-800-black
+		@include text-contrast
 
 	.col
 		display: flex
 		flex-direction: column
 		gap: $s-1--11
 
+// SERVICES RESPONSIVE
+@media (max-width: 900px)
+	.services
+		.header
+			padding: $s1--29
+		.list
+			padding: $s1--29 $s2--47
+			flex-wrap: wrap
+			justify-content: flex-start
+@media (max-width: 647px)
+	.services
+		.header
+			flex: 1 1 auto
+			justify-content: flex-start
+			flex-direction: column
+		.list
+			flex-direction: column
+
+
+
 
 
 // PROCESS
+
 section.process
 	display: flex
-	// align-items: stretch
 	justify-content: space-evenly
-	// align-content: stretch
-	@extend .bt
+	@include bt
 
 	.photo
-		background: url('/source/images/photo-skiier.jpg') center center no-repeat
+		background: url('/source/images/photo-skiier.jpg') 33% center no-repeat
 		background-size: cover
-		@extend .br
+		@include br
 		flex-grow: 1
 		flex-basis: 0
 	.content
@@ -539,44 +719,60 @@ section.process
 		flex-basis: 0
 		padding: $s3--76
 		gap: $s0--18
-		// .title
-			// margin-bottom: $s0--18
 
+// RESPONSIVE
+@media (max-width: 950px)
+	section.process
+		.content
+			padding: $s1--29
+@media (max-width: 500px)
+	section.process
+		flex-direction: column
 
 
 // CTA
 section.cta
 	display: flex
 	justify-content: center
-	@extend .bt
-	@extend .bb
+	align-content: center
+	@include bt
+	@include bb
 	padding-top: $s3--76
 	padding-bottom: $s3--76
-	@extend .bg-grid
+	@include bg-grid
 
 	text-align: center
 
 	.container
-		@extend .b
 		padding: $s2--47 $s4--123
 		background: $dark
+		@include b
 
 	.header
 		margin-bottom: $s-1--11
+		max-width: 14ch
+		margin-left: auto
+		margin-right: auto
 
 	.subheader
 		margin-bottom: $s1--29
+		max-width: 35ch
+		margin-left: auto
+		margin-right: auto
 
-	.prices
-		display: flex
-		margin-top: $s2--47
-		gap: $s3--76
 
-	.price
-		display: flex
-		flex-direction: column
-		gap: $s0--18
 
+@media (max-width: 800px)
+	section.cta
+		.header
+			// background: salmon
+			margin: null auto
+		.container
+			padding: $s2--47 $s1--29
+		.button
+			@include fs0--18
+			@include f-sans-600-semibold
+			padding: $s-1--11 $s3--76
 
 
 .footer
