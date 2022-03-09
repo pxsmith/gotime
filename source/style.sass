@@ -509,6 +509,7 @@ u
 		@include f-mono-400-regular
 		@include fs4--123
 		color: $accent
+		height: 175px
 
 	.quote-body
 		margin-top: - $s2--47
@@ -538,12 +539,19 @@ u
 // TESTIMONIALS RESPONSIVE
 @media (max-width: 1150px)
 	.testimonials
+		margin-left: $s1--29
+		margin-right: $s1--29
+
+@media (max-width: 1150px)
+	.testimonials
 		flex-direction: column
-		margin: null $s1--29
 
 	.quotation-mark
 		margin-top: - $s2--47
-		height: 175px
+
+	.quote
+		max-width: 60ch
+		@include margin-auto
 
 
 
@@ -611,6 +619,7 @@ section.pricing
 			display: none
 
 		.container
+			max-width: 75vw
 			padding: $s1--29
 
 

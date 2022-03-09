@@ -302,7 +302,8 @@ u {
   .testimonials .quotation-mark {
     font-family: "Covik_Sans_Mono-Regular";
     font-size: 123px;
-    color: #DC2626; }
+    color: #DC2626;
+    height: 175px; }
   .testimonials .quote-body {
     margin-top: -47px;
     color: rgba(255, 255, 255, 0.8); }
@@ -327,11 +328,18 @@ u {
 
 @media (max-width: 1150px) {
   .testimonials {
-    flex-direction: column;
-    margin: 29px; }
+    margin-left: 29px;
+    margin-right: 29px; } }
+
+@media (max-width: 1150px) {
+  .testimonials {
+    flex-direction: column; }
   .quotation-mark {
-    margin-top: -47px;
-    height: 175px; } }
+    margin-top: -47px; }
+  .quote {
+    max-width: 60ch;
+    margin-left: auto;
+    margin-right: auto; } }
 
 section.pricing {
   display: flex;
@@ -377,6 +385,7 @@ section.pricing {
   section.pricing hr {
     display: none; }
   section.pricing .container {
+    max-width: 75vw;
     padding: 29px; } }
 
 h1 {
