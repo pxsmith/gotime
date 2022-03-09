@@ -355,6 +355,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/source\/images\/photo-kirsten.jpg" : {
+      "ft" : 16384,
+      "iS" : 35662,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/source\/images\/photo-kirsten.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/source\/images\/photo-kyler.jpeg" : {
       "ft" : 16384,
       "iS" : 23705,
