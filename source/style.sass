@@ -55,9 +55,15 @@ a
   clear: both
   display: table
 
+@mixin margin-auto
+	margin-left: auto
+	margin-right: auto
+
+
 
 
 // THEME
+
 $dark: #120404
 $accent: #DC2626
 
@@ -416,7 +422,7 @@ u
 	max-width: 80vw
 	background: $dark
 
-	margin: 0 auto
+	@include margin-auto
 	margin-top: $s3--76
 	@include b
 	padding: $s2--47  $s3--76  $s3--76 $s3--76
@@ -491,7 +497,8 @@ u
 .testimonials
 	display: flex
 	gap: $s3--76
-	margin: null $s3--76
+	margin: $s3--76
+	margin-top: 0
 	align-content: stretch
 
 	.quote
@@ -751,14 +758,12 @@ section.cta
 	.header
 		margin-bottom: $s-1--11
 		max-width: 14ch
-		margin-left: auto
-		margin-right: auto
+		@include margin-auto
 
 	.subheader
 		margin-bottom: $s1--29
 		max-width: 35ch
-		margin-left: auto
-		margin-right: auto
+		@include margin-auto
 
 
 
