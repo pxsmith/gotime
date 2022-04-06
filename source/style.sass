@@ -198,8 +198,9 @@ a, .link, .button
   background-color: $accent
 
 u
-  text-decoration: underline
-  text-decoration-color: $accent
+	text-decoration: underline
+	text-decoration-color: $accent
+	text-decoration-thickness: 0.05em
 
 .button
   display: inline-block
@@ -446,6 +447,11 @@ u
 		@include fs1--29
 		line-height: 1.2
 		text-align: center
+
+	img
+		max-width: 48px
+		max-height: 48px
+		margin: 0 auto
 
 .how-it-works .divider
 	top: -210px

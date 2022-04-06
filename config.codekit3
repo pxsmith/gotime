@@ -965,6 +965,14 @@
       "oA" : 0,
       "oAP" : "\/source\/webfonts\/Covik_Sans-Semibold.woff2",
       "oF" : 0
+    },
+    "\/work.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/work.html",
+      "oF" : 0
     }
   },
   "hooks" : [
