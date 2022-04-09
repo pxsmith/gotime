@@ -59,6 +59,8 @@ a
 	margin-left: auto
 	margin-right: auto
 
+.page-wrapper
+	overflow-x: hidden
 
 
 
@@ -200,7 +202,8 @@ a, .link, .button
 u
 	text-decoration: underline
 	text-decoration-color: $accent
-	text-decoration-thickness: 0.05em
+h1 u
+	text-decoration-thickness: 0.06em
 
 .button
   display: inline-block
@@ -289,10 +292,26 @@ u
 			@include f-sans-600-semibold
 
 
+@mixin bg-grid
+	background: url(/source/images/vector-grid.svg)
+	background-attachment: fixed
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // HERO COPY
-.hero
+.homepage .hero
 	padding-top: $s5--200
 	padding-bottom: $s5--200
 
@@ -315,7 +334,7 @@ u
 // desktop view
 
 
-.hero .visuals
+.homepage .hero .visuals
 	background: url(/source/images/vector-grid.svg) ($s8--845 - $s5--200 ) top no-repeat
 	overflow-x: hidden
 	position: absolute
@@ -346,9 +365,9 @@ u
 
 // HERO TABLET & MOBILE
 @media (max-width: 768px)
-	.hero
+	.homepage .hero
 		padding-top: $s2--47
-		padding-bottom: $s4--123
+		// padding-bottom: $s4--123
 
 		.header
 			@include fs2--47
@@ -369,7 +388,7 @@ u
 			padding: $s-1--11 $s0--18
 
 	// VISUALS TABLET
-	.hero .visuals
+	.homepage .hero .visuals
 		background: url(/source/images/vector-grid.svg) $s6--323 (- $s5--200) no-repeat
 		overflow-x: hidden
 		position: absolute
@@ -394,7 +413,7 @@ u
 
 
 // SOCIAL PROOF
-.social-proof
+.homepage .social-proof
 	padding-top: $s2--47
 	@include text-contrast
 
@@ -488,7 +507,7 @@ u
 
 
 // DIVIDER
-.divider
+.homepage .divider
   position: relative
   z-index: -1
   overflow: hidden
@@ -496,11 +515,14 @@ u
     position: relative
     left: -50px
 
+.divider-services
+	padding-top: $s-1--11
+	padding-bottom: $s-1--11
 
 
 
 
-.testimonials
+.homepage .testimonials
 	display: flex
 	gap: $s3--76
 	margin: $s3--76
@@ -544,18 +566,18 @@ u
 
 // TESTIMONIALS RESPONSIVE
 @media (max-width: 1150px)
-	.testimonials
+	.homepage .testimonials
 		margin-left: $s1--29
 		margin-right: $s1--29
 
 @media (max-width: 1150px)
-	.testimonials
+	.homepage .testimonials
 		flex-direction: column
 
-	.quotation-mark
+	.homepage .quotation-mark
 		margin-top: - $s2--47
 
-	.quote
+	.homepage .quote
 		max-width: 60ch
 		@include margin-auto
 
@@ -563,9 +585,6 @@ u
 
 
 
-@mixin bg-grid
-	background: url(/source/images/vector-grid.svg)
-	background-attachment: fixed
 
 // PRICING
 section.pricing
@@ -662,6 +681,25 @@ h3
 	h3
 		@include f-sans-400-regular
 		@include text-contrast
+
+
+h4
+	@include f-mono-500-medium
+	@include text-default
+	letter-spacing: 0.05em
+	text-transform: uppercase
+
+h5
+	@include f-mono-700-bold
+	letter-spacing: 0.05em
+	text-transform: uppercase
+	@include text-subtle
+
+p
+	@include f-sans-400-regular
+	@include text-default
+	line-height: 1.7
+
 
 
 
@@ -790,7 +828,6 @@ section.cta
 @media (max-width: 800px)
 	section.cta
 		.header
-			// background: salmon
 			margin: null auto
 		.container
 			padding: $s2--47 $s1--29
@@ -801,42 +838,163 @@ section.cta
 
 
 .footer
-	text-align: center
-	padding: $s0--18
+	display: flex
+	padding: 32px
+	padding-left: $s1--29
+	padding-right: $s4--123
+	@include f-mono-400-regular
+	align-items: center
+	justify-content: space-between
+	.social
+		display: flex
+		gap: $s1--29
 
 
-// TOOLTIP
-// source: https://chrisbracco.com/a-simple-css-tooltip/
-/* Add this attribute to the element that needs a tooltip
-[data-tooltip]
-  position: relative
-  z-index: 2
-  cursor: pointer
 
-  &:before, &:after
-    visibility: hidden
-    opacity: 0
-    pointer-events: none
 
-  &:before
-    position: absolute
-    bottom: 20%
-    left: 60%
-    margin-bottom: 5px
-    margin-left: -80px
-    padding: 7px
-    background-color: $accent
-    color: $dark
-    content: attr(data-tooltip)
-    font-family: "Covik_Sans_Mono-Black"
-    text-transform: uppercase
-    text-align: center
-    font-size: $s0--18
-    line-height: 1
+// COMPONENT HERO LIST
+.hero-list
+	h4
+		margin-bottom: $s0--18
 
-  &:hover
-    &:before, &:after
-      visibility: visible
-      opacity: 1
+	> *
+		display: flex
+		align-items: center
+		gap: $s-2--7
+		flex-basis: 0
+	h5
+		flex-basis: 65px
+		text-align: right
+	p
+		@include f-mono-400-regular
+		@include text-contrast
+		line-height: 1
 
-// TK animate the arrows https://ricardometring.com/infinite-animation-in-css
+	.border
+		height: $s0--18
+		width: $s-1--11
+		border-right: 2px solid white
+
+
+.hero-list.wilbur
+	.border
+		width: 83px
+
+	-webkit-mask-image: linear-gradient(black 50%, transparent)
+	mask-image: linear-gradient(black 50%, transparent)
+
+.hero-list.risk
+	-webkit-mask-image: linear-gradient(black 70%, transparent)
+	mask-image: linear-gradient(black 70%, transparent)
+
+
+
+
+// WORK IMPACT
+// HERO
+.work-impact
+	section.hero
+		padding-top: $s4--123
+		padding-left: $s3--76
+		background: url(/source/images/work-impact-hero-bg.png) no-repeat top 50px left 450px
+		max-width: 1380px
+		max-height: 650px
+		margin: 0 auto
+
+	.hero-mockup
+		position: relative
+		top: -500px
+		left: 650px
+
+	h1
+		max-width: 12ch
+		margin-bottom: 0.3em
+
+	p
+		max-width: 53ch
+
+	.hero-list
+		margin-top: $s2--47
+
+@media (max-width: 900px)
+	.work-impact
+		.hero-mockup
+			top: 0
+			left: 0
+			max-width: 100vw
+
+		.hero-mockup img
+			@include margin-auto
+			max-width: 100%
+			padding-top: $s1--29
+
+		section.hero
+			max-height: none
+			padding-top: $s2--47
+			padding-left: $s2--47
+			padding-right: $s2--47
+			background: url(/source/images/work-impact-hero-bg.png) no-repeat top -100px left 400px
+
+@media (max-width: 400px)
+	.work-impact
+		section.hero
+			padding-top: $s0--18
+			padding-left: $s0--18
+			padding-right: $s0--18
+
+// WORK SECTIONS
+.work-impact
+	section.content
+		margin-bottom: $s3--76
+
+		.header
+			margin-top: $s3--76
+			margin-bottom: $s2--47
+
+		h3
+			margin-bottom: $s-1--11
+
+		p, h3
+			@include margin-auto
+			text-align: center
+			padding-left: $s0--18
+			padding-right: $s0--18
+
+		p
+			max-width: 40ch
+
+		.images
+			display: flex
+			justify-content: center
+			gap: $s2--47
+
+
+.prototype-cover
+	width: 100%
+	height: 50px
+	background: $dark
+	position: relative
+	margin-top: -50px
+
+
+
+// ANIMATION
+.scroller-animate
+	animation: scroll 8s linear infinite
+
+@keyframes scroll
+	to
+		transform: translateX(100px)
+
+
+
+
+
+
+
+
+
+
+
+
+// fin

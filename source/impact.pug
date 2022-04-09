@@ -1,0 +1,46 @@
+head
+  include components/head.pug
+
+body.work-impact 
+  .page-wrapper
+    include components/nav.pug
+    
+    section.hero
+      h1 <u>Stay fit</u> with just a few taps
+      p You’re supposed to feel the pain AT the gym, not on your gym’s app! This whitelabel app is available for any gym to match their own branding. Gym members easily learn about classes and book.
+
+      .hero-list.impact
+        h4 Deliverables
+        .item
+          img(src='source/images/icon-check-circle.svg')
+          p Visual design
+        .border
+        .item
+          img(src='source/images/icon-check-circle.svg')
+          p Mobile designs
+        .border
+        .item
+          img(src='source/images/icon-check-circle.svg')
+          p Interactive prototype
+        .hero-mockup
+          img(src='source/images/work-impact-hero.png' srcset='source/images/work-impact-hero@2x.png 2x' draggable='false')
+
+    
+    section.content
+      .header
+        h3 Learn more about new classes
+        p You might know exactly what you want. But maybe it’s time to try something new. Either way it’s not intimidating and easy to get started.
+      .images
+        img(src='source/images/work-impact-bjj.png' srcset='source/images/work-impact-bjj@2x.png 2x' draggable='false')
+        img(src='source/images/work-impact-calendar.png' srcset='source/images/work-impact-calendar@2x.png 2x' draggable='false')
+        img(src='source/images/work-impact-cardio.png' srcset='source/images/work-impact-cardio@2x.png 2x' draggable='false')
+
+    section.content
+      h3 Try it for yourself
+      p This prototype is tappable. Tap the load screen to get started. Then tap the calendar icons on the bottom. Tap the “What is…” card. Tap the “Cardio Smash” tab.
+      iframe(style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="100%" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FWYzdrw1phkR782M5UJs4Iq%2FGT---Impact-gym-app%3Fpage-id%3D0%253A1%26node-id%3D2%253A2%26viewport%3D320%252C48%252C0.61%26scaling%3Dscale-down%26starting-point-node-id%3D2%253A2" allowfullscreen)
+
+      .prototype-cover
+
+    include components/cta.pug
+    include components/footer.pug

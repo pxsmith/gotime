@@ -53,6 +53,9 @@ a {
   clear: both;
   display: table; }
 
+.page-wrapper {
+  overflow-x: hidden; }
+
 html {
   background: #120404;
   color: white;
@@ -74,8 +77,10 @@ a, .link, .button {
 
 u {
   text-decoration: underline;
-  text-decoration-color: #DC2626;
-  text-decoration-thickness: 0.05em; }
+  text-decoration-color: #DC2626; }
+
+h1 u {
+  text-decoration-thickness: 0.06em; }
 
 .button {
   display: inline-block;
@@ -145,19 +150,19 @@ u {
     .navbar .cta {
       font-family: "Covik_Sans-Semibold"; } }
 
-.hero {
+.homepage .hero {
   padding-top: 200px;
   padding-bottom: 200px; }
-  .hero .copy {
+  .homepage .hero .copy {
     padding-left: 76px; }
-  .hero .header {
+  .homepage .hero .header {
     max-width: 15ch; }
-  .hero .subheader {
+  .homepage .hero .subheader {
     margin-top: 18px;
     margin-bottom: 47px;
     max-width: 60ch; }
 
-.hero .visuals {
+.homepage .hero .visuals {
   background: url(/source/images/vector-grid.svg) 645px top no-repeat;
   overflow-x: hidden;
   position: absolute;
@@ -166,64 +171,63 @@ u {
   z-index: -1;
   height: 100vh;
   width: 100vw; }
-  .hero .visuals .photo-f1, .hero .visuals .photo-sprinter, .hero .visuals .photo-dirt-bikes {
+  .homepage .hero .visuals .photo-f1, .homepage .hero .visuals .photo-sprinter, .homepage .hero .visuals .photo-dirt-bikes {
     transform: scale(0.5, 0.5);
     border: 4px solid white;
     position: absolute; }
-  .hero .visuals .photo-f1 {
+  .homepage .hero .visuals .photo-f1 {
     top: 323px;
     left: 723px; }
-  .hero .visuals .photo-sprinter {
+  .homepage .hero .visuals .photo-sprinter {
     top: -123px;
     left: 646px; }
-  .hero .visuals .photo-dirt-bikes {
+  .homepage .hero .visuals .photo-dirt-bikes {
     top: -29px;
     left: 798px; }
 
 @media (max-width: 768px) {
-  .hero {
-    padding-top: 47px;
-    padding-bottom: 123px; }
-    .hero .header {
+  .homepage .hero {
+    padding-top: 47px; }
+    .homepage .hero .header {
       font-size: 47px;
       max-width: 10ch; }
-    .hero .copy {
+    .homepage .hero .copy {
       padding-left: 29px;
       padding-right: 29px; }
-    .hero .subheader {
+    .homepage .hero .subheader {
       margin-top: 18px;
       margin-bottom: 29px;
       max-width: 24ch; }
-    .hero .button {
+    .homepage .hero .button {
       font-size: 18px;
       font-family: "Covik_Sans-Semibold";
       padding: 11px 18px; }
-  .hero .visuals {
+  .homepage .hero .visuals {
     background: url(/source/images/vector-grid.svg) 323px -200px no-repeat;
     overflow-x: hidden;
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1; }
-    .hero .visuals .photo-f1 {
+    .homepage .hero .visuals .photo-f1 {
       top: 150px;
       left: 100px; }
-    .hero .visuals .photo-sprinter {
+    .homepage .hero .visuals .photo-sprinter {
       top: -250px;
       left: 200px; }
-    .hero .visuals .photo-dirt-bikes {
+    .homepage .hero .visuals .photo-dirt-bikes {
       top: -150px;
       left: 150px; } }
 
-.social-proof {
+.homepage .social-proof {
   padding-top: 47px;
   color: white; }
-  .social-proof .header {
+  .homepage .social-proof .header {
     font-family: "Covik_Sans_Mono-Regular";
     text-transform: uppercase;
     letter-spacing: 0.08em;
     text-align: center; }
-  .social-proof .logos {
+  .homepage .social-proof .logos {
     padding: 29px;
     display: flex;
     justify-content: center;
@@ -287,61 +291,65 @@ u {
   .how-it-works .divider {
     top: -470px; } }
 
-.divider {
+.homepage .divider {
   position: relative;
   z-index: -1;
   overflow: hidden; }
-  .divider img {
+  .homepage .divider img {
     position: relative;
     left: -50px; }
 
-.testimonials {
+.divider-services {
+  padding-top: 11px;
+  padding-bottom: 11px; }
+
+.homepage .testimonials {
   display: flex;
   gap: 76px;
   margin: 76px;
   margin-top: 0;
   align-content: stretch; }
-  .testimonials .quote {
+  .homepage .testimonials .quote {
     flex-grow: 1;
     flex-basis: 0; }
-  .testimonials .quotation-mark {
+  .homepage .testimonials .quotation-mark {
     font-family: "Covik_Sans_Mono-Regular";
     font-size: 123px;
     color: #DC2626;
     height: 175px; }
-  .testimonials .quote-body {
+  .homepage .testimonials .quote-body {
     margin-top: -47px;
     color: rgba(255, 255, 255, 0.8); }
-  .testimonials .portrait {
+  .homepage .testimonials .portrait {
     width: 76px;
     height: 76px;
     border-radius: 100%;
     border: 2px solid white; }
-  .testimonials .person {
+  .homepage .testimonials .person {
     margin-top: 29px;
     display: flex;
     gap: 18px;
     align-items: center; }
-  .testimonials .name {
+  .homepage .testimonials .name {
     font-family: "Covik_Sans-Medium";
     color: white;
     font-size: 20px;
     line-height: 1.2; }
-  .testimonials .job-title {
+  .homepage .testimonials .job-title {
     color: rgba(255, 255, 255, 0.65);
     line-height: 1.2; }
 
 @media (max-width: 1150px) {
-  .testimonials {
+  .homepage .testimonials {
     margin-left: 29px;
     margin-right: 29px; } }
 
 @media (max-width: 1150px) {
-  .testimonials {
+  .homepage .testimonials {
     flex-direction: column; }
-  .quotation-mark {
+  .homepage .quotation-mark {
     margin-top: -47px; }
-  .quote {
+  .homepage .quote {
     max-width: 60ch;
     margin-left: auto;
     margin-right: auto; } }
@@ -419,6 +427,23 @@ h3 {
   h3 {
     font-family: "Covik_Sans-Regular";
     color: white; } }
+
+h4 {
+  font-family: "Covik_Sans_Mono-Medium";
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 0.05em;
+  text-transform: uppercase; }
+
+h5 {
+  font-family: "Covik_Sans_Mono-Bold";
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.65); }
+
+p {
+  font-family: "Covik_Sans-Regular";
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.7; }
 
 .services {
   display: flex;
@@ -527,33 +552,126 @@ section.cta {
     padding: 11px 76px; } }
 
 .footer {
-  text-align: center;
-  padding: 18px; }
+  display: flex;
+  padding: 32px;
+  padding-left: 29px;
+  padding-right: 123px;
+  font-family: "Covik_Sans_Mono-Regular";
+  align-items: center;
+  justify-content: space-between; }
+  .footer .social {
+    display: flex;
+    gap: 29px; }
 
-/* Add this attribute to the element that needs a tooltip */
-[data-tooltip] {
+.hero-list h4 {
+  margin-bottom: 18px; }
+
+.hero-list > * {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  flex-basis: 0; }
+
+.hero-list h5 {
+  flex-basis: 65px;
+  text-align: right; }
+
+.hero-list p {
+  font-family: "Covik_Sans_Mono-Regular";
+  color: white;
+  line-height: 1; }
+
+.hero-list .border {
+  height: 18px;
+  width: 11px;
+  border-right: 2px solid white; }
+
+.hero-list.wilbur {
+  -webkit-mask-image: linear-gradient(black 50%, transparent);
+  mask-image: linear-gradient(black 50%, transparent); }
+  .hero-list.wilbur .border {
+    width: 83px; }
+
+.hero-list.risk {
+  -webkit-mask-image: linear-gradient(black 70%, transparent);
+  mask-image: linear-gradient(black 70%, transparent); }
+
+.work-impact section.hero {
+  padding-top: 123px;
+  padding-left: 76px;
+  background: url(/source/images/work-impact-hero-bg.png) no-repeat top 50px left 450px;
+  max-width: 1380px;
+  max-height: 650px;
+  margin: 0 auto; }
+
+.work-impact .hero-mockup {
   position: relative;
-  z-index: 2;
-  cursor: pointer; }
-  [data-tooltip]:before, [data-tooltip]:after {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none; }
-  [data-tooltip]:before {
-    position: absolute;
-    bottom: 20%;
-    left: 60%;
-    margin-bottom: 5px;
-    margin-left: -80px;
-    padding: 7px;
-    background-color: #DC2626;
-    color: #120404;
-    content: attr(data-tooltip);
-    font-family: "Covik_Sans_Mono-Black";
-    text-transform: uppercase;
+  top: -500px;
+  left: 650px; }
+
+.work-impact h1 {
+  max-width: 12ch;
+  margin-bottom: 0.3em; }
+
+.work-impact p {
+  max-width: 53ch; }
+
+.work-impact .hero-list {
+  margin-top: 47px; }
+
+@media (max-width: 900px) {
+  .work-impact .hero-mockup {
+    top: 0;
+    left: 0;
+    max-width: 100vw; }
+  .work-impact .hero-mockup img {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    padding-top: 29px; }
+  .work-impact section.hero {
+    max-height: none;
+    padding-top: 47px;
+    padding-left: 47px;
+    padding-right: 47px;
+    background: url(/source/images/work-impact-hero-bg.png) no-repeat top -100px left 400px; } }
+
+@media (max-width: 400px) {
+  .work-impact section.hero {
+    padding-top: 18px;
+    padding-left: 18px;
+    padding-right: 18px; } }
+
+.work-impact section.content {
+  margin-bottom: 76px; }
+  .work-impact section.content .header {
+    margin-top: 76px;
+    margin-bottom: 47px; }
+  .work-impact section.content h3 {
+    margin-bottom: 11px; }
+  .work-impact section.content p, .work-impact section.content h3 {
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    font-size: 18px;
-    line-height: 1; }
-  [data-tooltip]:hover:before, [data-tooltip]:hover:after {
-    visibility: visible;
-    opacity: 1; }
+    padding-left: 18px;
+    padding-right: 18px; }
+  .work-impact section.content p {
+    max-width: 40ch; }
+  .work-impact section.content .images {
+    display: flex;
+    justify-content: center;
+    gap: 47px; }
+
+.prototype-cover {
+  width: 100%;
+  height: 50px;
+  background: #120404;
+  position: relative;
+  margin-top: -50px; }
+
+.scroller-animate {
+  animation: scroll 8s linear infinite; }
+
+@keyframes scroll {
+  to {
+    transform: translateX(100px); } }
