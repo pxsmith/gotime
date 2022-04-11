@@ -54,7 +54,7 @@ a {
   display: table; }
 
 .page-wrapper {
-  overflow-x: hidden; }
+  overflow-x: hidden !important; }
 
 html {
   background: #120404;
@@ -147,7 +147,7 @@ h1 u {
       font-family: "Covik_Sans-Semibold"; } }
 
 .homepage .hero {
-  padding-top: 200px;
+  padding-top: 123px;
   padding-bottom: 200px; }
   .homepage .hero .copy {
     padding-left: 76px; }
@@ -200,11 +200,11 @@ h1 u {
       padding: 11px 18px; }
   .homepage .hero .visuals {
     background: url(/source/images/vector-grid.svg) 323px -200px no-repeat;
-    overflow-x: hidden;
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1; }
+    z-index: -1;
+    min-height: 700px; }
     .homepage .hero .visuals .photo-f1 {
       top: 150px;
       left: 100px; }
@@ -234,49 +234,73 @@ h1 u {
     flex-wrap: wrap; }
 
 .homepage .recent-work {
-  background: salmon;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   flex-wrap: wrap;
-  flex-grow: 0; }
+  flex-grow: 1;
+  align-items: stretch;
+  background: #120404;
+  margin-top: 76px; }
   .homepage .recent-work .header {
     box-sizing: border-box;
-    padding: 18px;
+    padding: 29px;
     display: flex;
     gap: 11px;
     flex-direction: column;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    width: 100%; }
+    .homepage .recent-work .header h3, .homepage .recent-work .header p {
+      width: 100%; }
   .homepage .recent-work .thumbnail {
     max-width: 100%;
     flex-grow: 0;
-    background: red; }
-  .homepage .recent-work .thumbnail img {
-    width: 100%; }
+    width: 450px; }
 
-@media (max-width: 450px) {
-  .homepage .recent-work .thumbnail, .homepage .recent-work .header {
-    width: 450px; } }
+.homepage .recent-work-background {
+  background: url(/source/images/vector-grid-short.svg) no-repeat right;
+  width: 100%;
+  height: 241px;
+  overflow: visible;
+  position: relative;
+  margin-top: -200px;
+  z-index: -1; }
+
+@media (max-width: 768px) {
+  .homepage section.recent-work {
+    margin-top: 0; } }
 
 @media (min-width: 450px) {
   .homepage .recent-work {
     border: 2px solid white;
     max-width: 450px; }
-    .homepage .recent-work .thumbnail, .homepage .recent-work .header {
+    .homepage .recent-work .header {
+      width: 100%; }
+    .homepage .recent-work .thumbnail {
       width: 350px; } }
 
 @media (min-width: 700px) {
   .homepage .recent-work {
-    max-width: 700px; } }
+    max-width: 700px; }
+    .homepage .recent-work .thumbnail-img {
+      width: 100%; }
+    .homepage .recent-work .header {
+      width: 350px; } }
 
 @media (min-width: 1000px) {
   .homepage .recent-work {
     max-width: 900px; }
-  .homepage .thumbnail, .homepage .header {
-    width: 450px; }
-  .homepage .thumbnail img {
-    width: 100%; } }
+    .homepage .recent-work .thumbnail, .homepage .recent-work .header {
+      width: 450px; } }
+
+@media (min-width: 1300px) {
+  .homepage .recent-work {
+    max-width: 1300px; }
+    .homepage .recent-work .header {
+      width: 250px; }
+    .homepage .recent-work .thumbnail {
+      width: 350px; } }
 
 .how-it-works .content {
   display: flex;
@@ -291,7 +315,9 @@ h1 u {
   padding: 47px 76px 76px 76px; }
   .how-it-works .content h2.header {
     margin-bottom: 29px;
-    text-align: center; }
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto; }
   .how-it-works .content .steps {
     display: flex;
     gap: 29px; }

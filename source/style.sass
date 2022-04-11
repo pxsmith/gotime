@@ -60,7 +60,7 @@ a
 	margin-right: auto
 
 .page-wrapper
-	overflow-x: hidden
+	overflow-x: hidden !important
 
 
 
@@ -309,7 +309,7 @@ h1 u
 
 // HERO COPY
 .homepage .hero
-	padding-top: $s5--200
+	padding-top: $s4--123
 	padding-bottom: $s5--200
 
 	.copy
@@ -339,6 +339,7 @@ h1 u
 	left: 0
 	z-index: -1
 	height: 100vh
+	// min-height: 700px
 	width: 100vw
 
 	.photo-f1, .photo-sprinter, .photo-dirt-bikes
@@ -387,11 +388,11 @@ h1 u
 	// VISUALS TABLET
 	.homepage .hero .visuals
 		background: url(/source/images/vector-grid.svg) $s6--323 (- $s5--200) no-repeat
-		overflow-x: hidden
 		position: absolute
 		top: 0
 		left: 0
 		z-index: -1
+		min-height: 700px
 
 		.photo-f1
 			top: 150px
@@ -434,69 +435,86 @@ h1 u
 
 
 .homepage .recent-work
-	background: salmon
 	@include margin-auto
 	display: flex
 	flex-wrap: wrap
-	flex-grow: 0
+	flex-grow: 1
+	align-items: stretch
+	background: $dark
+	margin-top: $s3--76
 
 	.header
 		box-sizing: border-box
-		padding: $s0--18
+		padding: $s1--29
 		display: flex
 		gap: $s-1--11
 		flex-direction: column
 
 		align-items: center
 		justify-content: center
+		width: 100%
+
+		h3, p
+			width: 100%
 
 	.thumbnail
 		max-width: 100%
 		flex-grow: 0
-		// width: 350px
-		background: red
-		// display: flex
+		width: 450px
 
-	.thumbnail img
-		width: 100%
-		// display: flex
-	// 	flex-grow: 1
+.homepage .recent-work-background
+	background: url(/source/images/vector-grid-short.svg) no-repeat right
+	width: 100%
+	height: 241px
+	overflow: visible
+	position: relative
+	margin-top: -200px
+	z-index: -1
 
-
-
-// NOT WORKING
-@media (max-width: 450px)
-	.homepage .recent-work
-		.thumbnail, .header
-			width: 450px
+@media (max-width: 768px)
+	.homepage section.recent-work
+		margin-top: 0
 
 @media (min-width: 450px)
 	.homepage .recent-work
 		@include b
 		max-width: 450px
 
-		.thumbnail, .header
+		.header
+			width: 100%
+
+		.thumbnail
 			width: 350px
 
 @media (min-width: 700px)
 	.homepage .recent-work
 		max-width: 700px
 
+		.thumbnail-img
+			width: 100%
+
+		.header
+			width: 350px
+
 @media (min-width: 1000px)
-	.homepage
-		.recent-work
-			max-width: 900px
+	.homepage .recent-work
+		max-width: 900px
 
 		.thumbnail, .header
 			width: 450px
 
-		.thumbnail img
-			width: 100%
 
-		// .header
-			// max-width: 250px
-		// display: flex
-		// align-items: center
+@media (min-width: 1300px)
+	.homepage .recent-work
+		max-width: 1300px
+
+		.header
+			width: 250px
+
+		.thumbnail
+			width: 350px
+
+
 
 
 
