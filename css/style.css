@@ -65,10 +65,6 @@ html {
 html, body > * {
   box-sizing: border-box; }
 
-p {
-  line-height: 1.7;
-  color: rgba(255, 255, 255, 0.8); }
-
 a, .link, .button {
   cursor: pointer; }
 
@@ -226,7 +222,9 @@ h1 u {
     font-family: "Covik_Sans_Mono-Regular";
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    text-align: center; }
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto; }
   .homepage .social-proof .logos {
     padding: 29px;
     display: flex;
@@ -234,6 +232,51 @@ h1 u {
     align-items: center;
     gap: 18px 47px;
     flex-wrap: wrap; }
+
+.homepage .recent-work {
+  background: salmon;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 0; }
+  .homepage .recent-work .header {
+    box-sizing: border-box;
+    padding: 18px;
+    display: flex;
+    gap: 11px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .homepage .recent-work .thumbnail {
+    max-width: 100%;
+    flex-grow: 0;
+    background: red; }
+  .homepage .recent-work .thumbnail img {
+    width: 100%; }
+
+@media (max-width: 450px) {
+  .homepage .recent-work .thumbnail, .homepage .recent-work .header {
+    width: 450px; } }
+
+@media (min-width: 450px) {
+  .homepage .recent-work {
+    border: 2px solid white;
+    max-width: 450px; }
+    .homepage .recent-work .thumbnail, .homepage .recent-work .header {
+      width: 350px; } }
+
+@media (min-width: 700px) {
+  .homepage .recent-work {
+    max-width: 700px; } }
+
+@media (min-width: 1000px) {
+  .homepage .recent-work {
+    max-width: 900px; }
+  .homepage .thumbnail, .homepage .header {
+    width: 450px; }
+  .homepage .thumbnail img {
+    width: 100%; } }
 
 .how-it-works .content {
   display: flex;

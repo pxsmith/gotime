@@ -190,9 +190,6 @@ html
   font-size: $s0--18
 html, body > *
   box-sizing: border-box
-p
-	line-height: 1.7
-	@include text-default
 a, .link, .button
   cursor: pointer
 
@@ -422,6 +419,7 @@ h1 u
 		text-transform: uppercase
 		letter-spacing: 0.08em
 		text-align: center
+		@include margin-auto
 
 	.logos
 		padding: null $s1--29
@@ -430,6 +428,76 @@ h1 u
 		align-items: center
 		gap: $s0--18 $s2--47
 		flex-wrap: wrap
+
+
+
+
+
+.homepage .recent-work
+	background: salmon
+	@include margin-auto
+	display: flex
+	flex-wrap: wrap
+	flex-grow: 0
+
+	.header
+		box-sizing: border-box
+		padding: $s0--18
+		display: flex
+		gap: $s-1--11
+		flex-direction: column
+
+		align-items: center
+		justify-content: center
+
+	.thumbnail
+		max-width: 100%
+		flex-grow: 0
+		// width: 350px
+		background: red
+		// display: flex
+
+	.thumbnail img
+		width: 100%
+		// display: flex
+	// 	flex-grow: 1
+
+
+
+// NOT WORKING
+@media (max-width: 450px)
+	.homepage .recent-work
+		.thumbnail, .header
+			width: 450px
+
+@media (min-width: 450px)
+	.homepage .recent-work
+		@include b
+		max-width: 450px
+
+		.thumbnail, .header
+			width: 350px
+
+@media (min-width: 700px)
+	.homepage .recent-work
+		max-width: 700px
+
+@media (min-width: 1000px)
+	.homepage
+		.recent-work
+			max-width: 900px
+
+		.thumbnail, .header
+			width: 450px
+
+		.thumbnail img
+			width: 100%
+
+		// .header
+			// max-width: 250px
+		// display: flex
+		// align-items: center
+
 
 
 
@@ -450,6 +518,7 @@ h1 u
 	h2.header
 		margin-bottom: $s1--29
 		text-align: center
+		@include margin-auto
 
 	.steps
 		display: flex
