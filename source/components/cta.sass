@@ -1,0 +1,43 @@
+@import '../source/global.sass'
+
+// CTA
+
+section.cta
+	display: flex
+	justify-content: center
+	align-content: center
+	@include bt
+	@include bb
+	padding-top: $s3--76
+	padding-bottom: $s3--76
+	@include bg-grid
+
+	text-align: center
+
+	.container
+		padding: $s2--47 $s4--123
+		background: $dark
+		@include b
+
+	.header
+		margin-bottom: $s-1--11
+		max-width: 14ch
+		@include margin-auto
+
+	.subheader
+		margin-bottom: $s1--29
+		max-width: 35ch
+		@include margin-auto
+
+// CTA – responsive
+
+@media (max-width: 800px)
+	section.cta
+		.header
+			margin: null auto
+		.container
+			padding: $s2--47 $s1--29
+		.button
+			@include fs0--18
+			@include f-sans-600-semibold
+			padding: $s-1--11 $s3--76

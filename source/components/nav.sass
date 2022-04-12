@@ -1,0 +1,83 @@
+@import '../source/global.sass'
+
+// NAVBAR
+// flexbox guide https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+.navbar
+  height: $s3--76
+  @include bt
+  @include bb
+  @include fs1--29
+  display: flex
+  top: 0
+  z-index: 1
+
+// Center the text in the navbar
+.navbar > *
+  display: flex
+  align-items: center
+
+// Style the logo in the navbar
+.navbar .logo
+  flex: 0 0 auto
+  padding-left: $s0--18
+  padding-right: $s0--18
+  @include br
+  background: $dark
+
+.navbar .scroller
+  flex: 1 1 auto
+  @include br
+  overflow: hidden
+  background: $dark
+
+  img
+    position: relative
+    left: -100px
+
+.navbar .link
+  flex: 0 0 auto
+  @include br
+  padding-left: $s2--47
+  padding-right: $s2--47
+  background: $dark
+
+.navbar .cta
+  flex: 0 0 auto
+  background: $accent
+  padding-left: $s2--47
+  padding-right: $s2--47
+
+// NAVBAR MOBILE
+@media (max-width: 768px)
+	.navbar
+		height: $s2--47
+		@include fs0--18
+
+		.logo
+			padding: 0
+
+		.logo img
+			transform: scale(0.8)
+
+		.scroller img
+			opacity: 0.1
+
+		.link
+			display: none
+
+		.link, .cta
+			padding-left: $s0--18
+			padding-right: $s0--18
+
+		.cta
+			@include f-sans-600-semibold
+
+
+// NAVBAR ANIMATION
+.navbar .scroller > *
+	animation: scroll 8s linear infinite
+
+@keyframes scroll
+	to
+		transform: translateX(100px)

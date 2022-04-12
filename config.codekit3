@@ -17,6 +17,18 @@
       "oAP" : "\/CNAME",
       "oF" : 0
     },
+    "\/css\/global.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/css\/global-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/css\/style.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -29,13 +41,17 @@
       "oF" : 0,
       "pg" : 0
     },
-    "\/impact.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
+    "\/css\/work-risk.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/impact.html",
-      "oF" : 0
+      "oAP" : "\/css\/work-risk-min.css",
+      "oF" : 0,
+      "pg" : 0
     },
     "\/index.html" : {
       "cB" : 0,
@@ -45,13 +61,17 @@
       "oAP" : "\/index.html",
       "oF" : 0
     },
-    "\/risk.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
+    "\/source\/components\/cta.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/risk.html",
-      "oF" : 0
+      "oAP" : "\/source\/components\/cta-min.css",
+      "oF" : 0,
+      "pg" : 0
     },
     "\/source\/components\/cta.pug" : {
       "cB" : 0,
@@ -63,6 +83,33 @@
       "oF" : 1,
       "oS" : 0
     },
+    "\/source\/components\/cta.sass" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 2,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/source\/components\/cta.css",
+      "oF" : 2,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/source\/components\/footer.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/source\/components\/footer-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/source\/components\/footer.pug" : {
       "cB" : 0,
       "cOD" : 1,
@@ -72,6 +119,21 @@
       "oAP" : "\/source\/components\/footer.html",
       "oF" : 1,
       "oS" : 0
+    },
+    "\/source\/components\/footer.sass" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 2,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/source\/components\/footer.css",
+      "oF" : 2,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
     },
     "\/source\/components\/head.pug" : {
       "cB" : 0,
@@ -83,6 +145,18 @@
       "oF" : 0,
       "oS" : 0
     },
+    "\/source\/components\/nav.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/source\/components\/nav-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/source\/components\/nav.pug" : {
       "cB" : 0,
       "cOD" : 1,
@@ -92,6 +166,21 @@
       "oAP" : "\/source\/components\/nav.html",
       "oF" : 0,
       "oS" : 0
+    },
+    "\/source\/components\/nav.sass" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 2,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/source\/components\/nav.css",
+      "oF" : 3,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
     },
     "\/source\/drift-snippet.js" : {
       "bF" : 0,
@@ -184,6 +273,21 @@
       "oA" : 0,
       "oAP" : "\/source\/favicon\/site.webmanifest",
       "oF" : 0
+    },
+    "\/source\/global.sass" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 2,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/css\/global.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
     },
     "\/source\/images\/icon-arrow-link.svg" : {
       "ft" : 2097152,
@@ -700,6 +804,136 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/source\/images\/work-risk-cards.png" : {
+      "ft" : 32768,
+      "iS" : 40440,
+      "oA" : 0,
+      "oAP" : "\/source\/images\/work-risk-cards.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/source\/images\/work-risk-cards@2x.png" : {
+      "ft" : 32768,
+      "iS" : 95551,
+      "oA" : 0,
+      "oAP" : "\/source\/images\/work-risk-cards@2x.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/source\/images\/work-risk-globe.png" : {
+      "ft" : 32768,
+      "iS" : 149465,
+      "oA" : 0,
+      "oAP" : "\/source\/images\/work-risk-globe.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/source\/images\/work-risk-globe@2x.png" : {
+      "ft" : 32768,
+      "iS" : 504968,
+      "oA" : 0,
+      "oAP" : "\/source\/images\/work-risk-globe@2x.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/source\/images\/work-risk-locked.png" : {
+      "ft" : 32768,
+      "iS" : 64876,
+      "oA" : 0,
+      "oAP" : "\/source\/images\/work-risk-locked.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/source\/images\/work-risk-locked@2x.png" : {
+      "ft" : 32768,
+      "iS" : 197383,
+      "oA" : 0,
+      "oAP" : "\/source\/images\/work-risk-locked@2x.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/source\/images\/work-risk-microsite.png" : {
+      "ft" : 32768,
+      "iS" : 119578,
+      "oA" : 0,
+      "oAP" : "\/source\/images\/work-risk-microsite.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/source\/images\/work-risk-microsite@2x.png" : {
+      "ft" : 32768,
+      "iS" : 422941,
+      "oA" : 0,
+      "oAP" : "\/source\/images\/work-risk-microsite@2x.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/source\/images\/work-risk-product.png" : {
+      "ft" : 32768,
+      "iS" : 102333,
+      "oA" : 0,
+      "oAP" : "\/source\/images\/work-risk-product.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/source\/images\/work-risk-product@2x.png" : {
+      "ft" : 32768,
+      "iS" : 293757,
+      "oA" : 0,
+      "oAP" : "\/source\/images\/work-risk-product@2x.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/source\/images\/work-thumbnail-impact.png" : {
       "ft" : 32768,
       "iS" : 118846,
@@ -778,16 +1012,6 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/source\/impact.pug" : {
-      "cB" : 0,
-      "cOD" : 1,
-      "ft" : 512,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/impact.html",
-      "oF" : 2,
-      "oS" : 0
-    },
     "\/source\/index.pug" : {
       "cB" : 0,
       "cOD" : 1,
@@ -796,16 +1020,6 @@
       "oA" : 0,
       "oAP" : "\/index.html",
       "oF" : 2,
-      "oS" : 0
-    },
-    "\/source\/risk.pug" : {
-      "cB" : 0,
-      "cOD" : 1,
-      "ft" : 512,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/risk.html",
-      "oF" : 3,
       "oS" : 0
     },
     "\/source\/style.sass" : {
@@ -818,7 +1032,7 @@
       "ma" : 0,
       "oA" : 0,
       "oAP" : "\/css\/style.css",
-      "oF" : 0,
+      "oF" : 2,
       "oS" : 0,
       "pg" : 0,
       "sct" : 1
@@ -1325,6 +1539,75 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/source\/webfonts\/Covik_Sans-Semibold.woff2",
+      "oF" : 0
+    },
+    "\/source\/work-impact.pug" : {
+      "cB" : 0,
+      "cOD" : 1,
+      "ft" : 512,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/work-impact.html",
+      "oF" : 2,
+      "oS" : 0
+    },
+    "\/source\/work-risk.pug" : {
+      "cB" : 0,
+      "cOD" : 1,
+      "ft" : 512,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/work-risk.html",
+      "oF" : 3,
+      "oS" : 0
+    },
+    "\/source\/work-risk.sass" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 2,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/css\/work-risk.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/source\/work-wilbur.pug" : {
+      "cB" : 0,
+      "cOD" : 1,
+      "ft" : 512,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/work-wilbur.html",
+      "oF" : 2,
+      "oS" : 0
+    },
+    "\/work-impact.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/work-impact.html",
+      "oF" : 0
+    },
+    "\/work-risk.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/work-risk.html",
+      "oF" : 0
+    },
+    "\/work-wilbur.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/work-wilbur.html",
       "oF" : 0
     }
   },

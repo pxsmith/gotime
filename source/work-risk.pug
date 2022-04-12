@@ -1,0 +1,95 @@
+head
+  //- include components/head.pug
+
+  link(rel="stylesheet" type="text/css" href="source/webfonts-min.css" preload)
+  link(rel='stylesheet' href='css/work-risk.css' preload)
+  meta(name="viewport" content="width=device-width, initial-scale=1")
+
+  //- Drift integration
+  script(src="/source/drift-snippet.js" type="text/javascript" async)
+
+  //- Analytics
+  script(data-host="https://microanalytics.io" data-dnt="false" src="https://microanalytics.io/js/script.js" id="ZwSg9rf6GA" async defer)
+
+
+
+
+body.page-work-impact
+  include components/nav.pug
+  .page-wrapper
+    section.hero
+
+      h1.header As <u>agile</u> as your roadmap
+      p.subheader Our design subscription can handle anything you throw at us. See how one client has taken advantage of our model’s agility. Here you see a microsite (#1) to visualize the most recent risks across the globe.
+
+      .hero-list
+        h4 Timeline
+        .item
+          img(src='source/images/icon-bullet.svg')
+          p Product redesign
+        .border
+        .item
+          img(src='source/images/icon-bullet.svg')
+          p Email designs
+        .border
+        .item
+          img(src='source/images/icon-bullet.svg')
+          p Sales demo
+        .border
+        .item.item-current
+          img(src='source/images/icon-circle.svg')
+          p Microsite #1
+        .border
+        .item
+          img(src='source/images/icon-bullet.svg')
+          p Lead generator #1
+        .border
+        .item
+          img(src='source/images/icon-bullet.svg')
+          p Microsite #2
+        .border
+        .item
+          img(src='source/images/icon-bullet.svg')
+          p New product
+        .border
+        .item
+          img(src='source/images/icon-bullet.svg')
+          p Lead generator #2
+
+      img.img-work-risk-globe(src="source/images/work-risk-globe.png" srcset="source/images/work-risk-globe@2x.png 2x" draggable='false')
+
+
+
+    section.microsite
+      .header
+        h2 Microsite #2
+        p When you’re travelling, you want to know the most up-to-date travel restrictions and rules. This microsite conveys that information in beautiful way for customers.
+
+      .work-risk-microsite
+        img.img-work-risk-microsite(src="source/images/work-risk-microsite.png" srcset="source/images/work-risk-microsite@2x.png 2x" draggable='false')
+
+
+    section.design-system
+      .header
+        h2 Design system
+        p This client was recently rebranded but the product didn’t get the same upgrade. We got to extend and improve the branding systematically across the product.
+      .work-risk-cards
+        img.img-work-risk-cards(src="source/images/work-risk-cards.png" srcset="source/images/work-risk-cards@2x.png 2x" draggable='false')
+
+
+    section.product
+      .header
+        h2 Product redesign
+        p Here you see the product refresh in action. You’re looking at a specific country’s risk report. This product is robust and you can see many other important things related to current risks.
+      .work-risk-product
+        img.img-work-risk-product(src="source/images/work-risk-product.png" srcset="source/images/work-risk-product@2x.png 2x" draggable='false')
+
+    section.sales
+      .header
+        h2 Support for the sales team
+        p You can’t be shown this design but you can still hear the story. Sales needed an interactive prototype to wow a potential client. We created a magical experience for them.
+      img.img-work-risk-locked(src="source/images/work-risk-locked.png" srcset="source/images/work-risk-locked@2x.png 2x" draggable='false')
+
+
+  include components/cta.pug
+  include components/footer.pug

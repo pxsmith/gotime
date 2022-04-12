@@ -1,0 +1,201 @@
+@forward 'components/nav.sass' {}html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+.cf {
+  overflow: auto; }
+
+.cf::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+.page-wrapper {
+  overflow-x: hidden !important; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+h1 {
+  font-size: 76px;
+  letter-spacing: -0.02em;
+  line-height: 1; }
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 47px; } }
+
+h2 {
+  font-size: 47px;
+  font-family: "Covik_Sans-Black";
+  line-height: 1.2; }
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 29px; } }
+
+h3 {
+  font-size: 29px;
+  font-family: "Covik_Sans-Bold"; }
+
+@media (max-width: 768px) {
+  h3 {
+    font-family: "Covik_Sans-Regular";
+    color: white; } }
+
+h4 {
+  font-family: "Covik_Sans_Mono-Medium";
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 0.05em;
+  text-transform: uppercase; }
+
+h5 {
+  font-family: "Covik_Sans_Mono-Bold";
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.65); }
+
+p {
+  font-family: "Covik_Sans-Regular";
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.7; }
+
+html {
+  background: #120404;
+  color: white;
+  font-family: "Covik_Sans-Regular";
+  font-size: 18px; }
+
+html, body > * {
+  box-sizing: border-box; }
+
+a, .link, .button {
+  cursor: pointer; }
+
+::selection {
+  background-color: #DC2626; }
+
+u {
+  text-decoration: underline;
+  text-decoration-color: #DC2626; }
+
+h1 u {
+  text-decoration-thickness: 0.06em; }
+
+.button {
+  display: inline-block;
+  padding: 18px 47px;
+  text-align: center;
+  font-size: 29px;
+  background: #DC2626;
+  border: 2px solid white; }
+
+.navbar {
+  height: 76px;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  font-size: 29px;
+  display: flex;
+  top: 0;
+  z-index: 1; }
+
+.navbar > * {
+  display: flex;
+  align-items: center; }
+
+.navbar .logo {
+  flex: 0 0 auto;
+  padding-left: 18px;
+  padding-right: 18px;
+  border-right: 2px solid white;
+  background: #120404; }
+
+.navbar .scroller {
+  flex: 1 1 auto;
+  border-right: 2px solid white;
+  overflow: hidden;
+  background: #120404; }
+  .navbar .scroller img {
+    position: relative;
+    left: -100px; }
+
+.navbar .link {
+  flex: 0 0 auto;
+  border-right: 2px solid white;
+  padding-left: 47px;
+  padding-right: 47px;
+  background: #120404; }
+
+.navbar .cta {
+  flex: 0 0 auto;
+  background: #DC2626;
+  padding-left: 47px;
+  padding-right: 47px; }
+
+@media (max-width: 768px) {
+  .navbar {
+    height: 47px;
+    font-size: 18px; }
+    .navbar .logo {
+      padding: 0; }
+    .navbar .logo img {
+      transform: scale(0.8); }
+    .navbar .scroller img {
+      opacity: 0.1; }
+    .navbar .link {
+      display: none; }
+    .navbar .link, .navbar .cta {
+      padding-left: 18px;
+      padding-right: 18px; }
+    .navbar .cta {
+      font-family: "Covik_Sans-Semibold"; } }
+
+.navbar .scroller > * {
+  animation: scroll 8s linear infinite; }
+
+@keyframes scroll {
+  to {
+    transform: translateX(100px); } }
