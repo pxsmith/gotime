@@ -1,7 +1,7 @@
 head
   //- include components/head.pug
   link(rel="stylesheet" type="text/css" href="source/webfonts-min.css" preload)
-  link(rel='stylesheet' href='css/global.css' preload)
+  link(rel='stylesheet' href='css/work-wilbur.css' preload)
   meta(name="viewport" content="width=device-width, initial-scale=1")
 
   //- Drift integration
@@ -15,8 +15,8 @@ body.work-wilbur
   .page-wrapper
     include components/nav.pug
     section.hero
-      h1 Flying from idea to prototype in 4 days
-      p To launch new ideas you need to be fast. An entrepreneurial colleague called us with a new app idea. In just a few days Go Time HQ made that idea a reality. When you see your idea on the screen, it’s easy to see what works and what doesn’t. Then you move forward just as quickly. This is how you beat your competitors.
+      h1.header From idea to prototype in <u>4 days</u>
+      p.subheader To launch new ideas you need to be fast. An entrepreneurial colleague called us with a new app idea. In just a few days Go Time HQ made that idea a reality. When you see your idea on the screen, it’s easy to see what works and what doesn’t. Then you move forward just as quickly. This is how you beat your competitors.
 
       .hero-list.wilbur
         h4 Timeline
@@ -45,47 +45,41 @@ body.work-wilbur
           img(src='source/images/icon-circle.svg')
           p Launch
 
+      .work-wilbur-hero
+        img.img-work-wilbur-hero(src="source/images/work-wilbur-hero.png" srcset="source/images/work-wilbur-hero@2x.png 2x" draggable='false')
+    
 
 
-      h1 Designs that adapt with you
-      p Our design subscription can handle anything you throw at us. See how one client has taken advantage of our model’s agility. Here you see a microsite to visualize the most recent risks across the globe.
-
-      .hero-list.risk
-        h4 Timeline
-        .item
-          img(src='source/images/icon-bullet.svg')
-          p Product redesign
-        .border
-        .item
-          img(src='source/images/icon-bullet.svg')
-          p Email designs
-        .border
-        .item
-          img(src='source/images/icon-bullet.svg')
-          p Sales demo
-        .border
-        .item
-          img(src='source/images/icon-circle.svg')
-          p Microsite #1
-        .border
-        .item
-          img(src='source/images/icon-bullet.svg')
-          p Lead generator #1
-        .border
-        .item
-          img(src='source/images/icon-bullet.svg')
-          p Microsite #2
-        .border
-        .item
-          img(src='source/images/icon-bullet.svg')
-          p New product
-        .border
-        .item
-          img(src='source/images/icon-bullet.svg')
-          p Lead generator #2
+    section.themes
+      .copy
+        h2.header Payments on themed landing pages
+        p.subheader This app lets creatives receive payments with no effort. It’s important to have themed landing pages to match the creator’s aesthetic.
+      .work-themes
+        img.img-work-themes-1(src="source/images/work-wilbur-themes-1.png" srcset="source/images/work-wilbur-themes-1@2x.png 2x" draggable='false')
+        img.img-work-themes-2(src="source/images/work-risk-work-wilbur-themes-2.png" srcset="source/images/work-wilbur-themes-2@2x.png 2x" draggable='false')
+        img.img-work-themes-3(src="source/images/work-wilbur-themes-3.png" srcset="source/images/work-wilbur-themes-3@2x.png 2x" draggable='false')
 
 
 
+    section.website-embed
+      .copy
+        h2.header Payments on any website
+        p.subheader Many creatives will want to use their existing website but collect payments. This app can be embedded anywhere.
+
+      .work-website-embed
+        img.img-work-website-embed(src="source/images/work-wilbur-website-embed.png" srcset="source/images/work-wilbur-website-embed@2x.png 2x" draggable='false')
+
+
+
+    section.user-flow
+      .copy
+        h2.header Get paid in just a few clicks
+        p.subheader Becoming an independent creative is liberating. In reality the admin side prevents many from taking the leap. This app lets creatives ditch old, bloated payment structures with simplicity.
+
+      .work-user-flow
+        img.img-work-user-flow-1(src="source/images/work-wilbur-user-flow-1.png" srcset="source/images/work-wilbur-user-flow-1@2x.png 2x" draggable='false')
+        img.img-work-user-flow-2(src="source/images/work-risk-work-wilbur-user-flow-2.png" srcset="source/images/work-wilbur-user-flow-2@2x.png 2x" draggable='false')
+        img.img-work-user-flow-3(src="source/images/work-wilbur-user-flow-3.png" srcset="source/images/work-wilbur-user-flow-3@2x.png 2x" draggable='false')
 
   include components/cta.pug
   include components/footer.pug

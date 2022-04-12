@@ -1,0 +1,160 @@
+@import '../source/global.sass'
+
+.hero-list.wilbur
+	.border
+		width: 85px
+
+	-webkit-mask-image: linear-gradient(black 50%, transparent)
+	mask-image: linear-gradient(black 50%, transparent)
+
+section.hero
+  padding: $s1--29
+  background: url(/source/images/work-wilbur-hero-bg.png) no-repeat top right
+  max-width: 1000px
+  @include margin-auto
+  overflow: visible
+
+  .header
+    max-width: 15ch
+
+  .subheader
+    margin-top: $s0--18
+    max-width: 62ch
+
+  .hero-list
+    margin-top: $s2--47
+
+@media (max-width: 500px)
+  section.hero
+    .subheader
+      display: none
+
+.work-wilbur-hero
+  display: flex
+  justify-content: center
+
+@media (max-width: 500px)
+  .work-wilbur-hero
+    margin-top: $s0--18
+    margin-left: -75%
+@media (min-width: 501px) and (max-width: 650px)
+  .work-wilbur-hero
+    margin-top: -250px
+    margin-right: -60%
+@media (min-width: 651px) and (max-width: 969px)
+  .work-wilbur-hero
+    margin-top: -200px
+    margin-right: -30%
+@media (min-width: 970px)
+  .work-wilbur-hero
+    margin-top: -550px
+    margin-right: -750px
+
+
+
+
+
+
+
+
+section.themes
+  margin-top: $s2--47
+
+  .header
+    padding-left: $s0--18
+    padding-right: $s0--18
+    padding-bottom: $s-2--7
+
+  .subheader
+    padding-left: $s0--18
+    padding-right: $s0--18
+
+  h2
+    text-align: center
+    @include margin-auto
+
+  p
+    text-align: center
+    max-width: 60ch
+    @include margin-auto
+
+.work-themes
+  display: flex
+  align-items: center
+  flex-direction: column
+  gap: $s0--18
+
+  margin-top: $s2--47
+
+  img
+    border-radius: 4px
+
+@media (min-width: 1050px)
+  .work-themes
+    flex-direction: row
+    justify-content: center
+
+
+
+
+
+
+section.website-embed
+  display: flex
+  align-items: center
+  flex-direction: column
+
+  margin-top: $s4--123
+  text-align: center
+
+  .header
+    padding-bottom: $s-2--7
+    padding-left: $s0--18
+    padding-right: $s0--18
+
+  .subheader
+    padding-left: $s0--18
+    padding-right: $s0--18
+    padding-bottom: $s2--47
+    max-width: 55ch
+
+
+
+
+
+section.user-flow
+  margin-top: $s4--123
+  text-align: center
+
+  .header
+    padding-left: $s0--18
+    padding-right: $s0--18
+    padding-bottom: $s-2--7
+
+  .subheader
+    @include margin-auto
+    padding-left: $s0--18
+    padding-right: $s0--18
+    padding-bottom: $s2--47
+    max-width: 60ch
+
+.work-user-flow
+  display: flex
+  align-items: flex-start
+  justify-content: center
+  gap: $s0--18
+
+  margin-bottom: $s4--123
+
+@media (max-width: 850px)
+  .work-user-flow
+    flex-direction: column
+    align-items: center
+
+
+
+
+
+
+
+// fin

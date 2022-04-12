@@ -156,12 +156,6 @@ h1 u {
   width: 12.5px;
   border-right: 2px solid white; }
 
-.hero-list.wilbur {
-  -webkit-mask-image: linear-gradient(black 50%, transparent);
-  mask-image: linear-gradient(black 50%, transparent); }
-  .hero-list.wilbur .border {
-    width: 83px; }
-
 .homepage .hero {
   padding-top: 123px;
   padding-bottom: 200px; }
