@@ -281,6 +281,10 @@ h1 u {
   .homepage section.recent-work {
     margin-top: 0; } }
 
+@media (max-width: 450px) {
+  .thumbnail-img {
+    width: 100%; } }
+
 @media (min-width: 450px) {
   .homepage .recent-work {
     border: 2px solid white;
