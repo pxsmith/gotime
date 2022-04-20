@@ -1,15 +1,23 @@
 head
-  //- include components/head.pug
-
-  link(rel="stylesheet" type="text/css" href="source/webfonts-min.css" preload)
+  include components/head.pug
   link(rel='stylesheet' href='css/work-risk.css' preload)
-  meta(name="viewport" content="width=device-width, initial-scale=1")
 
-  //- Drift integration
-  script(src="/source/drift-snippet.js" type="text/javascript" async)
-
-  //- Analytics
-  script(data-host="https://microanalytics.io" data-dnt="false" src="https://microanalytics.io/js/script.js" id="ZwSg9rf6GA" async defer)
+  // Primary Meta Tags
+  title Design case study &ndash; As agile as your startup
+  meta(name='title' content='Design case study – As agile as your startup')
+  meta(name='description' content='Our design subscription can handle anything you throw at us. See how one client has taken advantage of our model’s agility. Here you see a microsite to visualize the most recent risks across the globe.')
+  // Open Graph / Facebook
+  meta(property='og:type' content='website')
+  meta(property='og:url' content='https://gotimehq.com/work-risk.html')
+  meta(property='og:title' content='Design case study – As agile as your startup')
+  meta(property='og:description' content='Our design subscription can handle anything you throw at us. See how one client has taken advantage of our model’s agility. Here you see a microsite to visualize the most recent risks across the globe.')
+  meta(property='og:image' content='/source/images/social-preview-risk.png')
+  // Twitter
+  meta(property='twitter:card' content='summary_large_image')
+  meta(property='twitter:url' content='https://gotimehq.com/work-risk.html')
+  meta(property='twitter:title' content='Design case study – As agile as your startup')
+  meta(property='twitter:description' content='Our design subscription can handle anything you throw at us. See how one client has taken advantage of our model’s agility. Here you see a microsite to visualize the most recent risks across the globe.')
+  meta(property='twitter:image' content='/source/images/social-preview-risk.png')
 
 
 

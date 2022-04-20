@@ -636,6 +636,45 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/source\/images\/social-preview-impact.png" : {
+      "ft" : 32768,
+      "iS" : 156682,
+      "oA" : 0,
+      "oAP" : "\/source\/images\/social-preview-impact.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/source\/images\/social-preview-risk.png" : {
+      "ft" : 32768,
+      "iS" : 144477,
+      "oA" : 0,
+      "oAP" : "\/source\/images\/social-preview-risk.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/source\/images\/social-preview-wilbur.png" : {
+      "ft" : 32768,
+      "iS" : 179523,
+      "oA" : 0,
+      "oAP" : "\/source\/images\/social-preview-wilbur.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/source\/images\/social-preview.png" : {
       "ft" : 32768,
       "iS" : 89143,
