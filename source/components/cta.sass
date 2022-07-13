@@ -1,7 +1,6 @@
 @import '../source/global.sass'
 
 // CTA
-
 section.cta
 	display: flex
 	justify-content: center
@@ -15,14 +14,12 @@ section.cta
 	text-align: center
 
 	.container
-		padding: 0
-		min-width: 800px
+		padding: $s2--47 $s4--123
 		background: $dark
 		@include b
 
 	.header
-		margin-top: $s0--18
-		margin-bottom: $s0--18
+		margin-bottom: $s-1--11
 		max-width: 14ch
 		@include margin-auto
 
@@ -32,7 +29,6 @@ section.cta
 		@include margin-auto
 
 // CTA – responsive
-
 @media (max-width: 800px)
 	section.cta
 		.header

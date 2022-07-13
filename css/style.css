@@ -908,6 +908,9 @@ h1 u {
     margin-left: auto;
     margin-right: auto; } }
 
+section.design-collage {
+  transform: scale(1); }
+
 section.pricing {
   display: flex;
   justify-content: center;
