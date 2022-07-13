@@ -57,29 +57,29 @@ body.homepage
     .recent-work-background
 
 
-    section.social-proof
-      .header In good company
-      .logos
-        img.logo-angellist(src="source/images/logo-angellist.png" srcset="source/images/logo-angellist-@2x.png 2x" draggable='false')
-        img.logo-shark-tank(src="source/images/logo-shark-tank.png" srcset="source/images/logo-shark-tank-@2x.png 2x" draggable='false')
-        img.logo-techcrunch(src="source/images/logo-techcrunch.png" srcset="source/images/logo-techcrunch-@2x.png 2x" draggable='false')
-        img.logo-y-combinator(src="source/images/logo-y-combinator.png" srcset="source/images/logo-y-combinator-@2x.png 2x" draggable='false')
+    //- section.social-proof
+    //-   .header In good company
+    //-   .logos
+    //-     img.logo-angellist(src="source/images/logo-angellist.png" srcset="source/images/logo-angellist-@2x.png 2x" draggable='false')
+    //-     img.logo-shark-tank(src="source/images/logo-shark-tank.png" srcset="source/images/logo-shark-tank-@2x.png 2x" draggable='false')
+    //-     img.logo-techcrunch(src="source/images/logo-techcrunch.png" srcset="source/images/logo-techcrunch-@2x.png 2x" draggable='false')
+    //-     img.logo-y-combinator(src="source/images/logo-y-combinator.png" srcset="source/images/logo-y-combinator-@2x.png 2x" draggable='false')
 
 
 
-    section.how-it-works
-      .content
-        h2.header How it works
-        .steps
-          .step-1
-            img(src='source/images/icon-notepad.svg')
-            p Submit your <br> design brief
-          .step-2
-            img(src='source/images/icon-delivery.svg')
-            p Get your designs <br> in 2-4 days
-          .step-3
-            img(src='source/images/icon-repeat.svg')
-            p Give feedback or <br> start next project
+    //- section.how-it-works
+    //-   .content
+    //-     h2.header How it works
+    //-     .steps
+    //-       .step-1
+    //-         img(src='source/images/icon-notepad.svg')
+    //-         p Submit your <br> design brief
+    //-       .step-2
+    //-         img(src='source/images/icon-delivery.svg')
+    //-         p Get your designs <br> in 2-4 days
+    //-       .step-3
+    //-         img(src='source/images/icon-repeat.svg')
+    //-         p Give feedback or <br> start next project
     
       .divider
         img(src="source/images/vector-arrows.svg")
@@ -97,15 +97,6 @@ body.homepage
     
       .quote.quote-2
         p.quotation-mark &ldquo;
-        p.quote-body The <u>efficiency & accuracy</u> of Go Time HQ’s work continues to blow me away. Whether it’s designing landing pages, logos, mobile apps, you name it—Go Time <u>handles everything</u>.
-        a.person(href='https://www.linkedin.com/in/anebiagbo/' target='_blank')
-          img.portrait(src='source/images/photo-anebi.jpeg' draggable='false')
-          .text
-            p.name Anebi Agbo
-            p.job-title Founder & CEO
-    
-      .quote.quote-3
-        p.quotation-mark &ldquo;
         p.quote-body Not only do they handle every project with an <u>immense amount of enthusiasm</u>, but Go Time HQ brings a unique perspective to every client and project they work on. <u>You’ll be lucky to work together</u> given the chance.
         a.person(href="https://www.linkedin.com/in/kylerphillips/" target='_blank')
           img.portrait(src='source/images/photo-kyler.jpeg' draggable='false')
@@ -113,27 +104,49 @@ body.homepage
             p.name Kyler Phillips
             p.job-title Senior Designer
     
+      .quote.quote-3
+        p.quotation-mark &ldquo;
+        p.quote-body The <u>efficiency & accuracy</u> of Go Time HQ’s work continues to blow me away. Whether it’s designing landing pages, logos, mobile apps, you name it—Go Time <u>handles everything</u>.
+        a.person(href='https://www.linkedin.com/in/anebiagbo/' target='_blank')
+          img.portrait(src='source/images/photo-anebi.jpeg' draggable='false')
+          .text
+            p.name Anebi Agbo
+            p.job-title Founder & CEO
+
+    
     
     section.pricing
       .container
         header
-          h2.header Dead-simple pricing
-          p.subheader We’re passionate about design. We spend minimal time on admin for maximal time designing.
+          h2.header Simple pricing
+          p.subheader We’re passionate about design. We spend minimal <br> time on admin for maximal time designing.
         .prices
-          .price.price-monthly
-            .title
-              img.icon(src='source/images/icon-calendar.svg' draggable='false')
-              h3 $4k/mo subscription 
-            p Did you need a designer yesterday? Do you have a bottomless list of design needs? This is for you.
-            p There are no minimums and you can cancel anytime. This is great before you hire your first designer and as a boost to your design team.
+          .price
+            .title.ai-flex-start
+              img.icon(src='source/images/icon-plane.svg' draggable='false')
+              .flex.fd-column
+                h3 Express subscription 
+                h3.price-amount $4k/mo
+                p ☑ Turnaround in 2-4 business days 
+                p ☑ One project at a time
+                p ☑ No max per month
+                p ☑ Cancel anytime
           hr
-          .price.price-tokens
-            .title
-              img.icon(src='source/images/icon-hand.svg' draggable='false')
-              h3.title $3k/each design token
-            p Do you have a project or two you need finished? This might be for you.
-            p Just like the subscription you submit your brief and get designs quickly. Each token gets you one project and one revision (if necessary).
+          .price
+            .title.ai-flex-start
+              img.icon(src='source/images/icon-truck.svg' draggable='false')
+              .flex.fd-column
+                h3 Economy subscription 
+                h3.price-amount $2k/mo
+                p ☑ Turnaround in 5-7 business days
+                p ☑ One project at a time
+                p ☑ 3 max per month
+                p ☑ Cancel anytime
     
+
+    .divider.divider-services
+      img(src="source/images/vector-arrows.svg")
+
     section.services
       h2.header Design <br>services
       .list
@@ -163,15 +176,7 @@ body.homepage
           p.title Fundraising
           p Pitch decks
     
-    .divider.divider-services
-      img(src="source/images/vector-arrows.svg")
-    
-    section.process
-      .content.photo
-      .content
-        h3.title Our iterative process moves with you
-        p Forget the old way of working with agencies where they create a rigid scope that is set for months. Many times these massive design projects flop. It’s too big. It’s too off-target. 
-        p The speed at which we work removes all the risk of massive projects. Sometimes we’re off, and it’s ony 2-4 more days before you see another pass. When priorities change—we’re here for you. When an important pitch comes up—we’re here for you.
+
 
     include components/cta.pug
     include components/footer.pug

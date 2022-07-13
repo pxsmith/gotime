@@ -381,11 +381,31 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/source\/images\/icon-plane.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/source\/images\/icon-plane.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/source\/images\/icon-repeat.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
       "oAP" : "\/source\/images\/icon-repeat.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/source\/images\/icon-social-dribbble.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/source\/images\/icon-social-dribbble.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -416,6 +436,16 @@
       "miP" : 0,
       "oA" : 2,
       "oAP" : "\/source\/images\/icon-social-twitter.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/source\/images\/icon-truck.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/source\/images\/icon-truck.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,

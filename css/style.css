@@ -157,6 +157,66 @@ h1 u {
   width: 12.5px;
   border-right: 2px solid white; }
 
+.flex {
+  display: flex; }
+
+.fd-row {
+  flex-direction: row; }
+
+.fd-column {
+  flex-direction: column; }
+
+.jc-flex-start {
+  justify-content: flex-start; }
+
+.jc-flex-end {
+  justify-content: flex-end; }
+
+.jc-center {
+  justify-content: center; }
+
+.jc-space-between {
+  justify-content: space-between; }
+
+.jc-space-around {
+  justify-content: space-around; }
+
+.jc-space-evenly {
+  justify-content: space-evenly; }
+
+.ai-flex-start {
+  align-items: flex-start; }
+
+.ai-flex-end {
+  align-items: flex-end; }
+
+.ai-center {
+  align-items: center; }
+
+.ai-stretch {
+  align-items: stretch; }
+
+.ai-baseline {
+  align-items: baseline; }
+
+.ac-flex-start {
+  align-content: flex-start; }
+
+.ac-flex-end {
+  align-content: flex-end; }
+
+.ac-center {
+  align-content: center; }
+
+.ac-stretch {
+  align-content: stretch; }
+
+.ac-space-between {
+  align-content: space-between; }
+
+.ac-space-around {
+  align-content: space-around; }
+
 .homepage .hero {
   padding-top: 123px;
   padding-bottom: 200px; }
@@ -392,7 +452,8 @@ h1 u {
 
 .divider-services {
   padding-top: 11px;
-  padding-bottom: 11px; }
+  padding-bottom: 11px;
+  border-bottom: 2px solid white; }
 
 .homepage .testimonials {
   display: flex;
@@ -458,21 +519,24 @@ section.pricing {
   text-align: center; }
   section.pricing .container {
     border: 2px solid white;
-    padding: 76px;
-    padding-top: 47px;
+    padding: 47px;
     background: #120404;
-    max-width: 950px; }
+    max-width: 1200px; }
   section.pricing .header {
     text-align: center;
     margin-bottom: 7px; }
   section.pricing .title {
     display: flex;
-    gap: 18px;
-    align-items: center; }
+    gap: 18px; }
+  section.pricing .price-amount {
+    font-family: "Covik_Sans-Regular";
+    margin-bottom: 18px; }
+  section.pricing .title .fd-column {
+    gap: 7px; }
   section.pricing .prices {
     display: flex;
     margin-top: 47px;
-    gap: 76px;
+    gap: 47px;
     text-align: left; }
   section.pricing .price {
     display: flex;
@@ -493,8 +557,7 @@ section.pricing {
     padding: 29px; } }
 
 .services {
-  display: flex;
-  border-bottom: 2px solid white; }
+  display: flex; }
   .services .header {
     display: flex;
     align-items: center;

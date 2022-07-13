@@ -1,4 +1,4 @@
-@forward 'components/nav.sass' {}html, body, div, span, applet, object, iframe,
+html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -16,7 +16,8 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility; }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -54,7 +55,7 @@ a {
   display: table; }
 
 .page-wrapper {
-  overflow-x: hidden !important; }
+  overflow-x: hidden; }
 
 *, *:before, *:after {
   box-sizing: border-box; }
@@ -133,11 +134,34 @@ h1 u {
   background: #DC2626;
   border: 2px solid white; }
 
+.hero-list h4 {
+  margin-bottom: 18px; }
+
+.hero-list > * {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  flex-basis: 0; }
+
+.hero-list h5 {
+  flex-basis: 65px;
+  text-align: right; }
+
+.hero-list p {
+  font-family: "Covik_Sans_Mono-Regular";
+  color: white;
+  line-height: 1; }
+
+.hero-list .border {
+  height: 18px;
+  width: 12.5px;
+  border-right: 2px solid white; }
+
 .footer {
   display: flex;
   padding: 32px;
   padding-left: 29px;
-  padding-right: 123px;
+  padding-right: 29px;
   font-family: "Covik_Sans_Mono-Regular";
   align-items: center;
   justify-content: space-between; }

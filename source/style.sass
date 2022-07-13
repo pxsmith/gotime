@@ -313,6 +313,7 @@
 .divider-services
 	padding-top: $s-1--11
 	padding-bottom: $s-1--11
+	@include bb
 
 
 
@@ -400,10 +401,9 @@ section.pricing
 
 	.container
 		@include b
-		padding: $s3--76
-		padding-top: $s2--47
+		padding: $s2--47
 		background: $dark
-		max-width: 950px
+		max-width: 1200px
 
 	.header
 		text-align: center
@@ -413,14 +413,18 @@ section.pricing
 	.title
 		display: flex
 		gap: $s0--18
-		align-items: center
+	.price-amount
+		@include f-sans-400-regular
+		margin-bottom: $s0--18
+	.title .fd-column
+		gap: $s-2--7
 
 
 	.prices
 		display: flex
 		// justify-content: flex-start
 		margin-top: $s2--47
-		gap: $s3--76
+		gap: $s2--47
 		text-align: left
 
 	.price
@@ -453,7 +457,6 @@ section.pricing
 
 .services
 	display: flex
-	@include bb
 
 	.header
 		display: flex

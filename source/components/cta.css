@@ -1,4 +1,4 @@
-@forward 'components/nav.sass' {}html, body, div, span, applet, object, iframe,
+html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -16,7 +16,8 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility; }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -54,7 +55,7 @@ a {
   display: table; }
 
 .page-wrapper {
-  overflow-x: hidden !important; }
+  overflow-x: hidden; }
 
 *, *:before, *:after {
   box-sizing: border-box; }
@@ -133,6 +134,89 @@ h1 u {
   background: #DC2626;
   border: 2px solid white; }
 
+.hero-list h4 {
+  margin-bottom: 18px; }
+
+.hero-list > * {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  flex-basis: 0; }
+
+.hero-list h5 {
+  flex-basis: 65px;
+  text-align: right; }
+
+.hero-list p {
+  font-family: "Covik_Sans_Mono-Regular";
+  color: white;
+  line-height: 1; }
+
+.hero-list .border {
+  height: 18px;
+  width: 12.5px;
+  border-right: 2px solid white; }
+
+.flex {
+  display: flex; }
+
+.fd-row {
+  flex-direction: row; }
+
+.fd-column {
+  flex-direction: column; }
+
+.jc-flex-start {
+  justify-content: flex-start; }
+
+.jc-flex-end {
+  justify-content: flex-end; }
+
+.jc-center {
+  justify-content: center; }
+
+.jc-space-between {
+  justify-content: space-between; }
+
+.jc-space-around {
+  justify-content: space-around; }
+
+.jc-space-evenly {
+  justify-content: space-evenly; }
+
+.ai-flex-start {
+  align-items: flex-start; }
+
+.ai-flex-end {
+  align-items: flex-end; }
+
+.ai-center {
+  align-items: center; }
+
+.ai-stretch {
+  align-items: stretch; }
+
+.ai-baseline {
+  align-items: baseline; }
+
+.ac-flex-start {
+  align-content: flex-start; }
+
+.ac-flex-end {
+  align-content: flex-end; }
+
+.ac-center {
+  align-content: center; }
+
+.ac-stretch {
+  align-content: stretch; }
+
+.ac-space-between {
+  align-content: space-between; }
+
+.ac-space-around {
+  align-content: space-around; }
+
 section.cta {
   display: flex;
   justify-content: center;
@@ -145,11 +229,13 @@ section.cta {
   background-attachment: fixed;
   text-align: center; }
   section.cta .container {
-    padding: 47px 123px;
+    padding: 0;
+    min-width: 800px;
     background: #120404;
     border: 2px solid white; }
   section.cta .header {
-    margin-bottom: 11px;
+    margin-top: 18px;
+    margin-bottom: 18px;
     max-width: 14ch;
     margin-left: auto;
     margin-right: auto; }
