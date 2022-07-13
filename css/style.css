@@ -16,7 +16,8 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility; }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -267,6 +268,9 @@ h1 u {
     max-width: 100%;
     flex-grow: 0;
     width: 450px; }
+    .homepage .recent-work .thumbnail p {
+      padding-left: 11px;
+      border-left: 2px solid white; }
 
 .homepage .recent-work-background {
   background: url(/source/images/vector-grid-short.svg) no-repeat right;
@@ -293,6 +297,10 @@ h1 u {
       width: 100%; }
     .homepage .recent-work .thumbnail {
       width: 350px; } }
+
+@media (max-width: 700px) {
+  .homepage .recent-work .thumbnail p {
+    border-left: 0px; } }
 
 @media (min-width: 700px) {
   .homepage .recent-work {
