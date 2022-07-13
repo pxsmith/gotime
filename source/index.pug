@@ -38,21 +38,25 @@ body.homepage
 
 
     section.recent-work
-      .header
-        h3 Recent Work
+      .header.br
+        h3 Case Studies
         p We’ve served over 40 happy startups. Here’s a small sample we can share.
 
       a(href='/work-impact.html' draggable='false').thumbnail.thumbnail-impact
         img.thumbnail-img(src="source/images/work-thumbnail-impact.png" srcset="source/images/work-thumbnail-impact@2x.png 2x" draggable='false')
-        p Read case study →
+        p.pl0.pr0.tc Read more →
+        // nice, but not responsive 
+        //- .df.jc-space-between.pl0.pr0.br
+        //-   p Read
+        //-   p →
 
       a(href='/work-wilbur.html' draggable='false').thumbnail.thumbnail-wilbur
         img.thumbnail-img(src="source/images/work-thumbnail-wilbur.png" srcset="source/images/work-thumbnail-wilbur@2x.png 2x" draggable='false')
-        p Read case study →
+        p.pl0.pr0.tc Read more →
 
       a(href='/work-risk.html' draggable='false').thumbnail.thumbnail-risk
         img.thumbnail-img(src="source/images/work-thumbnail-risk.png" srcset="source/images/work-thumbnail-risk@2x.png 2x" draggable='false')
-        p Read case study →
+        p.pl0.pr0.tc Read more →
 
     .recent-work-background
 
@@ -81,8 +85,8 @@ body.homepage
     //-         img(src='source/images/icon-repeat.svg')
     //-         p Give feedback or <br> start next project
     
-      .divider
-        img(src="source/images/vector-arrows.svg")
+      //- .divider
+      //-   img(src="source/images/vector-arrows.svg")
     
 
     section.testimonials
@@ -115,7 +119,7 @@ body.homepage
 
     
     
-    section.pricing
+    section.pricing.bt
       .container
         header
           h2.header Simple pricing
@@ -144,10 +148,10 @@ body.homepage
                 p ☑ Cancel anytime
     
 
-    .divider.divider-services
-      img(src="source/images/vector-arrows.svg")
+    //- .divider.divider-services
+    //-   img(src="source/images/vector-arrows.svg")
 
-    section.services
+    section.services.bt
       h2.header Design <br>services
       .list
         .col
@@ -178,7 +182,7 @@ body.homepage
     
 
 
-    include components/cta.pug
+    include components/how-it-works.pug
     include components/footer.pug
 
     

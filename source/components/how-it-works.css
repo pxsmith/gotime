@@ -619,149 +619,32 @@ h1 u {
 .ac-space-around {
   align-content: space-around; }
 
-section.hero {
-  padding: 29px;
-  max-width: 1200px;
-  margin: 0 auto; }
-  section.hero .subheader {
-    margin-top: 18px;
-    margin-bottom: 47px; }
-
-.hero-list {
-  -webkit-mask-image: linear-gradient(black 70%, transparent);
-  mask-image: linear-gradient(black 70%, transparent); }
-  .hero-list .item-current > * {
-    font-family: "Covik_Sans_Mono-Black"; }
-
-@media (min-width: 768px) {
-  .img-work-risk-globe {
-    margin-top: -700;
-    margin-left: 500; } }
-
-@media (max-width: 768px) {
-  .img-work-risk-globe {
-    margin-top: -80;
-    margin-left: 0; }
-  .hero-list {
-    display: none; } }
-
-@media (min-width: 768px) {
-  .hero .header {
-    max-width: 11ch; }
-  .hero .subheader {
-    max-width: 40ch; } }
-
-section.microsite .header {
-  padding-left: 18px;
-  padding-right: 18px;
-  padding-bottom: 47px; }
-
-.work-risk-microsite {
-  display: flex;
-  justify-content: center;
-  width: 100%; }
-
-section.microsite {
-  max-width: 1050px;
-  margin-left: auto;
-  margin-right: auto; }
-
-.work-risk-microsite {
-  background: url(/source/images/vector-grid.svg) no-repeat 350px 200px; }
-
-@media (max-width: 800px) {
-  section.microsite {
-    margin-top: -50px; }
-  .img-work-risk-microsite {
-    margin-left: -50%; } }
-
-@media (min-width: 800px) {
-  section.microsite {
-    margin-top: 76px; }
-    section.microsite p {
-      max-width: 29ch; }
-  .img-work-risk-microsite {
-    margin-top: -350px; }
-  .work-risk-microsite {
-    background: url(/source/images/vector-grid.svg) no-repeat 80px -209px; } }
-
-section.design-system {
-  margin-top: 123px; }
-  section.design-system .header {
-    padding: 18px;
-    margin-bottom: 29px;
-    text-align: center; }
-  section.design-system p {
-    margin-top: 7px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 60ch; }
-
-.work-risk-cards {
-  display: flex;
-  justify-content: center; }
-
-section.product {
-  margin-top: 123px; }
-  section.product .header {
-    padding: 18px;
-    margin-bottom: 29px;
-    margin-left: auto;
-    margin-right: auto; }
-  section.product p {
-    margin-top: 7px;
-    max-width: 75ch; }
-
-.work-risk-product {
-  display: flex;
-  justify-content: center;
-  margin-top: -20px;
-  background: url(/source/images/vector-grid.svg) no-repeat 80px -100px; }
-
-@media (max-width: 550px) {
-  .work-risk-product {
-    margin-right: -90%; } }
-
-@media (min-width: 550px) {
-  .work-risk-product {
-    margin-right: -50%; } }
-
-section.product {
-  max-width: 1080px;
-  margin-left: auto;
-  margin-right: auto; }
-
-@media (min-width: 800px) {
-  section.product {
-    margin-top: 323px; }
-    section.product .header {
-      max-width: 40ch;
-      margin-right: 50px; }
-  .work-risk-product {
-    margin-left: -700px; }
-  .img-work-risk-product {
-    margin-top: -350px; } }
-
-section.sales {
+section.how-it-works {
   display: flex;
   justify-content: center;
   align-content: center;
-  flex-direction: column;
-  text-align: center;
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 76px;
-  margin-bottom: 123px; }
-  section.sales .header {
-    padding: 18px; }
-  section.sales .header h2 {
-    margin-bottom: 7px; }
-  section.sales p {
-    max-width: 52ch;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  padding-top: 76px;
+  padding-bottom: 76px;
+  background: url(/source/images/vector-grid.svg);
+  background-attachment: fixed; }
+  section.how-it-works .how-it-works-video {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 29px; }
+    padding: 0;
+    min-width: 800px;
+    max-width: 100%;
+    background: #120404;
+    border: 2px solid white; }
+  section.how-it-works .header {
+    margin-top: 18px;
+    margin-bottom: 18px;
+    max-width: 14ch;
+    margin-left: auto;
+    margin-right: auto; }
 
-.img-work-risk-locked {
-  max-width: 100%; }
+@media (max-width: 800px) {
+  section.how-it-works .how-it-works-video {
+    min-width: unset;
+    width: 100%; } }

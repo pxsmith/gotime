@@ -1,0 +1,37 @@
+@import '../source/global.sass'
+
+// CTA
+
+section.how-it-works
+	display: flex
+	justify-content: center
+	align-content: center
+	@include bt
+	@include bb
+	padding-top: $s3--76
+	padding-bottom: $s3--76
+	@include bg-grid
+
+
+	.how-it-works-video
+		@include margin-auto
+		padding: 0
+		min-width: 800px
+		max-width: 100%
+		background: $dark
+		@include b
+
+	.header
+		margin-top: $s0--18
+		margin-bottom: $s0--18
+		max-width: 14ch
+		@include margin-auto
+
+
+// How It Works – responsive
+
+@media (max-width: 800px)
+	section.how-it-works
+		.how-it-works-video
+			min-width: unset
+			width: 100%
