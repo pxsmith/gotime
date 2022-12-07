@@ -948,6 +948,12 @@ section.pricing {
     gap: 18px; }
   section.pricing hr {
     border: 2px solid rgba(255, 255, 255, 0.2); }
+  section.pricing footer {
+    padding-top: 47px;
+    max-width: 46ch;
+    margin: 0 auto; }
+    section.pricing footer .header {
+      color: #DC2626; }
 
 @media (max-width: 800px) {
   section.pricing .prices {
