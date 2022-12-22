@@ -28,6 +28,7 @@ body.homepage
         h1.header Go faster with a <u>design subscription</u>
         p.subheader Simple pricing for continuous design services. You can throw most design projects at us and you’ll see results in 2-4 days.
         a.button(href='https://calendly.com/gotimehq/meet' target='_blank') Let’s go!
+        //- h2.header.text-outline.mt3 Recent Work
 
       .visuals
         img.photo-skiier(src="source/images/photo-weightlifter.jpg" draggable='false')
@@ -35,58 +36,23 @@ body.homepage
         img.photo-f1(src="source/images/photo-f1.jpg" draggable='false')
 
 
-
-
-    section.recent-work
-      .header.br
-        h3 Case Studies
-        p We’ve served over 40 happy startups. Here’s a small sample we can share.
-
-      a(href='/work-impact.html' draggable='false').thumbnail.thumbnail-impact
-        img.thumbnail-img(src="source/images/work-thumbnail-impact.png" srcset="source/images/work-thumbnail-impact@2x.png 2x" draggable='false')
-        p.pl0.pr0.tc Read more →
-        // nice, but not responsive 
-        //- .df.jc-space-between.pl0.pr0.br
-        //-   p Read
-        //-   p →
-
-      a(href='/work-wilbur.html' draggable='false').thumbnail.thumbnail-wilbur
-        img.thumbnail-img(src="source/images/work-thumbnail-wilbur.png" srcset="source/images/work-thumbnail-wilbur@2x.png 2x" draggable='false')
-        p.pl0.pr0.tc Read more →
-
-      a(href='/work-risk.html' draggable='false').thumbnail.thumbnail-risk
-        img.thumbnail-img(src="source/images/work-thumbnail-risk.png" srcset="source/images/work-thumbnail-risk@2x.png 2x" draggable='false')
-        p.pl0.pr0.tc Read more →
-
-    .recent-work-background
-
-
-    //- section.social-proof
-    //-   .header In good company
-    //-   .logos
-    //-     img.logo-angellist(src="source/images/logo-angellist.png" srcset="source/images/logo-angellist-@2x.png 2x" draggable='false')
-    //-     img.logo-shark-tank(src="source/images/logo-shark-tank.png" srcset="source/images/logo-shark-tank-@2x.png 2x" draggable='false')
-    //-     img.logo-techcrunch(src="source/images/logo-techcrunch.png" srcset="source/images/logo-techcrunch-@2x.png 2x" draggable='false')
-    //-     img.logo-y-combinator(src="source/images/logo-y-combinator.png" srcset="source/images/logo-y-combinator-@2x.png 2x" draggable='false')
-
-
-
-    //- section.how-it-works
-    //-   .content
-    //-     h2.header How it works
-    //-     .steps
-    //-       .step-1
-    //-         img(src='source/images/icon-notepad.svg')
-    //-         p Submit your <br> design brief
-    //-       .step-2
-    //-         img(src='source/images/icon-delivery.svg')
-    //-         p Get your designs <br> in 2-4 days
-    //-       .step-3
-    //-         img(src='source/images/icon-repeat.svg')
-    //-         p Give feedback or <br> start next project
-    
-      //- .divider
-      //-   img(src="source/images/vector-arrows.svg")
+    section.design-collage.mt0
+      //- h2.header.text-outline.mt0.tc Recent Work
+      .row.df.jc-center
+        img(src='source/images/design-collage-09.png' srcset='source/images/design-collage-09.png 2x' draggable='false')
+        img(src='source/images/design-collage-10.png' srcset='source/images/design-collage-10.png 2x' draggable='false')
+        img(src='source/images/design-collage-11.png' srcset='source/images/design-collage-11.png 2x' draggable='false')
+        img(src='source/images/design-collage-12.png' srcset='source/images/design-collage-12.png 2x' draggable='false')
+      .row.df.jc-center
+        img(src='source/images/design-collage-01.png' srcset='source/images/design-collage-01.png 2x' draggable='false')
+        img(src='source/images/design-collage-02.png' srcset='source/images/design-collage-02.png 2x' draggable='false')
+        img(src='source/images/design-collage-03.png' srcset='source/images/design-collage-03.png 2x' draggable='false')
+        img(src='source/images/design-collage-04.png' srcset='source/images/design-collage-04.png 2x' draggable='false')
+      .row.df.jc-center
+        img(src='source/images/design-collage-05.png' srcset='source/images/design-collage-05.png 2x' draggable='false')
+        img(src='source/images/design-collage-06.png' srcset='source/images/design-collage-06.png 2x' draggable='false')
+        img(src='source/images/design-collage-07.png' srcset='source/images/design-collage-07.png 2x' draggable='false')
+        img(src='source/images/design-collage-08.png' srcset='source/images/design-collage-08.png 2x' draggable='false')
     
 
     section.testimonials
@@ -117,28 +83,42 @@ body.homepage
             p.name Anebi Agbo
             p.job-title Founder & CEO
 
+
+    
+    include components/how-it-works.pug
+
+    section.services.bt.bb
+      h2.header Design <br>services
+      .list
+        .col
+          p.title Branding 
+          p Brand identity
+          p Logo design
+          p Merch
+        .col
+          p.title Product
+          p UI design
+          p Prototyping
+          p Wireframing
+          p Product design
+          p iOS & Android
+        .col
+          p.title Marketing
+          p Social media
+          p Ads
+          p Email
+          p Collateral
+        .col
+          p.title Sales
+          p Presentations
+          p Demos
+        .col
+          p.title Fundraising
+          p Pitch decks
     
 
-    section.design-collage
-      .row.df.jc-center
-        img(src='source/images/design-collage-09.png' srcset='source/images/design-collage-09.png 2x' draggable='false')
-        img(src='source/images/design-collage-10.png' srcset='source/images/design-collage-10.png 2x' draggable='false')
-        img(src='source/images/design-collage-11.png' srcset='source/images/design-collage-11.png 2x' draggable='false')
-        img(src='source/images/design-collage-12.png' srcset='source/images/design-collage-12.png 2x' draggable='false')
-      .row.df.jc-center
-        img(src='source/images/design-collage-01.png' srcset='source/images/design-collage-01.png 2x' draggable='false')
-        img(src='source/images/design-collage-02.png' srcset='source/images/design-collage-02.png 2x' draggable='false')
-        img(src='source/images/design-collage-03.png' srcset='source/images/design-collage-03.png 2x' draggable='false')
-        img(src='source/images/design-collage-04.png' srcset='source/images/design-collage-04.png 2x' draggable='false')
-      .row.df.jc-center
-        img(src='source/images/design-collage-05.png' srcset='source/images/design-collage-05.png 2x' draggable='false')
-        img(src='source/images/design-collage-06.png' srcset='source/images/design-collage-06.png 2x' draggable='false')
-        img(src='source/images/design-collage-07.png' srcset='source/images/design-collage-07.png 2x' draggable='false')
-        img(src='source/images/design-collage-08.png' srcset='source/images/design-collage-08.png 2x' draggable='false')
-    
 
-
-    section.pricing.bt
+    section.pricing.bb
       .container
         header
           h2.header Simple pricing
@@ -172,38 +152,28 @@ body.homepage
     //- .divider.divider-services
     //-   img(src="source/images/vector-arrows.svg")
 
-    section.services.bt
-      h2.header Design <br>services
-      .list
-        .col
-          p.title Branding 
-          p Brand identity
-          p Logo design
-          p Merch
-        .col
-          p.title Product
-          p UI design
-          p Prototyping
-          p Wireframing
-          p Product design
-          p iOS & Android
-        .col
-          p.title Marketing
-          p Social media
-          p Ads
-          p Email
-          p Collateral
-        .col
-          p.title Sales
-          p Presentations
-          p Demos
-        .col
-          p.title Fundraising
-          p Pitch decks
-    
 
 
-    include components/how-it-works.pug
+
+    section.recent-work.mb3
+      .header.br
+        h3 Case Studies
+        p We’ve served over 40 happy startups. Here’s a small sample we can share.
+
+      a(href='/work-impact.html' draggable='false').thumbnail.thumbnail-impact
+        img.thumbnail-img(src="source/images/work-thumbnail-impact.png" srcset="source/images/work-thumbnail-impact@2x.png 2x" draggable='false')
+        p.pl0.pr0.tc Read more →
+
+      a(href='/work-wilbur.html' draggable='false').thumbnail.thumbnail-wilbur
+        img.thumbnail-img(src="source/images/work-thumbnail-wilbur.png" srcset="source/images/work-thumbnail-wilbur@2x.png 2x" draggable='false')
+        p.pl0.pr0.tc Read more →
+
+      a(href='/work-risk.html' draggable='false').thumbnail.thumbnail-risk
+        img.thumbnail-img(src="source/images/work-thumbnail-risk.png" srcset="source/images/work-thumbnail-risk@2x.png 2x" draggable='false')
+        p.pl0.pr0.tc Read more →
+
+    //- .recent-work-background
+
     //- include components/cta.pug
     include components/footer.pug
 

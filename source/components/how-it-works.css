@@ -623,9 +623,10 @@ section.how-it-works {
   display: flex;
   justify-content: center;
   align-content: center;
-  border-top: 2px solid white;
-  padding-top: 76px;
-  padding-bottom: 76px; }
+  padding-top: 29px;
+  padding-bottom: 76px;
+  background: url(/source/images/vector-grid.svg);
+  background-attachment: fixed; }
   section.how-it-works .how-it-works-video {
     margin-left: auto;
     margin-right: auto;

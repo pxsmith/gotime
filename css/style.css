@@ -908,13 +908,19 @@ h1 u {
     margin-left: auto;
     margin-right: auto; } }
 
+.text-outline {
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5); }
+
 section.design-collage {
   transform: scale(1); }
+  section.design-collage .header {
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5); }
 
 section.pricing {
   display: flex;
   justify-content: center;
-  margin-top: 123px;
   padding-top: 76px;
   padding-bottom: 76px;
   background: url(/source/images/vector-grid.svg);
