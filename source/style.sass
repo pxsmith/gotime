@@ -16,7 +16,7 @@
 	.subheader
 		margin-top: $s0--18
 		margin-bottom: $s2--47
-		max-width: 60ch
+		max-width: 48ch
 
 
 
@@ -59,7 +59,7 @@
 @media (max-width: 768px)
 	.homepage .hero
 		padding-top: $s2--47
-		// padding-bottom: $s4--123
+		padding-bottom: $s1--29
 
 		.header
 			@include fs2--47
@@ -72,7 +72,7 @@
 		.subheader
 			margin-top: $s0--18
 			margin-bottom: $s1--29
-			max-width: 24ch
+			// max-width: 24ch
 
 		.button
 			@include fs0--18
@@ -89,16 +89,19 @@
 		min-height: 700px
 
 		.photo-f1
-			top: 150px
-			left: 100px
+			// top: 150px
+			// left: 100px
+			display: none
 
 		.photo-sprinter
-			top: -250px
-			left: 200px
+			// top: -250px
+			// left: 200px
+			display: none
 
 		.photo-dirt-bikes
-			top: -150px
-			left: 150px
+			// top: -150px
+			// left: 150px
+			display: none
 
 
 
@@ -175,6 +178,10 @@
 @media (max-width: 450px)
 	.thumbnail-img
 		width: 100%
+@media (max-width: 600px)
+	section.design-collage .row :last-of-type
+		display: none
+
 
 
 @media (min-width: 450px)

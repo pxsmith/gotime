@@ -60,6 +60,27 @@ a {
 *, *:before, *:after {
   box-sizing: border-box; }
 
+.fs0--18 {
+  font-size: 18px; }
+
+.fs1--29 {
+  font-size: 29px; }
+
+.fs2--47 {
+  font-size: 47px; }
+
+.fs3--76 {
+  font-size: 76px; }
+
+.fs4--123 {
+  font-size: 123px; }
+
+.fs5--200 {
+  font-size: 200px; }
+
+.fs6--323 {
+  font-size: 323px; }
+
 .ma--2--7, .ma-2 {
   margin: 7px; }
 

@@ -60,6 +60,27 @@ a {
 *, *:before, *:after {
   box-sizing: border-box; }
 
+.fs0--18 {
+  font-size: 18px; }
+
+.fs1--29 {
+  font-size: 29px; }
+
+.fs2--47 {
+  font-size: 47px; }
+
+.fs3--76 {
+  font-size: 76px; }
+
+.fs4--123 {
+  font-size: 123px; }
+
+.fs5--200 {
+  font-size: 200px; }
+
+.fs6--323 {
+  font-size: 323px; }
+
 .ma--2--7, .ma-2 {
   margin: 7px; }
 
@@ -629,7 +650,7 @@ h1 u {
   .homepage .hero .subheader {
     margin-top: 18px;
     margin-bottom: 47px;
-    max-width: 60ch; }
+    max-width: 48ch; }
 
 .homepage .hero .visuals {
   background: url(/source/images/vector-grid.svg) 645px top no-repeat;
@@ -656,7 +677,8 @@ h1 u {
 
 @media (max-width: 768px) {
   .homepage .hero {
-    padding-top: 47px; }
+    padding-top: 47px;
+    padding-bottom: 29px; }
     .homepage .hero .header {
       font-size: 47px;
       max-width: 10ch; }
@@ -665,8 +687,7 @@ h1 u {
       padding-right: 29px; }
     .homepage .hero .subheader {
       margin-top: 18px;
-      margin-bottom: 29px;
-      max-width: 24ch; }
+      margin-bottom: 29px; }
     .homepage .hero .button {
       font-size: 18px;
       font-family: "Covik_Sans-Semibold";
@@ -679,14 +700,11 @@ h1 u {
     z-index: -1;
     min-height: 700px; }
     .homepage .hero .visuals .photo-f1 {
-      top: 150px;
-      left: 100px; }
+      display: none; }
     .homepage .hero .visuals .photo-sprinter {
-      top: -250px;
-      left: 200px; }
+      display: none; }
     .homepage .hero .visuals .photo-dirt-bikes {
-      top: -150px;
-      left: 150px; } }
+      display: none; } }
 
 .homepage .social-proof {
   padding-top: 47px;
@@ -750,6 +768,10 @@ h1 u {
 @media (max-width: 450px) {
   .thumbnail-img {
     width: 100%; } }
+
+@media (max-width: 600px) {
+  section.design-collage .row :last-of-type {
+    display: none; } }
 
 @media (min-width: 450px) {
   .homepage .recent-work {
