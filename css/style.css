@@ -644,9 +644,11 @@ h1 u {
   padding-top: 123px;
   padding-bottom: 200px; }
   .homepage .hero .copy {
-    padding-left: 123px; }
+    padding-left: 76px; }
   .homepage .hero .header {
     max-width: 15ch; }
+  .homepage .hero h1 {
+    letter-spacing: -0.04em; }
   .homepage .hero .subheader {
     margin-top: 18px;
     margin-bottom: 47px;
