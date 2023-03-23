@@ -747,6 +747,16 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/source\/images\/icon-lightning.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/source\/images\/icon-lightning.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/source\/images\/icon-notepad.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -915,6 +925,19 @@
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/source\/images\/photo-kyler.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/source\/images\/photo-manny.jpeg" : {
+      "ft" : 16384,
+      "iS" : 52888,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/source\/images\/photo-manny.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
