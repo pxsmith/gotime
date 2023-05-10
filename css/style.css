@@ -1136,3 +1136,12 @@ section.process {
   background: #120404;
   position: relative;
   margin-top: -50px; }
+
+.images-hi-res img {
+  width: 50vw;
+  height: 37.5vw; }
+
+@media (max-width: 1000px) {
+  .images-hi-res img {
+    width: 100vw;
+    height: 75vw; } }

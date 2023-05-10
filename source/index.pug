@@ -37,7 +37,6 @@ body.homepage
         img.photo-sprinter(src="source/images/photo-sprinter.jpg" draggable='false')
         img.photo-f1(src="source/images/photo-f1.jpg" draggable='false')
 
-
     section.design-collage.mt0
       //- h2.header.text-outline.mt0.tc Recent Work
       .row.df.jc-center
@@ -58,6 +57,7 @@ body.homepage
 
     
 
+    h2.tc.mt3 Wall of Love
     section.testimonials
       .quote
         p.quotation-mark &ldquo;
@@ -160,7 +160,6 @@ body.homepage
               img.icon(src='source/images/icon-repeat.svg' draggable='false')
               .flex.fd-column
                 h3 Monthly subscription 
-                h3.price-amount $8k/month
                 p ☑ Faster than a full-time designer 
                 p ☑ Cheaper than a full-time designer 
                 p ☑ Dedicated on-shore designer
@@ -172,15 +171,10 @@ body.homepage
               img.icon(src='source/images/icon-lightning.svg' draggable='false')
               .flex.fd-column
                 h3 On-demand design
-                h3.price-amount Flexible pricing
                 p ☑ Fast turnaround
                 p ☑ Simple pricing
                 p ☑ Pay-as-you go
                 p ☑ No minimums
-
-        footer
-          h4.header $trapped for ca$h?
-          p.subheader We’re dedicated to helping early-stage founders take the first steps in their journey. <u><a href='https://airtable.com/shr5OfqlF5QetFVKe' target="_blank">Ask about our special 0-to-1 pricing</a></u>.
     
 
     //- .divider.divider-services
@@ -189,26 +183,93 @@ body.homepage
 
 
 
-    section.recent-work.mb3
-      .header.br
-        h3 Case Studies
-        p We’ve served over 40 happy startups. Here’s a small sample we can share.
+    //- section.recent-work.mb3
+    //-   .header.br
+    //-     h3 Case Studies
+    //-     p We’ve served over 40 happy startups. Here’s a small sample we can share.
 
-      a(href='/work-impact.html' draggable='false').thumbnail.thumbnail-impact
-        img.thumbnail-img(src="source/images/work-thumbnail-impact.png" srcset="source/images/work-thumbnail-impact@2x.png 2x" draggable='false')
-        p.pl0.pr0.tc Read more →
+    //-   a(href='/work-impact.html' draggable='false').thumbnail.thumbnail-impact
+    //-     img.thumbnail-img(src="source/images/work-thumbnail-impact.png" srcset="source/images/work-thumbnail-impact@2x.png 2x" draggable='false')
+    //-     p.pl0.pr0.tc Read more →
 
-      a(href='/work-wilbur.html' draggable='false').thumbnail.thumbnail-wilbur
-        img.thumbnail-img(src="source/images/work-thumbnail-wilbur.png" srcset="source/images/work-thumbnail-wilbur@2x.png 2x" draggable='false')
-        p.pl0.pr0.tc Read more →
+    //-   a(href='/work-wilbur.html' draggable='false').thumbnail.thumbnail-wilbur
+    //-     img.thumbnail-img(src="source/images/work-thumbnail-wilbur.png" srcset="source/images/work-thumbnail-wilbur@2x.png 2x" draggable='false')
+    //-     p.pl0.pr0.tc Read more →
 
-      a(href='/work-risk.html' draggable='false').thumbnail.thumbnail-risk
-        img.thumbnail-img(src="source/images/work-thumbnail-risk.png" srcset="source/images/work-thumbnail-risk@2x.png 2x" draggable='false')
-        p.pl0.pr0.tc Read more →
+    //-   a(href='/work-risk.html' draggable='false').thumbnail.thumbnail-risk
+    //-     img.thumbnail-img(src="source/images/work-thumbnail-risk.png" srcset="source/images/work-thumbnail-risk@2x.png 2x" draggable='false')
+    //-     p.pl0.pr0.tc Read more →
 
     //- .recent-work-background
 
     //- include components/cta.pug
-    include components/footer.pug
+  
 
-    
+    section#work.selected-work.mb3.mt3 
+      h2.tc.mb-2 Selected designs
+      p.tc Go Time has helped over 60 startups with all things design.<br>Here’s a small sample of work we can share.
+
+    .images-hi-res
+
+      //- Aterio report
+      img(src='source/images/design-hi-res-13.jpg' srcset='source/images/design-hi-res-13@2x.jpg 2x' draggable='false' loading='lazy')
+
+      //- Aterio app
+      img(src='source/images/design-hi-res-14.jpg' srcset='source/images/design-hi-res-14@2x.jpg 2x' draggable='false' loading='lazy')
+
+      //- Aterio map
+      img(src='source/images/design-hi-res-07.jpg' srcset='source/images/design-hi-res-07@2x.jpg 2x' draggable='false' loading='lazy')
+
+      //- Aterio website
+      img(src='source/images/design-hi-res-08.jpg' srcset='source/images/design-hi-res-08@2x.jpg 2x' draggable='false' loading='lazy')
+
+      include components/cta.pug
+
+      //- Vacayou destination
+      img(src='source/images/design-hi-res-09.jpg' srcset='source/images/design-hi-res-09@2x.jpg 2x' draggable='false' loading='lazy')
+
+      //- Vacayou app
+      img(src='source/images/design-hi-res-10.jpg' srcset='source/images/design-hi-res-10@2x.jpg 2x' draggable='false' loading='lazy')
+
+      //- Vacayou lightbox
+      img(src='source/images/design-hi-res-11.jpg' srcset='source/images/design-hi-res-11@2x.jpg 2x' draggable='false' loading='lazy')
+
+      //- Vacayou checkout
+      img(src='source/images/design-hi-res-12.jpg' srcset='source/images/design-hi-res-12@2x.jpg 2x' draggable='false' loading='lazy')
+
+      include components/cta.pug
+
+      //- Farms 2 Friends market
+      img(src='source/images/design-hi-res-05.jpg' srcset='source/images/design-hi-res-05@2x.jpg 2x' draggable='false' loading='lazy')
+
+      //- Farms 2 Friends products
+      img(src='source/images/design-hi-res-06.jpg' srcset='source/images/design-hi-res-06@2x.jpg 2x' draggable='false' loading='lazy')
+
+      //- Farms 2 Friends onboarding
+      img(src='source/images/design-hi-res-15.jpg' srcset='source/images/design-hi-res-15@2x.jpg 2x' draggable='false' loading='lazy')
+
+      //- Farms 2 Friends checkout
+      img(src='source/images/design-hi-res-16.jpg' srcset='source/images/design-hi-res-16@2x.jpg 2x' draggable='false' loading='lazy')
+
+      include components/cta.pug
+
+      //- XtraMath website
+      img(src='source/images/design-hi-res-18.jpg' srcset='source/images/design-hi-res-18@2x.jpg 2x' draggable='false' loading='lazy')
+
+      //- Hiji mobile
+      img(src='source/images/design-hi-res-01.jpg' srcset='source/images/design-hi-res-01@2x.jpg 2x' draggable='false' loading='lazy')
+
+      //- Emplifi logo
+      img(src='source/images/design-hi-res-02.jpg' srcset='source/images/design-hi-res-02@2x.jpg 2x' draggable='false' loading='lazy')
+
+      //- Riskline microsite
+      img(src='source/images/design-hi-res-03.jpg' srcset='source/images/design-hi-res-03@2x.jpg 2x' draggable='false' loading='lazy')
+
+      //- Umani logo
+      img(src='source/images/design-hi-res-17.jpg' srcset='source/images/design-hi-res-17@2x.jpg 2x' draggable='false' loading='lazy')
+
+      //- Umani shirt
+      img(src='source/images/design-hi-res-04.jpg' srcset='source/images/design-hi-res-04@2x.jpg 2x' draggable='false' loading='lazy')
+
+    include components/cta.pug
+    include components/footer.pug
