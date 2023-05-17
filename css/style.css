@@ -648,11 +648,11 @@ h1 u {
   .homepage .hero .header {
     max-width: 15ch; }
   .homepage .hero h1 {
-    letter-spacing: -0.04em; }
+    letter-spacing: -0.06em; }
   .homepage .hero .subheader {
     margin-top: 18px;
     margin-bottom: 47px;
-    max-width: 48ch; }
+    max-width: 60ch; }
 
 .homepage .hero .visuals {
   background: url(/source/images/vector-grid.svg) 645px top no-repeat;
