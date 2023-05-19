@@ -1,0 +1,123 @@
+// LAYOUTS
+
+.layout-with-sticky-image
+  padding: $s3--76
+  display: grid
+  justify-content: center
+  grid-template-columns: 1fr 1fr
+  grid-gap: $s2--47
+  background: url(/source/images/vector-grid.svg) $s8 $s4 no-repeat
+
+  .layout-visuals.layout-mobile
+    display: none
+    margin-bottom: $s0--18
+
+  .layout-visuals img
+    max-width: 100%
+
+@media (max-width: 950px)
+  .layout-with-sticky-image
+    padding: $s1
+    grid-template-columns: 1fr
+
+    .layout-visuals.layout-mobile
+      display: block
+    .layout-visuals.layout-desktop
+      display: none
+
+
+
+
+
+
+// MEDIA
+.image-sticky
+  position: -webkit-sticky
+  position: sticky
+  top: $s0--18
+.image-with-border
+  padding: $s0--18
+  background: $dark
+  border: 2px solid white
+  box-shadow: 11px 11px 0px #140505, 11px 11px 0px 2px rgba(255, 255, 255, 1)
+
+
+
+
+// HERO TABLET & MOBILE
+@media (max-width: 768px)
+  .homepage .hero
+    padding-top: $s2--47
+    padding-bottom: $s1--29
+
+    .header
+      @include fs2--47
+      max-width: 10ch
+
+    .copy
+      padding-left: $s1--29
+      padding-right: $s1--29
+
+    .subheader
+      margin-top: $s0--18
+      margin-bottom: $s1--29
+      // max-width: 24ch
+
+    .button
+      @include fs0--18
+      @include f-sans-600-semibold
+      padding: $s-1--11 $s0--18
+
+  // VISUALS TABLET
+  .homepage .hero .visuals
+    background: url(/source/images/vector-grid.svg) $s6--323 (- $s5--200) no-repeat
+    position: absolute
+    top: 0
+    left: 0
+    z-index: -1
+    min-height: 700px
+
+    .photo-f1
+      // top: 150px
+      // left: 100px
+      display: none
+
+    .photo-sprinter
+      // top: -250px
+      // left: 200px
+      display: none
+
+    .photo-dirt-bikes
+      // top: -150px
+      // left: 150px
+      display: none
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// CONTENT
+// 2 column responsive
+
+.images-hi-res img
+  // 4:3 aspect ratio
+  width: 50vw
+  height: 37.5vw
+
+@media (max-width: 1000px)
+  .images-hi-res img
+    // 4:3 aspect ratio
+    width: 100vw
+    height: 75vw

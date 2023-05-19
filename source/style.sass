@@ -1,25 +1,22 @@
 @import '../source/global.sass'
-
+@import '../source/components.sass'
 
 // HERO COPY
 
 .homepage .hero
-	padding-top: $s4--123
-	padding-bottom: $s5--200
+  padding-top: $s4--123
+  padding-bottom: $s5--200
 
-	.copy
-		padding-left: $s3--76
+  .copy
+    padding-left: $s3--76
 
-	.header
-		max-width: 15ch
+  .header
+    max-width: 15ch
 
-	h1
-		letter-spacing: -0.06em
-
-	.subheader
-		margin-top: $s0--18
-		margin-bottom: $s2--47
-		max-width: 60ch
+  .subheader
+    margin-top: $s0--18
+    margin-bottom: $s2--47
+    max-width: 60ch
 
 
 
@@ -29,82 +26,81 @@
 // desktop view
 
 .homepage .hero .visuals
-	background: url(/source/images/vector-grid.svg) ($s8--845 - $s5--200 ) top no-repeat
-	overflow-x: hidden
-	position: absolute
-	top: 0
-	left: 0
-	z-index: -1
-	height: 100vh
-	// min-height: 700px
-	width: 100vw
+  background: url(/source/images/vector-grid.svg) ($s8--845 - $s5--200 ) top no-repeat
+  overflow-x: hidden
+  position: absolute
+  top: 0
+  left: 0
+  z-index: -1
+  height: 100vh
+  width: 100vw
 
-	.photo-f1, .photo-sprinter, .photo-skiier
-		transform: scale(0.5, 0.5)
-		border: 4px solid white
-		position: absolute
+  .photo-f1, .photo-sprinter, .photo-skiier
+    transform: scale(0.5, 0.5)
+    border: 4px solid white
+    position: absolute
 
-	.photo-f1
-		top: $s6--323
-		left: $s7--523 + $s5--200
+  .photo-f1
+    top: $s6--323
+    left: $s7--523 + $s5--200
 
-	.photo-sprinter
-		top: - $s4--123
-		left: $s7--523 + $s4--123
+  .photo-sprinter
+    top: - $s4--123
+    left: $s7--523 + $s4--123
 
-	.photo-skiier
-		top: - $s1--29
-		left: $s8--845 - $s2--47
+  .photo-skiier
+    top: - $s1--29
+    left: $s8--845 - $s2--47
 
 
 
 // HERO TABLET & MOBILE
 @media (max-width: 768px)
-	.homepage .hero
-		padding-top: $s2--47
-		padding-bottom: $s1--29
+  .homepage .hero
+    padding-top: $s2--47
+    padding-bottom: $s1--29
 
-		.header
-			@include fs2--47
-			max-width: 10ch
+    .header
+      @include fs2--47
+      max-width: 10ch
 
-		.copy
-			padding-left: $s1--29
-			padding-right: $s1--29
+    .copy
+      padding-left: $s1--29
+      padding-right: $s1--29
 
-		.subheader
-			margin-top: $s0--18
-			margin-bottom: $s1--29
-			// max-width: 24ch
+    .subheader
+      margin-top: $s0--18
+      margin-bottom: $s1--29
+      // max-width: 24ch
 
-		.button
-			@include fs0--18
-			@include f-sans-600-semibold
-			padding: $s-1--11 $s0--18
+    .button
+      @include fs0--18
+      @include f-sans-600-semibold
+      padding: $s-1--11 $s0--18
 
-	// VISUALS TABLET
-	.homepage .hero .visuals
-		background: url(/source/images/vector-grid.svg) $s6--323 (- $s5--200) no-repeat
-		position: absolute
-		top: 0
-		left: 0
-		z-index: -1
-		min-height: 700px
+  // VISUALS TABLET
+  .homepage .hero .visuals
+    background: url(/source/images/vector-grid.svg) $s6--323 (- $s5--200) no-repeat
+    position: absolute
+    top: 0
+    left: 0
+    z-index: -1
+    min-height: 700px
 
-		.photo-f1
-			// top: 150px
-			// left: 100px
-			display: none
+    .photo-f1
+      // top: 150px
+      // left: 100px
+      display: none
 
-		.photo-sprinter
-			// top: -250px
-			// left: 200px
-			display: none
+    .photo-sprinter
+      // top: -250px
+      // left: 200px
+      display: none
 
-		.photo-dirt-bikes
-			// top: -150px
-			// left: 150px
-			display: none
+    .photo-dirt-bikes
+      // top: -150px
+      // left: 150px
+      display: none
 
 
 
@@ -112,123 +108,123 @@
 
 // SOCIAL PROOF
 .homepage .social-proof
-	padding-top: $s2--47
-	@include text-contrast
+  padding-top: $s2--47
+  @include text-contrast
 
-	.header
-		@include f-mono-400-regular
-		text-transform: uppercase
-		letter-spacing: 0.08em
-		text-align: center
-		@include margin-auto
+  .header
+    @include f-mono-400-regular
+    text-transform: uppercase
+    letter-spacing: 0.08em
+    text-align: center
+    @include margin-auto
 
-	.logos
-		padding: null $s1--29
-		display: flex
-		justify-content: center
-		align-items: center
-		gap: $s0--18 $s2--47
-		flex-wrap: wrap
+  .logos
+    padding: null $s1--29
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: $s0--18 $s2--47
+    flex-wrap: wrap
 
 
 
 
 
 .homepage .recent-work
-	@include margin-auto
-	display: flex
-	flex-wrap: wrap
-	flex-grow: 1
-	align-items: stretch
-	background: $dark
-	margin-top: $s3--76
+  @include margin-auto
+  display: flex
+  flex-wrap: wrap
+  flex-grow: 1
+  align-items: stretch
+  background: $dark
+  margin-top: $s3--76
 
-	.header
-		box-sizing: border-box
-		padding: $s1--29
-		display: flex
-		gap: $s-1--11
-		flex-direction: column
+  .header
+    box-sizing: border-box
+    padding: $s1--29
+    display: flex
+    gap: $s-1--11
+    flex-direction: column
 
-		align-items: center
-		justify-content: center
-		width: 100%
+    align-items: center
+    justify-content: center
+    width: 100%
 
-		h3, p
-			width: 100%
+    h3, p
+      width: 100%
 
-	.thumbnail
-		max-width: 100%
-		flex-grow: 0
-		width: 450px
-		p
-			padding-left: $s-1--11
-			border-left: 2px solid white
+  .thumbnail
+    max-width: 100%
+    flex-grow: 0
+    width: 450px
+    p
+      padding-left: $s-1--11
+      border-left: 2px solid white
 
 .homepage .recent-work-background
-	background: url(/source/images/vector-grid-short.svg) no-repeat right
-	width: 100%
-	height: 241px
-	overflow: visible
-	position: relative
-	margin-top: -200px
-	z-index: -1
+  background: url(/source/images/vector-grid-short.svg) no-repeat right
+  width: 100%
+  height: 241px
+  overflow: visible
+  position: relative
+  margin-top: -200px
+  z-index: -1
 
 @media (max-width: 768px)
-	.homepage section.recent-work
-		margin-top: 0
+  .homepage section.recent-work
+    margin-top: 0
 
 @media (max-width: 450px)
-	.thumbnail-img
-		width: 100%
+  .thumbnail-img
+    width: 100%
 @media (max-width: 600px)
-	section.design-collage .row :last-of-type
-		display: none
+  section.design-collage .row :last-of-type
+    display: none
 
 
 
 @media (min-width: 450px)
-	.homepage .recent-work
-		@include b
-		max-width: 454px
+  .homepage .recent-work
+    @include b
+    max-width: 454px
 
-		.header
-			width: 100%
+    .header
+      width: 100%
 
-		.thumbnail
-			width: 350px
+    .thumbnail
+      width: 350px
 
 @media (max-width: 700px)
-	.homepage .recent-work .thumbnail p
-		border-left: 0px
+  .homepage .recent-work .thumbnail p
+    border-left: 0px
 
 @media (min-width: 700px)
-	.homepage .recent-work
-		max-width: 704px
+  .homepage .recent-work
+    max-width: 704px
 
-		.thumbnail-img
-			width: 100%
+    .thumbnail-img
+      width: 100%
 
-		.header
-			width: 350px
+    .header
+      width: 350px
 
 @media (min-width: 1000px)
-	.homepage .recent-work
-		max-width: 904px
+  .homepage .recent-work
+    max-width: 904px
 
-		.thumbnail, .header
-			width: 450px
+    .thumbnail, .header
+      width: 450px
 
 
 @media (min-width: 1300px)
-	.homepage .recent-work
-		max-width: 1304px
+  .homepage .recent-work
+    max-width: 1304px
 
-		.header
-			width: 250px
+    .header
+      width: 250px
 
-		.thumbnail
-			width: 350px
+    .thumbnail
+      width: 350px
 
 
 
@@ -239,73 +235,73 @@
 // HOW IT WORKS
 
 .how-it-works .content
-	display: flex
-	flex-direction: column
-	width: 1000px
-	max-width: 80vw
-	background: $dark
+  display: flex
+  flex-direction: column
+  width: 1000px
+  max-width: 80vw
+  background: $dark
 
-	@include margin-auto
-	margin-top: $s3--76
-	@include b
-	padding: $s2--47  $s3--76  $s3--76 $s3--76
+  @include margin-auto
+  margin-top: $s3--76
+  @include b
+  padding: $s2--47  $s3--76  $s3--76 $s3--76
 
-	h2.header
-		margin-bottom: $s1--29
-		text-align: center
-		@include margin-auto
+  h2.header
+    margin-bottom: $s1--29
+    text-align: center
+    @include margin-auto
 
-	.steps
-		display: flex
-		gap: $s1--29
+  .steps
+    display: flex
+    gap: $s1--29
 
-	.step-1, .step-2, .step-3
-		display: flex
-		flex-direction: column
-		flex-grow: 1
-		flex-basis: 0
-		gap: $s0--18
+  .step-1, .step-2, .step-3
+    display: flex
+    flex-direction: column
+    flex-grow: 1
+    flex-basis: 0
+    gap: $s0--18
 
-	p
-		@include fs1--29
-		line-height: 1.2
-		text-align: center
+  p
+    @include fs1--29
+    line-height: 1.2
+    text-align: center
 
-	img
-		max-width: 48px
-		max-height: 48px
-		margin: 0 auto
+  img
+    max-width: 48px
+    max-height: 48px
+    margin: 0 auto
 
 .how-it-works .divider
-	top: -210px
+  top: -210px
 
 // HOW IT WORKS TABLET
 @media (max-width: 1150px)
-	.how-it-works .content
-		margin-top: $s2--47
-		padding: $s1--29  $s2--47  $s2--47 $s2--47
+  .how-it-works .content
+    margin-top: $s2--47
+    padding: $s1--29  $s2--47  $s2--47 $s2--47
 
-		h2.header
-			margin-bottom: $s0--18
+    h2.header
+      margin-bottom: $s0--18
 
-		.steps
-			gap: $s0--18
+    .steps
+      gap: $s0--18
 
-		.step-1, .step-2, .step-3
-			gap: $s0--18
-		p
-			@include fs0--18
+    .step-1, .step-2, .step-3
+      gap: $s0--18
+    p
+      @include fs0--18
 
 @media (max-width: 560px)
-	.how-it-works
-		.steps
-			flex-direction: column
+  .how-it-works
+    .steps
+      flex-direction: column
 
-	.how-it-works .content
-		max-width: 66vw
+  .how-it-works .content
+    max-width: 66vw
 
-	.how-it-works .divider
-		top: -470px
+  .how-it-works .divider
+    top: -470px
 
 
 
@@ -321,9 +317,9 @@
     left: -50px
 
 .divider-services
-	padding-top: $s-1--11
-	padding-bottom: $s-1--11
-	@include bb
+  padding-top: $s-1--11
+  padding-bottom: $s-1--11
+  @include bb
 
 
 
@@ -331,153 +327,153 @@
 // TESTIMONIALS
 
 .homepage .testimonials
-	display: flex
-	gap: $s3--76
-	margin: $s3--76
-	margin-top: 0
-	align-content: stretch
+  display: flex
+  gap: $s3--76
+  margin: $s3--76
+  margin-top: 0
+  align-content: stretch
 
-	.quote
-		flex-grow: 1
-		flex-basis: 0
+  .quote
+    flex-grow: 1
+    flex-basis: 0
 
-	.quotation-mark
-		@include f-mono-400-regular
-		@include fs4--123
-		color: $accent
-		height: 175px
+  .quotation-mark
+    @include f-mono-400-regular
+    @include fs4--123
+    color: $accent
+    height: 175px
 
-	.quote-body
-		margin-top: - $s2--47
-		@include text-default
+  .quote-body
+    margin-top: - $s2--47
+    @include text-default
 
-	.portrait
-		width: $s3--76
-		height: $s3--76
-		border-radius: 100%
-		@include b
+  .portrait
+    width: $s3--76
+    height: $s3--76
+    border-radius: 100%
+    @include b
 
-	.person
-		margin-top: $s1--29
-		display: flex
-		gap: $s0--18
-		align-items: center
+  .person
+    margin-top: $s1--29
+    display: flex
+    gap: $s0--18
+    align-items: center
 
-	.name
-		@include f-sans-500-medium
-		@include text-contrast
-		font-size: 20px
-		line-height: 1.2
-	.job-title
-		@include text-subtle
-		line-height: 1.2
+  .name
+    @include f-sans-500-medium
+    @include text-contrast
+    font-size: 20px
+    line-height: 1.2
+  .job-title
+    @include text-subtle
+    line-height: 1.2
 
 // TESTIMONIALS RESPONSIVE
 @media (max-width: 1150px)
-	.homepage .testimonials
-		margin-left: $s1--29
-		margin-right: $s1--29
+  .homepage .testimonials
+    margin-left: $s1--29
+    margin-right: $s1--29
 
 @media (max-width: 1150px)
-	.homepage .testimonials
-		flex-direction: column
+  .homepage .testimonials
+    flex-direction: column
 
-	.homepage .quotation-mark
-		margin-top: - $s2--47
+  .homepage .quotation-mark
+    margin-top: - $s2--47
 
-	.homepage .quote
-		max-width: 60ch
-		@include margin-auto
+  .homepage .quote
+    max-width: 60ch
+    @include margin-auto
 
 
 
 
 .text-outline
-	color: transparent
-	-webkit-text-stroke: 1px rgba(white, 0.5)
+  color: transparent
+  -webkit-text-stroke: 1px rgba(white, 0.5)
 
 // DESIGN COLLAGE
 section.design-collage
-	.header
-		color: transparent
-		-webkit-text-stroke: 1px rgba(white, 0.5)
+  .header
+    color: transparent
+    -webkit-text-stroke: 1px rgba(white, 0.5)
 
-	transform: scale(1)
-	// img
-	// 	width: 400px
-	// 	height: 300px
+  transform: scale(1)
+  // img
+  //   width: 400px
+  //   height: 300px
 
 
 
 // PRICING
 
 section.pricing
-	display: flex
-	justify-content: center
+  display: flex
+  justify-content: center
 
-	padding-top: $s3--76
-	padding-bottom: $s3--76
-	@include bg-grid
+  padding-top: $s3--76
+  padding-bottom: $s3--76
+  @include bg-grid
 
-	text-align: center
+  text-align: center
 
-	.container
-		@include b
-		padding: $s2--47
-		background: $dark
-		max-width: 1200px
+  .container
+    @include b
+    padding: $s2--47
+    background: $dark
+    max-width: 1200px
 
-	.header
-		text-align: center
-		margin-bottom: $s-2--7
-
-
-	.title
-		display: flex
-		gap: $s0--18
-	.price-amount
-		@include f-sans-400-regular
-		margin-bottom: $s0--18
-	.title .fd-column
-		gap: $s-2--7
+  .header
+    text-align: center
+    margin-bottom: $s-2--7
 
 
-	.prices
-		display: flex
-		// justify-content: flex-start
-		margin-top: $s2--47
-		gap: $s2--47
-		text-align: left
+  .title
+    display: flex
+    gap: $s0--18
+  .price-amount
+    @include f-sans-400-regular
+    margin-bottom: $s0--18
+  .title .fd-column
+    gap: $s-2--7
 
-	.price
-		display: flex
-		flex-direction: column
-		align-items: flex-start
-		gap: $s0--18
 
-	hr
-		border: 2px solid rgba(white, 0.2)
+  .prices
+    display: flex
+    // justify-content: flex-start
+    margin-top: $s2--47
+    gap: $s2--47
+    text-align: left
 
-	footer
-		padding-top: $s2--47
-		.header
-			color: $accent
-		max-width: 46ch
-		margin: 0 auto
+  .price
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    gap: $s0--18
+
+  hr
+    border: 2px solid rgba(white, 0.2)
+
+  footer
+    padding-top: $s2--47
+    .header
+      color: $accent
+    max-width: 46ch
+    margin: 0 auto
 
 
 @media (max-width: 800px)
-	section.pricing
-		.prices
-			flex-direction: column
-			gap: $s2--47
+  section.pricing
+    .prices
+      flex-direction: column
+      gap: $s2--47
 
-		hr
-			display: none
+    hr
+      display: none
 
-		.container
-			max-width: 75vw
-			padding: $s1--29
+    .container
+      max-width: 75vw
+      padding: $s1--29
 
 
 
@@ -486,55 +482,55 @@ section.pricing
 // SERVICES
 
 .services
-	display: flex
+  display: flex
 
-	.header
-		display: flex
-		align-items: center
+  .header
+    display: flex
+    align-items: center
 
-		padding: $s3--76
-		@include br
+    padding: $s3--76
+    @include br
 
-	.list
-		display: flex
-		padding: $s2--47 $s1--29
-		justify-content: space-evenly
-		flex: 1 1 auto
-		gap: $s0--18
+  .list
+    display: flex
+    padding: $s2--47 $s1--29
+    justify-content: space-evenly
+    flex: 1 1 auto
+    gap: $s0--18
 
 
-		p:not(.title)
-			@include text-subtle
+    p:not(.title)
+      @include text-subtle
 
-	.col .title
-		@include f-sans-800-black
-		@include text-contrast
+  .col .title
+    @include f-sans-800-black
+    @include text-contrast
 
-	.col
-		display: flex
-		flex-direction: column
-		gap: $s-2--7
+  .col
+    display: flex
+    flex-direction: column
+    gap: $s-2--7
 
 // SERVICES RESPONSIVE
 @media (max-width: 900px)
-	.services
-		.header
-			padding: $s1--29
-		.list
-			padding: $s1--29 $s2--47
-			flex-wrap: wrap
-			justify-content: flex-start
+  .services
+    .header
+      padding: $s1--29
+    .list
+      padding: $s1--29 $s2--47
+      flex-wrap: wrap
+      justify-content: flex-start
 @media (max-width: 647px)
-	.services
-		.header
-			flex: 1 1 auto
-			justify-content: flex-start
-			flex-direction: column
-		.list
-			flex-direction: column
-			gap: $s0--18
-		.col
-			gap: 0px
+  .services
+    .header
+      flex: 1 1 auto
+      justify-content: flex-start
+      flex-direction: column
+    .list
+      flex-direction: column
+      gap: $s0--18
+    .col
+      gap: 0px
 
 
 
@@ -543,34 +539,34 @@ section.pricing
 // PROCESS
 
 section.process
-	display: flex
-	justify-content: space-evenly
-	align-items: stretch
-	justify-content: center
-	min-height: $s6--323
-	@include bt
+  display: flex
+  justify-content: space-evenly
+  align-items: stretch
+  justify-content: center
+  min-height: $s6--323
+  @include bt
 
-	.photo
-		@include br
-		background: url('/source/images/photo-skiier.jpg') 33% center no-repeat
-		background-size: cover
+  .photo
+    @include br
+    background: url('/source/images/photo-skiier.jpg') 33% center no-repeat
+    background-size: cover
 
-	.content
-		display: flex
-		flex-direction: column
-		flex-grow: 1
-		flex-basis: 0
-		padding: $s3--76
-		gap: $s0--18
+  .content
+    display: flex
+    flex-direction: column
+    flex-grow: 1
+    flex-basis: 0
+    padding: $s3--76
+    gap: $s0--18
 
 // RESPONSIVE
 @media (max-width: 950px)
-	section.process
-		.content
-			padding: $s1--29
+  section.process
+    .content
+      padding: $s1--29
 @media (max-width: 500px)
-	section.process
-		flex-direction: column
+  section.process
+    flex-direction: column
 
 
 
@@ -579,100 +575,88 @@ section.process
 // WORK IMPACT
 // HERO
 .work-impact
-	section.hero
-		padding-top: $s4--123
-		padding-left: $s3--76
-		background: url(/source/images/work-impact-hero-bg.png) no-repeat top 50px left 450px
-		max-width: 1380px
-		max-height: 800px
-		margin: 0 auto
+  section.hero
+    padding-top: $s4--123
+    padding-left: $s3--76
+    background: url(/source/images/work-impact-hero-bg.png) no-repeat top 50px left 450px
+    max-width: 1380px
+    max-height: 800px
+    margin: 0 auto
 
-	.hero-mockup
-		position: relative
-		top: -500px
-		left: 650px
+  .hero-mockup
+    position: relative
+    top: -500px
+    left: 650px
 
-	h1
-		max-width: 12ch
-		margin-bottom: 0.3em
+  h1
+    max-width: 12ch
+    margin-bottom: 0.3em
 
-	p
-		max-width: 53ch
+  p
+    max-width: 53ch
 
-	.hero-list
-		margin-top: $s2--47
+  .hero-list
+    margin-top: $s2--47
 
 @media (max-width: 900px)
-	.work-impact
-		.hero-mockup
-			top: 0
-			left: 0
-			max-width: 100vw
+  .work-impact
+    .hero-mockup
+      top: 0
+      left: 0
+      max-width: 100vw
 
-		.hero-mockup img
-			@include margin-auto
-			max-width: 100%
-			padding-top: $s1--29
+    .hero-mockup img
+      @include margin-auto
+      max-width: 100%
+      padding-top: $s1--29
 
-		section.hero
-			max-height: none
-			padding-top: $s2--47
-			padding-left: $s2--47
-			padding-right: $s2--47
-			background: url(/source/images/work-impact-hero-bg.png) no-repeat top -100px left 400px
+    section.hero
+      max-height: none
+      padding-top: $s2--47
+      padding-left: $s2--47
+      padding-right: $s2--47
+      background: url(/source/images/work-impact-hero-bg.png) no-repeat top -100px left 400px
 
 @media (max-width: 400px)
-	.work-impact
-		section.hero
-			padding-top: $s0--18
-			padding-left: $s0--18
-			padding-right: $s0--18
+  .work-impact
+    section.hero
+      padding-top: $s0--18
+      padding-left: $s0--18
+      padding-right: $s0--18
 
 // WORK SECTIONS
 .work-impact
-	section.content
-		margin-bottom: $s3--76
+  section.content
+    margin-bottom: $s3--76
 
-		.header
-			margin-top: $s3--76
-			margin-bottom: $s2--47
+    .header
+      margin-top: $s3--76
+      margin-bottom: $s2--47
 
-		h3
-			margin-bottom: $s-1--11
+    h3
+      margin-bottom: $s-1--11
 
-		p, h3
-			@include margin-auto
-			text-align: center
-			padding-left: $s0--18
-			padding-right: $s0--18
+    p, h3
+      @include margin-auto
+      text-align: center
+      padding-left: $s0--18
+      padding-right: $s0--18
 
-		p
-			max-width: 40ch
+    p
+      max-width: 40ch
 
-		.images
-			display: flex
-			justify-content: center
-			gap: $s2--47
+    .images
+      display: flex
+      justify-content: center
+      gap: $s2--47
 
 
 .prototype-cover
-	width: 100%
-	height: 50px
-	background: $dark
-	position: relative
-	margin-top: -50px
-
-
-.images-hi-res img
-	// 4:3 aspect ratio
-	width: 50vw
-	height: 37.5vw
-
-@media (max-width: 1000px)
-	.images-hi-res img
-		// 4:3 aspect ratio
-		width: 100vw
-		height: 75vw
+  width: 100%
+  height: 50px
+  background: $dark
+  position: relative
+  margin-top: -50px
 
 
 

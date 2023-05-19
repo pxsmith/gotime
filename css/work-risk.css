@@ -60,25 +60,25 @@ a {
 *, *:before, *:after {
   box-sizing: border-box; }
 
-.fs0--18 {
+.fs0--18, .fs0 {
   font-size: 18px; }
 
-.fs1--29 {
+.fs1--29, .fs1 {
   font-size: 29px; }
 
-.fs2--47 {
+.fs2--47, .fs2 {
   font-size: 47px; }
 
-.fs3--76 {
+.fs3--76, .fs3 {
   font-size: 76px; }
 
-.fs4--123 {
+.fs4--123, .fs4 {
   font-size: 123px; }
 
-.fs5--200 {
+.fs5--200, .fs5 {
   font-size: 200px; }
 
-.fs6--323 {
+.fs6--323, .fs6 {
   font-size: 323px; }
 
 .ma--2--7, .ma-2 {
@@ -441,6 +441,9 @@ a {
 .pb-9--1368, .pb9 {
   padding-bottom: 1368px; }
 
+.bg-dark, .bg-black {
+  background: #120404; }
+
 .b {
   border: 2px solid white; }
 
@@ -470,7 +473,7 @@ a {
 
 h1 {
   font-size: 76px;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.06em;
   line-height: 1; }
 
 @media (max-width: 768px) {
@@ -580,6 +583,25 @@ h1 u {
 .dif {
   display: inline-flex; }
 
+.dg {
+  display: grid; }
+
+.p-static {
+  position: static; }
+
+.p-relative {
+  position: relative; }
+
+.p-absolute {
+  position: absolute; }
+
+.p-fixed {
+  position: fixed; }
+
+.p-sticky {
+  position: -webkit-sticky;
+  position: sticky; }
+
 .flex {
   display: flex; }
 
@@ -588,6 +610,15 @@ h1 u {
 
 .fd-column {
   flex-direction: column; }
+
+.fg-0 {
+  flex-grow: 0; }
+
+.fg-1 {
+  flex-grow: 1; }
+
+.fg-2 {
+  flex-grow: 2; }
 
 .jc-flex-start {
   justify-content: flex-start; }

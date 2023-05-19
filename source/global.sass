@@ -92,20 +92,33 @@ $s7--523: 523px
 $s8--845: 845px
 $s9--1368: 1368px
 
+$s-2: $s-2--7
+$s-1: $s-1--11
+$s0: $s0--18
+$s1: $s1--29
+$s2: $s2--47
+$s3: $s3--76
+$s4: $s4--123
+$s5: $s5--200
+$s6: $s6--323
+$s7: $s7--523
+$s8: $s8--845
+$s9: $s9--1368
 
-.fs0--18
+
+.fs0--18, .fs0
   font-size: $s0--18
-.fs1--29
+.fs1--29, .fs1
   font-size: $s1--29
-.fs2--47
+.fs2--47, .fs2
   font-size: $s2--47
-.fs3--76
+.fs3--76, .fs3
   font-size: $s3--76
-.fs4--123
+.fs4--123, .fs4
   font-size: $s4--123
-.fs5--200
+.fs5--200, .fs5
   font-size: $s5--200
-.fs6--323
+.fs6--323, .fs6
   font-size: $s6--323
 
 @mixin fs0--18
@@ -449,6 +462,9 @@ $s9--1368: 1368px
   padding-bottom: $s9--1368
 
 
+// BACKGROUND
+.bg-dark, .bg-black
+  background: $dark
 
 
 // BORDERS
@@ -502,7 +518,7 @@ $s9--1368: 1368px
 
 h1
 	@include fs3--76
-	letter-spacing: -0.02em
+	letter-spacing: -0.06em
 	line-height: 1
 
 @media (max-width: 768px)
@@ -610,6 +626,7 @@ h1 u
 		border-right: 2px solid white
 
 
+// DISPLAY
 
 .dib
 	display: inline-block
@@ -621,15 +638,39 @@ h1 u
 	display: inline
 .dif
 	display: inline-flex
+.dg
+  display: grid
 
-// ATOMIC CSS
-// parent
+
+// POSITION 
+.p-static
+  position: static
+.p-relative
+  position: relative
+.p-absolute
+  position: absolute
+.p-fixed
+  position: fixed
+.p-sticky
+  position: -webkit-sticky
+  position: sticky
+
+
+// FLEX
+
 .flex
 	display: flex
 .fd-row
 	flex-direction: row
 .fd-column
 	flex-direction: column
+
+.fg-0
+  flex-grow: 0
+.fg-1
+  flex-grow: 1
+.fg-2
+  flex-grow: 2
 
 .jc-flex-start
 	justify-content: flex-start
