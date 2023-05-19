@@ -12,7 +12,7 @@ html(lang='en-US')
     .layout-with-sticky-image
       .layout-header
         h1 <u>Design services</u> for startups &amp; enterprise
-        p.mt-1.mb2 At Go Time we’ve helped many founders &amp; fast-moving businesses with everything below. You’re going to see your first round of designs in under a week. This isn’t our first rodeo!
+        p At Go Time we’ve helped many founders &amp; fast-moving businesses with everything below. You’re going to see your first round of designs in under a week. This isn’t our first rodeo!
 
         .layout-visuals.layout-mobile
           img.image-with-border(src='/source/images/photo-hairpin-turn.jpg' srcset='/source/images/photo-hairpin-turn@2x.jpg 2x' draggable='false')
@@ -27,14 +27,14 @@ html(lang='en-US')
             h3= serviceName
 
         +service('Pitch Decks', '/services/pitch-decks')
-        +service('Branding & Logo Design')
+        +service('MVP Sprints', '/services/mvp-sprints')
+        +service('HiFi Prototypes', '/services/hifi-prototypes')
+        +service('Design Systems', '/services/design-systems')
+        +serviceNoLink('Branding & Logo Design')
         +serviceNoLink('UX/UI Design')
         +serviceNoLink('Website Designs')
         +serviceNoLink('Landing Pages')
         +serviceNoLink('Webflow Builds')
-        +serviceNoLink('MVP Sprints')
-        +serviceNoLink('Hi-Fidelity Prototypes')
-        +serviceNoLink('Design Systems')
         +serviceNoLink('Design Thinking Workshops')
 
       .layout-visuals.layout-desktop

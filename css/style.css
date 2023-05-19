@@ -677,7 +677,9 @@ h1 u {
   justify-content: center;
   grid-template-columns: 1fr 1fr;
   grid-gap: 47px;
-  background: url(/source/images/vector-grid.svg) 845px 123px no-repeat; }
+  background: url(/source/images/vector-grid.svg) 968px 47px no-repeat; }
+  .layout-with-sticky-image h1, .layout-with-sticky-image p {
+    margin-bottom: 18px; }
   .layout-with-sticky-image .layout-visuals.layout-mobile {
     display: none;
     margin-bottom: 18px; }
@@ -774,10 +776,9 @@ h1 u {
     left: 723px; }
   .homepage .hero .visuals .photo-sprinter {
     top: -123px;
-    left: 646px; }
+    left: 693px; }
   .homepage .hero .visuals .photo-skiier {
-    top: -29px;
-    left: 798px; }
+    left: 769px; }
 
 @media (max-width: 768px) {
   .homepage .hero {

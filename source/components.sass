@@ -6,7 +6,10 @@
   justify-content: center
   grid-template-columns: 1fr 1fr
   grid-gap: $s2--47
-  background: url(/source/images/vector-grid.svg) $s8 $s4 no-repeat
+  background: url(/source/images/vector-grid.svg) ($s8 + $s4) $s2 no-repeat
+
+  h1, p
+    margin-bottom: $s0
 
   .layout-visuals.layout-mobile
     display: none
