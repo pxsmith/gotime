@@ -683,7 +683,7 @@ h1 u {
   .navbar .link {
     flex: 0 0 auto;
     flex-wrap: wrap;
-    transition: 100ms ease-in-out; }
+    transition: 250ms ease-in; }
     .navbar .link:hover {
       color: #DC2626; }
   .navbar > * {

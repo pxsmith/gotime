@@ -107,6 +107,14 @@
       "oAP" : "\/robots.txt",
       "oF" : 0
     },
+    "\/services\/design-systems\/index.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/services\/design-systems\/index.html",
+      "oF" : 0
+    },
     "\/services\/design-systems\/index.pug" : {
       "cB" : 0,
       "cOD" : 1,
@@ -485,6 +493,26 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 1
+    },
+    "\/source\/images\/cursor-hand.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/source\/images\/cursor-hand.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/source\/images\/cursor-point.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/source\/images\/cursor-point.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
     },
     "\/source\/images\/design-collage-01.png" : {
       "ft" : 32768,

@@ -704,7 +704,7 @@ h1 u {
   padding: 18px;
   background: #120404;
   border: 2px solid white;
-  box-shadow: 11px 11px 0px #140505, 11px 11px 0px 2px white; }
+  box-shadow: 11px 11px 0px #120404, 11px 11px 0px 2px white; }
 
 @media (max-width: 768px) {
   .homepage .hero {
@@ -1239,3 +1239,26 @@ section.process {
   background: #120404;
   position: relative;
   margin-top: -50px; }
+
+body {
+  cursor: url("/source/images/cursor-hand.svg"), auto; }
+
+a, a:hover {
+  cursor: url("/source/images/cursor-point.svg"), auto; }
+
+a.person p.name {
+  transition: 200ms ease-in; }
+
+a.person:hover p.name {
+  transition: 200ms ease-in;
+  color: #DC2626; }
+
+a.button {
+  transition: 200ms ease-in; }
+
+a.button:hover {
+  border: 2px solid white;
+  box-shadow: -11px 11px 0px #120404, -11px 11px 0px 2px white; }
+
+a:hover {
+  transition: 200ms ease-in; }
