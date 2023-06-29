@@ -471,6 +471,18 @@ a {
 .tj {
   text-align: justify; }
 
+.text-contrast {
+  color: white; }
+
+.text-default {
+  color: rgba(255, 255, 255, 0.8); }
+
+.text-subtle {
+  color: rgba(255, 255, 255, 0.65); }
+
+.text-extra-subtle {
+  color: rgba(255, 255, 255, 0.4); }
+
 h1 {
   font-size: 123px;
   letter-spacing: -0.075em;
@@ -747,8 +759,8 @@ h1 u {
     height: 75vw; } }
 
 .homepage .hero {
-  padding-top: 123px;
-  padding-bottom: 200px; }
+  padding-top: 76px;
+  padding-bottom: 123px; }
   .homepage .hero .copy {
     padding-left: 76px;
     padding-right: 76px; }
@@ -758,6 +770,11 @@ h1 u {
     margin-top: 29px;
     margin-bottom: 47px;
     max-width: 60ch; }
+  .homepage .hero .text-highlight {
+    color: 315deg, #DC2626 0%, #FA603E 100%;
+    background: -webkit-linear-gradient(315deg, #DC2626 0%, #FA603E 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
 
 .homepage .hero .visuals {
   background: url(/source/images/vector-grid.svg) 645px top no-repeat;
@@ -768,19 +785,19 @@ h1 u {
   z-index: -1;
   height: 100vh;
   width: 100vw; }
-  .homepage .hero .visuals .photo-f1, .homepage .hero .visuals .photo-sprinter, .homepage .hero .visuals .photo-skiier {
+  .homepage .hero .visuals .photo-hero-3, .homepage .hero .visuals .photo-hero-2, .homepage .hero .visuals .photo-hero-1 {
     transform: scale(0.5, 0.5);
     border: 4px solid white;
     position: absolute; }
-  .homepage .hero .visuals .photo-f1 {
+  .homepage .hero .visuals .photo-hero-3 {
     top: 350px;
     left: 850px; }
-  .homepage .hero .visuals .photo-sprinter {
+  .homepage .hero .visuals .photo-hero-2 {
     top: -175px;
-    left: 750px; }
-  .homepage .hero .visuals .photo-skiier {
-    top: -50px;
-    left: 900px; }
+    left: 700px; }
+  .homepage .hero .visuals .photo-hero-1 {
+    top: 50px;
+    left: 975px; }
 
 @media (max-width: 768px) {
   .homepage .hero {
@@ -788,7 +805,8 @@ h1 u {
     padding-bottom: 29px; }
     .homepage .hero .header {
       font-size: 47px;
-      max-width: 10ch; }
+      max-width: 100ch;
+      line-height: 1em; }
     .homepage .hero .copy {
       padding-left: 29px;
       padding-right: 29px; }
@@ -806,9 +824,9 @@ h1 u {
     left: 0;
     z-index: -1;
     min-height: 700px; }
-    .homepage .hero .visuals .photo-f1 {
+    .homepage .hero .visuals .photo-hero-3 {
       display: none; }
-    .homepage .hero .visuals .photo-sprinter {
+    .homepage .hero .visuals .photo-hero-2 {
       display: none; }
     .homepage .hero .visuals .photo-dirt-bikes {
       display: none; } }
