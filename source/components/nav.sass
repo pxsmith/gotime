@@ -1,4 +1,4 @@
-@import '../source/global.sass'
+@import '../source/_variables.sass'
 
 // NAVBAR
 // flexbox guide https://css-tricks.com/snippets/css/a-guide-to-flexbox/
@@ -15,8 +15,8 @@
 
   .link
     flex: 0 0 auto
-    @extend .pl0
-    @extend .pr1
+    padding-left: $s0
+    padding-right: $s1
     flex-wrap: wrap
 
     transition: 250ms ease-in 

@@ -1,3 +1,5 @@
+@import '../source/_variables.sass'
+
 // RESETS (template)
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -59,10 +61,6 @@ a
 .page-wrapper
 	overflow-x: hidden
 
-@mixin margin-auto
-	margin-left: auto
-	margin-right: auto
-
 *, *:before, *:after
   box-sizing: border-box
 
@@ -74,36 +72,7 @@ a
 
 
 
-// THEME
 
-$dark: #120404
-$accent: #DC2626
-
-$s-2--7: 7px
-$s-1--11: 11px
-$s0--18: 18px
-$s1--29: 29px
-$s2--47: 47px
-$s3--76: 76px
-$s4--123: 123px
-$s5--200: 200px
-$s6--323: 323px
-$s7--523: 523px
-$s8--845: 845px
-$s9--1368: 1368px
-
-$s-2: $s-2--7
-$s-1: $s-1--11
-$s0: $s0--18
-$s1: $s1--29
-$s2: $s2--47
-$s3: $s3--76
-$s4: $s4--123
-$s5: $s5--200
-$s6: $s6--323
-$s7: $s7--523
-$s8: $s8--845
-$s9: $s9--1368
 
 
 .fs0--18, .fs0
@@ -121,88 +90,11 @@ $s9: $s9--1368
 .fs6--323, .fs6
   font-size: $s6--323
 
-@mixin fs0--18
-  font-size: $s0--18
-@mixin fs1--29
-  font-size: $s1--29
-@mixin fs2--47
-  font-size: $s2--47
-@mixin fs3--76
-  font-size: $s3--76
-@mixin fs4--123
-  font-size: $s4--123
-@mixin fs5--200
-  font-size: $s5--200
-@mixin fs6--323
-  font-size: $s6--323
 
 
 
 
 
-
-
-
-// COVIK SANS
-@mixin f-mono-800-black
-  font-family: "Covik_Sans_Mono-Black"
-@mixin f-mono-800-black-italic
-  font-family: "Covik_Sans_Mono-Black_Italic"
-
-@mixin f-mono-700-bold
-  font-family: "Covik_Sans_Mono-Bold"
-@mixin f-mono-700-bold-italic
-  font-family: "Covik_Sans_Mono-Bold_Italic"
-
-@mixin f-mono-600-semibold
-  font-family: "Covik_Sans_Mono-Semibold_Italic"
-@mixin f-mono-600-semibold-italic
-  font-family: "Covik_Sans_Mono-Semibold"
-
-@mixin f-mono-500-medium
-  font-family: "Covik_Sans_Mono-Medium"
-@mixin f-mono-500-medium-italic
-  font-family: "Covik_Sans_Mono-Medium_Italic"
-
-@mixin f-mono-400-regular
-  font-family: "Covik_Sans_Mono-Regular"
-@mixin f-mono-400-regular-italic
-  font-family: "Covik_Sans_Mono-Italic"
-
-
-
-// COVIK MONO
-@mixin f-sans-800-black
-  font-family: "Covik_Sans-Black"
-@mixin f-sans-800-black-italic
-  font-family: "Covik_Sans-Black_Italic"
-
-@mixin f-sans-700-bold
-  font-family: "Covik_Sans-Bold"
-@mixin f-sans-700-bold-italic
-  font-family: "Covik_Sans-Bold_Italic"
-
-@mixin f-sans-600-semibold
-  font-family: "Covik_Sans-Semibold"
-@mixin f-sans-600-semibold--italic
-  font-family: "Covik_Sans-Semibold_Italic"
-
-@mixin f-sans-500-medium
-  font-family: "Covik_Sans-Medium"
-@mixin f-sans-500-medium-italic
-  font-family: "Covik_Sans-Medium_Italic"
-
-@mixin f-sans-400-regular
-  font-family: "Covik_Sans-Regular"
-@mixin f-sans-400-regular-italic
-  font-family: "Covik_Sans-Italic"
-
-@mixin text-contrast
-	color: white
-@mixin text-default
-	color: rgba(white, 0.8)
-@mixin text-subtle
-	color: rgba(white, 0.65)
 
 
 
@@ -471,36 +363,19 @@ $s9: $s9--1368
 
 .b
   border: 2px solid white
-@mixin b
-  border: 2px solid white
 
 .bt
-  border-top: 2px solid white
-@mixin bt
   border-top: 2px solid white
 
 .br
   border-right: 2px solid white
-@mixin br
-  border-right: 2px solid white
-
 
 .bb
   border-bottom: 2px solid white
-@mixin bb
-  border-bottom: 2px solid white
-
 
 .bl
   border-left: 2px solid white
-@mixin bl
-  border-left: 2px solid white
 
-// GRID
-
-@mixin bg-grid
-	background: url(/source/images/vector-grid.svg)
-	background-attachment: fixed
 
 
 
@@ -517,9 +392,9 @@ $s9: $s9--1368
 	text-align: justify
 
 h1
-	@include fs3--76
-	letter-spacing: -0.06em
-	line-height: 1
+  @include fs4--123
+  letter-spacing: -0.075em
+  line-height: 0.9em
 
 @media (max-width: 768px)
 	h1
