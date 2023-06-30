@@ -493,7 +493,7 @@ h1 {
     font-size: 47px; } }
 
 h2 {
-  font-size: 47px;
+  font-size: 76px;
   font-family: "Covik_Sans-Black";
   line-height: 1.2; }
 
@@ -502,7 +502,7 @@ h2 {
     font-size: 29px; } }
 
 h3 {
-  font-size: 29px;
+  font-size: 47px;
   font-family: "Covik_Sans-Bold"; }
 
 @media (max-width: 768px) {
