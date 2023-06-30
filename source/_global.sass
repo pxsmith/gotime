@@ -72,32 +72,6 @@ a
 
 
 
-
-
-
-.fs0--18, .fs0
-  font-size: $s0--18
-.fs1--29, .fs1
-  font-size: $s1--29
-.fs2--47, .fs2
-  font-size: $s2--47
-.fs3--76, .fs3
-  font-size: $s3--76
-.fs4--123, .fs4
-  font-size: $s4--123
-.fs5--200, .fs5
-  font-size: $s5--200
-.fs6--323, .fs6
-  font-size: $s6--323
-
-
-
-
-
-
-
-
-
 // MARGIN
 .ma--2--7, .ma-2
   margin: $s-2--7
@@ -391,6 +365,54 @@ a
 .tj
 	text-align: justify
 
+.fw8
+  font-family: "Covik_Sans_Mono-Black"
+.fw8-i f-mono-800-black-italic
+  font-family: "Covik_Sans_Mono-Black_Italic"
+
+.fw7 f-mono-700-bold
+  font-family: "Covik_Sans_Mono-Bold"
+.fw7-i f-mono-700-bold-italic
+  font-family: "Covik_Sans_Mono-Bold_Italic"
+
+.fw6 f-mono-600-semibold
+  font-family: "Covik_Sans_Mono-Semibold_Italic"
+.fw6-i f-mono-600-semibold-italic
+  font-family: "Covik_Sans_Mono-Semibold"
+
+.fw5 f-mono-500-medium
+  font-family: "Covik_Sans_Mono-Medium"
+.fw5-i f-mono-500-medium-italic
+  font-family: "Covik_Sans_Mono-Medium_Italic"
+
+.fw4 f-mono-400-regular
+  font-family: "Covik_Sans_Mono-Regular"
+.fw4-i f-mono-400-regular-italic
+  font-family: "Covik_Sans_Mono-Italic"
+
+
+
+.fs0--18, .fs0
+  font-size: $s0--18
+.fs1--29, .fs1
+  font-size: $s1--29
+.fs2--47, .fs2
+  font-size: $s2--47
+.fs3--76, .fs3
+  font-size: $s3--76
+.fs4--123, .fs4
+  font-size: $s4--123
+.fs5--200, .fs5
+  font-size: $s5--200
+.fs6--323, .fs6
+  font-size: $s6--323
+
+.text-highlight
+  color: $gradient
+  background: -webkit-linear-gradient($gradient)
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+
 .text-contrast
 	color: white
 .text-default
@@ -401,23 +423,23 @@ a
 	color: rgba(white, 0.4)
 
 h1
-  @include fs4--123
+  font-size: $s4--123
   letter-spacing: -0.075em
   line-height: 0.9em
 
 @media (max-width: 768px)
 	h1
-		@include fs2--47
+    font-size: $s3--76
 
 
 h2
-  font-size: $s3--76
   @include f-sans-800-black
+  font-size: $s3--76
   line-height: 1.2
 
 @media (max-width: 768px)
 	h2
-		@include fs1--29
+    font-size: $s2--47
 
 
 h3
@@ -426,21 +448,28 @@ h3
 
 @media (max-width: 768px)
 	h3
-		@include f-sans-400-regular
-		@include text-contrast
+    font-size: $s1--29
+    @include text-contrast
 
 
 h4
+  font-size: $s1--29
+  @include f-sans-700-bold
+
+
+h5
 	@include f-mono-500-medium
 	@include text-default
 	letter-spacing: 0.05em
 	text-transform: uppercase
 
-h5
+
+h6
 	@include f-mono-700-bold
 	letter-spacing: 0.05em
 	text-transform: uppercase
 	@include text-subtle
+
 
 p
 	@include f-sans-400-regular

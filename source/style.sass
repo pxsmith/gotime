@@ -19,11 +19,6 @@
     margin-top: $s1--29
     margin-bottom: $s2--47
     max-width: 60ch
-  .text-highlight
-    color: $gradient
-    background: -webkit-linear-gradient($gradient)
-    -webkit-background-clip: text
-    -webkit-text-fill-color: transparent
 
 
 
@@ -68,7 +63,6 @@
     padding-bottom: $s1--29
 
     .header
-      @include fs2--47
       max-width: 100ch
       line-height: 1em
 
@@ -79,7 +73,6 @@
     .subheader
       margin-top: $s0--18
       margin-bottom: $s1--29
-      // max-width: 24ch
 
     .button
       @include fs0--18
@@ -96,20 +89,68 @@
     min-height: 700px
 
     .photo-hero-3
-      // top: 150px
-      // left: 100px
       display: none
 
     .photo-hero-2
-      // top: -250px
-      // left: 200px
       display: none
 
-    .photo-dirt-bikes
-      // top: -150px
-      // left: 150px
+    .photo-hero-1
       display: none
 
+
+
+
+// VALUE PROPS
+.homepage .section-value-props
+  margin: $s4--123 $s3--76 
+
+  .header
+    margin-bottom: $s4--123
+
+  .header h2
+    line-height: 0.9em
+
+  .header h2:first-of-type
+    @include f-sans-400-regular
+
+  .value-prop h3:nth-of-type(1)
+    @include f-sans-800-black
+    padding-bottom: $s-2--7
+
+  .value-prop h3:nth-of-type(2)
+    @include f-sans-400-regular
+    @include text-default
+    letter-spacing: -0.04em
+
+  .value-props
+    display: grid
+    grid-template-columns: repeat(3, minmax(0, 1fr))
+    column-gap: $s3--76
+
+  .value-prop p
+    padding-top: $s1--29
+
+
+
+// VALUE PROPS —— RESPONSIVE 
+@media (max-width: 1080px)
+  .homepage .section-value-props
+    margin: $s3--76 $s2--47
+
+    .header
+      margin-bottom: $s3--76
+
+    .value-props
+      display: flex
+      flex-direction: column
+
+    .value-prop p
+      padding-top: $s-1--11
+      padding-bottom: $s2--47
+
+@media (max-width: 768px)
+  .homepage .section-value-props
+    margin: $s2--47 $s1--29
 
 
 

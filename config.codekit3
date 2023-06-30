@@ -1638,6 +1638,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/source\/images\/photo-hero-liftoff.jpg" : {
+      "ft" : 16384,
+      "iS" : 83203,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/source\/images\/photo-hero-liftoff.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/source\/images\/photo-hero-motorcycle.jpg" : {
       "ft" : 16384,
       "iS" : 86055,
@@ -1653,13 +1666,13 @@
     },
     "\/source\/images\/photo-hero-rocket.jpg" : {
       "ft" : 16384,
-      "iS" : 36945,
+      "iS" : 90812,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/source\/images\/photo-hero-rocket.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 1,
+      "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
