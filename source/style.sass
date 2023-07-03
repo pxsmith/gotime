@@ -100,6 +100,7 @@
 
 
 
+
 // VALUE PROPS
 .homepage .section-value-props
   margin: $s4--123 $s3--76 
@@ -107,29 +108,39 @@
   .header
     margin-bottom: $s4--123
 
-  .header h2
-    line-height: 0.9em
 
-  .header h2:first-of-type
-    @include f-sans-400-regular
+  .value-prop-header
+    @extend h3
+    @extend .text-highlight
+    height: 100%
+    padding-bottom: $s-1--11
 
-  .value-prop h3:nth-of-type(1)
-    @include f-sans-800-black
-    padding-bottom: $s-2--7
+  .value-prop-subheader
+    @extend h5
+    @include text-contrast
 
-  .value-prop h3:nth-of-type(2)
-    @include f-sans-400-regular
-    @include text-default
-    letter-spacing: -0.04em
 
   .value-props
     display: grid
     grid-template-columns: repeat(3, minmax(0, 1fr))
     column-gap: $s3--76
+    row-gap: $s3--76
 
   .value-prop p
-    padding-top: $s1--29
+    padding-top: $s-1--11
 
+    
+  // .header h2:first-of-type
+    // @include f-sans-400-regular
+
+  // .value-prop h3:nth-of-type(1)
+    // @include f-sans-800-black
+    // padding-bottom: $s-2--7
+
+  // .value-prop h3:nth-of-type(2)
+  //   @include f-sans-400-regular
+  //   @include text-default
+  //   letter-spacing: -0.04em
 
 
 // VALUE PROPS —— RESPONSIVE 
@@ -146,7 +157,7 @@
 
     .value-prop p
       padding-top: $s-1--11
-      padding-bottom: $s2--47
+      // padding-bottom: $s2--47
 
 @media (max-width: 768px)
   .homepage .section-value-props
@@ -729,10 +740,20 @@ a.person:hover p.name
 
 a.button
   transition: 200ms ease-in
+
 a.button:hover
-  // background: darken($accent, 5)
   border: 2px solid white
   box-shadow: -11px 11px 0px $dark, -11px 11px 0px 2px white
+
+.button-afterword
+  margin-top: $s-1--11
+  @extend h5
+  @extend .text-contrast
+
+a.button:hover .button-afterword
+  color: $accent
+  padding-left: 100px
+
 
 a:hover
   transition: 200ms ease-in 

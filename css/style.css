@@ -1,5 +1,5 @@
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1, h2, h3, .homepage .section-value-props .value-prop-header, h4, h5, .button-afterword, .homepage .section-value-props .value-prop-subheader, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -501,13 +501,13 @@ a {
 .fs6--323, .fs6 {
   font-size: 323px; }
 
-.text-highlight {
+.text-highlight, .homepage .section-value-props .value-prop-header {
   color: 315deg, #DC2626 0%, #FA603E 100%;
   background: -webkit-linear-gradient(315deg, #DC2626 0%, #FA603E 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
-.text-contrast {
+.text-contrast, .button-afterword {
   color: white; }
 
 .text-default {
@@ -537,12 +537,12 @@ h2 {
   h2 {
     font-size: 47px; } }
 
-h3 {
+h3, .homepage .section-value-props .value-prop-header {
   font-size: 47px;
   font-family: "Covik_Sans-Bold"; }
 
 @media (max-width: 768px) {
-  h3 {
+  h3, .homepage .section-value-props .value-prop-header {
     font-size: 29px;
     color: white; } }
 
@@ -550,11 +550,12 @@ h4 {
   font-size: 29px;
   font-family: "Covik_Sans-Bold"; }
 
-h5 {
+h5, .button-afterword, .homepage .section-value-props .value-prop-subheader {
   font-family: "Covik_Sans_Mono-Medium";
   color: rgba(255, 255, 255, 0.8);
   letter-spacing: 0.05em;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  line-height: 1.4em; }
 
 h6 {
   font-family: "Covik_Sans_Mono-Bold";
@@ -606,7 +607,7 @@ h1 u {
   gap: 7px;
   flex-basis: 0; }
 
-.hero-list h5 {
+.hero-list h5, .hero-list .button-afterword, .hero-list .homepage .section-value-props .value-prop-subheader, .homepage .section-value-props .hero-list .value-prop-subheader {
   flex-basis: 65px;
   text-align: right; }
 
@@ -869,23 +870,18 @@ h1 u {
   margin: 123px 76px; }
   .homepage .section-value-props .header {
     margin-bottom: 123px; }
-  .homepage .section-value-props .header h2 {
-    line-height: 0.9em; }
-  .homepage .section-value-props .header h2:first-of-type {
-    font-family: "Covik_Sans-Regular"; }
-  .homepage .section-value-props .value-prop h3:nth-of-type(1) {
-    font-family: "Covik_Sans-Black";
-    padding-bottom: 7px; }
-  .homepage .section-value-props .value-prop h3:nth-of-type(2) {
-    font-family: "Covik_Sans-Regular";
-    color: rgba(255, 255, 255, 0.8);
-    letter-spacing: -0.04em; }
+  .homepage .section-value-props .value-prop-header {
+    height: 100%;
+    padding-bottom: 11px; }
+  .homepage .section-value-props .value-prop-subheader {
+    color: white; }
   .homepage .section-value-props .value-props {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    column-gap: 76px; }
+    column-gap: 76px;
+    row-gap: 76px; }
   .homepage .section-value-props .value-prop p {
-    padding-top: 29px; }
+    padding-top: 11px; }
 
 @media (max-width: 1080px) {
   .homepage .section-value-props {
@@ -896,8 +892,7 @@ h1 u {
       display: flex;
       flex-direction: column; }
     .homepage .section-value-props .value-prop p {
-      padding-top: 11px;
-      padding-bottom: 47px; } }
+      padding-top: 11px; } }
 
 @media (max-width: 768px) {
   .homepage .section-value-props {
@@ -939,7 +934,7 @@ h1 u {
     align-items: center;
     justify-content: center;
     width: 100%; }
-    .homepage .recent-work .header h3, .homepage .recent-work .header p {
+    .homepage .recent-work .header h3, .homepage .recent-work .header .section-value-props .value-prop-header, .homepage .section-value-props .recent-work .header .value-prop-header, .homepage .recent-work .header p {
       width: 100%; }
   .homepage .recent-work .thumbnail {
     max-width: 100%;
@@ -1310,9 +1305,9 @@ section.process {
   .work-impact section.content .header {
     margin-top: 76px;
     margin-bottom: 47px; }
-  .work-impact section.content h3 {
+  .work-impact section.content h3, .work-impact section.content .homepage .section-value-props .value-prop-header, .homepage .section-value-props .work-impact section.content .value-prop-header {
     margin-bottom: 11px; }
-  .work-impact section.content p, .work-impact section.content h3 {
+  .work-impact section.content p, .work-impact section.content h3, .work-impact section.content .homepage .section-value-props .value-prop-header, .homepage .section-value-props .work-impact section.content .value-prop-header {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -1351,6 +1346,13 @@ a.button {
 a.button:hover {
   border: 2px solid white;
   box-shadow: -11px 11px 0px #120404, -11px 11px 0px 2px white; }
+
+.button-afterword {
+  margin-top: 11px; }
+
+a.button:hover .button-afterword {
+  color: #DC2626;
+  padding-left: 100px; }
 
 a:hover {
   transition: 200ms ease-in; }
