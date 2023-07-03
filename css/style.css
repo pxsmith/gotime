@@ -1,5 +1,5 @@
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, .homepage .section-value-props .value-prop-header, h4, h5, .button-afterword, .homepage .section-value-props .value-prop-subheader, h6, p, blockquote, pre,
+h1, h2, h3, .homepage .section-the-plan .the-plan-header, .homepage .section-value-props .value-prop-header, h4, h5, .button-afterword, .homepage .section-value-props .value-prop-subheader, h6, p, .homepage .section-value-props .value-prop-body, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -501,7 +501,7 @@ a {
 .fs6--323, .fs6 {
   font-size: 323px; }
 
-.text-highlight, .homepage .section-value-props .value-prop-header {
+.text-highlight, .homepage .section-the-plan .the-plan-header, .homepage .section-value-props .value-prop-header {
   color: 315deg, #DC2626 0%, #FA603E 100%;
   background: -webkit-linear-gradient(315deg, #DC2626 0%, #FA603E 100%);
   -webkit-background-clip: text;
@@ -537,12 +537,12 @@ h2 {
   h2 {
     font-size: 47px; } }
 
-h3, .homepage .section-value-props .value-prop-header {
+h3, .homepage .section-the-plan .the-plan-header, .homepage .section-value-props .value-prop-header {
   font-size: 47px;
   font-family: "Covik_Sans-Bold"; }
 
 @media (max-width: 768px) {
-  h3, .homepage .section-value-props .value-prop-header {
+  h3, .homepage .section-the-plan .the-plan-header, .homepage .section-value-props .value-prop-header {
     font-size: 29px;
     color: white; } }
 
@@ -563,7 +563,7 @@ h6 {
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.65); }
 
-p {
+p, .homepage .section-value-props .value-prop-body {
   font-family: "Covik_Sans-Regular";
   color: rgba(255, 255, 255, 0.8);
   line-height: 1.7; }
@@ -611,7 +611,7 @@ h1 u {
   flex-basis: 65px;
   text-align: right; }
 
-.hero-list p {
+.hero-list p, .hero-list .homepage .section-value-props .value-prop-body, .homepage .section-value-props .hero-list .value-prop-body {
   font-family: "Covik_Sans_Mono-Regular";
   color: white;
   line-height: 1; }
@@ -731,7 +731,7 @@ h1 u {
   grid-template-columns: 1fr 1fr;
   grid-gap: 47px;
   background: url(/source/images/vector-grid.svg) 968px 47px no-repeat; }
-  .layout-with-sticky-image h1, .layout-with-sticky-image p {
+  .layout-with-sticky-image h1, .layout-with-sticky-image p, .layout-with-sticky-image .homepage .section-value-props .value-prop-body, .homepage .section-value-props .layout-with-sticky-image .value-prop-body {
     margin-bottom: 18px; }
   .layout-with-sticky-image .layout-visuals.layout-mobile {
     display: none;
@@ -880,7 +880,7 @@ h1 u {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     column-gap: 76px;
     row-gap: 76px; }
-  .homepage .section-value-props .value-prop p {
+  .homepage .section-value-props .value-prop-body {
     padding-top: 11px; }
   .homepage .section-value-props .value-prop img.icon {
     width: 72px;
@@ -895,12 +895,65 @@ h1 u {
     .homepage .section-value-props .value-props {
       display: flex;
       flex-direction: column; }
-    .homepage .section-value-props .value-prop p {
+    .homepage .section-value-props .value-prop {
       padding-top: 11px; } }
 
 @media (max-width: 768px) {
   .homepage .section-value-props {
     margin: 47px 29px; } }
+
+.homepage .section-the-plan {
+  margin: 200px 76px; }
+  .homepage .section-the-plan .the-plan-number {
+    font-family: "Covik_Sans_Mono-Regular";
+    font-size: 323px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #DC2626; }
+  .homepage .section-the-plan .the-plan-steps {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: 76px;
+    row-gap: 76px; }
+  .homepage .section-the-plan .the-plan-header {
+    padding-bottom: 18px; }
+  .homepage .section-the-plan .the-plan-body {
+    color: white;
+    font-size: 29px;
+    line-height: 1.35em;
+    max-width: 22ch; }
+
+@media (max-width: 1080px) {
+  .homepage .section-the-plan {
+    margin: 200px 47px; }
+    .homepage .section-the-plan .header {
+      margin-bottom: 76px; }
+    .homepage .section-the-plan .the-plan-body {
+      font-size: 18px;
+      line-height: 1.5em; } }
+
+@media (max-width: 768px) {
+  .homepage .section-the-plan {
+    margin: 123px 29px; }
+    .homepage .section-the-plan .header {
+      margin-bottom: 0px;
+      margin-top: 76px; }
+    .homepage .section-the-plan .the-plan-number {
+      font-size: 200px; }
+    .homepage .section-the-plan .the-plan-steps {
+      column-gap: 29px; } }
+
+@media (max-width: 450px) {
+  .homepage .section-the-plan .header {
+    margin-bottom: 18px; }
+  .homepage .section-the-plan .the-plan-steps {
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px; }
+  .homepage .section-the-plan .the-plan-number {
+    font-size: 123px; }
+  .homepage .section-the-plan .the-plan-body {
+    max-width: 100%; } }
 
 .homepage .social-proof {
   padding-top: 47px;
@@ -938,13 +991,13 @@ h1 u {
     align-items: center;
     justify-content: center;
     width: 100%; }
-    .homepage .recent-work .header h3, .homepage .recent-work .header .section-value-props .value-prop-header, .homepage .section-value-props .recent-work .header .value-prop-header, .homepage .recent-work .header p {
+    .homepage .recent-work .header h3, .homepage .recent-work .header .section-value-props .value-prop-header, .homepage .section-value-props .recent-work .header .value-prop-header, .homepage .recent-work .header .section-the-plan .the-plan-header, .homepage .section-the-plan .recent-work .header .the-plan-header, .homepage .recent-work .header p, .homepage .recent-work .header .section-value-props .value-prop-body, .homepage .section-value-props .recent-work .header .value-prop-body {
       width: 100%; }
   .homepage .recent-work .thumbnail {
     max-width: 100%;
     flex-grow: 0;
     width: 450px; }
-    .homepage .recent-work .thumbnail p {
+    .homepage .recent-work .thumbnail p, .homepage .recent-work .thumbnail .section-value-props .value-prop-body, .homepage .section-value-props .recent-work .thumbnail .value-prop-body {
       padding-left: 11px;
       border-left: 2px solid white; }
 
@@ -979,7 +1032,7 @@ h1 u {
       width: 350px; } }
 
 @media (max-width: 700px) {
-  .homepage .recent-work .thumbnail p {
+  .homepage .recent-work .thumbnail p, .homepage .recent-work .thumbnail .section-value-props .value-prop-body, .homepage .section-value-props .recent-work .thumbnail .value-prop-body {
     border-left: 0px; } }
 
 @media (min-width: 700px) {
@@ -1029,7 +1082,7 @@ h1 u {
     flex-grow: 1;
     flex-basis: 0;
     gap: 18px; }
-  .how-it-works .content p {
+  .how-it-works .content p, .how-it-works .content .homepage .section-value-props .value-prop-body, .homepage .section-value-props .how-it-works .content .value-prop-body {
     font-size: 29px;
     line-height: 1.2;
     text-align: center; }
@@ -1051,7 +1104,7 @@ h1 u {
       gap: 18px; }
     .how-it-works .content .step-1, .how-it-works .content .step-2, .how-it-works .content .step-3 {
       gap: 18px; }
-    .how-it-works .content p {
+    .how-it-works .content p, .how-it-works .content .homepage .section-value-props .value-prop-body, .homepage .section-value-props .how-it-works .content .value-prop-body {
       font-size: 18px; } }
 
 @media (max-width: 560px) {
@@ -1202,7 +1255,7 @@ section.pricing {
     justify-content: space-evenly;
     flex: 1 1 auto;
     gap: 18px; }
-    .services .list p:not(.title) {
+    .services .list p:not(.title), .services .list .homepage .section-value-props .value-prop-body:not(.title), .homepage .section-value-props .services .list .value-prop-body:not(.title) {
       color: rgba(255, 255, 255, 0.65); }
   .services .col .title {
     font-family: "Covik_Sans-Black";
@@ -1275,7 +1328,7 @@ section.process {
   max-width: 12ch;
   margin-bottom: 0.3em; }
 
-.work-impact p {
+.work-impact p, .work-impact .homepage .section-value-props .value-prop-body, .homepage .section-value-props .work-impact .value-prop-body {
   max-width: 53ch; }
 
 .work-impact .hero-list {
@@ -1309,15 +1362,15 @@ section.process {
   .work-impact section.content .header {
     margin-top: 76px;
     margin-bottom: 47px; }
-  .work-impact section.content h3, .work-impact section.content .homepage .section-value-props .value-prop-header, .homepage .section-value-props .work-impact section.content .value-prop-header {
+  .work-impact section.content h3, .work-impact section.content .homepage .section-value-props .value-prop-header, .homepage .section-value-props .work-impact section.content .value-prop-header, .work-impact section.content .homepage .section-the-plan .the-plan-header, .homepage .section-the-plan .work-impact section.content .the-plan-header {
     margin-bottom: 11px; }
-  .work-impact section.content p, .work-impact section.content h3, .work-impact section.content .homepage .section-value-props .value-prop-header, .homepage .section-value-props .work-impact section.content .value-prop-header {
+  .work-impact section.content p, .work-impact section.content .homepage .section-value-props .value-prop-body, .homepage .section-value-props .work-impact section.content .value-prop-body, .work-impact section.content h3, .work-impact section.content .homepage .section-value-props .value-prop-header, .homepage .section-value-props .work-impact section.content .value-prop-header, .work-impact section.content .homepage .section-the-plan .the-plan-header, .homepage .section-the-plan .work-impact section.content .the-plan-header {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     padding-left: 18px;
     padding-right: 18px; }
-  .work-impact section.content p {
+  .work-impact section.content p, .work-impact section.content .homepage .section-value-props .value-prop-body, .homepage .section-value-props .work-impact section.content .value-prop-body {
     max-width: 40ch; }
   .work-impact section.content .images {
     display: flex;
@@ -1337,10 +1390,10 @@ body {
 a, a:hover {
   cursor: url("/source/images/cursor-point.svg"), auto; }
 
-a.person p.name {
+a.person p.name, a.person .homepage .section-value-props .name.value-prop-body, .homepage .section-value-props a.person .name.value-prop-body {
   transition: 200ms ease-in; }
 
-a.person:hover p.name {
+a.person:hover p.name, a.person:hover .homepage .section-value-props .name.value-prop-body, .homepage .section-value-props a.person:hover .name.value-prop-body {
   transition: 200ms ease-in;
   color: #DC2626; }
 
@@ -1353,10 +1406,6 @@ a.button:hover {
 
 .button-afterword {
   margin-top: 11px; }
-
-a.button:hover .button-afterword {
-  color: #DC2626;
-  padding-left: 100px; }
 
 a:hover {
   transition: 200ms ease-in; }

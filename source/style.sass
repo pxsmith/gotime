@@ -101,7 +101,7 @@
 
 
 
-// VALUE PROPS
+// VALUE PROPS ✅ ✅ ✅ ✅ ✅ ✅ ✅
 .homepage .section-value-props
   margin: $s4--123 $s3--76 
 
@@ -126,7 +126,8 @@
     column-gap: $s3--76
     row-gap: $s3--76
 
-  .value-prop p
+  .value-prop-body
+    @extend p
     padding-top: $s-1--11
 
   .value-prop img.icon
@@ -147,13 +148,88 @@
       display: flex
       flex-direction: column
 
-    .value-prop p
+    .value-prop
       padding-top: $s-1--11
-      // padding-bottom: $s2--47
 
 @media (max-width: 768px)
   .homepage .section-value-props
     margin: $s2--47 $s1--29
+
+
+
+
+
+// THE PLAN 🗺️ 🗺️ 🗺️ 🗺️ 🗺️ 🗺️ 🗺️
+.homepage .section-the-plan
+  margin: $s5--200 $s3--76 
+
+  .the-plan-number
+    @include f-mono-400-regular
+    font-size: $s6--323
+    -webkit-text-fill-color: transparent
+    -webkit-text-stroke-width: 1px
+    -webkit-text-stroke-color: $accent
+
+  .the-plan-steps
+    display: grid
+    grid-template-columns: repeat(3, minmax(0, 1fr))
+    column-gap: $s3--76
+    row-gap: $s3--76
+
+  .the-plan-header
+    @extend h3
+    @extend .text-highlight
+    padding-bottom: $s0--18
+    
+  .the-plan-body
+    @include text-contrast
+    font-size: $s1--29
+    line-height: 1.35em
+    max-width: 22ch
+
+
+// THE PLAN —— RESPONSIVE 
+@media (max-width: 1080px)
+  .homepage .section-the-plan
+    margin: $s5--200 $s2--47
+
+    .header
+      margin-bottom: $s3--76
+
+    .the-plan-body
+      font-size: $s0--18
+      line-height: 1.5em
+
+
+@media (max-width: 768px)
+  .homepage .section-the-plan
+    margin: $s4--123 $s1--29
+
+    .header
+      margin-bottom: 0px
+      margin-top: $s3--76
+    .the-plan-number
+      font-size: $s5--200
+
+    .the-plan-steps
+      column-gap: $s1--29
+
+@media (max-width: 450px)
+  .homepage .section-the-plan
+    .header
+      margin-bottom: $s0--18
+
+    .the-plan-steps
+      display: flex
+      flex-direction: column
+      row-gap: $s0--18
+
+    .the-plan-number
+      font-size: $s4--123
+
+    .the-plan-body
+      max-width: 100%
+
 
 
 
@@ -741,11 +817,6 @@ a.button:hover
   margin-top: $s-1--11
   @extend h5
   @extend .text-contrast
-
-a.button:hover .button-afterword
-  color: $accent
-  padding-left: 100px
-
 
 a:hover
   transition: 200ms ease-in 
