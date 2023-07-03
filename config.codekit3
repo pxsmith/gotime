@@ -1361,6 +1361,16 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/source\/images\/icon-chat-messages.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/source\/images\/icon-chat-messages.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/source\/images\/icon-check-circle.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -1376,6 +1386,16 @@
       "miP" : 0,
       "oA" : 2,
       "oAP" : "\/source\/images\/icon-circle.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/source\/images\/icon-crown.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/source\/images\/icon-crown.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -1401,11 +1421,41 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/source\/images\/icon-handshake.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/source\/images\/icon-handshake.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/source\/images\/icon-lightning.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
       "oAP" : "\/source\/images\/icon-lightning.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/source\/images\/icon-map-pin.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/source\/images\/icon-map-pin.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/source\/images\/icon-money-shield.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/source\/images\/icon-money-shield.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -1476,6 +1526,16 @@
       "miP" : 0,
       "oA" : 2,
       "oAP" : "\/source\/images\/icon-social-twitter.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/source\/images\/icon-stopwatch.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/source\/images\/icon-stopwatch.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
