@@ -501,7 +501,7 @@ a {
 .fs6--323, .fs6 {
   font-size: 323px; }
 
-.text-highlight, .homepage .section-the-plan .the-plan-header, .homepage .section-value-props .value-prop-header {
+.text-highlight, .homepage .testimonials .quotation-mark, .homepage .section-the-plan .the-plan-header, .homepage .section-value-props .value-prop-header {
   color: 315deg, #DC2626 0%, #FA603E 100%;
   background: -webkit-linear-gradient(315deg, #DC2626 0%, #FA603E 100%);
   -webkit-background-clip: text;
@@ -919,7 +919,7 @@ h1 u {
   .homepage .section-the-plan .the-plan-body {
     color: white;
     font-size: 29px;
-    line-height: 1.35em;
+    line-height: 1.5em;
     max-width: 22ch; }
 
 @media (max-width: 1080px) {
@@ -953,24 +953,6 @@ h1 u {
     font-size: 123px; }
   .homepage .section-the-plan .the-plan-body {
     max-width: 100%; } }
-
-.homepage .social-proof {
-  padding-top: 47px;
-  color: white; }
-  .homepage .social-proof .header {
-    font-family: "Covik_Sans_Mono-Regular";
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto; }
-  .homepage .social-proof .logos {
-    padding: 29px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 18px 47px;
-    flex-wrap: wrap; }
 
 .homepage .recent-work {
   margin-left: auto;
@@ -1056,64 +1038,6 @@ h1 u {
     .homepage .recent-work .thumbnail {
       width: 350px; } }
 
-.how-it-works .content {
-  display: flex;
-  flex-direction: column;
-  width: 1000px;
-  max-width: 80vw;
-  background: #120404;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 76px;
-  border: 2px solid white;
-  padding: 47px 76px 76px 76px; }
-  .how-it-works .content h2.header {
-    margin-bottom: 29px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto; }
-  .how-it-works .content .steps {
-    display: flex;
-    gap: 29px; }
-  .how-it-works .content .step-1, .how-it-works .content .step-2, .how-it-works .content .step-3 {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    flex-basis: 0;
-    gap: 18px; }
-  .how-it-works .content p, .how-it-works .content .homepage .section-value-props .value-prop-body, .homepage .section-value-props .how-it-works .content .value-prop-body {
-    font-size: 29px;
-    line-height: 1.2;
-    text-align: center; }
-  .how-it-works .content img {
-    max-width: 48px;
-    max-height: 48px;
-    margin: 0 auto; }
-
-.how-it-works .divider {
-  top: -210px; }
-
-@media (max-width: 1150px) {
-  .how-it-works .content {
-    margin-top: 47px;
-    padding: 29px 47px 47px 47px; }
-    .how-it-works .content h2.header {
-      margin-bottom: 18px; }
-    .how-it-works .content .steps {
-      gap: 18px; }
-    .how-it-works .content .step-1, .how-it-works .content .step-2, .how-it-works .content .step-3 {
-      gap: 18px; }
-    .how-it-works .content p, .how-it-works .content .homepage .section-value-props .value-prop-body, .homepage .section-value-props .how-it-works .content .value-prop-body {
-      font-size: 18px; } }
-
-@media (max-width: 560px) {
-  .how-it-works .steps {
-    flex-direction: column; }
-  .how-it-works .content {
-    max-width: 66vw; }
-  .how-it-works .divider {
-    top: -470px; } }
-
 .homepage .divider {
   position: relative;
   z-index: -1;
@@ -1127,19 +1051,31 @@ h1 u {
   padding-bottom: 11px;
   border-bottom: 2px solid white; }
 
+.homepage .testimonials-section {
+  margin: 123px 76px; }
+
+@media (max-width: 1080px) {
+  .homepage .testimonials-section {
+    margin: 123px 47px; } }
+
+@media (max-width: 768px) {
+  .homepage .testimonials-section {
+    margin: 123px 29px; } }
+
+.homepage .testimonials-section .header {
+  margin-bottom: 47px; }
+
 .homepage .testimonials {
-  display: flex;
-  gap: 76px;
-  margin: 76px;
-  margin-top: 0;
-  align-content: stretch; }
+  display: grid;
+  column-gap: 123px;
+  row-gap: 18px;
+  grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .homepage .testimonials .quote {
     flex-grow: 1;
     flex-basis: 0; }
   .homepage .testimonials .quotation-mark {
     font-family: "Covik_Sans_Mono-Regular";
     font-size: 123px;
-    color: #DC2626;
     height: 175px; }
   .homepage .testimonials .quote-body {
     margin-top: -47px;
@@ -1163,20 +1099,16 @@ h1 u {
     color: rgba(255, 255, 255, 0.65);
     line-height: 1.2; }
 
-@media (max-width: 1150px) {
+@media (max-width: 1080px) {
   .homepage .testimonials {
-    margin-left: 29px;
-    margin-right: 29px; } }
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 47px; } }
 
-@media (max-width: 1150px) {
+@media (max-width: 680px) {
   .homepage .testimonials {
-    flex-direction: column; }
-  .homepage .quotation-mark {
-    margin-top: -47px; }
-  .homepage .quote {
-    max-width: 60ch;
-    margin-left: auto;
-    margin-right: auto; } }
+    grid-template-columns: repeat(1, minmax(0, 1fr)); }
+  .homepage .testimonials-section .header {
+    margin-bottom: 0; } }
 
 .text-outline {
   color: transparent;
