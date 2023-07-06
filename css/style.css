@@ -1,5 +1,5 @@
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, .homepage .section-the-plan .the-plan-header, .homepage .section-value-props .value-prop-header, h4, h5, .button-afterword, .homepage .section-value-props .value-prop-subheader, h6, p, .homepage .section-value-props .value-prop-body, blockquote, pre,
+h1, h2, .header-group .header, h3, .homepage .the-plan-section .the-plan-header, .homepage .value-props-section .value-prop-header, h4, h5, .button-afterword, .homepage .value-props-section .value-prop-subheader, h6, p, .homepage .the-plan-section .the-plan-body, .homepage .value-props-section .value-prop-body, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -501,9 +501,9 @@ a {
 .fs6--323, .fs6 {
   font-size: 323px; }
 
-.text-highlight, .homepage .testimonials .quotation-mark, .homepage .section-the-plan .the-plan-header, .homepage .section-value-props .value-prop-header {
-  color: 315deg, #DC2626 0%, #FA603E 100%;
-  background: -webkit-linear-gradient(315deg, #DC2626 0%, #FA603E 100%);
+.text-highlight, .homepage .social-proof-section .quotation-mark, .homepage .the-plan-section .the-plan-header, .homepage .value-props-section .value-prop-header {
+  color: 90deg, #DC2626 0%, #FA603E 100%;
+  background: -webkit-linear-gradient(90deg, #DC2626 0%, #FA603E 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
@@ -513,7 +513,7 @@ a {
 .text-default {
   color: rgba(255, 255, 255, 0.8); }
 
-.text-subtle {
+.text-subtle, .header-group .super-header {
   color: rgba(255, 255, 255, 0.65); }
 
 .text-extra-subtle {
@@ -528,21 +528,21 @@ h1 {
   h1 {
     font-size: 76px; } }
 
-h2 {
+h2, .header-group .header {
   font-family: "Covik_Sans-Black";
   font-size: 76px;
   line-height: 1.2; }
 
 @media (max-width: 768px) {
-  h2 {
+  h2, .header-group .header {
     font-size: 47px; } }
 
-h3, .homepage .section-the-plan .the-plan-header, .homepage .section-value-props .value-prop-header {
+h3, .homepage .the-plan-section .the-plan-header, .homepage .value-props-section .value-prop-header {
   font-size: 47px;
   font-family: "Covik_Sans-Bold"; }
 
 @media (max-width: 768px) {
-  h3, .homepage .section-the-plan .the-plan-header, .homepage .section-value-props .value-prop-header {
+  h3, .homepage .the-plan-section .the-plan-header, .homepage .value-props-section .value-prop-header {
     font-size: 29px;
     color: white; } }
 
@@ -550,7 +550,7 @@ h4 {
   font-size: 29px;
   font-family: "Covik_Sans-Bold"; }
 
-h5, .button-afterword, .homepage .section-value-props .value-prop-subheader {
+h5, .button-afterword, .homepage .value-props-section .value-prop-subheader {
   font-family: "Covik_Sans_Mono-Medium";
   color: rgba(255, 255, 255, 0.8);
   letter-spacing: 0.05em;
@@ -563,7 +563,7 @@ h6 {
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.65); }
 
-p, .homepage .section-value-props .value-prop-body {
+p, .homepage .the-plan-section .the-plan-body, .homepage .value-props-section .value-prop-body {
   font-family: "Covik_Sans-Regular";
   color: rgba(255, 255, 255, 0.8);
   line-height: 1.7; }
@@ -607,11 +607,11 @@ h1 u {
   gap: 7px;
   flex-basis: 0; }
 
-.hero-list h5, .hero-list .button-afterword, .hero-list .homepage .section-value-props .value-prop-subheader, .homepage .section-value-props .hero-list .value-prop-subheader {
+.hero-list h5, .hero-list .button-afterword, .hero-list .homepage .value-props-section .value-prop-subheader, .homepage .value-props-section .hero-list .value-prop-subheader {
   flex-basis: 65px;
   text-align: right; }
 
-.hero-list p, .hero-list .homepage .section-value-props .value-prop-body, .homepage .section-value-props .hero-list .value-prop-body {
+.hero-list p, .hero-list .homepage .the-plan-section .the-plan-body, .homepage .the-plan-section .hero-list .the-plan-body, .hero-list .homepage .value-props-section .value-prop-body, .homepage .value-props-section .hero-list .value-prop-body {
   font-family: "Covik_Sans_Mono-Regular";
   color: white;
   line-height: 1; }
@@ -731,7 +731,7 @@ h1 u {
   grid-template-columns: 1fr 1fr;
   grid-gap: 47px;
   background: url(/source/images/vector-grid.svg) 968px 47px no-repeat; }
-  .layout-with-sticky-image h1, .layout-with-sticky-image p, .layout-with-sticky-image .homepage .section-value-props .value-prop-body, .homepage .section-value-props .layout-with-sticky-image .value-prop-body {
+  .layout-with-sticky-image h1, .layout-with-sticky-image p, .layout-with-sticky-image .homepage .the-plan-section .the-plan-body, .homepage .the-plan-section .layout-with-sticky-image .the-plan-body, .layout-with-sticky-image .homepage .value-props-section .value-prop-body, .homepage .value-props-section .layout-with-sticky-image .value-prop-body {
     margin-bottom: 18px; }
   .layout-with-sticky-image .layout-visuals.layout-mobile {
     display: none;
@@ -866,88 +866,97 @@ h1 u {
     .homepage .hero .visuals .photo-hero-1 {
       display: none; } }
 
-.homepage .section-value-props {
-  margin: 123px 76px; }
-  .homepage .section-value-props .header {
-    margin-bottom: 123px; }
-  .homepage .section-value-props .value-prop-header {
-    padding-bottom: 11px; }
-  .homepage .section-value-props .value-prop-subheader {
-    color: white; }
-  .homepage .section-value-props .value-props {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    column-gap: 76px;
-    row-gap: 76px; }
-  .homepage .section-value-props .value-prop-body {
-    padding-top: 11px; }
-  .homepage .section-value-props .value-prop img.icon {
-    width: 72px;
-    height: 72px;
-    margin-bottom: 18px; }
-
-@media (max-width: 1080px) {
-  .homepage .section-value-props {
-    margin: 76px 47px; }
-    .homepage .section-value-props .header {
-      margin-bottom: 76px; }
-    .homepage .section-value-props .value-props {
-      display: flex;
-      flex-direction: column; }
-    .homepage .section-value-props .value-prop {
-      padding-top: 11px; } }
-
-@media (max-width: 768px) {
-  .homepage .section-value-props {
-    margin: 47px 29px; } }
-
-.homepage .section-the-plan {
+.homepage .value-props-section, .homepage .the-plan-section, .homepage .social-proof-section, .homepage .services-section {
   margin: 200px 76px; }
-  .homepage .section-the-plan .the-plan-number {
-    font-family: "Covik_Sans_Mono-Regular";
-    font-size: 323px;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #DC2626; }
-  .homepage .section-the-plan .the-plan-steps {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    column-gap: 76px;
-    row-gap: 76px; }
-  .homepage .section-the-plan .the-plan-header {
-    padding-bottom: 18px; }
-  .homepage .section-the-plan .the-plan-body {
-    color: white;
-    font-size: 29px;
-    line-height: 1.5em;
-    max-width: 22ch; }
 
 @media (max-width: 1080px) {
-  .homepage .section-the-plan {
-    margin: 200px 47px; }
-    .homepage .section-the-plan .header {
-      margin-bottom: 76px; }
-    .homepage .section-the-plan .the-plan-body {
-      font-size: 18px;
-      line-height: 1.5em; } }
+  .homepage .value-props-section, .homepage .the-plan-section, .homepage .social-proof-section, .homepage .services-section {
+    margin: 76px 47px;
+    margin-bottom: 123px; } }
 
 @media (max-width: 768px) {
-  .homepage .section-the-plan {
-    margin: 123px 29px; }
-    .homepage .section-the-plan .header {
-      margin-bottom: 0px;
-      margin-top: 76px; }
-    .homepage .section-the-plan .the-plan-number {
-      font-size: 200px; }
-    .homepage .section-the-plan .the-plan-steps {
-      column-gap: 29px; } }
+  .homepage .value-props-section, .homepage .the-plan-section, .homepage .social-proof-section, .homepage .services-section {
+    margin: 76px 29px;
+    margin-bottom: 123px; } }
 
-@media (max-width: 450px) {
-  .homepage .section-the-plan .header {
-    margin-bottom: 18px; }
+.header-group .super-header {
+  text-transform: uppercase;
+  font-size: 29px; }
+
+.header-group {
+  margin-bottom: 76px; }
+
+@media (max-width: 768px) {
+  .homepage .header-group {
+    margin-bottom: 47px; } }
+
+.homepage .value-props-section .value-prop-header {
+  padding-bottom: 11px; }
+
+.homepage .value-props-section .value-prop-subheader {
+  color: white; }
+
+.homepage .value-props-section .value-props {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 76px;
+  row-gap: 76px; }
+
+.homepage .value-props-section .value-prop-body {
+  padding-top: 11px; }
+
+.homepage .value-props-section .value-prop img.icon {
+  width: 72px;
+  height: 72px;
+  margin-bottom: 18px; }
+
+@media (max-width: 1080px) {
+  .homepage .value-props-section .value-props {
+    grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+@media (max-width: 768px) {
+  .homepage .value-props-section .value-props {
+    grid-template-columns: repeat(1, minmax(0, 1fr)); } }
+
+.homepage .the-plan-section .the-plan-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  row-gap: 76px; }
+
+.homepage .the-plan-section .the-plan-step {
+  place-self: center;
+  align-self: start;
+  text-align: center; }
+
+.homepage .the-plan-section .the-plan-number {
+  font-family: "Covik_Sans_Mono-Regular";
+  font-size: 323px;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #DC2626; }
+
+.homepage .the-plan-section .the-plan-header {
+  padding-bottom: 18px; }
+
+.homepage .the-plan-section .the-plan-body {
+  font-size: 18px;
+  max-width: 22ch; }
+
+@media (min-width: 1080px) {
+  .homepage .the-plan-section .the-plan-steps {
+    margin-top: -76px; } }
+
+@media (max-width: 1080px) {
+  .homepage .the-plan-section .the-plan-number {
+    font-size: 200px; } }
+
+@media (max-width: 768px) {
+  .homepage .the-plan-section .the-plan-steps {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    row-gap: 0; } }
+
+@media (max-width: 480px) {
   .homepage .section-the-plan .the-plan-steps {
-    display: flex;
-    flex-direction: column;
     row-gap: 18px; }
   .homepage .section-the-plan .the-plan-number {
     font-size: 123px; }
@@ -972,13 +981,13 @@ h1 u {
     align-items: center;
     justify-content: center;
     width: 100%; }
-    .homepage .recent-work .header h3, .homepage .recent-work .header .section-value-props .value-prop-header, .homepage .section-value-props .recent-work .header .value-prop-header, .homepage .recent-work .header .section-the-plan .the-plan-header, .homepage .section-the-plan .recent-work .header .the-plan-header, .homepage .recent-work .header p, .homepage .recent-work .header .section-value-props .value-prop-body, .homepage .section-value-props .recent-work .header .value-prop-body {
+    .homepage .recent-work .header h3, .homepage .recent-work .header .value-props-section .value-prop-header, .homepage .value-props-section .recent-work .header .value-prop-header, .homepage .recent-work .header .the-plan-section .the-plan-header, .homepage .the-plan-section .recent-work .header .the-plan-header, .homepage .recent-work .header p, .homepage .recent-work .header .value-props-section .value-prop-body, .homepage .value-props-section .recent-work .header .value-prop-body, .homepage .recent-work .header .the-plan-section .the-plan-body, .homepage .the-plan-section .recent-work .header .the-plan-body {
       width: 100%; }
   .homepage .recent-work .thumbnail {
     max-width: 100%;
     flex-grow: 0;
     width: 450px; }
-    .homepage .recent-work .thumbnail p, .homepage .recent-work .thumbnail .section-value-props .value-prop-body, .homepage .section-value-props .recent-work .thumbnail .value-prop-body {
+    .homepage .recent-work .thumbnail p, .homepage .recent-work .thumbnail .value-props-section .value-prop-body, .homepage .value-props-section .recent-work .thumbnail .value-prop-body, .homepage .recent-work .thumbnail .the-plan-section .the-plan-body, .homepage .the-plan-section .recent-work .thumbnail .the-plan-body {
       padding-left: 11px;
       border-left: 2px solid white; }
 
@@ -1013,7 +1022,7 @@ h1 u {
       width: 350px; } }
 
 @media (max-width: 700px) {
-  .homepage .recent-work .thumbnail p, .homepage .recent-work .thumbnail .section-value-props .value-prop-body, .homepage .section-value-props .recent-work .thumbnail .value-prop-body {
+  .homepage .recent-work .thumbnail p, .homepage .recent-work .thumbnail .value-props-section .value-prop-body, .homepage .value-props-section .recent-work .thumbnail .value-prop-body, .homepage .recent-work .thumbnail .the-plan-section .the-plan-body, .homepage .the-plan-section .recent-work .thumbnail .the-plan-body {
     border-left: 0px; } }
 
 @media (min-width: 700px) {
@@ -1051,68 +1060,60 @@ h1 u {
   padding-bottom: 11px;
   border-bottom: 2px solid white; }
 
-.homepage .testimonials-section {
-  margin: 123px 76px; }
+.homepage .social-proof-section .header-group {
+  margin-bottom: 18px; }
 
-@media (max-width: 1080px) {
-  .homepage .testimonials-section {
-    margin: 123px 47px; } }
-
-@media (max-width: 768px) {
-  .homepage .testimonials-section {
-    margin: 123px 29px; } }
-
-.homepage .testimonials-section .header {
-  margin-bottom: 47px; }
-
-.homepage .testimonials {
+.homepage .social-proof-section .social-proof {
   display: grid;
   column-gap: 123px;
-  row-gap: 18px;
+  row-gap: 47px;
   grid-template-columns: repeat(3, minmax(0, 1fr)); }
-  .homepage .testimonials .quote {
-    flex-grow: 1;
-    flex-basis: 0; }
-  .homepage .testimonials .quotation-mark {
-    font-family: "Covik_Sans_Mono-Regular";
-    font-size: 123px;
-    height: 175px; }
-  .homepage .testimonials .quote-body {
-    margin-top: -47px;
-    color: rgba(255, 255, 255, 0.8); }
-  .homepage .testimonials .portrait {
-    width: 76px;
-    height: 76px;
-    border-radius: 100%;
-    border: 2px solid white; }
-  .homepage .testimonials .person {
-    margin-top: 29px;
-    display: flex;
-    gap: 18px;
-    align-items: center; }
-  .homepage .testimonials .name {
-    font-family: "Covik_Sans-Medium";
-    color: white;
-    font-size: 20px;
-    line-height: 1.2; }
-  .homepage .testimonials .job-title {
-    color: rgba(255, 255, 255, 0.65);
-    line-height: 1.2; }
+
+.homepage .social-proof-section .quote {
+  flex-grow: 1;
+  flex-basis: 0; }
+
+.homepage .social-proof-section .quotation-mark {
+  font-family: "Covik_Sans_Mono-Regular";
+  font-size: 123px;
+  height: 175px; }
+
+.homepage .social-proof-section .quote-body {
+  margin-top: -47px;
+  color: rgba(255, 255, 255, 0.8); }
+
+.homepage .social-proof-section .portrait {
+  width: 76px;
+  height: 76px;
+  border-radius: 100%;
+  border: 2px solid white; }
+
+.homepage .social-proof-section .person {
+  margin-top: 29px;
+  display: flex;
+  gap: 18px;
+  align-items: center; }
+
+.homepage .social-proof-section .name {
+  font-family: "Covik_Sans-Medium";
+  color: white;
+  font-size: 20px;
+  line-height: 1.2; }
+
+.homepage .social-proof-section .job-title {
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.2; }
 
 @media (max-width: 1080px) {
-  .homepage .testimonials {
+  .homepage .social-proof-section .social-proof {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     column-gap: 47px; } }
 
 @media (max-width: 680px) {
-  .homepage .testimonials {
+  .homepage .social-proof-section .social-proof {
     grid-template-columns: repeat(1, minmax(0, 1fr)); }
-  .homepage .testimonials-section .header {
+  .homepage .social-proof-section .header {
     margin-bottom: 0; } }
-
-.text-outline {
-  color: transparent;
-  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5); }
 
 section.design-collage {
   transform: scale(1); }
@@ -1120,211 +1121,16 @@ section.design-collage {
     color: transparent;
     -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5); }
 
-section.pricing {
-  display: flex;
-  justify-content: center;
-  padding-top: 76px;
-  padding-bottom: 76px;
-  background: url(/source/images/vector-grid.svg);
-  background-attachment: fixed;
-  text-align: center; }
-  section.pricing .container {
-    border: 2px solid white;
-    padding: 47px;
-    background: #120404;
-    max-width: 1200px; }
-  section.pricing .header {
-    text-align: center;
-    margin-bottom: 7px; }
-  section.pricing .title {
-    display: flex;
-    gap: 18px; }
-  section.pricing .price-amount {
-    font-family: "Covik_Sans-Regular";
-    margin-bottom: 18px; }
-  section.pricing .title .fd-column {
-    gap: 7px; }
-  section.pricing .prices {
-    display: flex;
-    margin-top: 47px;
-    gap: 47px;
-    text-align: left; }
-  section.pricing .price {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 18px; }
-  section.pricing hr {
-    border: 2px solid rgba(255, 255, 255, 0.2); }
-  section.pricing footer {
-    padding-top: 47px;
-    max-width: 46ch;
-    margin: 0 auto; }
-    section.pricing footer .header {
-      color: #DC2626; }
-
-@media (max-width: 800px) {
-  section.pricing .prices {
-    flex-direction: column;
-    gap: 47px; }
-  section.pricing hr {
-    display: none; }
-  section.pricing .container {
-    max-width: 75vw;
-    padding: 29px; } }
-
-.services {
-  display: flex; }
-  .services .header {
-    display: flex;
-    align-items: center;
-    padding: 76px;
-    border-right: 2px solid white; }
-  .services .list {
-    display: flex;
-    padding: 47px 29px;
-    justify-content: space-evenly;
-    flex: 1 1 auto;
-    gap: 18px; }
-    .services .list p:not(.title), .services .list .homepage .section-value-props .value-prop-body:not(.title), .homepage .section-value-props .services .list .value-prop-body:not(.title) {
-      color: rgba(255, 255, 255, 0.65); }
-  .services .col .title {
-    font-family: "Covik_Sans-Black";
-    color: white; }
-  .services .col {
-    display: flex;
-    flex-direction: column;
-    gap: 7px; }
-
-@media (max-width: 900px) {
-  .services .header {
-    padding: 29px; }
-  .services .list {
-    padding: 29px 47px;
-    flex-wrap: wrap;
-    justify-content: flex-start; } }
-
-@media (max-width: 647px) {
-  .services .header {
-    flex: 1 1 auto;
-    justify-content: flex-start;
-    flex-direction: column; }
-  .services .list {
-    flex-direction: column;
-    gap: 18px; }
-  .services .col {
-    gap: 0px; } }
-
-section.process {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: stretch;
-  justify-content: center;
-  min-height: 323px;
-  border-top: 2px solid white; }
-  section.process .photo {
-    border-right: 2px solid white;
-    background: url("/source/images/photo-skiier.jpg") 33% center no-repeat;
-    background-size: cover; }
-  section.process .content {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    flex-basis: 0;
-    padding: 76px;
-    gap: 18px; }
-
-@media (max-width: 950px) {
-  section.process .content {
-    padding: 29px; } }
-
-@media (max-width: 500px) {
-  section.process {
-    flex-direction: column; } }
-
-.work-impact section.hero {
-  padding-top: 123px;
-  padding-left: 76px;
-  background: url(/source/images/work-impact-hero-bg.png) no-repeat top 50px left 450px;
-  max-width: 1380px;
-  max-height: 800px;
-  margin: 0 auto; }
-
-.work-impact .hero-mockup {
-  position: relative;
-  top: -500px;
-  left: 650px; }
-
-.work-impact h1 {
-  max-width: 12ch;
-  margin-bottom: 0.3em; }
-
-.work-impact p, .work-impact .homepage .section-value-props .value-prop-body, .homepage .section-value-props .work-impact .value-prop-body {
-  max-width: 53ch; }
-
-.work-impact .hero-list {
-  margin-top: 47px; }
-
-@media (max-width: 900px) {
-  .work-impact .hero-mockup {
-    top: 0;
-    left: 0;
-    max-width: 100vw; }
-  .work-impact .hero-mockup img {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%;
-    padding-top: 29px; }
-  .work-impact section.hero {
-    max-height: none;
-    padding-top: 47px;
-    padding-left: 47px;
-    padding-right: 47px;
-    background: url(/source/images/work-impact-hero-bg.png) no-repeat top -100px left 400px; } }
-
-@media (max-width: 400px) {
-  .work-impact section.hero {
-    padding-top: 18px;
-    padding-left: 18px;
-    padding-right: 18px; } }
-
-.work-impact section.content {
-  margin-bottom: 76px; }
-  .work-impact section.content .header {
-    margin-top: 76px;
-    margin-bottom: 47px; }
-  .work-impact section.content h3, .work-impact section.content .homepage .section-value-props .value-prop-header, .homepage .section-value-props .work-impact section.content .value-prop-header, .work-impact section.content .homepage .section-the-plan .the-plan-header, .homepage .section-the-plan .work-impact section.content .the-plan-header {
-    margin-bottom: 11px; }
-  .work-impact section.content p, .work-impact section.content .homepage .section-value-props .value-prop-body, .homepage .section-value-props .work-impact section.content .value-prop-body, .work-impact section.content h3, .work-impact section.content .homepage .section-value-props .value-prop-header, .homepage .section-value-props .work-impact section.content .value-prop-header, .work-impact section.content .homepage .section-the-plan .the-plan-header, .homepage .section-the-plan .work-impact section.content .the-plan-header {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    padding-left: 18px;
-    padding-right: 18px; }
-  .work-impact section.content p, .work-impact section.content .homepage .section-value-props .value-prop-body, .homepage .section-value-props .work-impact section.content .value-prop-body {
-    max-width: 40ch; }
-  .work-impact section.content .images {
-    display: flex;
-    justify-content: center;
-    gap: 47px; }
-
-.prototype-cover {
-  width: 100%;
-  height: 50px;
-  background: #120404;
-  position: relative;
-  margin-top: -50px; }
-
 body {
   cursor: url("/source/images/cursor-hand.svg"), auto; }
 
 a, a:hover {
   cursor: url("/source/images/cursor-point.svg"), auto; }
 
-a.person p.name, a.person .homepage .section-value-props .name.value-prop-body, .homepage .section-value-props a.person .name.value-prop-body {
+a.person p.name, a.person .homepage .value-props-section .name.value-prop-body, .homepage .value-props-section a.person .name.value-prop-body, a.person .homepage .the-plan-section .name.the-plan-body, .homepage .the-plan-section a.person .name.the-plan-body {
   transition: 200ms ease-in; }
 
-a.person:hover p.name, a.person:hover .homepage .section-value-props .name.value-prop-body, .homepage .section-value-props a.person:hover .name.value-prop-body {
+a.person:hover p.name, a.person:hover .homepage .value-props-section .name.value-prop-body, .homepage .value-props-section a.person:hover .name.value-prop-body, a.person:hover .homepage .the-plan-section .name.the-plan-body, .homepage .the-plan-section a.person:hover .name.the-plan-body {
   transition: 200ms ease-in;
   color: #DC2626; }
 

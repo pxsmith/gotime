@@ -54,9 +54,8 @@
     top: 50px
     left: 975px
 
-
-
 // HERO TABLET & MOBILE
+
 @media (max-width: 768px)
   .homepage .hero
     padding-top: $s2--47
@@ -100,17 +99,62 @@
 
 
 
+// GENERAL LAYOUT / STYLING 💅 💅 💅 💅 💅 💅 💅
+
+.homepage 
+  & .value-props-section, .the-plan-section, .social-proof-section, .services-section
+    margin: $s5--200 $s3--76 
+
+@media (max-width: 1080px)
+  .homepage 
+    & .value-props-section, .the-plan-section, .social-proof-section, .services-section
+      margin: $s3--76 $s2--47
+      margin-bottom: $s4--123
+
+@media (max-width: 768px)
+  .homepage 
+    & .value-props-section, .the-plan-section, .social-proof-section, .services-section
+      margin: $s3--76 $s1--29
+      margin-bottom: $s4--123
+
+
+
+
+
+// section header & superheader styling
+
+.header-group
+  .super-header
+    text-transform: uppercase
+    font-size: $s1--29
+    @extend .text-subtle
+
+  .header
+    @extend h2
+
+.header-group
+  margin-bottom: $s3--76
+
+@media (max-width: 1080px)
+  .homepage 
+    .header-group
+      // margin-bottom: $s2--47
+
+@media (max-width: 768px)
+  .homepage 
+    .header-group
+      margin-bottom: $s2--47
+
+
+
+
+
 
 
 
 // VALUE PROPS ✨ ✨ ✨ ✨ ✨ ✨ ✨
 
-.homepage .section-value-props
-  margin: $s4--123 $s3--76 
-
-  .header
-    margin-bottom: $s4--123
-
+.homepage .value-props-section
 
   .value-prop-header
     @extend h3
@@ -120,7 +164,6 @@
   .value-prop-subheader
     @extend h5
     @include text-contrast
-
 
   .value-props
     display: grid
@@ -137,26 +180,17 @@
     height: 48px * 1.5
     margin-bottom: $s0--18
 
-
 // VALUE PROPS —— RESPONSIVE 
+
 @media (max-width: 1080px)
-  .homepage .section-value-props
-    margin: $s3--76 $s2--47
-
-    .header
-      margin-bottom: $s3--76
-
+  .homepage .value-props-section
     .value-props
-      display: flex
-      flex-direction: column
-
-    .value-prop
-      padding-top: $s-1--11
+      grid-template-columns: repeat(2, minmax(0, 1fr))
 
 @media (max-width: 768px)
-  .homepage .section-value-props
-    margin: $s2--47 $s1--29
-
+  .homepage .value-props-section
+    .value-props
+      grid-template-columns: repeat(1, minmax(0, 1fr))
 
 
 
@@ -164,8 +198,19 @@
 
 
 // THE PLAN ✅ ✅ ✅ ✅ ✅ ✅ ✅
-.homepage .section-the-plan
-  margin: $s5--200 $s3--76 
+
+.homepage .the-plan-section
+
+  .the-plan-steps
+    display: grid
+    grid-template-columns: repeat(3, minmax(0, 1fr))
+    // column-gap: $s3--76
+    row-gap: $s3--76
+
+  .the-plan-step
+    place-self: center
+    align-self: start
+    text-align: center
 
   .the-plan-number
     @include f-mono-400-regular
@@ -174,58 +219,37 @@
     -webkit-text-stroke-width: 1px
     -webkit-text-stroke-color: $accent
 
-  .the-plan-steps
-    display: grid
-    grid-template-columns: repeat(3, minmax(0, 1fr))
-    column-gap: $s3--76
-    row-gap: $s3--76
-
   .the-plan-header
     @extend h3
     @extend .text-highlight
     padding-bottom: $s0--18
     
   .the-plan-body
-    @include text-contrast
-    font-size: $s1--29
-    line-height: 1.5em
+    font-size: $s0--18
+    @extend p
     max-width: 22ch
 
+// responsive 
 
-// THE PLAN —— RESPONSIVE 
+@media (min-width: 1080px)
+  .homepage .the-plan-section    
+    .the-plan-steps
+      margin-top: - $s3--76
+
 @media (max-width: 1080px)
-  .homepage .section-the-plan
-    margin: $s5--200 $s2--47
-
-    .header
-      margin-bottom: $s3--76
-
-    .the-plan-body
-      font-size: $s0--18
-      line-height: 1.5em
-
-
-@media (max-width: 768px)
-  .homepage .section-the-plan
-    margin: $s4--123 $s1--29
-
-    .header
-      margin-bottom: 0px
-      margin-top: $s3--76
+  .homepage .the-plan-section    
     .the-plan-number
       font-size: $s5--200
 
+@media (max-width: 768px)
+  .homepage .the-plan-section
     .the-plan-steps
-      column-gap: $s1--29
+      grid-template-columns: repeat(1, minmax(0, 1fr))
+      row-gap: 0
 
-@media (max-width: 450px)
+@media (max-width: 480px)
   .homepage .section-the-plan
-    .header
-      margin-bottom: $s0--18
-
     .the-plan-steps
-      display: flex
-      flex-direction: column
       row-gap: $s0--18
 
     .the-plan-number
@@ -359,35 +383,18 @@
 
 
 
-// TESTIMONIALS 💬 💬 💬 💬 💬 💬 💬 💬
 
-.homepage .testimonials-section
-  margin: $s4--123 $s3--76 
+// SOCIAL PROOF 💬 💬 💬 💬 💬 💬 💬 💬
 
-@media (max-width: 1080px)
-  .homepage .testimonials-section
-    margin: $s4--123 $s2--47
+.homepage .social-proof-section
+  .header-group
+    margin-bottom: $s0--18
 
-@media (max-width: 768px)
-  .homepage .testimonials-section
-    margin: $s4--123 $s1--29
-
-
-
-
-.homepage .testimonials-section .header
-  margin-bottom: $s2--47
-
-.homepage .testimonials
-  display: grid
-  column-gap: $s4--123
-  row-gap: $s0--18
-  grid-template-columns: repeat(3, minmax(0, 1fr))
-  // flex-wrap: wrap
-  // flex-basis: 30%
-  // margin: $s3--76
-  // margin-top: 0
-  // align-content: stretch
+  .social-proof
+    display: grid
+    column-gap: $s4--123
+    row-gap: $s2--47
+    grid-template-columns: repeat(3, minmax(0, 1fr))
 
   .quote
     flex-grow: 1
@@ -397,7 +404,6 @@
     @include f-mono-400-regular
     @include fs4--123
     @extend .text-highlight
-    // color: $accent
     height: 175px
 
   .quote-body
@@ -421,20 +427,23 @@
     @include text-contrast
     font-size: 20px
     line-height: 1.2
+
   .job-title
     @include text-subtle
     line-height: 1.2
 
-// TESTIMONIALS RESPONSIVE
+// SOCIAL PROOF RESPONSIVE
+
 @media (max-width: 1080px)
-  .homepage .testimonials
+  .homepage .social-proof-section .social-proof
     grid-template-columns: repeat(2, minmax(0, 1fr))
     column-gap: $s2--47
 
 @media (max-width: 680px)
-  .homepage .testimonials
+  .homepage .social-proof-section .social-proof
     grid-template-columns: repeat(1, minmax(0, 1fr))
-  .homepage .testimonials-section .header
+
+  .homepage .social-proof-section .header
     margin-bottom: 0
 
 
@@ -442,11 +451,9 @@
 
 
 
-.text-outline
-  color: transparent
-  -webkit-text-stroke: 1px rgba(white, 0.5)
 
 // DESIGN COLLAGE
+
 section.design-collage
   .header
     color: transparent
@@ -457,258 +464,256 @@ section.design-collage
 
 
 
-// PRICING
 
-section.pricing
-  display: flex
-  justify-content: center
+// PRICING OLD 💀 💀 💀 💀 💀 💀 💀
 
-  padding-top: $s3--76
-  padding-bottom: $s3--76
-  @include bg-grid
+// section.pricing
+//   display: flex
+//   justify-content: center
 
-  text-align: center
+//   padding-top: $s3--76
+//   padding-bottom: $s3--76
+//   @include bg-grid
 
-  .container
-    @include b
-    padding: $s2--47
-    background: $dark
-    max-width: 1200px
+//   text-align: center
 
-  .header
-    text-align: center
-    margin-bottom: $s-2--7
+//   .container
+//     @include b
+//     padding: $s2--47
+//     background: $dark
+//     max-width: 1200px
 
+//   .header
+//     text-align: center
+//     margin-bottom: $s-2--7
 
-  .title
-    display: flex
-    gap: $s0--18
-  .price-amount
-    @include f-sans-400-regular
-    margin-bottom: $s0--18
-  .title .fd-column
-    gap: $s-2--7
+//   .title
+//     display: flex
+//     gap: $s0--18
+//   .price-amount
+//     @include f-sans-400-regular
+//     margin-bottom: $s0--18
+//   .title .fd-column
+//     gap: $s-2--7
 
+//   .prices
+//     display: flex
+//     margin-top: $s2--47
+//     gap: $s2--47
+//     text-align: left
 
-  .prices
-    display: flex
-    // justify-content: flex-start
-    margin-top: $s2--47
-    gap: $s2--47
-    text-align: left
+//   .price
+//     display: flex
+//     flex-direction: column
+//     align-items: flex-start
+//     gap: $s0--18
 
-  .price
-    display: flex
-    flex-direction: column
-    align-items: flex-start
-    gap: $s0--18
+//   hr
+//     border: 2px solid rgba(white, 0.2)
 
-  hr
-    border: 2px solid rgba(white, 0.2)
-
-  footer
-    padding-top: $s2--47
-    .header
-      color: $accent
-    max-width: 46ch
-    margin: 0 auto
+//   footer
+//     padding-top: $s2--47
+//     .header
+//       color: $accent
+//     max-width: 46ch
+//     margin: 0 auto
 
 
-@media (max-width: 800px)
-  section.pricing
-    .prices
-      flex-direction: column
-      gap: $s2--47
+// @media (max-width: 800px)
+//   section.pricing
+//     .prices
+//       flex-direction: column
+//       gap: $s2--47
 
-    hr
-      display: none
+//     hr
+//       display: none
 
-    .container
-      max-width: 75vw
-      padding: $s1--29
+//     .container
+//       max-width: 75vw
+//       padding: $s1--29
 
 
 
 
 
-// SERVICES
+// SERVICES OLD 💀 💀 💀 💀 💀 💀 💀
 
-.services
-  display: flex
+// .services
+//   display: flex
 
-  .header
-    display: flex
-    align-items: center
+//   .header
+//     display: flex
+//     align-items: center
 
-    padding: $s3--76
-    @include br
+//     padding: $s3--76
+//     @include br
 
-  .list
-    display: flex
-    padding: $s2--47 $s1--29
-    justify-content: space-evenly
-    flex: 1 1 auto
-    gap: $s0--18
-
-
-    p:not(.title)
-      @include text-subtle
-
-  .col .title
-    @include f-sans-800-black
-    @include text-contrast
-
-  .col
-    display: flex
-    flex-direction: column
-    gap: $s-2--7
-
-// SERVICES RESPONSIVE
-@media (max-width: 900px)
-  .services
-    .header
-      padding: $s1--29
-    .list
-      padding: $s1--29 $s2--47
-      flex-wrap: wrap
-      justify-content: flex-start
-@media (max-width: 647px)
-  .services
-    .header
-      flex: 1 1 auto
-      justify-content: flex-start
-      flex-direction: column
-    .list
-      flex-direction: column
-      gap: $s0--18
-    .col
-      gap: 0px
+//   .list
+//     display: flex
+//     padding: $s2--47 $s1--29
+//     justify-content: space-evenly
+//     flex: 1 1 auto
+//     gap: $s0--18
 
 
+//     p:not(.title)
+//       @include text-subtle
 
+//   .col .title
+//     @include f-sans-800-black
+//     @include text-contrast
 
+//   .col
+//     display: flex
+//     flex-direction: column
+//     gap: $s-2--7
 
-// PROCESS
-
-section.process
-  display: flex
-  justify-content: space-evenly
-  align-items: stretch
-  justify-content: center
-  min-height: $s6--323
-  @include bt
-
-  .photo
-    @include br
-    background: url('/source/images/photo-skiier.jpg') 33% center no-repeat
-    background-size: cover
-
-  .content
-    display: flex
-    flex-direction: column
-    flex-grow: 1
-    flex-basis: 0
-    padding: $s3--76
-    gap: $s0--18
-
-// RESPONSIVE
-@media (max-width: 950px)
-  section.process
-    .content
-      padding: $s1--29
-@media (max-width: 500px)
-  section.process
-    flex-direction: column
+// // SERVICES RESPONSIVE
+// @media (max-width: 900px)
+//   .services
+//     .header
+//       padding: $s1--29
+//     .list
+//       padding: $s1--29 $s2--47
+//       flex-wrap: wrap
+//       justify-content: flex-start
+// @media (max-width: 647px)
+//   .services
+//     .header
+//       flex: 1 1 auto
+//       justify-content: flex-start
+//       flex-direction: column
+//     .list
+//       flex-direction: column
+//       gap: $s0--18
+//     .col
+//       gap: 0px
 
 
 
 
 
-// WORK IMPACT
+// PROCESS GONE 💀 💀 💀 💀 💀 💀 💀
+
+// section.process
+//   display: flex
+//   justify-content: space-evenly
+//   align-items: stretch
+//   justify-content: center
+//   min-height: $s6--323
+//   @include bt
+
+//   .photo
+//     @include br
+//     background: url('/source/images/photo-skiier.jpg') 33% center no-repeat
+//     background-size: cover
+
+//   .content
+//     display: flex
+//     flex-direction: column
+//     flex-grow: 1
+//     flex-basis: 0
+//     padding: $s3--76
+//     gap: $s0--18
+
+// // RESPONSIVE
+// @media (max-width: 950px)
+//   section.process
+//     .content
+//       padding: $s1--29
+// @media (max-width: 500px)
+//   section.process
+//     flex-direction: column
+
+
+
+
+
+// WORK IMPACT 💀 💀 💀 💀 💀 💀 💀
 // HERO
-.work-impact
-  section.hero
-    padding-top: $s4--123
-    padding-left: $s3--76
-    background: url(/source/images/work-impact-hero-bg.png) no-repeat top 50px left 450px
-    max-width: 1380px
-    max-height: 800px
-    margin: 0 auto
+// .work-impact
+//   section.hero
+//     padding-top: $s4--123
+//     padding-left: $s3--76
+//     background: url(/source/images/work-impact-hero-bg.png) no-repeat top 50px left 450px
+//     max-width: 1380px
+//     max-height: 800px
+//     margin: 0 auto
 
-  .hero-mockup
-    position: relative
-    top: -500px
-    left: 650px
+//   .hero-mockup
+//     position: relative
+//     top: -500px
+//     left: 650px
 
-  h1
-    max-width: 12ch
-    margin-bottom: 0.3em
+//   h1
+//     max-width: 12ch
+//     margin-bottom: 0.3em
 
-  p
-    max-width: 53ch
+//   p
+//     max-width: 53ch
 
-  .hero-list
-    margin-top: $s2--47
+//   .hero-list
+//     margin-top: $s2--47
 
-@media (max-width: 900px)
-  .work-impact
-    .hero-mockup
-      top: 0
-      left: 0
-      max-width: 100vw
+// @media (max-width: 900px)
+//   .work-impact
+//     .hero-mockup
+//       top: 0
+//       left: 0
+//       max-width: 100vw
 
-    .hero-mockup img
-      @include margin-auto
-      max-width: 100%
-      padding-top: $s1--29
+//     .hero-mockup img
+//       @include margin-auto
+//       max-width: 100%
+//       padding-top: $s1--29
 
-    section.hero
-      max-height: none
-      padding-top: $s2--47
-      padding-left: $s2--47
-      padding-right: $s2--47
-      background: url(/source/images/work-impact-hero-bg.png) no-repeat top -100px left 400px
+//     section.hero
+//       max-height: none
+//       padding-top: $s2--47
+//       padding-left: $s2--47
+//       padding-right: $s2--47
+//       background: url(/source/images/work-impact-hero-bg.png) no-repeat top -100px left 400px
 
-@media (max-width: 400px)
-  .work-impact
-    section.hero
-      padding-top: $s0--18
-      padding-left: $s0--18
-      padding-right: $s0--18
+// @media (max-width: 400px)
+//   .work-impact
+//     section.hero
+//       padding-top: $s0--18
+//       padding-left: $s0--18
+//       padding-right: $s0--18
 
-// WORK SECTIONS
-.work-impact
-  section.content
-    margin-bottom: $s3--76
+// // WORK SECTIONS
+// .work-impact
+//   section.content
+//     margin-bottom: $s3--76
 
-    .header
-      margin-top: $s3--76
-      margin-bottom: $s2--47
+//     .header
+//       margin-top: $s3--76
+//       margin-bottom: $s2--47
 
-    h3
-      margin-bottom: $s-1--11
+//     h3
+//       margin-bottom: $s-1--11
 
-    p, h3
-      @include margin-auto
-      text-align: center
-      padding-left: $s0--18
-      padding-right: $s0--18
+//     p, h3
+//       @include margin-auto
+//       text-align: center
+//       padding-left: $s0--18
+//       padding-right: $s0--18
 
-    p
-      max-width: 40ch
+//     p
+//       max-width: 40ch
 
-    .images
-      display: flex
-      justify-content: center
-      gap: $s2--47
+//     .images
+//       display: flex
+//       justify-content: center
+//       gap: $s2--47
 
 
-.prototype-cover
-  width: 100%
-  height: 50px
-  background: $dark
-  position: relative
-  margin-top: -50px
+// .prototype-cover
+//   width: 100%
+//   height: 50px
+//   background: $dark
+//   position: relative
+//   margin-top: -50px
 
 
 
