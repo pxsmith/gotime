@@ -24,6 +24,8 @@
 
 
 
+
+
 // HERO VISUALS 🦸‍♂️ 🦸‍♂️ 🦸‍♂️ 🦸‍♂️ 🦸‍♂️ 🦸‍♂️ 🦸‍♂️
 // desktop view
 
@@ -99,27 +101,25 @@
 
 
 
+
+
 // GENERAL LAYOUT / STYLING 💅 💅 💅 💅 💅 💅 💅
 
 .homepage 
-  & .value-props-section, .the-plan-section, .social-proof-section, .services-section
+  & .value-props-section, .the-plan-section, .social-proof-section, .services-section, .faq-section
     margin: $s5--200 $s3--76 
 
 @media (max-width: 1080px)
   .homepage 
-    & .value-props-section, .the-plan-section, .social-proof-section, .services-section
+    & .value-props-section, .the-plan-section, .social-proof-section, .services-section, .faq-section
       margin: $s3--76 $s2--47
       margin-bottom: $s4--123
 
 @media (max-width: 768px)
   .homepage 
-    & .value-props-section, .the-plan-section, .social-proof-section, .services-section
+    & .value-props-section, .the-plan-section, .social-proof-section, .services-section, .faq-section
       margin: $s3--76 $s1--29
       margin-bottom: $s4--123
-
-
-
-
 
 // section header & superheader styling
 
@@ -144,8 +144,6 @@
   .homepage 
     .header-group
       margin-bottom: $s2--47
-
-
 
 
 
@@ -257,6 +255,181 @@
 
     .the-plan-body
       max-width: 100%
+
+
+
+
+
+
+// SOCIAL PROOF 💬 💬 💬 💬 💬 💬 💬 💬
+
+.homepage .social-proof-section
+  .header-group
+    margin-bottom: $s0--18
+
+  .social-proof
+    display: grid
+    column-gap: $s4--123
+    row-gap: $s2--47
+    grid-template-columns: repeat(3, minmax(0, 1fr))
+
+  .quote
+    flex-grow: 1
+    flex-basis: 0
+
+  .quotation-mark
+    @include f-mono-400-regular
+    @include fs4--123
+    @extend .text-highlight
+    height: 175px
+
+  .quote-body
+    margin-top: - $s2--47
+    @include text-default
+
+  .portrait
+    width: $s3--76
+    height: $s3--76
+    border-radius: 100%
+    @include b
+
+  .person
+    margin-top: $s1--29
+    display: flex
+    gap: $s0--18
+    align-items: center
+
+  .name
+    @include f-sans-500-medium
+    @include text-contrast
+    font-size: 20px
+    line-height: 1.2
+
+  .job-title
+    @include text-subtle
+    line-height: 1.2
+
+// SOCIAL PROOF RESPONSIVE
+
+@media (max-width: 1080px)
+  .homepage .social-proof-section .social-proof
+    grid-template-columns: repeat(2, minmax(0, 1fr))
+    column-gap: $s2--47
+
+@media (max-width: 680px)
+  .homepage .social-proof-section .social-proof
+    grid-template-columns: repeat(1, minmax(0, 1fr))
+
+  .homepage .social-proof-section .header
+    margin-bottom: 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+// SERVICES 🛠️ 🛠️ 🛠️ 🛠️ 🛠️ 🛠️ 🛠️
+
+.homepage .services-section
+
+  .services
+    grid-template-columns: repeat(3, minmax(0, 1fr))
+    gap: $s2--47
+
+  .service-header
+    font-size: $s2--47
+    letter-spacing: -0.04em
+
+  .service-time
+    @extend h5
+    @extend .text-contrast
+
+  .service .icon
+    width: 48px * 1.5
+    height: 48px * 1.5
+    margin-bottom: $s0--18
+
+
+
+
+
+
+
+
+
+
+
+
+// FAQ ❓ ❓ ❓ ❓ ❓ ❓ ❓
+// https://codepen.io/pxsmith/pen/LYXjgbR
+
+.homepage .faq-section
+
+  .header-group
+    margin-bottom: $s2--47
+
+  .faq-wrapper
+    padding-top: $s1--29
+    padding-bottom: $s0--18
+
+  .faq-wrapper:first-of-type
+    @extend .bt
+
+  .faq-wrapper
+    @extend .bb
+
+  // .faq-wrapper:not(.faq-wrapper:last-of-type)
+  //   @extend .bb
+
+  .faq
+    flex-direction: row
+    overflow: hidden 
+
+  .faq-question
+    display: flex
+    @extend h4
+    line-height: 1.2em
+    letter-spacing: -0.04em
+
+  .faq-question-text
+    transition: all 0.35s
+    flex-grow: 1
+
+  .faq-answer
+    padding-top: $s0--18
+    max-width: 75ch
+    max-height: 0
+    transition: all 1s ease-in-out
+
+    p:not(p:first-of-type)
+      padding-top: $s0--18
+
+    p:last-of-type
+      padding-bottom: $s0--18
+
+  // pure css accordion interaction
+  .faq input[type="checkbox"]
+    display: none
+  input:checked 
+    ~ .faq-answer
+      max-height: 100vh
+  input ~ .faq-question .faq-question-icon::after
+    content: "+"
+  input:checked ~ .faq-question .faq-question-icon::after
+    content: "×"
+
+// responsive
+@media (max-width: 768px)
+  .homepage .faq-section
+    .faq-question
+      font-size: $s1--29
 
 
 
@@ -379,72 +552,6 @@
   padding-top: $s-1--11
   padding-bottom: $s-1--11
   @include bb
-
-
-
-
-
-// SOCIAL PROOF 💬 💬 💬 💬 💬 💬 💬 💬
-
-.homepage .social-proof-section
-  .header-group
-    margin-bottom: $s0--18
-
-  .social-proof
-    display: grid
-    column-gap: $s4--123
-    row-gap: $s2--47
-    grid-template-columns: repeat(3, minmax(0, 1fr))
-
-  .quote
-    flex-grow: 1
-    flex-basis: 0
-
-  .quotation-mark
-    @include f-mono-400-regular
-    @include fs4--123
-    @extend .text-highlight
-    height: 175px
-
-  .quote-body
-    margin-top: - $s2--47
-    @include text-default
-
-  .portrait
-    width: $s3--76
-    height: $s3--76
-    border-radius: 100%
-    @include b
-
-  .person
-    margin-top: $s1--29
-    display: flex
-    gap: $s0--18
-    align-items: center
-
-  .name
-    @include f-sans-500-medium
-    @include text-contrast
-    font-size: 20px
-    line-height: 1.2
-
-  .job-title
-    @include text-subtle
-    line-height: 1.2
-
-// SOCIAL PROOF RESPONSIVE
-
-@media (max-width: 1080px)
-  .homepage .social-proof-section .social-proof
-    grid-template-columns: repeat(2, minmax(0, 1fr))
-    column-gap: $s2--47
-
-@media (max-width: 680px)
-  .homepage .social-proof-section .social-proof
-    grid-template-columns: repeat(1, minmax(0, 1fr))
-
-  .homepage .social-proof-section .header
-    margin-bottom: 0
 
 
 
@@ -723,7 +830,7 @@ section.design-collage
 
 body
   cursor: url('/source/images/cursor-hand.svg'), auto
-a, a:hover
+a, a:hover, label
   cursor: url('/source/images/cursor-point.svg'), auto
 
 
