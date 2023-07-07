@@ -340,8 +340,14 @@
 .homepage .services-section
 
   .services
+    display: grid
     grid-template-columns: repeat(3, minmax(0, 1fr))
-    gap: $s2--47
+    gap: $s4--123
+
+  .service
+    display: flex
+    flex-direction: column
+    gap: $s0--18
 
   .service-header
     font-size: $s2--47
@@ -352,12 +358,28 @@
     @extend .text-contrast
 
   .service .icon
-    width: 48px * 1.5
-    height: 48px * 1.5
+    width: 48px * 2
+    height: 48px * 2
     margin-bottom: $s0--18
 
+  .service-list-item:before
+    content: '☑'
+    padding-right: $s-1--11
+    @extend .text-highlight
 
+@media (max-width: 1080px)
+  .homepage .services-section 
+    .services
+      gap: $s1--29
 
+    .service-header
+        font-size: $s1--29
+
+@media (max-width: 768px)
+  .homepage .services-section 
+    .services
+      grid-template-columns: repeat(1, minmax(0, 1fr))
+      row-gap: $s3--76
 
 
 

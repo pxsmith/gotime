@@ -502,7 +502,7 @@ a {
 .fs6--323, .fs6 {
   font-size: 323px; }
 
-.text-highlight, .homepage .social-proof-section .quotation-mark, .homepage .the-plan-section .the-plan-header, .homepage .value-props-section .value-prop-header {
+.text-highlight, .homepage .services-section .service-list-item:before, .homepage .social-proof-section .quotation-mark, .homepage .the-plan-section .the-plan-header, .homepage .value-props-section .value-prop-header {
   color: 90deg, #DC2626 0%, #FA603E 100%;
   background: -webkit-linear-gradient(90deg, #DC2626 0%, #FA603E 100%);
   -webkit-background-clip: text;
@@ -1020,17 +1020,38 @@ h1 u {
     margin-bottom: 0; } }
 
 .homepage .services-section .services {
+  display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 47px; }
+  gap: 123px; }
+
+.homepage .services-section .service {
+  display: flex;
+  flex-direction: column;
+  gap: 18px; }
 
 .homepage .services-section .service-header {
   font-size: 47px;
   letter-spacing: -0.04em; }
 
 .homepage .services-section .service .icon {
-  width: 72px;
-  height: 72px;
+  width: 96px;
+  height: 96px;
   margin-bottom: 18px; }
+
+.homepage .services-section .service-list-item:before {
+  content: '☑';
+  padding-right: 11px; }
+
+@media (max-width: 1080px) {
+  .homepage .services-section .services {
+    gap: 29px; }
+  .homepage .services-section .service-header {
+    font-size: 29px; } }
+
+@media (max-width: 768px) {
+  .homepage .services-section .services {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    row-gap: 76px; } }
 
 .homepage .faq-section .header-group {
   margin-bottom: 47px; }
