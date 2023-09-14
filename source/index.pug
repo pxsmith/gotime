@@ -14,7 +14,7 @@ html(lang='en-US')
           h1.header Beat your competition with great design. <span class='text-highlight'>Fast.</span>
           p.subheader Skimp on design and you’re getting left behind. But design agencies cost $10,000s. Freelancers are unreliable. Full-time designers take months to find. What you need is a true design partner, stat.
           a.button(href='https://calendly.com/gotimehq/meet' target='_blank') Book a call
-          p.button-afterword Only 1 client spot left
+          p.button-afterword Limited availability
 
         .visuals
           img.photo-hero-1(src="source/images/photo-hero-motorcycle.jpg" draggable='false')
@@ -108,34 +108,6 @@ html(lang='en-US')
 
 
 
-      //- section.services.bt.bb
-        h3.header Design <br>services
-        .list
-          .col
-            p.title Branding 
-            p Brand identity
-            p Logo design
-            p Merch
-          .col
-            p.title Product
-            p UX/UI design
-            p Prototyping
-            p Wireframing
-            p Product design
-            p iOS & Android
-          .col
-            p.title Marketing
-            p Social media
-            p Ads
-            p Email
-            p Collateral
-          .col
-            p.title Sales
-            p Presentations
-            p Demos
-          .col
-            p.title Fundraising
-            p Pitch decks
 
 
       include components/cta
@@ -203,6 +175,38 @@ html(lang='en-US')
 
 
 
+      section.case-studies-section 
+        .header-group
+          .super-header Case studies
+          .header Amazing outcomes
+
+        .case-studies
+          
+          a(href='/case-studies/fractional-product-design').case-study.link-with-border
+            .case-study-thumbnail
+              img(src='/case-studies/fractional-product-design/case-study-1.jpg' srcset='/case-studies/fractional-product-design/case-study-1.jpg 2x' draggable='false' loading='lazy')
+            .case-study-header Saved $8,782/mo
+            .case-study-body Product design • microsites • marketing • web &amp; mobile app • creative direction
+
+          a(href='/case-studies/mvp-in-7-days').case-study.link-with-border
+            .case-study-thumbnail
+              img(src='/case-studies/mvp-in-7-days/case-study-1.jpg' srcset='/case-studies/mvp-in-7-days/case-study-1@2x.jpg 2x' draggable='false' loading='lazy')
+            .case-study-header MVP in 7 days
+            .case-study-body Product design • branding • web &amp; mobile app • creative direction
+
+          a(href='/case-studies/leads-in-24-hours').case-study.link-with-border
+            .case-study-thumbnail
+              img(src='/case-studies/leads-in-24-hours/case-study-1.jpg' srcset='/case-studies/leads-in-24-hours/case-study-1@2x.jpg 2x' draggable='false' loading='lazy')
+            .case-study-header Leads in 24 hours
+            .case-study-body Website design • Webflow build • branding • creative direction
+
+
+
+
+
+
+
+
       section.services-section
         .header-group
           .super-header At your service
@@ -243,9 +247,55 @@ html(lang='en-US')
 
 
 
+
+
+
+
+
+
+      //- section.projects-section 
+        .header-group
+          .super-header Samples we can share
+          .header Craftsmanship we’re proud of
+
+        .projects
+          
+          a(href='#').project.link-with-border
+            .project-thumbnail
+              img(src='source/images/design-hi-res-05.jpg' srcset='source/images/design-hi-res-05@2x.jpg 2x' draggable='false' loading='lazy')
+            .project-header Farmers’ marketplace
+            .project-body DTC • E-commerce • brand identity • web &amp; mobile app • MVP design • creative direction
+
+          a(href='#').project.link-with-border
+            .project-thumbnail
+              img(src='source/images/design-hi-res-10.jpg' srcset='source/images/design-hi-res-10@2x.jpg 2x' draggable='false' loading='lazy')
+            .project-header Vacation booking
+            .project-body Web app • 
+
+          a(href='#').project.link-with-border
+            .project-thumbnail
+              //- img(src='source/images/design-hi-res-10.jpg' srcset='source/images/design-hi-res-10@2x.jpg 2x' draggable='false' loading='lazy')
+            .project-header Real estate scoring
+            .project-body service
+
+          a(href='#').project.link-with-border
+            .project-thumbnail
+              //- img(src='source/images/design-hi-res-10.jpg' srcset='source/images/design-hi-res-10@2x.jpg 2x' draggable='false' loading='lazy')
+            .project-header Auto repair shop
+            .project-body service 
+
+
+
+
+
+
+
+
+
+
       section.faq-section
         .header-group
-          .super-header What about…
+          .super-header You’re wondering…
           .header FAQs
 
         .faqs
@@ -256,7 +306,7 @@ html(lang='en-US')
                 .faq-question-text How much does it cost?
                 .faq-question-icon
               .faq-answer
-                p When you’re ready for a full-power Design Subscription it costs a flat rate of $8,000 per month. Considering the median total compensation for product designers is $151,980 ($12,665 per month), you’re saving a lot of moolah. 
+                p When you’re ready for a full-power Design Subscription it costs a flat rate of $8,000 per month. Considering the median total compensation for product designers is $151,980, after health insurance, benefits, and taxes that’s $16,781 per month. With Go Time you’re saving a lot of moolah. 
                 p We also offer Design On-Demand. This is how even the most cash-strapped startups can access great design. Don’t hesitate to reach out! If it’s a good fit, we’re going to find a way to work together, even if it means paring down the scope (but NEVER paring down the quality!).
 
           .faq-wrapper
@@ -296,38 +346,6 @@ html(lang='en-US')
                 p Sometimes! We’re extremely excited about using AI to supercharge our creative process. For example, sometimes we’ll use Midjourney to generate images. From what we’ve seen, AI isn’t taking our jobs as designers anytime soon.
 
 
-
-
-
-
-
-
-
-      //- section.pricing.bb
-      //-   .container
-      //-     header
-      //-       h3.header Simple pricing
-      //-       p.subheader We’re passionate about design. We spend minimal time on admin for maximal time designing.
-      //-     .prices
-      //-       .price
-      //-         .title.ai-flex-start
-      //-           img.icon(src='source/images/icon-repeat.svg' draggable='false')
-      //-           .flex.fd-column
-      //-             h4 Monthly subscription 
-      //-             p ☑ Faster than a full-time designer 
-      //-             p ☑ Cheaper than a full-time designer 
-      //-             p ☑ Dedicated on-shore designer
-      //-             p ☑ Cancel anytime
-      //-       hr
-      //-       .price
-      //-         .title.ai-flex-start
-      //-           img.icon(src='source/images/icon-lightning.svg' draggable='false')
-      //-           .flex.fd-column
-      //-             h4 On-demand design
-      //-             p ☑ Fast turnaround
-      //-             p ☑ Simple pricing
-      //-             p ☑ Pay-as-you go
-      //-             p ☑ No minimums
 
 
 

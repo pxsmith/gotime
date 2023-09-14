@@ -46,15 +46,15 @@
 
   .photo-hero-3 // f1
     top: 350px
-    left: 850px
+    left: 800px
 
   .photo-hero-2 // rocket
     top: -175px
-    left: 700px
+    left: 650px
 
   .photo-hero-1 // motorcycle
     top: 50px
-    left: 975px
+    left: 925px
 
 // HERO TABLET & MOBILE
 
@@ -74,11 +74,6 @@
     .subheader
       margin-top: $s0--18
       margin-bottom: $s1--29
-
-    .button
-      @include fs0--18
-      @include f-sans-600-semibold
-      padding: $s-1--11 $s0--18
 
   // VISUALS TABLET
   .homepage .hero .visuals
@@ -106,18 +101,18 @@
 // GENERAL LAYOUT / STYLING 💅 💅 💅 💅 💅 💅 💅
 
 .homepage 
-  & .value-props-section, .the-plan-section, .social-proof-section, .services-section, .faq-section
+  & .value-props-section, .the-plan-section, .social-proof-section, .services-section, .faq-section, .projects-section, .case-studies-section
     margin: $s5--200 $s3--76 
 
 @media (max-width: 1080px)
   .homepage 
-    & .value-props-section, .the-plan-section, .social-proof-section, .services-section, .faq-section
+    & .value-props-section, .the-plan-section, .social-proof-section, .services-section, .faq-section, .projects-section, .case-studies-section
       margin: $s3--76 $s2--47
       margin-bottom: $s4--123
 
 @media (max-width: 768px)
   .homepage 
-    & .value-props-section, .the-plan-section, .social-proof-section, .services-section, .faq-section
+    & .value-props-section, .the-plan-section, .social-proof-section, .services-section, .faq-section, .projects-section, .case-studies-section
       margin: $s3--76 $s1--29
       margin-bottom: $s4--123
 
@@ -362,6 +357,9 @@
     height: 48px * 2
     margin-bottom: $s0--18
 
+  .service-list-item
+    line-height: 1.5em
+
   .service-list-item:before
     content: '☑'
     padding-right: $s-1--11
@@ -370,7 +368,7 @@
 @media (max-width: 1080px)
   .homepage .services-section 
     .services
-      gap: $s1--29
+      gap: $s2--47
 
     .service-header
         font-size: $s1--29
@@ -378,11 +376,88 @@
 @media (max-width: 768px)
   .homepage .services-section 
     .services
-      grid-template-columns: repeat(1, minmax(0, 1fr))
+      grid-template-columns: repeat(2, minmax(0, 1fr))
       row-gap: $s3--76
 
+@media (max-width: 480px)
+  .homepage .services-section 
+    .services
+      grid-template-columns: repeat(1, minmax(0, 1fr))
 
 
+
+
+
+
+
+// Projects 🖼️ 🖼️ 🖼️ 🖼️ 🖼️ 🖼️ 🖼️
+.homepage .projects-section
+
+  .projects
+    display: grid
+    grid-template-columns: repeat(2, minmax(0, 1fr))
+    gap: $s3--76
+
+  .project
+    // display: block
+    // padding-bottom: $s1--29
+
+  .project-thumbnail
+
+    img
+      width: 100%
+
+  .project-header
+    display: flex
+    flex-grow: 1
+    @extend h3
+    padding-top: $s0--18
+    padding-bottom: $s0--18
+
+  .project-body
+    @extend p
+
+@media (max-width: 768px)
+  .homepage .projects-section 
+    .projects
+      grid-template-columns: repeat(1, minmax(0, 1fr))
+
+
+
+
+
+
+// Case Studies 📚 📚 📚 📚 📚 📚 📚
+.homepage .case-studies-section
+
+  .case-studies
+    display: grid
+    grid-template-columns: repeat(3, minmax(0, 1fr))
+    gap: $s2--47
+
+  .case-study
+    // display: block
+    // padding-bottom: $s1--29
+
+  .case-study-thumbnail
+
+    img
+      width: 100%
+
+  .case-study-header
+    display: flex
+    flex-grow: 1
+    @extend h3
+    padding-top: $s0--18
+    padding-bottom: $s0--18
+
+  .case-study-body
+    @extend h5
+
+@media (max-width: 768px)
+  .homepage .case-studies-section 
+    .case-studies
+      grid-template-columns: repeat(1, minmax(0, 1fr))
 
 
 
@@ -594,259 +669,6 @@ section.design-collage
 
 
 
-// PRICING OLD 💀 💀 💀 💀 💀 💀 💀
-
-// section.pricing
-//   display: flex
-//   justify-content: center
-
-//   padding-top: $s3--76
-//   padding-bottom: $s3--76
-//   @include bg-grid
-
-//   text-align: center
-
-//   .container
-//     @include b
-//     padding: $s2--47
-//     background: $dark
-//     max-width: 1200px
-
-//   .header
-//     text-align: center
-//     margin-bottom: $s-2--7
-
-//   .title
-//     display: flex
-//     gap: $s0--18
-//   .price-amount
-//     @include f-sans-400-regular
-//     margin-bottom: $s0--18
-//   .title .fd-column
-//     gap: $s-2--7
-
-//   .prices
-//     display: flex
-//     margin-top: $s2--47
-//     gap: $s2--47
-//     text-align: left
-
-//   .price
-//     display: flex
-//     flex-direction: column
-//     align-items: flex-start
-//     gap: $s0--18
-
-//   hr
-//     border: 2px solid rgba(white, 0.2)
-
-//   footer
-//     padding-top: $s2--47
-//     .header
-//       color: $accent
-//     max-width: 46ch
-//     margin: 0 auto
-
-
-// @media (max-width: 800px)
-//   section.pricing
-//     .prices
-//       flex-direction: column
-//       gap: $s2--47
-
-//     hr
-//       display: none
-
-//     .container
-//       max-width: 75vw
-//       padding: $s1--29
-
-
-
-
-
-// SERVICES OLD 💀 💀 💀 💀 💀 💀 💀
-
-// .services
-//   display: flex
-
-//   .header
-//     display: flex
-//     align-items: center
-
-//     padding: $s3--76
-//     @include br
-
-//   .list
-//     display: flex
-//     padding: $s2--47 $s1--29
-//     justify-content: space-evenly
-//     flex: 1 1 auto
-//     gap: $s0--18
-
-
-//     p:not(.title)
-//       @include text-subtle
-
-//   .col .title
-//     @include f-sans-800-black
-//     @include text-contrast
-
-//   .col
-//     display: flex
-//     flex-direction: column
-//     gap: $s-2--7
-
-// // SERVICES RESPONSIVE
-// @media (max-width: 900px)
-//   .services
-//     .header
-//       padding: $s1--29
-//     .list
-//       padding: $s1--29 $s2--47
-//       flex-wrap: wrap
-//       justify-content: flex-start
-// @media (max-width: 647px)
-//   .services
-//     .header
-//       flex: 1 1 auto
-//       justify-content: flex-start
-//       flex-direction: column
-//     .list
-//       flex-direction: column
-//       gap: $s0--18
-//     .col
-//       gap: 0px
-
-
-
-
-
-// PROCESS GONE 💀 💀 💀 💀 💀 💀 💀
-
-// section.process
-//   display: flex
-//   justify-content: space-evenly
-//   align-items: stretch
-//   justify-content: center
-//   min-height: $s6--323
-//   @include bt
-
-//   .photo
-//     @include br
-//     background: url('/source/images/photo-skiier.jpg') 33% center no-repeat
-//     background-size: cover
-
-//   .content
-//     display: flex
-//     flex-direction: column
-//     flex-grow: 1
-//     flex-basis: 0
-//     padding: $s3--76
-//     gap: $s0--18
-
-// // RESPONSIVE
-// @media (max-width: 950px)
-//   section.process
-//     .content
-//       padding: $s1--29
-// @media (max-width: 500px)
-//   section.process
-//     flex-direction: column
-
-
-
-
-
-// WORK IMPACT 💀 💀 💀 💀 💀 💀 💀
-// HERO
-// .work-impact
-//   section.hero
-//     padding-top: $s4--123
-//     padding-left: $s3--76
-//     background: url(/source/images/work-impact-hero-bg.png) no-repeat top 50px left 450px
-//     max-width: 1380px
-//     max-height: 800px
-//     margin: 0 auto
-
-//   .hero-mockup
-//     position: relative
-//     top: -500px
-//     left: 650px
-
-//   h1
-//     max-width: 12ch
-//     margin-bottom: 0.3em
-
-//   p
-//     max-width: 53ch
-
-//   .hero-list
-//     margin-top: $s2--47
-
-// @media (max-width: 900px)
-//   .work-impact
-//     .hero-mockup
-//       top: 0
-//       left: 0
-//       max-width: 100vw
-
-//     .hero-mockup img
-//       @include margin-auto
-//       max-width: 100%
-//       padding-top: $s1--29
-
-//     section.hero
-//       max-height: none
-//       padding-top: $s2--47
-//       padding-left: $s2--47
-//       padding-right: $s2--47
-//       background: url(/source/images/work-impact-hero-bg.png) no-repeat top -100px left 400px
-
-// @media (max-width: 400px)
-//   .work-impact
-//     section.hero
-//       padding-top: $s0--18
-//       padding-left: $s0--18
-//       padding-right: $s0--18
-
-// // WORK SECTIONS
-// .work-impact
-//   section.content
-//     margin-bottom: $s3--76
-
-//     .header
-//       margin-top: $s3--76
-//       margin-bottom: $s2--47
-
-//     h3
-//       margin-bottom: $s-1--11
-
-//     p, h3
-//       @include margin-auto
-//       text-align: center
-//       padding-left: $s0--18
-//       padding-right: $s0--18
-
-//     p
-//       max-width: 40ch
-
-//     .images
-//       display: flex
-//       justify-content: center
-//       gap: $s2--47
-
-
-// .prototype-cover
-//   width: 100%
-//   height: 50px
-//   background: $dark
-//   position: relative
-//   margin-top: -50px
-
-
-
-
 
 // CURSOR
 
@@ -879,6 +701,47 @@ a.button:hover
 a:hover
   transition: 200ms ease-in 
 
+
+
+
+
+
+
+
+
+// CASE STUDIES
+
+.case-study
+  .hero
+    margin: $s3--76
+    margin-bottom: $s0--18
+    padding-left: $s0--18
+    padding-right: $s0--18
+    text-align: center
+    max-width: 58rem
+    margin-left: auto
+    margin-right: auto
+
+    p
+      margin-top: $s1--29
+
+    p:last-of-type
+      margin-bottom: $s4--123
+
+  .heading
+    line-height: 1.05em
+
+  a img
+    width: 100%
+
+@media (max-width: 768px)
+  .case-study
+    .hero
+      margin-top: $s2--47
+      text-align: left
+
+      p:last-of-type
+        margin-bottom: $s0--18
 
 
 

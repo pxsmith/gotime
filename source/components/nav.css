@@ -22,9 +22,12 @@
     flex: 0 0 auto;
     padding-left: 18px; }
 
-@media (max-width: 510px) {
+@media (max-width: 630px) {
   .navbar {
     flex-wrap: wrap; }
+    .navbar .link {
+      padding-left: 7px;
+      padding-right: 7px; }
   .navbar, .navbar .flex {
     justify-content: center;
     margin-top: 7px; } }

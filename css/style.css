@@ -1,6 +1,6 @@
 @charset "UTF-8";
 html, body, div, span, applet, object, iframe,
-h1, h2, .header-group .header, h3, .homepage .the-plan-section .the-plan-header, .homepage .value-props-section .value-prop-header, h4, .homepage .faq-section .faq-question, h5, .button-afterword, .homepage .services-section .service-time, .homepage .value-props-section .value-prop-subheader, h6, p, .homepage .the-plan-section .the-plan-body, .homepage .value-props-section .value-prop-body, blockquote, pre,
+h1, h2, .header-group .header, h3, .homepage .case-studies-section .case-study-header, .homepage .projects-section .project-header, .homepage .the-plan-section .the-plan-header, .homepage .value-props-section .value-prop-header, h4, .homepage .faq-section .faq-question, h5, .button-afterword, .homepage .case-studies-section .case-study-body, .homepage .services-section .service-time, .homepage .value-props-section .value-prop-subheader, h6, p, .homepage .projects-section .project-body, .homepage .the-plan-section .the-plan-body, .homepage .value-props-section .value-prop-body, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -520,6 +520,9 @@ a {
 .text-extra-subtle {
   color: rgba(255, 255, 255, 0.4); }
 
+.text-underline {
+  text-decoration: underline; }
+
 h1 {
   font-size: 123px;
   letter-spacing: -0.075em;
@@ -538,12 +541,12 @@ h2, .header-group .header {
   h2, .header-group .header {
     font-size: 47px; } }
 
-h3, .homepage .the-plan-section .the-plan-header, .homepage .value-props-section .value-prop-header {
+h3, .homepage .case-studies-section .case-study-header, .homepage .projects-section .project-header, .homepage .the-plan-section .the-plan-header, .homepage .value-props-section .value-prop-header {
   font-size: 47px;
   font-family: "Covik_Sans-Bold"; }
 
 @media (max-width: 768px) {
-  h3, .homepage .the-plan-section .the-plan-header, .homepage .value-props-section .value-prop-header {
+  h3, .homepage .case-studies-section .case-study-header, .homepage .projects-section .project-header, .homepage .the-plan-section .the-plan-header, .homepage .value-props-section .value-prop-header {
     font-size: 29px;
     color: white; } }
 
@@ -551,7 +554,7 @@ h4, .homepage .faq-section .faq-question {
   font-size: 29px;
   font-family: "Covik_Sans-Bold"; }
 
-h5, .button-afterword, .homepage .services-section .service-time, .homepage .value-props-section .value-prop-subheader {
+h5, .button-afterword, .homepage .case-studies-section .case-study-body, .homepage .services-section .service-time, .homepage .value-props-section .value-prop-subheader {
   font-family: "Covik_Sans_Mono-Medium";
   color: rgba(255, 255, 255, 0.8);
   letter-spacing: 0.05em;
@@ -564,7 +567,7 @@ h6 {
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.65); }
 
-p, .homepage .the-plan-section .the-plan-body, .homepage .value-props-section .value-prop-body {
+p, .homepage .projects-section .project-body, .homepage .the-plan-section .the-plan-body, .homepage .value-props-section .value-prop-body {
   font-family: "Covik_Sans-Regular";
   color: rgba(255, 255, 255, 0.8);
   line-height: 1.7; }
@@ -608,11 +611,11 @@ h1 u {
   gap: 7px;
   flex-basis: 0; }
 
-.hero-list h5, .hero-list .button-afterword, .hero-list .homepage .services-section .service-time, .homepage .services-section .hero-list .service-time, .hero-list .homepage .value-props-section .value-prop-subheader, .homepage .value-props-section .hero-list .value-prop-subheader {
+.hero-list h5, .hero-list .button-afterword, .hero-list .homepage .case-studies-section .case-study-body, .homepage .case-studies-section .hero-list .case-study-body, .hero-list .homepage .services-section .service-time, .homepage .services-section .hero-list .service-time, .hero-list .homepage .value-props-section .value-prop-subheader, .homepage .value-props-section .hero-list .value-prop-subheader {
   flex-basis: 65px;
   text-align: right; }
 
-.hero-list p, .hero-list .homepage .the-plan-section .the-plan-body, .homepage .the-plan-section .hero-list .the-plan-body, .hero-list .homepage .value-props-section .value-prop-body, .homepage .value-props-section .hero-list .value-prop-body {
+.hero-list p, .hero-list .homepage .projects-section .project-body, .homepage .projects-section .hero-list .project-body, .hero-list .homepage .the-plan-section .the-plan-body, .homepage .the-plan-section .hero-list .the-plan-body, .hero-list .homepage .value-props-section .value-prop-body, .homepage .value-props-section .hero-list .value-prop-body {
   font-family: "Covik_Sans_Mono-Regular";
   color: white;
   line-height: 1; }
@@ -732,7 +735,7 @@ h1 u {
   grid-template-columns: 1fr 1fr;
   grid-gap: 47px;
   background: url(/source/images/vector-grid.svg) 968px 47px no-repeat; }
-  .layout-with-sticky-image h1, .layout-with-sticky-image p, .layout-with-sticky-image .homepage .the-plan-section .the-plan-body, .homepage .the-plan-section .layout-with-sticky-image .the-plan-body, .layout-with-sticky-image .homepage .value-props-section .value-prop-body, .homepage .value-props-section .layout-with-sticky-image .value-prop-body {
+  .layout-with-sticky-image h1, .layout-with-sticky-image p, .layout-with-sticky-image .homepage .projects-section .project-body, .homepage .projects-section .layout-with-sticky-image .project-body, .layout-with-sticky-image .homepage .the-plan-section .the-plan-body, .homepage .the-plan-section .layout-with-sticky-image .the-plan-body, .layout-with-sticky-image .homepage .value-props-section .value-prop-body, .homepage .value-props-section .layout-with-sticky-image .value-prop-body {
     margin-bottom: 18px; }
   .layout-with-sticky-image .layout-visuals.layout-mobile {
     display: none;
@@ -760,36 +763,16 @@ h1 u {
   border: 2px solid white;
   box-shadow: 11px 11px 0px #120404, 11px 11px 0px 2px white; }
 
-@media (max-width: 768px) {
-  .homepage .hero {
-    padding-top: 47px;
-    padding-bottom: 29px; }
-    .homepage .hero .header {
-      font-size: 47px;
-      max-width: 10ch; }
-    .homepage .hero .copy {
-      padding-left: 29px;
-      padding-right: 29px; }
-    .homepage .hero .subheader {
-      margin-top: 18px;
-      margin-bottom: 29px; }
-    .homepage .hero .button {
-      font-size: 18px;
-      font-family: "Covik_Sans-Semibold";
-      padding: 11px 18px; }
-  .homepage .hero .visuals {
-    background: url(/source/images/vector-grid.svg) 323px -200px no-repeat;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    min-height: 700px; }
-    .homepage .hero .visuals .photo-f1 {
-      display: none; }
-    .homepage .hero .visuals .photo-sprinter {
-      display: none; }
-    .homepage .hero .visuals .photo-dirt-bikes {
-      display: none; } }
+.link-with-border {
+  padding: 18px;
+  background: #120404;
+  border: 2px solid white;
+  box-shadow: 11px 11px 0px #120404, 11px 11px 0px 2px white;
+  transition: all 400ms ease-in-out; }
+  .link-with-border:hover {
+    border-color: #DC2626;
+    box-shadow: -11px 11px 0px #120404, -11px 11px 0px 2px #DC2626;
+    transition: all 400ms ease-in-out; }
 
 .images-hi-res img {
   width: 50vw;
@@ -828,13 +811,13 @@ h1 u {
     position: absolute; }
   .homepage .hero .visuals .photo-hero-3 {
     top: 350px;
-    left: 850px; }
+    left: 800px; }
   .homepage .hero .visuals .photo-hero-2 {
     top: -175px;
-    left: 700px; }
+    left: 650px; }
   .homepage .hero .visuals .photo-hero-1 {
     top: 50px;
-    left: 975px; }
+    left: 925px; }
 
 @media (max-width: 768px) {
   .homepage .hero {
@@ -849,10 +832,6 @@ h1 u {
     .homepage .hero .subheader {
       margin-top: 18px;
       margin-bottom: 29px; }
-    .homepage .hero .button {
-      font-size: 18px;
-      font-family: "Covik_Sans-Semibold";
-      padding: 11px 18px; }
   .homepage .hero .visuals {
     background: url(/source/images/vector-grid.svg) 323px -200px no-repeat;
     position: absolute;
@@ -867,16 +846,16 @@ h1 u {
     .homepage .hero .visuals .photo-hero-1 {
       display: none; } }
 
-.homepage .value-props-section, .homepage .the-plan-section, .homepage .social-proof-section, .homepage .services-section, .homepage .faq-section {
+.homepage .value-props-section, .homepage .the-plan-section, .homepage .social-proof-section, .homepage .services-section, .homepage .faq-section, .homepage .projects-section, .homepage .case-studies-section {
   margin: 200px 76px; }
 
 @media (max-width: 1080px) {
-  .homepage .value-props-section, .homepage .the-plan-section, .homepage .social-proof-section, .homepage .services-section, .homepage .faq-section {
+  .homepage .value-props-section, .homepage .the-plan-section, .homepage .social-proof-section, .homepage .services-section, .homepage .faq-section, .homepage .projects-section, .homepage .case-studies-section {
     margin: 76px 47px;
     margin-bottom: 123px; } }
 
 @media (max-width: 768px) {
-  .homepage .value-props-section, .homepage .the-plan-section, .homepage .social-proof-section, .homepage .services-section, .homepage .faq-section {
+  .homepage .value-props-section, .homepage .the-plan-section, .homepage .social-proof-section, .homepage .services-section, .homepage .faq-section, .homepage .projects-section, .homepage .case-studies-section {
     margin: 76px 29px;
     margin-bottom: 123px; } }
 
@@ -1038,20 +1017,63 @@ h1 u {
   height: 96px;
   margin-bottom: 18px; }
 
+.homepage .services-section .service-list-item {
+  line-height: 1.5em; }
+
 .homepage .services-section .service-list-item:before {
   content: '☑';
   padding-right: 11px; }
 
 @media (max-width: 1080px) {
   .homepage .services-section .services {
-    gap: 29px; }
+    gap: 47px; }
   .homepage .services-section .service-header {
     font-size: 29px; } }
 
 @media (max-width: 768px) {
   .homepage .services-section .services {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     row-gap: 76px; } }
+
+@media (max-width: 480px) {
+  .homepage .services-section .services {
+    grid-template-columns: repeat(1, minmax(0, 1fr)); } }
+
+.homepage .projects-section .projects {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 76px; }
+
+.homepage .projects-section .project-thumbnail img {
+  width: 100%; }
+
+.homepage .projects-section .project-header {
+  display: flex;
+  flex-grow: 1;
+  padding-top: 18px;
+  padding-bottom: 18px; }
+
+@media (max-width: 768px) {
+  .homepage .projects-section .projects {
+    grid-template-columns: repeat(1, minmax(0, 1fr)); } }
+
+.homepage .case-studies-section .case-studies {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 47px; }
+
+.homepage .case-studies-section .case-study-thumbnail img {
+  width: 100%; }
+
+.homepage .case-studies-section .case-study-header {
+  display: flex;
+  flex-grow: 1;
+  padding-top: 18px;
+  padding-bottom: 18px; }
+
+@media (max-width: 768px) {
+  .homepage .case-studies-section .case-studies {
+    grid-template-columns: repeat(1, minmax(0, 1fr)); } }
 
 .homepage .faq-section .header-group {
   margin-bottom: 47px; }
@@ -1078,9 +1100,9 @@ h1 u {
   max-width: 75ch;
   max-height: 0;
   transition: all 1s ease-in-out; }
-  .homepage .faq-section .faq-answer p:not(p:first-of-type), .homepage .faq-section .faq-answer .value-props-section .value-prop-body:not(p:first-of-type), .homepage .value-props-section .faq-section .faq-answer .value-prop-body:not(p:first-of-type), .homepage .faq-section .faq-answer .the-plan-section .the-plan-body:not(p:first-of-type), .homepage .the-plan-section .faq-section .faq-answer .the-plan-body:not(p:first-of-type) {
+  .homepage .faq-section .faq-answer p:not(p:first-of-type), .homepage .faq-section .faq-answer .value-props-section .value-prop-body:not(p:first-of-type), .homepage .value-props-section .faq-section .faq-answer .value-prop-body:not(p:first-of-type), .homepage .faq-section .faq-answer .the-plan-section .the-plan-body:not(p:first-of-type), .homepage .the-plan-section .faq-section .faq-answer .the-plan-body:not(p:first-of-type), .homepage .faq-section .faq-answer .projects-section .project-body:not(p:first-of-type), .homepage .projects-section .faq-section .faq-answer .project-body:not(p:first-of-type) {
     padding-top: 18px; }
-  .homepage .faq-section .faq-answer p:last-of-type, .homepage .faq-section .faq-answer .value-props-section .value-prop-body:last-of-type, .homepage .value-props-section .faq-section .faq-answer .value-prop-body:last-of-type, .homepage .faq-section .faq-answer .the-plan-section .the-plan-body:last-of-type, .homepage .the-plan-section .faq-section .faq-answer .the-plan-body:last-of-type {
+  .homepage .faq-section .faq-answer p:last-of-type, .homepage .faq-section .faq-answer .value-props-section .value-prop-body:last-of-type, .homepage .value-props-section .faq-section .faq-answer .value-prop-body:last-of-type, .homepage .faq-section .faq-answer .the-plan-section .the-plan-body:last-of-type, .homepage .the-plan-section .faq-section .faq-answer .the-plan-body:last-of-type, .homepage .faq-section .faq-answer .projects-section .project-body:last-of-type, .homepage .projects-section .faq-section .faq-answer .project-body:last-of-type {
     padding-bottom: 18px; }
 
 .homepage .faq-section .faq input[type="checkbox"] {
@@ -1117,13 +1139,13 @@ h1 u {
     align-items: center;
     justify-content: center;
     width: 100%; }
-    .homepage .recent-work .header h3, .homepage .recent-work .header .value-props-section .value-prop-header, .homepage .value-props-section .recent-work .header .value-prop-header, .homepage .recent-work .header .the-plan-section .the-plan-header, .homepage .the-plan-section .recent-work .header .the-plan-header, .homepage .recent-work .header p, .homepage .recent-work .header .value-props-section .value-prop-body, .homepage .value-props-section .recent-work .header .value-prop-body, .homepage .recent-work .header .the-plan-section .the-plan-body, .homepage .the-plan-section .recent-work .header .the-plan-body {
+    .homepage .recent-work .header h3, .homepage .recent-work .header .value-props-section .value-prop-header, .homepage .value-props-section .recent-work .header .value-prop-header, .homepage .recent-work .header .the-plan-section .the-plan-header, .homepage .the-plan-section .recent-work .header .the-plan-header, .homepage .recent-work .header .projects-section .project-header, .homepage .projects-section .recent-work .header .project-header, .homepage .recent-work .header .case-studies-section .case-study-header, .homepage .case-studies-section .recent-work .header .case-study-header, .homepage .recent-work .header p, .homepage .recent-work .header .value-props-section .value-prop-body, .homepage .value-props-section .recent-work .header .value-prop-body, .homepage .recent-work .header .the-plan-section .the-plan-body, .homepage .the-plan-section .recent-work .header .the-plan-body, .homepage .recent-work .header .projects-section .project-body, .homepage .projects-section .recent-work .header .project-body {
       width: 100%; }
   .homepage .recent-work .thumbnail {
     max-width: 100%;
     flex-grow: 0;
     width: 450px; }
-    .homepage .recent-work .thumbnail p, .homepage .recent-work .thumbnail .value-props-section .value-prop-body, .homepage .value-props-section .recent-work .thumbnail .value-prop-body, .homepage .recent-work .thumbnail .the-plan-section .the-plan-body, .homepage .the-plan-section .recent-work .thumbnail .the-plan-body {
+    .homepage .recent-work .thumbnail p, .homepage .recent-work .thumbnail .value-props-section .value-prop-body, .homepage .value-props-section .recent-work .thumbnail .value-prop-body, .homepage .recent-work .thumbnail .the-plan-section .the-plan-body, .homepage .the-plan-section .recent-work .thumbnail .the-plan-body, .homepage .recent-work .thumbnail .projects-section .project-body, .homepage .projects-section .recent-work .thumbnail .project-body {
       padding-left: 11px;
       border-left: 2px solid white; }
 
@@ -1158,7 +1180,7 @@ h1 u {
       width: 350px; } }
 
 @media (max-width: 700px) {
-  .homepage .recent-work .thumbnail p, .homepage .recent-work .thumbnail .value-props-section .value-prop-body, .homepage .value-props-section .recent-work .thumbnail .value-prop-body, .homepage .recent-work .thumbnail .the-plan-section .the-plan-body, .homepage .the-plan-section .recent-work .thumbnail .the-plan-body {
+  .homepage .recent-work .thumbnail p, .homepage .recent-work .thumbnail .value-props-section .value-prop-body, .homepage .value-props-section .recent-work .thumbnail .value-prop-body, .homepage .recent-work .thumbnail .the-plan-section .the-plan-body, .homepage .the-plan-section .recent-work .thumbnail .the-plan-body, .homepage .recent-work .thumbnail .projects-section .project-body, .homepage .projects-section .recent-work .thumbnail .project-body {
     border-left: 0px; } }
 
 @media (min-width: 700px) {
@@ -1208,10 +1230,10 @@ body {
 a, a:hover, label {
   cursor: url("/source/images/cursor-point.svg"), auto; }
 
-a.person p.name, a.person .homepage .value-props-section .name.value-prop-body, .homepage .value-props-section a.person .name.value-prop-body, a.person .homepage .the-plan-section .name.the-plan-body, .homepage .the-plan-section a.person .name.the-plan-body {
+a.person p.name, a.person .homepage .value-props-section .name.value-prop-body, .homepage .value-props-section a.person .name.value-prop-body, a.person .homepage .the-plan-section .name.the-plan-body, .homepage .the-plan-section a.person .name.the-plan-body, a.person .homepage .projects-section .name.project-body, .homepage .projects-section a.person .name.project-body {
   transition: 200ms ease-in; }
 
-a.person:hover p.name, a.person:hover .homepage .value-props-section .name.value-prop-body, .homepage .value-props-section a.person:hover .name.value-prop-body, a.person:hover .homepage .the-plan-section .name.the-plan-body, .homepage .the-plan-section a.person:hover .name.the-plan-body {
+a.person:hover p.name, a.person:hover .homepage .value-props-section .name.value-prop-body, .homepage .value-props-section a.person:hover .name.value-prop-body, a.person:hover .homepage .the-plan-section .name.the-plan-body, .homepage .the-plan-section a.person:hover .name.the-plan-body, a.person:hover .homepage .projects-section .name.project-body, .homepage .projects-section a.person:hover .name.project-body {
   transition: 200ms ease-in;
   color: #DC2626; }
 
@@ -1227,3 +1249,30 @@ a.button:hover {
 
 a:hover {
   transition: 200ms ease-in; }
+
+.case-study .hero {
+  margin: 76px;
+  margin-bottom: 18px;
+  padding-left: 18px;
+  padding-right: 18px;
+  text-align: center;
+  max-width: 58rem;
+  margin-left: auto;
+  margin-right: auto; }
+  .case-study .hero p, .case-study .hero .homepage .value-props-section .value-prop-body, .homepage .value-props-section .case-study .hero .value-prop-body, .case-study .hero .homepage .the-plan-section .the-plan-body, .homepage .the-plan-section .case-study .hero .the-plan-body, .case-study .hero .homepage .projects-section .project-body, .homepage .projects-section .case-study .hero .project-body {
+    margin-top: 29px; }
+  .case-study .hero p:last-of-type, .case-study .hero .homepage .value-props-section .value-prop-body:last-of-type, .homepage .value-props-section .case-study .hero .value-prop-body:last-of-type, .case-study .hero .homepage .the-plan-section .the-plan-body:last-of-type, .homepage .the-plan-section .case-study .hero .the-plan-body:last-of-type, .case-study .hero .homepage .projects-section .project-body:last-of-type, .homepage .projects-section .case-study .hero .project-body:last-of-type {
+    margin-bottom: 123px; }
+
+.case-study .heading {
+  line-height: 1.05em; }
+
+.case-study a img {
+  width: 100%; }
+
+@media (max-width: 768px) {
+  .case-study .hero {
+    margin-top: 47px;
+    text-align: left; }
+    .case-study .hero p:last-of-type, .case-study .hero .homepage .value-props-section .value-prop-body:last-of-type, .homepage .value-props-section .case-study .hero .value-prop-body:last-of-type, .case-study .hero .homepage .the-plan-section .the-plan-body:last-of-type, .homepage .the-plan-section .case-study .hero .the-plan-body:last-of-type, .case-study .hero .homepage .projects-section .project-body:last-of-type, .homepage .projects-section .case-study .hero .project-body:last-of-type {
+      margin-bottom: 18px; } }

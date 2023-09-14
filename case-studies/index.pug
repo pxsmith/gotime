@@ -1,0 +1,40 @@
+html(lang='en-US')
+  head
+    include /source/components/head.pug
+    include /source/components/meta-tags.pug
+
+  include /source/components/google-analytics.pug
+
+
+
+  body.page.subpage
+    include /source/components/nav.pug
+    .layout-with-sticky-image
+      .layout-header
+        h1 Amazing <span class='text-highlight'>outcomes &nbsp;</span> 
+        p At Go Time we’re extremely proud of how we’ve helped our clients. Here’s just a small sampling of our amazing outcomes.
+
+        .layout-visuals.layout-mobile
+          img.image-with-border(src='/source/images/photo-fire.jpg' srcset='/source/images/photo-fire@2x.jpg 2x' draggable='false')
+
+        mixin service(serviceName, link)
+          a(href=link).df.jc-space-between.bb.pt1.pb1
+            h4= serviceName
+            h4 →
+
+        mixin serviceNoLink(serviceName)
+          .df.jc-space-between.bb.pt1.pb1
+            h4= serviceName
+
+        +service('Riskline saved $8,782 per month', '/case-studies/fractional-product-design')
+        +service('EngineIQ started building their MVP in less than 7 days', '/case-studies/mvp-in-7-days')
+        +service('Sun Lift Solar started getting leads in 24 hours', '/case-studies/leads-in-24-hours')
+
+      .layout-visuals.layout-desktop
+        img.image-with-border.image-sticky(src='/source/images/photo-fire.jpg' srcset='/source/images/photo-fire@2x.jpg 2x' draggable='false')
+
+
+
+
+    //- include /source/components/cta.pug
+    include /source/components/footer.pug
