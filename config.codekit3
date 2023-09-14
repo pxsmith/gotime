@@ -17,6 +17,16 @@
       "oAP" : "\/.gitignore",
       "oF" : 0
     },
+    "\/book-a-call\/index.pug" : {
+      "cB" : 0,
+      "cOD" : 1,
+      "ft" : 512,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/book-a-call\/index.html",
+      "oF" : 0,
+      "oS" : 0
+    },
     "\/case-studies\/fractional-product-design\/case-study-1.jpg" : {
       "ft" : 16384,
       "iS" : 172588,
