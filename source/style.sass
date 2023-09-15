@@ -46,15 +46,15 @@
 
   .photo-hero-3 // f1
     top: 350px
-    left: 800px
+    left: 850px
 
   .photo-hero-2 // rocket
     top: -175px
-    left: 650px
+    left: 700px
 
   .photo-hero-1 // motorcycle
     top: 50px
-    left: 925px
+    left: 975px
 
 // HERO TABLET & MOBILE
 
@@ -92,7 +92,6 @@
 
     .photo-hero-1
       display: none
-
 
 
 
@@ -428,26 +427,60 @@
 
 
 // Case Studies 📚 📚 📚 📚 📚 📚 📚
-.homepage .case-studies-section
+
+.page-case-study
+  .hero
+    margin: $s0--18
+    padding-left: $s0--18
+    padding-right: $s0--18
+    text-align: center
+    max-width: 58rem
+    margin-left: auto
+    margin-right: auto
+
+    p
+      margin: auto
+      margin-top: $s0--18
+      max-width: 75ch
+
+    p:last-of-type
+      margin-bottom: $s3--76
+
+  .header
+    line-height: 1.05em
+
+  a img
+    width: 100%
+
+@media (max-width: 768px)
+  .page-case-study
+    .hero
+      margin-top: $s2--47
+      text-align: left
+
+      p
+        margin-top: $s0--18
+
+      p:last-of-type
+        margin-bottom: $s2--47
+
+
+
+.case-studies-section
+  margin: $s3--76
 
   .case-studies
     display: grid
     grid-template-columns: repeat(3, minmax(0, 1fr))
     gap: $s2--47
 
-  .case-study
-    // display: block
-    // padding-bottom: $s1--29
-
-  .case-study-thumbnail
-
-    img
-      width: 100%
+  .case-study-thumbnail img
+    width: 100%
 
   .case-study-header
     display: flex
     flex-grow: 1
-    @extend h3
+    @extend h4
     padding-top: $s0--18
     padding-bottom: $s0--18
 
@@ -455,9 +488,22 @@
     @extend h5
 
 @media (max-width: 768px)
-  .homepage .case-studies-section 
+  .case-studies-section 
     .case-studies
       grid-template-columns: repeat(1, minmax(0, 1fr))
+
+
+@media (max-width: 1080px)
+  .case-studies-section
+    margin: $s2--47 $s0--18
+
+// @media (max-width: 768px)
+//   .layout-common-margin
+//     margin: $s3--76 $s1--29
+//     margin-bottom: $s4--123
+
+
+
 
 
 
@@ -691,7 +737,7 @@ a.button
 
 a.button:hover
   border: 2px solid white
-  box-shadow: -11px 11px 0px $dark, -11px 11px 0px 2px white
+  box-shadow: -7px 7px 0px $dark, -7px 7px 0px 2px white
 
 .button-afterword
   margin-top: $s-1--11
@@ -702,46 +748,6 @@ a:hover
   transition: 200ms ease-in 
 
 
-
-
-
-
-
-
-
-// CASE STUDIES
-
-.case-study
-  .hero
-    margin: $s3--76
-    margin-bottom: $s0--18
-    padding-left: $s0--18
-    padding-right: $s0--18
-    text-align: center
-    max-width: 58rem
-    margin-left: auto
-    margin-right: auto
-
-    p
-      margin-top: $s1--29
-
-    p:last-of-type
-      margin-bottom: $s4--123
-
-  .heading
-    line-height: 1.05em
-
-  a img
-    width: 100%
-
-@media (max-width: 768px)
-  .case-study
-    .hero
-      margin-top: $s2--47
-      text-align: left
-
-      p:last-of-type
-        margin-bottom: $s0--18
 
 
 

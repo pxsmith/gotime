@@ -7,34 +7,56 @@ html(lang='en-US')
 
 
 
-  body.page.subpage
+  body.page-case-study
     include /source/components/nav.pug
-    .layout-with-sticky-image
-      .layout-header
-        h1 Amazing <span class='text-highlight'>outcomes &nbsp;</span> 
-        p At Go Time we’re extremely proud of how we’ve helped our clients. Here’s just a small sampling of our amazing outcomes.
+    .hero
+      h2.header Amazing <span class='text-highlight'>outcomes </span> 
+      p At Go Time we’re extremely proud of how we’ve helped our clients. Here’s just a small sampling of our amazing outcomes.
 
-        .layout-visuals.layout-mobile
-          img.image-with-border(src='/source/images/photo-fire.jpg' srcset='/source/images/photo-fire@2x.jpg 2x' draggable='false')
+    section.case-studies-section
+      .case-studies
+        
+        a(href='/case-studies/fractional-product-design').case-study.link-with-border
+          .case-study-thumbnail
+            img(src='/case-studies/fractional-product-design/case-study-1.jpg' srcset='/case-studies/fractional-product-design/case-study-1.jpg 2x' draggable='false' loading='lazy')
+          .case-study-header Skipped 5 months of hiring &amp; onboarding
+          .case-study-body Product design • microsites • marketing • web &amp; mobile app
 
-        mixin service(serviceName, link)
-          a(href=link).df.jc-space-between.bb.pt1.pb1
-            h4= serviceName
-            h4 →
+        a(href='/case-studies/mvp-in-7-days').case-study.link-with-border
+          .case-study-thumbnail
+            img(src='/case-studies/mvp-in-7-days/case-study-1.jpg' srcset='/case-studies/mvp-in-7-days/case-study-1@2x.jpg 2x' draggable='false' loading='lazy')
+          .case-study-header Started building their MVP in 7 days
+          .case-study-body Product design • branding • web &amp; mobile app • creative direction
 
-        mixin serviceNoLink(serviceName)
-          .df.jc-space-between.bb.pt1.pb1
-            h4= serviceName
-
-        +service('Riskline saved $8,782 per month', '/case-studies/fractional-product-design')
-        +service('EngineIQ started building their MVP in less than 7 days', '/case-studies/mvp-in-7-days')
-        +service('Sun Lift Solar started getting leads in 24 hours', '/case-studies/leads-in-24-hours')
-
-      .layout-visuals.layout-desktop
-        img.image-with-border.image-sticky(src='/source/images/photo-fire.jpg' srcset='/source/images/photo-fire@2x.jpg 2x' draggable='false')
+        a(href='/case-studies/leads-in-24-hours').case-study.link-with-border
+          .case-study-thumbnail
+            img(src='/case-studies/leads-in-24-hours/case-study-1.jpg' srcset='/case-studies/leads-in-24-hours/case-study-1@2x.jpg 2x' draggable='false' loading='lazy')
+          .case-study-header Started getting leads in 24 hours
+          .case-study-body Website design • Webflow build • branding • creative direction
 
 
 
+        //- .layout-visuals.layout-mobile
+        //-   img.image-with-border(src='/source/images/photo-fire.jpg' srcset='/source/images/photo-fire@2x.jpg 2x' draggable='false')
 
-    //- include /source/components/cta.pug
+        //- mixin service(serviceName, link)
+        //-   a(href=link).df.jc-space-between.bb.pt1.pb1
+        //-     h4= serviceName
+        //-     h4 →
+
+        //- mixin serviceNoLink(serviceName)
+        //-   .df.jc-space-between.bb.pt1.pb1
+        //-     h4= serviceName
+
+        //- +service('Riskline saved $8,782 per month', '/case-studies/fractional-product-design')
+        //- +service('EngineIQ started building their MVP in less than 7 days', '/case-studies/mvp-in-7-days')
+        //- +service('Sun Lift Solar started getting leads in 24 hours', '/case-studies/leads-in-24-hours')
+
+      //- .layout-visuals.layout-desktop
+      //-   img.image-with-border.image-sticky(src='/source/images/photo-fire.jpg' srcset='/source/images/photo-fire@2x.jpg 2x' draggable='false')
+
+
+
+
+    include /source/components/cta.pug
     include /source/components/footer.pug

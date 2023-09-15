@@ -11,10 +11,13 @@
     flex: 0 0 auto;
     padding-left: 18px;
     padding-right: 29px;
-    flex-wrap: wrap;
-    transition: 250ms ease-in; }
+    flex-wrap: wrap; }
     .navbar .link:hover {
-      color: #DC2626; }
+      color: 90deg, #DC2626 0%, #FA603E 100%;
+      background: -webkit-linear-gradient(90deg, #DC2626 0%, #FA603E 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: 250ms ease-in; }
   .navbar > * {
     display: flex;
     align-items: center; }

@@ -19,9 +19,12 @@
     padding-right: $s1
     flex-wrap: wrap
 
-    transition: 250ms ease-in 
     &:hover
-      color: $accent
+      color: $gradient
+      background: -webkit-linear-gradient($gradient)
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent
+      transition: 250ms ease-in 
 
   // Center the text in the navbar
   > *

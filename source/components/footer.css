@@ -9,3 +9,5 @@
   .footer .social {
     display: flex;
     gap: 29px; }
+    .footer .social > :hover {
+      opacity: 0.6; }
