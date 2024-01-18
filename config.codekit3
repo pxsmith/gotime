@@ -7,7 +7,7 @@
       "uuidString" : "0C294D0B-93BD-4630-86FE-2B1628DE5832"
     }
   ],
-  "creatorBuild" : "34518",
+  "creatorBuild" : "34564",
   "files" : {
     "\/.gitignore" : {
       "cB" : 0,
@@ -3909,7 +3909,7 @@
   "projectAttributes" : {
     "creationDate" : 503460403,
     "displayValue" : "gotime",
-    "displayValueWasSetByUser" : 0,
+    "displayValueWasSetByUser" : 1,
     "iconImageName" : "\/source\/favicon\/apple-touch-icon.png",
     "iconImageWasSetByUser" : 0
   },
@@ -4737,9 +4737,6 @@
       "no-new-native-nonconstructor" : {
         "active" : 0
       },
-      "no-new-object" : {
-        "active" : 0
-      },
       "no-new-symbol" : {
         "active" : 1
       },
@@ -4751,6 +4748,9 @@
       },
       "no-obj-calls" : {
         "active" : 1
+      },
+      "no-object-constructor" : {
+        "active" : 0
       },
       "no-octal" : {
         "active" : 1
