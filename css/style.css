@@ -508,6 +508,10 @@ a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
+.text-strike {
+  opacity: 0.4;
+  text-decoration: line-through; }
+
 .text-contrast, .button-afterword, .homepage .services-section .service-time {
   color: white; }
 
@@ -784,8 +788,8 @@ h1 u {
     height: 75vw; } }
 
 .homepage .hero {
-  padding-top: 76px;
-  padding-bottom: 123px; }
+  padding-top: 47px;
+  padding-bottom: 47px; }
   .homepage .hero .copy {
     padding-left: 76px;
     padding-right: 76px; }

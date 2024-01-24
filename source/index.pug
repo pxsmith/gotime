@@ -11,10 +11,16 @@ html(lang='en-US')
 
       section.hero
         .copy
-          h1.header Helping funded startups with design. <span class='text-highlight'>Fast.</span>
-          p.subheader It takes on average 6 months and $224,000 to hire and onboard a full-time product designer. With Go Time you get started in 1 day at a fraction of the cost. 
-          a.button(href='https://calendly.com/gotimehq/meet' target='_blank') Free Strategy Call
-          p.button-afterword $150 value, no strings attached
+          h1.header Get elite product design in <span class='text-strike'>months&nbsp;</span>&nbsp;<span class='text-highlight'> moments. </span>
+
+          //- h1.header Look no further, here’s your new<span class='text-highlight'> design partner.</span>
+
+          //- h1.header Get your team elite design in <span class='text-strike'>months </span><span class='text-highlight'>hours.</span>
+
+          p.subheader Does waiting months and spending $100-200k+ to source, interview, hire, and onboard a full-time product designer sound wise? Be savvy and get started with Go Time in under 1 day at a fraction of the cost. You get continuous design sprints each 2-4 days for a flat fee.
+          a.button(href='https://calendly.com/gotimehq/meet' target='_blank') Let’s Go!
+          p.button-afterword 7-day money-back guarantee
+          //- h5.text-extra-subtle.mt2.mb0 Trusted By
 
         .visuals
           img.photo-hero-1(src="source/images/photo-hero-motorcycle.jpg" draggable='false')
@@ -25,14 +31,14 @@ html(lang='en-US')
 
       section.design-collage
         h5.tc.text-extra-subtle.mb0 Work Samples
-        .row.df.jc-center
+        .row.df.jc-center.animate__animated.animate__fadeIn
           img(src='source/images/design-collage-11.png' srcset='source/images/design-collage-11.png 2x' draggable='false')
           img(src='source/images/design-collage-10.png' srcset='source/images/design-collage-10.png 2x' draggable='false')
           img(src='source/images/design-collage-12.png' srcset='source/images/design-collage-12.png 2x' draggable='false')
           img(src='source/images/design-collage-09.png' srcset='source/images/design-collage-09.png 2x' draggable='false')
           img(src='source/images/design-collage-02.png' srcset='source/images/design-collage-02.png 2x' draggable='false')
           img(src='source/images/design-collage-01.png' srcset='source/images/design-collage-01.png 2x' draggable='false')
-        .row.df.jc-center
+        .row.df.jc-center.animate__animated.animate__fadeIn
           img(src='source/images/design-collage-06.png' srcset='source/images/design-collage-06.png 2x' draggable='false')
           img(src='source/images/design-collage-03.png' srcset='source/images/design-collage-03.png 2x' draggable='false')
           img(src='source/images/design-collage-04.png' srcset='source/images/design-collage-04.png 2x' draggable='false')
@@ -47,19 +53,19 @@ html(lang='en-US')
           .super-header Look no further,
           .header You found your new design partner.
         .value-props 
-          .value-prop
+          .value-prop.animate__animated.animate__fadeIn
             img.icon(src='source/images/icon-money-shield.svg' draggable='false')
             .value-prop-header Layoff-proof 
             .value-prop-subheader More design output, no more headcount 
             .value-prop-body Get the extra product design or marketing resources you need without the extra headcount. Sleep easy knowing there’s one less potential layoff. Flexibility is the foundation of our business, so when you’re subscribed, you can pause or cancel at anytime. 
 
-          .value-prop
+          .value-prop.animate__animated.animate__fadeIn
             img.icon(src='source/images/icon-stopwatch.svg' draggable='false')
             .value-prop-header Absurdly fast
             .value-prop-subheader See designs delivered in 2-4 days
             .value-prop-body Gone are the days shelling out $10,000s or $100,000s to old-fashioned design agencies. The designs are shiny, but they’re too slow for startups. With our agile design process, you see designs in 2-4 days. This allows us to course-correct as fast as humanly possible.
 
-          .value-prop
+          .value-prop.box
             img.icon(src='source/images/icon-map-pin.svg' draggable='false')
             .value-prop-header One-stop shop
             .value-prop-subheader All of your creative needs met 
@@ -427,3 +433,5 @@ html(lang='en-US')
 
       include components/cta.pug
       include components/footer.pug
+
+    //- script(src=/source/script.js)
