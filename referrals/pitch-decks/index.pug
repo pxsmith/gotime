@@ -1,0 +1,26 @@
+html(lang='en-US')
+  head
+    include /source/components/head.pug
+    include /source/components/meta-tags.pug
+
+  include /source/components/google-analytics.pug
+
+
+
+  body.page.subpage
+    include /source/components/nav.pug
+    .layout-with-sticky-image
+      .layout-header
+        a(href='/services').pa-2
+          h4 SERVICES
+        h1 <u>Pitch decks</u> for startups &amp; founders
+        p Gearing up for your pitch to potential investors can be daunting, but with the right pitch deck, you can make a lasting impression and secure the funds you need to launch your business. Get ready to launch your venture with confidence. We’ll create a deck that’s tailored to your venture and industry, with a focus on the numbers and visuals that will compel investors. Get ready become a funded founder!
+
+      .layout-visuals
+        img.image-with-border.image-sticky(src='/source/images/photo-pitch-decks.jpg' srcset='/source/images/photo-pitch-decks@2x.jpg 2x' draggable='false')
+
+
+
+
+    include /source/components/cta.pug
+    include /source/components/footer.pug

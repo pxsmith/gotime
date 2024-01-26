@@ -1,0 +1,65 @@
+html(lang='en-US')
+  head
+    include /source/components/head.pug
+    include /source/components/meta-tags.pug
+
+  include /source/components/google-analytics.pug
+
+
+
+  body.page.subpage
+    include /source/components/nav.pug
+    .layout-with-sticky-image
+      .layout-header
+        h1 Refer clients &amp; <span class='text-highlight'>earn $1,600+</span>
+        p That’s 20% of the first month, but 10% of each additional month for up to one year. That could be $10,400 in your pocket for just one client. Download our one-pager and share it.
+        a.button.mt1(href='/one-pager' target='_blank') Download One-Pager
+
+        .layout-visuals.layout-mobile
+          img.image-with-border(src='/source/images/photo-benjamin.jpg' srcset='/source/images/photo-benjamin@2x.jpg 2x' draggable='false')
+
+        .mt3
+          h4.mb0 What if I’m your new client?
+          p If this is your first time working with us, yes! Let’s pass on those sweet savings to you! (So long as we’re not paying someone a referral for you.)
+
+        .mt3
+          h4.mb0 Terms &amp; conditions
+          ul.fs0.text-default
+            li.mb0 ☑ Valid for new clients only
+            li.mb0 ☑ Valid for full priced subscription at $8k/mo, no other services or discounts
+            li.mb0 ☑ Referrer will get $1,600 the first month and $800 the next 11 months for each month the newly referred client is subscribed and pays their invoice
+            li.mb0 ☑ Referrer must be identified at the beginning of the new subscription (there will be no referral backpay)
+            li.mb0 ☑ There must be proof you referred them (e.g. they mention you in an email)
+            li.mb0 ☑ Payments sent when client payment clears (usually 5-10 days)
+            li.mb0 ☑ Offer subject to change or end at any time
+            li.mb0 ☑ Payments end when the referred client ends the subscription or after 12 months, whichever comes first 
+
+
+        //- mixin service(serviceName, link)
+        //-   a(href=link).df.jc-space-between.bb.pt1.pb1
+        //-     h3= serviceName
+        //-     h3 →
+
+        //- mixin serviceNoLink(serviceName)
+        //-   .df.jc-space-between.bb.pt1.pb1
+        //-     h3= serviceName
+
+        //- +service('Pitch Decks', '/services/pitch-decks')
+        //- +service('MVP Sprints', '/services/mvp-sprints')
+        //- +service('HiFi Prototypes', '/services/hifi-prototypes')
+        //- +service('Design Systems', '/services/design-systems')
+        //- +serviceNoLink('Branding & Logo Design')
+        //- +serviceNoLink('UX/UI Design')
+        //- +serviceNoLink('Website Designs')
+        //- +serviceNoLink('Landing Pages')
+        //- +serviceNoLink('Webflow Builds')
+        //- +serviceNoLink('Design Thinking Workshops')
+
+      .layout-visuals.layout-desktop
+        img.image-with-border.image-sticky(src='/source/images/photo-benjamin.jpg' srcset='/source/images/photo-benjamin@2x.jpg 2x' draggable='false')
+
+
+
+
+    //- include /source/components/cta.pug
+    include /source/components/footer.pug
