@@ -24,6 +24,17 @@
   .navbar .logo {
     flex: 0 0 auto;
     padding-left: 18px; }
+  .navbar .nav-cta {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 18px;
+    padding-right: 18px;
+    background-color: #DC2626; }
+  .navbar .nav-cta {
+    transition: 200ms ease-in; }
+  .navbar .nav-cta:hover {
+    border: 2px solid white;
+    box-shadow: -7px 7px 0px #120404, -7px 7px 0px 2px white; }
 
 @media (max-width: 700px) {
   .navbar {
