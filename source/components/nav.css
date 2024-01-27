@@ -4,6 +4,7 @@
   padding-right: 18px;
   font-size: 18px;
   font-family: "Covik_Sans-Black";
+  text-align: center;
   display: flex;
   top: 0;
   z-index: 1; }
@@ -36,12 +37,13 @@
     border: 2px solid white;
     box-shadow: -7px 7px 0px #120404, -7px 7px 0px 2px white; }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .navbar {
     flex-wrap: wrap; }
+    .navbar .links {
+      flex-wrap: wrap; }
     .navbar .link {
-      padding-left: 7px;
-      padding-right: 7px; }
+      padding: 11px 7px; }
   .navbar, .navbar .flex {
     justify-content: center;
     margin-top: 7px; } }

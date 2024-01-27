@@ -9,6 +9,7 @@
   padding-right: $s0
   @include fs0--18
   @include f-sans-800-black
+  text-align: center
   display: flex
   top: 0
   z-index: 1
@@ -52,14 +53,15 @@
 
 // NAVBAR MOBILE
 
-@media (max-width: 700px)
+@media (max-width: 800px)
   .navbar
     flex-wrap: wrap
+    .links
+      flex-wrap: wrap
     .link 
-      padding-left: $s-2--7
-      padding-right: $s-2--7
+      padding: $s-1 $s-2--7 
   .navbar, .navbar .flex
     justify-content: center
     margin-top: $s-2
 
-
+// @media (max-width: 500px)

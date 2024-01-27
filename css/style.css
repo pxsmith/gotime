@@ -850,6 +850,12 @@ h1 u {
     .homepage .hero .visuals .photo-hero-1 {
       display: none; } }
 
+@media (max-width: 768px) and (max-width: 490px) {
+  .homepage .hero {
+    padding-top: 76px; }
+    .homepage .hero .header {
+      padding-top: 29px; } }
+
 .homepage .value-props-section, .homepage .the-plan-section, .homepage .social-proof-section, .homepage .services-section, .homepage .faq-section, .homepage .projects-section, .homepage .case-studies-section {
   margin: 200px 76px; }
 
