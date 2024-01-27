@@ -794,7 +794,8 @@ h1 u {
     padding-left: 76px;
     padding-right: 76px; }
   .homepage .hero .header {
-    max-width: 10ch; }
+    max-width: 10ch;
+    line-height: 0.8em; }
   .homepage .hero .subheader {
     margin-top: 29px;
     margin-bottom: 47px;
@@ -829,7 +830,7 @@ h1 u {
     padding-bottom: 29px; }
     .homepage .hero .header {
       max-width: 100ch;
-      line-height: 1em; }
+      line-height: 0.85em; }
     .homepage .hero .copy {
       padding-left: 29px;
       padding-right: 29px; }
