@@ -15,20 +15,40 @@
     <script async="async" src="https://scripts.simpleanalyticscdn.com/auto-events.js"></script>
     <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade"/></noscript>
     <script>
-      var urlParams = window.location.pathname;
-      if (urlParams.startsWith("/blog")) {
-          var content_type = "TOFU";
-      }
-      if (urlParams.startsWith("/case-studies")) {
-          var content_type = "MOFU";
-      }
-      if (urlParams.startsWith("/pricing") || urlParams.startsWith("/features")) {
-          var content_type = "BOFU";
-      }
-      var sa_fa = document.getElementsByTagName("a");
-      for (let i = 0; i < sa_fa.length; i++) {
-          sa_fa[i].setAttribute("onclick", `sa_event(${content_type})`);
-      }
+      (function () {
+        function saLoadedLinkEvents() {
+          document
+            .querySelectorAll("a[data-sa-link-event]")
+            .forEach(function (element) {
+              var href = element.getAttribute("href");
+              var eventName = element.getAttribute("data-sa-link-event");
+              if (!href || !window.sa_event || !window.sa_loaded) return;
+      
+              element.addEventListener("click", function (event) {
+                var target = element.getAttribute("target");
+                if (target === "_blank") {
+                  event.preventDefault();
+                  window.sa_event(eventName, function () {
+                    window.location.href = href;
+                  });
+                  return false;
+                } else {
+                  window.sa_event(eventName);
+                  return true;
+                }
+              });
+            });
+        }
+      
+        if (document.readyState === "ready" || document.readyState === "complete") {
+          saLoadedLinkEvents();
+        } else {
+          document.addEventListener("readystatechange", function (event) {
+            if (event.target.readyState === "complete") saLoadedLinkEvents();
+          });
+        }
+      })();
+      
       
       
       
@@ -87,7 +107,7 @@
       <section class="hero">
         <div class="copy">
           <h1 class="header">Get elite UX/UI design in <span class='text-strike'>months&nbsp;</span> <span class='text-highlight'>moments. </span></h1>
-          <p class="subheader">Why spend months and burn a bunch of cash interviewing, hiring and onboarding a full-time product designer? Get started with Go Time today with zero commitment. Designs delivered every 2-4 days for a flat, monthly fee</p><a class="button" href="https://calendly.com/gotimehq/meet" target="_blank" data-sa-event="Primary CTA clicked">Book a Call</a>
+          <p class="subheader">Why spend months and burn a bunch of cash interviewing, hiring and onboarding a full-time product designer? Get started with Go Time today with zero commitment. Designs delivered every 2-4 days for a flat, monthly fee</p><a class="button" href="https://calendly.com/gotimehq/meet" target="_blank" data-sa-link-event="primary_CTA_link_event" data-sa-event="primary_CTA_event">Book a Call</a>
           <div class="social-proof-avatars mt1"><a class="avatar" href="https://www.linkedin.com/in/ssshah0624/" target="_blank"><img class="portrait" src="source/images/photo-bio-sunny.jpeg" draggable="false"/></a><a class="avatar" href="https://www.linkedin.com/in/emmanuelbamfo/" target="_blank"><img class="portrait" src="source/images/photo-bio-manny.jpeg" draggable="false"/></a><a class="avatar" href="https://www.linkedin.com/in/borislippeveld/" target="_blank"><img class="portrait" src="source/images/photo-bio-boris.jpeg" draggable="false"/></a>
             <div class="avatar">
               <h5 class="counter">+70</h5>

@@ -18,20 +18,40 @@ script(async src="https://scripts.simpleanalyticscdn.com/auto-events.js")
 noscript
   img(src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade")
 script.
-  var urlParams = window.location.pathname;
-  if (urlParams.startsWith("/blog")) {
-      var content_type = "TOFU";
-  }
-  if (urlParams.startsWith("/case-studies")) {
-      var content_type = "MOFU";
-  }
-  if (urlParams.startsWith("/pricing") || urlParams.startsWith("/features")) {
-      var content_type = "BOFU";
-  }
-  var sa_fa = document.getElementsByTagName("a");
-  for (let i = 0; i < sa_fa.length; i++) {
-      sa_fa[i].setAttribute("onclick", `sa_event(${content_type})`);
-  }
+  (function () {
+    function saLoadedLinkEvents() {
+      document
+        .querySelectorAll("a[data-sa-link-event]")
+        .forEach(function (element) {
+          var href = element.getAttribute("href");
+          var eventName = element.getAttribute("data-sa-link-event");
+          if (!href || !window.sa_event || !window.sa_loaded) return;
+
+          element.addEventListener("click", function (event) {
+            var target = element.getAttribute("target");
+            if (target === "_blank") {
+              event.preventDefault();
+              window.sa_event(eventName, function () {
+                window.location.href = href;
+              });
+              return false;
+            } else {
+              window.sa_event(eventName);
+              return true;
+            }
+          });
+        });
+    }
+
+    if (document.readyState === "ready" || document.readyState === "complete") {
+      saLoadedLinkEvents();
+    } else {
+      document.addEventListener("readystatechange", function (event) {
+        if (event.target.readyState === "complete") saLoadedLinkEvents();
+      });
+    }
+  })();
+
 
 
 
