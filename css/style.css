@@ -1,6 +1,6 @@
 @charset "UTF-8";
 html, body, div, span, applet, object, iframe,
-h1, h2, .header-group .header, h3, .homepage .projects-section .project-header, .homepage .the-plan-section .the-plan-header, .homepage .value-props-section .value-prop-header, h4, .homepage .faq-section .faq-question, .case-studies-section .case-study-header, h5, .button-afterword, .case-studies-section .case-study-body, .homepage .services-section .service-time, .homepage .value-props-section .value-prop-subheader, h6, p, .homepage .projects-section .project-body, .homepage .the-plan-section .the-plan-body, .homepage .value-props-section .value-prop-body, blockquote, pre,
+h1, h2, .header-group .header, h3, .homepage .projects-section .project-header, .homepage .the-plan-section .the-plan-header, h4, .homepage .faq-section .faq-question, .case-studies-section .case-study-header, .homepage .services-section .service-header, .homepage .value-props-section .value-prop-header, h5, .button-afterword, .case-studies-section .case-study-body, .homepage .services-section .service-list-item, .homepage .services-section .service-time, h6, p, .homepage .projects-section .project-body, .homepage .the-plan-section .the-plan-body, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -502,7 +502,7 @@ a {
 .fs6--323, .fs6 {
   font-size: 323px; }
 
-.text-highlight, .homepage .services-section .service-list-item:before, .homepage .social-proof-section .quotation-mark, .homepage .the-plan-section .the-plan-header, .homepage .value-props-section .value-prop-header {
+.text-highlight, .homepage .services-section .service-list-item:before, .homepage .social-proof-section .quotation-mark, .homepage .the-plan-section .the-plan-header {
   color: 90deg, #DC2626 0%, #FA603E 100%;
   background: -webkit-linear-gradient(90deg, #DC2626 0%, #FA603E 100%);
   -webkit-background-clip: text;
@@ -512,7 +512,7 @@ a {
   opacity: 0.4;
   text-decoration: line-through; }
 
-.text-contrast, .button-afterword, .homepage .services-section .service-time {
+.text-contrast, .button-afterword {
   color: white; }
 
 .text-default {
@@ -545,20 +545,20 @@ h2, .header-group .header {
   h2, .header-group .header {
     font-size: 47px; } }
 
-h3, .homepage .projects-section .project-header, .homepage .the-plan-section .the-plan-header, .homepage .value-props-section .value-prop-header {
+h3, .homepage .projects-section .project-header, .homepage .the-plan-section .the-plan-header {
   font-size: 47px;
   font-family: "Covik_Sans-Bold"; }
 
 @media (max-width: 768px) {
-  h3, .homepage .projects-section .project-header, .homepage .the-plan-section .the-plan-header, .homepage .value-props-section .value-prop-header {
+  h3, .homepage .projects-section .project-header, .homepage .the-plan-section .the-plan-header {
     font-size: 29px;
     color: white; } }
 
-h4, .homepage .faq-section .faq-question, .case-studies-section .case-study-header {
+h4, .homepage .faq-section .faq-question, .case-studies-section .case-study-header, .homepage .services-section .service-header, .homepage .value-props-section .value-prop-header {
   font-size: 29px;
   font-family: "Covik_Sans-Bold"; }
 
-h5, .button-afterword, .case-studies-section .case-study-body, .homepage .services-section .service-time, .homepage .value-props-section .value-prop-subheader {
+h5, .button-afterword, .case-studies-section .case-study-body, .homepage .services-section .service-list-item, .homepage .services-section .service-time {
   font-family: "Covik_Sans_Mono-Medium";
   color: rgba(255, 255, 255, 0.8);
   letter-spacing: 0.05em;
@@ -571,7 +571,7 @@ h6 {
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.65); }
 
-p, .homepage .projects-section .project-body, .homepage .the-plan-section .the-plan-body, .homepage .value-props-section .value-prop-body {
+p, .homepage .projects-section .project-body, .homepage .the-plan-section .the-plan-body {
   font-family: "Covik_Sans-Regular";
   color: rgba(255, 255, 255, 0.8);
   line-height: 1.7; }
@@ -606,7 +606,7 @@ h1 u {
   background: #DC2626;
   border: 2px solid white; }
 
-.hero-list h4, .hero-list .homepage .faq-section .faq-question, .homepage .faq-section .hero-list .faq-question, .hero-list .case-studies-section .case-study-header, .case-studies-section .hero-list .case-study-header {
+.hero-list h4, .hero-list .homepage .faq-section .faq-question, .homepage .faq-section .hero-list .faq-question, .hero-list .case-studies-section .case-study-header, .case-studies-section .hero-list .case-study-header, .hero-list .homepage .services-section .service-header, .homepage .services-section .hero-list .service-header, .hero-list .homepage .value-props-section .value-prop-header, .homepage .value-props-section .hero-list .value-prop-header {
   margin-bottom: 18px; }
 
 .hero-list > * {
@@ -615,11 +615,11 @@ h1 u {
   gap: 7px;
   flex-basis: 0; }
 
-.hero-list h5, .hero-list .button-afterword, .hero-list .case-studies-section .case-study-body, .case-studies-section .hero-list .case-study-body, .hero-list .homepage .services-section .service-time, .homepage .services-section .hero-list .service-time, .hero-list .homepage .value-props-section .value-prop-subheader, .homepage .value-props-section .hero-list .value-prop-subheader {
+.hero-list h5, .hero-list .button-afterword, .hero-list .case-studies-section .case-study-body, .case-studies-section .hero-list .case-study-body, .hero-list .homepage .services-section .service-list-item, .homepage .services-section .hero-list .service-list-item, .hero-list .homepage .services-section .service-time, .homepage .services-section .hero-list .service-time {
   flex-basis: 65px;
   text-align: right; }
 
-.hero-list p, .hero-list .homepage .projects-section .project-body, .homepage .projects-section .hero-list .project-body, .hero-list .homepage .the-plan-section .the-plan-body, .homepage .the-plan-section .hero-list .the-plan-body, .hero-list .homepage .value-props-section .value-prop-body, .homepage .value-props-section .hero-list .value-prop-body {
+.hero-list p, .hero-list .homepage .projects-section .project-body, .homepage .projects-section .hero-list .project-body, .hero-list .homepage .the-plan-section .the-plan-body, .homepage .the-plan-section .hero-list .the-plan-body {
   font-family: "Covik_Sans_Mono-Regular";
   color: white;
   line-height: 1; }
@@ -739,7 +739,7 @@ h1 u {
   grid-template-columns: 1fr 1fr;
   grid-gap: 47px;
   background: url(/source/images/vector-grid.svg) 968px 47px no-repeat; }
-  .layout-with-sticky-image h1, .layout-with-sticky-image p, .layout-with-sticky-image .homepage .projects-section .project-body, .homepage .projects-section .layout-with-sticky-image .project-body, .layout-with-sticky-image .homepage .the-plan-section .the-plan-body, .homepage .the-plan-section .layout-with-sticky-image .the-plan-body, .layout-with-sticky-image .homepage .value-props-section .value-prop-body, .homepage .value-props-section .layout-with-sticky-image .value-prop-body {
+  .layout-with-sticky-image h1, .layout-with-sticky-image p, .layout-with-sticky-image .homepage .projects-section .project-body, .homepage .projects-section .layout-with-sticky-image .project-body, .layout-with-sticky-image .homepage .the-plan-section .the-plan-body, .homepage .the-plan-section .layout-with-sticky-image .the-plan-body {
     margin-bottom: 18px; }
   .layout-with-sticky-image .layout-visuals.layout-mobile {
     display: none;
@@ -800,6 +800,31 @@ h1 u {
     margin-top: 29px;
     margin-bottom: 47px;
     max-width: 60ch; }
+  .homepage .hero .social-proof-avatars {
+    display: flex;
+    align-items: center; }
+    .homepage .hero .social-proof-avatars .portrait {
+      height: 47px;
+      width: 47px;
+      border-radius: 100%;
+      margin-right: -8px;
+      border: #120404 3px solid;
+      transition: all 0.35s ease-in-out; }
+      .homepage .hero .social-proof-avatars .portrait:hover {
+        border: white 3px solid;
+        transition: all 0.35s ease-in-out; }
+    .homepage .hero .social-proof-avatars .counter {
+      height: 47px;
+      width: 47px;
+      border-radius: 100%;
+      border: #120404 3px solid;
+      background: white;
+      color: #120404;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center; }
+    .homepage .hero .social-proof-avatars .label {
+      color: white; }
 
 .homepage .hero .visuals {
   background: url(/source/images/vector-grid.svg) 645px top no-repeat;
@@ -881,25 +906,22 @@ h1 u {
   .homepage .header-group {
     margin-bottom: 47px; } }
 
-.homepage .value-props-section .value-prop-header {
-  padding-bottom: 11px; }
-
-.homepage .value-props-section .value-prop-subheader {
-  color: white; }
-
-.homepage .value-props-section .value-props {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  column-gap: 76px;
-  row-gap: 76px; }
-
-.homepage .value-props-section .value-prop-body {
-  padding-top: 11px; }
-
-.homepage .value-props-section .value-prop img.icon {
-  width: 72px;
-  height: 72px;
-  margin-bottom: 18px; }
+.homepage .value-props-section {
+  margin-top: -76px;
+  padding-bottom: 76px; }
+  .homepage .value-props-section .value-prop-header {
+    margin-bottom: 11px; }
+  .homepage .value-props-section .value-prop-subheader {
+    color: rgba(255, 255, 255, 0.65); }
+  .homepage .value-props-section .value-props {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    column-gap: 76px;
+    row-gap: 76px; }
+  .homepage .value-props-section .value-prop img.icon {
+    width: 72px;
+    height: 72px;
+    margin-bottom: 18px; }
 
 @media (max-width: 1080px) {
   .homepage .value-props-section .value-props {
@@ -1020,16 +1042,18 @@ h1 u {
   gap: 18px; }
 
 .homepage .services-section .service-header {
-  font-size: 47px;
-  letter-spacing: -0.04em; }
+  line-height: 1.25em; }
+
+.homepage .services-section .service-time {
+  opacity: 0.65; }
 
 .homepage .services-section .service .icon {
-  width: 96px;
-  height: 96px;
-  margin-bottom: 18px; }
+  width: 72px;
+  height: 72px; }
 
 .homepage .services-section .service-list-item {
-  line-height: 1.5em; }
+  line-height: 1.5em;
+  color: white; }
 
 .homepage .services-section .service-list-item:before {
   content: '☑';
@@ -1076,11 +1100,11 @@ h1 u {
   max-width: 58rem;
   margin-left: auto;
   margin-right: auto; }
-  .page-case-study .hero p, .page-case-study .hero .homepage .value-props-section .value-prop-body, .homepage .value-props-section .page-case-study .hero .value-prop-body, .page-case-study .hero .homepage .the-plan-section .the-plan-body, .homepage .the-plan-section .page-case-study .hero .the-plan-body, .page-case-study .hero .homepage .projects-section .project-body, .homepage .projects-section .page-case-study .hero .project-body {
+  .page-case-study .hero p, .page-case-study .hero .homepage .the-plan-section .the-plan-body, .homepage .the-plan-section .page-case-study .hero .the-plan-body, .page-case-study .hero .homepage .projects-section .project-body, .homepage .projects-section .page-case-study .hero .project-body {
     margin: auto;
     margin-top: 18px;
     max-width: 75ch; }
-  .page-case-study .hero p:last-of-type, .page-case-study .hero .homepage .value-props-section .value-prop-body:last-of-type, .homepage .value-props-section .page-case-study .hero .value-prop-body:last-of-type, .page-case-study .hero .homepage .the-plan-section .the-plan-body:last-of-type, .homepage .the-plan-section .page-case-study .hero .the-plan-body:last-of-type, .page-case-study .hero .homepage .projects-section .project-body:last-of-type, .homepage .projects-section .page-case-study .hero .project-body:last-of-type {
+  .page-case-study .hero p:last-of-type, .page-case-study .hero .homepage .the-plan-section .the-plan-body:last-of-type, .homepage .the-plan-section .page-case-study .hero .the-plan-body:last-of-type, .page-case-study .hero .homepage .projects-section .project-body:last-of-type, .homepage .projects-section .page-case-study .hero .project-body:last-of-type {
     margin-bottom: 76px; }
 
 .page-case-study .header {
@@ -1093,13 +1117,15 @@ h1 u {
   .page-case-study .hero {
     margin-top: 47px;
     text-align: left; }
-    .page-case-study .hero p, .page-case-study .hero .homepage .value-props-section .value-prop-body, .homepage .value-props-section .page-case-study .hero .value-prop-body, .page-case-study .hero .homepage .the-plan-section .the-plan-body, .homepage .the-plan-section .page-case-study .hero .the-plan-body, .page-case-study .hero .homepage .projects-section .project-body, .homepage .projects-section .page-case-study .hero .project-body {
+    .page-case-study .hero p, .page-case-study .hero .homepage .the-plan-section .the-plan-body, .homepage .the-plan-section .page-case-study .hero .the-plan-body, .page-case-study .hero .homepage .projects-section .project-body, .homepage .projects-section .page-case-study .hero .project-body {
       margin-top: 18px; }
-    .page-case-study .hero p:last-of-type, .page-case-study .hero .homepage .value-props-section .value-prop-body:last-of-type, .homepage .value-props-section .page-case-study .hero .value-prop-body:last-of-type, .page-case-study .hero .homepage .the-plan-section .the-plan-body:last-of-type, .homepage .the-plan-section .page-case-study .hero .the-plan-body:last-of-type, .page-case-study .hero .homepage .projects-section .project-body:last-of-type, .homepage .projects-section .page-case-study .hero .project-body:last-of-type {
+    .page-case-study .hero p:last-of-type, .page-case-study .hero .homepage .the-plan-section .the-plan-body:last-of-type, .homepage .the-plan-section .page-case-study .hero .the-plan-body:last-of-type, .page-case-study .hero .homepage .projects-section .project-body:last-of-type, .homepage .projects-section .page-case-study .hero .project-body:last-of-type {
       margin-bottom: 47px; } }
 
 .case-studies-section {
   margin: 76px; }
+  .case-studies-section .header-group {
+    margin-bottom: 29px; }
   .case-studies-section .case-studies {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1145,9 +1171,9 @@ h1 u {
   max-width: 75ch;
   max-height: 0;
   transition: all 1s ease-in-out; }
-  .homepage .faq-section .faq-answer p:not(p:first-of-type), .homepage .faq-section .faq-answer .value-props-section .value-prop-body:not(p:first-of-type), .homepage .value-props-section .faq-section .faq-answer .value-prop-body:not(p:first-of-type), .homepage .faq-section .faq-answer .the-plan-section .the-plan-body:not(p:first-of-type), .homepage .the-plan-section .faq-section .faq-answer .the-plan-body:not(p:first-of-type), .homepage .faq-section .faq-answer .projects-section .project-body:not(p:first-of-type), .homepage .projects-section .faq-section .faq-answer .project-body:not(p:first-of-type) {
+  .homepage .faq-section .faq-answer p:not(p:first-of-type), .homepage .faq-section .faq-answer .the-plan-section .the-plan-body:not(p:first-of-type), .homepage .the-plan-section .faq-section .faq-answer .the-plan-body:not(p:first-of-type), .homepage .faq-section .faq-answer .projects-section .project-body:not(p:first-of-type), .homepage .projects-section .faq-section .faq-answer .project-body:not(p:first-of-type) {
     padding-top: 18px; }
-  .homepage .faq-section .faq-answer p:last-of-type, .homepage .faq-section .faq-answer .value-props-section .value-prop-body:last-of-type, .homepage .value-props-section .faq-section .faq-answer .value-prop-body:last-of-type, .homepage .faq-section .faq-answer .the-plan-section .the-plan-body:last-of-type, .homepage .the-plan-section .faq-section .faq-answer .the-plan-body:last-of-type, .homepage .faq-section .faq-answer .projects-section .project-body:last-of-type, .homepage .projects-section .faq-section .faq-answer .project-body:last-of-type {
+  .homepage .faq-section .faq-answer p:last-of-type, .homepage .faq-section .faq-answer .the-plan-section .the-plan-body:last-of-type, .homepage .the-plan-section .faq-section .faq-answer .the-plan-body:last-of-type, .homepage .faq-section .faq-answer .projects-section .project-body:last-of-type, .homepage .projects-section .faq-section .faq-answer .project-body:last-of-type {
     padding-bottom: 18px; }
 
 .homepage .faq-section .faq input[type="checkbox"] {
@@ -1184,13 +1210,13 @@ h1 u {
     align-items: center;
     justify-content: center;
     width: 100%; }
-    .homepage .recent-work .header h3, .homepage .recent-work .header .value-props-section .value-prop-header, .homepage .value-props-section .recent-work .header .value-prop-header, .homepage .recent-work .header .the-plan-section .the-plan-header, .homepage .the-plan-section .recent-work .header .the-plan-header, .homepage .recent-work .header .projects-section .project-header, .homepage .projects-section .recent-work .header .project-header, .homepage .recent-work .header p, .homepage .recent-work .header .value-props-section .value-prop-body, .homepage .value-props-section .recent-work .header .value-prop-body, .homepage .recent-work .header .the-plan-section .the-plan-body, .homepage .the-plan-section .recent-work .header .the-plan-body, .homepage .recent-work .header .projects-section .project-body, .homepage .projects-section .recent-work .header .project-body {
+    .homepage .recent-work .header h3, .homepage .recent-work .header .the-plan-section .the-plan-header, .homepage .the-plan-section .recent-work .header .the-plan-header, .homepage .recent-work .header .projects-section .project-header, .homepage .projects-section .recent-work .header .project-header, .homepage .recent-work .header p, .homepage .recent-work .header .the-plan-section .the-plan-body, .homepage .the-plan-section .recent-work .header .the-plan-body, .homepage .recent-work .header .projects-section .project-body, .homepage .projects-section .recent-work .header .project-body {
       width: 100%; }
   .homepage .recent-work .thumbnail {
     max-width: 100%;
     flex-grow: 0;
     width: 450px; }
-    .homepage .recent-work .thumbnail p, .homepage .recent-work .thumbnail .value-props-section .value-prop-body, .homepage .value-props-section .recent-work .thumbnail .value-prop-body, .homepage .recent-work .thumbnail .the-plan-section .the-plan-body, .homepage .the-plan-section .recent-work .thumbnail .the-plan-body, .homepage .recent-work .thumbnail .projects-section .project-body, .homepage .projects-section .recent-work .thumbnail .project-body {
+    .homepage .recent-work .thumbnail p, .homepage .recent-work .thumbnail .the-plan-section .the-plan-body, .homepage .the-plan-section .recent-work .thumbnail .the-plan-body, .homepage .recent-work .thumbnail .projects-section .project-body, .homepage .projects-section .recent-work .thumbnail .project-body {
       padding-left: 11px;
       border-left: 2px solid white; }
 
@@ -1225,7 +1251,7 @@ h1 u {
       width: 350px; } }
 
 @media (max-width: 700px) {
-  .homepage .recent-work .thumbnail p, .homepage .recent-work .thumbnail .value-props-section .value-prop-body, .homepage .value-props-section .recent-work .thumbnail .value-prop-body, .homepage .recent-work .thumbnail .the-plan-section .the-plan-body, .homepage .the-plan-section .recent-work .thumbnail .the-plan-body, .homepage .recent-work .thumbnail .projects-section .project-body, .homepage .projects-section .recent-work .thumbnail .project-body {
+  .homepage .recent-work .thumbnail p, .homepage .recent-work .thumbnail .the-plan-section .the-plan-body, .homepage .the-plan-section .recent-work .thumbnail .the-plan-body, .homepage .recent-work .thumbnail .projects-section .project-body, .homepage .projects-section .recent-work .thumbnail .project-body {
     border-left: 0px; } }
 
 @media (min-width: 700px) {
@@ -1275,10 +1301,10 @@ body {
 a, a:hover, label {
   cursor: url("/source/images/cursor-point.svg"), auto; }
 
-a.person p.name, a.person .homepage .value-props-section .name.value-prop-body, .homepage .value-props-section a.person .name.value-prop-body, a.person .homepage .the-plan-section .name.the-plan-body, .homepage .the-plan-section a.person .name.the-plan-body, a.person .homepage .projects-section .name.project-body, .homepage .projects-section a.person .name.project-body {
+a.person p.name, a.person .homepage .the-plan-section .name.the-plan-body, .homepage .the-plan-section a.person .name.the-plan-body, a.person .homepage .projects-section .name.project-body, .homepage .projects-section a.person .name.project-body {
   transition: 200ms ease-in; }
 
-a.person:hover p.name, a.person:hover .homepage .value-props-section .name.value-prop-body, .homepage .value-props-section a.person:hover .name.value-prop-body, a.person:hover .homepage .the-plan-section .name.the-plan-body, .homepage .the-plan-section a.person:hover .name.the-plan-body, a.person:hover .homepage .projects-section .name.project-body, .homepage .projects-section a.person:hover .name.project-body {
+a.person:hover p.name, a.person:hover .homepage .the-plan-section .name.the-plan-body, .homepage .the-plan-section a.person:hover .name.the-plan-body, a.person:hover .homepage .projects-section .name.project-body, .homepage .projects-section a.person:hover .name.project-body {
   transition: 200ms ease-in;
   color: #DC2626; }
 

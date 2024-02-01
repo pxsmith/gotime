@@ -21,10 +21,35 @@
     margin-bottom: $s2--47
     max-width: 60ch
 
+  .social-proof-avatars
+    display: flex
+    align-items: center
 
+    .portrait
+      height: $s2--47
+      width: $s2--47
+      border-radius: 100%
+      margin-right: -8px
+      border: $dark 3px solid
+      transition: all 0.35s ease-in-out
 
+      &:hover
+        border: white 3px solid 
+        transition: all 0.35s ease-in-out
 
+    .counter
+      height: $s2--47
+      width: $s2--47
+      border-radius: 100%
+      border: $dark 3px solid
+      background: white
+      color: $dark
+      display: inline-flex
+      align-items: center
+      justify-content: center
 
+    .label
+      color: white
 
 
 // HERO VISUALS 🦸‍♂️ 🦸‍♂️ 🦸‍♂️ 🦸‍♂️ 🦸‍♂️ 🦸‍♂️ 🦸‍♂️
@@ -153,25 +178,21 @@
 // VALUE PROPS ✨ ✨ ✨ ✨ ✨ ✨ ✨
 
 .homepage .value-props-section
+  margin-top: - $s3--76
+  padding-bottom: $s3--76
 
   .value-prop-header
-    @extend h3
-    @extend .text-highlight
-    padding-bottom: $s-1--11
+    @extend h4
+    margin-bottom: $s-1--11
 
   .value-prop-subheader
-    @extend h5
-    @include text-contrast
+    @include text-subtle
 
   .value-props
     display: grid
-    grid-template-columns: repeat(3, minmax(0, 1fr))
+    grid-template-columns: repeat(4, minmax(0, 1fr))
     column-gap: $s3--76
     row-gap: $s3--76
-
-  .value-prop-body
-    @extend p
-    padding-top: $s-1--11
 
   .value-prop img.icon
     width: 48px * 1.5
@@ -350,20 +371,24 @@
     gap: $s0--18
 
   .service-header
-    font-size: $s2--47
-    letter-spacing: -0.04em
+    // font-size: $s2--47
+    @extend h4
+    line-height: 1.25em
+    // letter-spacing: -0.04em
 
   .service-time
     @extend h5
-    @extend .text-contrast
+    opacity: 0.65
 
   .service .icon
-    width: 48px * 2
-    height: 48px * 2
-    margin-bottom: $s0--18
+    width: 48px * 1.5
+    height: 48px * 1.5
+    // margin-bottom: $s0--18
 
   .service-list-item
     line-height: 1.5em
+    @extend h5
+    color: white
 
   .service-list-item:before
     content: '☑'
@@ -474,6 +499,9 @@
 
 .case-studies-section
   margin: $s3--76
+
+  .header-group
+    margin-bottom: $s1--29
 
   .case-studies
     display: grid
