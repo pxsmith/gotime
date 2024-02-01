@@ -1,8 +1,30 @@
 html(lang='en-US')
   head
     include /source/components/head.pug
-    include /source/components/meta-tags.pug
     include /source/components/google-analytics.pug
+
+    // Primary Meta Tags
+
+    // Title
+    title Refer a design client &amp; earn $1,600 instantly • Go Time Design Studio
+    meta(name='title' content='Refer a design client &amp; earn $1,600 instantly • Go Time Design Studio')
+    meta(property='og:title' content='Refer a design client &amp; earn $1,600 instantly • Go Time Design Studio')
+    meta(property='twitter:title' content='Refer a design client &amp; earn $1,600 instantly • Go Time Design Studio')
+
+    // Description
+    meta(name='description' content='Go Time is a high-speed design studio for startups & enterprise. Get exceptional design services extremely fast. See your first designs in under a week.')
+    meta(property='og:description' content='Go Time is a high-speed design studio for startups & enterprise. Get exceptional design services extremely fast. See your first designs in under a week.')
+    meta(property='twitter:description' content='Go Time is a high-speed design studio for startups & enterprise. Get exceptional design services extremely fast. See your first designs in under a week.')
+
+    // Open Graph / Facebook
+    meta(property='og:type' content='website')
+    meta(property='og:url' content='https://gotimehq.com/referrals')
+    meta(property='og:image' content='/source/images/social-preview-referrals.jpg')
+
+    // Twitter
+    meta(property='twitter:card' content='summary_large_image')
+    meta(property='twitter:url' content='https://gotimehq.com/referrals')
+    meta(property='twitter:image' content='/source/images/social-preview-referrals.jpg')
 
   body.page.subpage.page-referrals
     include /source/components/nav.pug
