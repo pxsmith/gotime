@@ -876,12 +876,6 @@ h1 u {
     .homepage .hero .visuals .photo-hero-1 {
       display: none; } }
 
-@media (max-width: 768px) and (max-width: 490px) {
-  .homepage .hero {
-    padding-top: 76px; }
-    .homepage .hero .header {
-      padding-top: 29px; } }
-
 .homepage .value-props-section, .homepage .the-plan-section, .homepage .social-proof-section, .homepage .services-section, .homepage .faq-section, .homepage .projects-section, .homepage .case-studies-section {
   margin: 200px 76px; }
 
@@ -1145,6 +1139,13 @@ h1 u {
 @media (max-width: 1080px) {
   .case-studies-section {
     margin: 47px 18px; } }
+
+.page-referrals .layout-header .header {
+  max-width: 9ch; }
+
+@media (max-width: 1200px) {
+  .page-referrals .layout-header .header {
+    font-size: 76px; } }
 
 .homepage .faq-section .header-group {
   margin-bottom: 47px; }

@@ -2171,7 +2171,7 @@
       "oAP" : "\/source\/images\/photo-benjamin.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -2184,7 +2184,7 @@
       "oAP" : "\/source\/images\/photo-benjamin@2x.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75

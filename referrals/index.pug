@@ -4,17 +4,11 @@ html(lang='en-US')
     include /source/components/meta-tags.pug
     include /source/components/google-analytics.pug
 
-
-
-  body.page.subpage
-    //- Google Tag Manager (noscript)
-    noscript
-      iframe(src="https://www.googletagmanager.com/ns.html?id=GTM-MC3HD5SG" height="0" width="0" style="display:none;visibility:hidden")
-
+  body.page.subpage.page-referrals
     include /source/components/nav.pug
     .layout-with-sticky-image
       .layout-header
-        h1 Refer a client <span class='text-highlight'>&amp; earn $1,600 instantly&nbsp;</span>
+        h1.header Refer a client <span class='text-highlight'>&amp; earn $1,600 instantly&nbsp;</span>
         p Plus earn 10% of Go Time’s monthly fee for each additional month up to one year. That’s $10,400 for referring a single client—a nice chunk of change. Download our one-pager and share.
         a.button.mt0.mb1(href='/one-pager' data-sa-link-event='download_one_pager' target='_blank') Download One-Pager
 
@@ -41,32 +35,7 @@ html(lang='en-US')
             li.mb0 ☑ Offer subject to change or end at any time
             li.mb0 ☑ Payments end when the referred client ends the subscription or after 12 months, whichever comes first 
 
-
-        //- mixin service(serviceName, link)
-        //-   a(href=link).df.jc-space-between.bb.pt1.pb1
-        //-     h3= serviceName
-        //-     h3 →
-
-        //- mixin serviceNoLink(serviceName)
-        //-   .df.jc-space-between.bb.pt1.pb1
-        //-     h3= serviceName
-
-        //- +service('Pitch Decks', '/services/pitch-decks')
-        //- +service('MVP Sprints', '/services/mvp-sprints')
-        //- +service('HiFi Prototypes', '/services/hifi-prototypes')
-        //- +service('Design Systems', '/services/design-systems')
-        //- +serviceNoLink('Branding & Logo Design')
-        //- +serviceNoLink('UX/UI Design')
-        //- +serviceNoLink('Website Designs')
-        //- +serviceNoLink('Landing Pages')
-        //- +serviceNoLink('Webflow Builds')
-        //- +serviceNoLink('Design Thinking Workshops')
-
       .layout-visuals.layout-desktop
         img.image-with-border.image-sticky(src='/source/images/photo-benjamin.jpg' srcset='/source/images/photo-benjamin@2x.jpg 2x' draggable='false')
 
-
-
-
-    //- include /source/components/cta.pug
     include /source/components/footer.pug

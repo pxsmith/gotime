@@ -47,3 +47,7 @@
   .navbar, .navbar .flex {
     justify-content: center;
     margin-top: 7px; } }
+
+@media (max-width: 500px) {
+  .navbar {
+    margin-bottom: 76px; } }
