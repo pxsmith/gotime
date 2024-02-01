@@ -15,11 +15,32 @@
     <script async="async" src="https://scripts.simpleanalyticscdn.com/auto-events.js"></script>
     <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade"/></noscript>
     <script>
+      var urlParams = window.location.pathname;
+      if (urlParams.startsWith("/blog")) {
+          var content_type = "TOFU";
+      }
+      if (urlParams.startsWith("/case-studies")) {
+          var content_type = "MOFU";
+      }
+      if (urlParams.startsWith("/pricing") || urlParams.startsWith("/features")) {
+          var content_type = "BOFU";
+      }
+      var sa_fa = document.getElementsByTagName("a");
+      for (let i = 0; i < sa_fa.length; i++) {
+          sa_fa[i].setAttribute("onclick", `sa_event(${content_type})`);
+      }
+      
+      
+      
+      
+    </script>
+    <script>
       (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
       new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
       j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
       })(window,document,'script','dataLayer','GTM-MC3HD5SG');
+      
       
       
     </script>
@@ -41,16 +62,16 @@
     <meta property="twitter:card" content="summary_large_image"/>
     <meta property="twitter:url" content="https://gotimehq.com/"/>
     <meta property="twitter:image" content="https://gotimehq.com/source/images/social-preview.jpg"/>
+    <!-- Google tag (gtag.js)-->
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-F9G230L80X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      
+      gtag('config', 'G-F9G230L80X');
+    </script>
   </head>
-  <!-- Google tag (gtag.js)-->
-  <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-F9G230L80X"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    
-    gtag('config', 'G-F9G230L80X');
-  </script>
   <body class="page subpage">
     <noscript>
       <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MC3HD5SG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
@@ -64,7 +85,7 @@
     </div>
     <div class="layout-with-sticky-image">
       <div class="layout-header">
-        <h1>Refer a client &amp; <span class='text-highlight'>earn $1,600 instantly&nbsp;</span></h1>
+        <h1>Refer a client <span class='text-highlight'>&amp; earn $1,600 instantly&nbsp;</span></h1>
         <p>Plus earn 10% of Go Time’s monthly fee for each additional month up to one year. That’s $10,400 for referring a single client—a nice chunk of change. Download our one-pager and share.</p><a class="button mt0 mb1" href="/one-pager" target="_blank" data-sa-event="Download One-Pager clicked">Download One-Pager</a>
         <div class="layout-visuals layout-mobile"><img class="image-with-border" src="/source/images/photo-benjamin.jpg" srcset="/source/images/photo-benjamin@2x.jpg 2x" draggable="false"/></div>
         <div class="mt3">

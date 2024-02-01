@@ -17,6 +17,24 @@ script(async defer src="https://scripts.simpleanalyticscdn.com/latest.js")
 script(async src="https://scripts.simpleanalyticscdn.com/auto-events.js")
 noscript
   img(src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade")
+script.
+  var urlParams = window.location.pathname;
+  if (urlParams.startsWith("/blog")) {
+      var content_type = "TOFU";
+  }
+  if (urlParams.startsWith("/case-studies")) {
+      var content_type = "MOFU";
+  }
+  if (urlParams.startsWith("/pricing") || urlParams.startsWith("/features")) {
+      var content_type = "BOFU";
+  }
+  var sa_fa = document.getElementsByTagName("a");
+  for (let i = 0; i < sa_fa.length; i++) {
+      sa_fa[i].setAttribute("onclick", `sa_event(${content_type})`);
+  }
+
+
+
 
 //- Google Tag Manager
 script.
@@ -25,6 +43,7 @@ script.
   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-MC3HD5SG');
+
 
 
 //- //- Try Scrollmagic
