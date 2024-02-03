@@ -3,6 +3,8 @@ link(rel="stylesheet" type="text/css" href="/source/webfonts-min.css" preload)
 link(rel='stylesheet' href='/css/style.css' preload)
 meta(name="viewport" content="width=device-width, initial-scale=1")
 
+
+
 //- https://favicon.io
 link(rel="apple-touch-icon" sizes="180x180" href="/source/favicon/apple-touch-icon.png")
 link(rel="icon" type="image/png" sizes="32x32" href="/source/favicon/favicon-32x32.png")
@@ -11,6 +13,8 @@ link(rel="manifest" href="/source/favicon/site.webmanifest")
 
 meta(name="theme-color" content="#140505" media="(prefers-color-scheme: light)")
 meta(name="theme-color" content="#140505" media="(prefers-color-scheme: dark)")
+
+
 
 //- 100% privacy-first analytics
 script(async defer src="https://scripts.simpleanalyticscdn.com/latest.js")
@@ -54,8 +58,6 @@ script.
 
 
 
-
-
 //- Google Tag Manager
 script.
   (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -64,6 +66,11 @@ script.
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-MC3HD5SG');
 
+script(defer src="/source/scripts.js")
+
+
+//- //- jQuery
+//- script(src="https://code.jquery.com/jquery-latest.min.js")
 
 
 //- //- Try Scrollmagic

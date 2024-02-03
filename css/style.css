@@ -26,7 +26,8 @@ footer, header, hgroup, menu, nav, section {
   display: block; }
 
 body {
-  line-height: 1; }
+  line-height: 1;
+    line-height--webkit-backface-visibility: hidden; }
 
 ol, ul {
   list-style: none; }
@@ -786,6 +787,111 @@ h1 u {
   .images-hi-res img {
     width: 100vw;
     height: 75vw; } }
+
+.tooltip-item {
+  position: relative; }
+  .tooltip-item:focus, .tooltip-item:hover .tooltip {
+    opacity: 1;
+    visibility: visible; }
+  .tooltip-item .tooltip {
+    position: absolute;
+    top: 65px;
+    background-color: white;
+    background: #120404;
+    border: 2px solid white;
+    margin: 0 auto;
+    min-width: 323px;
+    max-width: 523px;
+    opacity: 0;
+    padding: 0.65em;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+    visibility: hidden;
+    z-index: 10; }
+    .tooltip-item .tooltip p, .tooltip-item .tooltip .homepage .projects-section .project-body, .homepage .projects-section .tooltip-item .tooltip .project-body, .tooltip-item .tooltip .homepage .the-plan-section .the-plan-body, .homepage .the-plan-section .tooltip-item .tooltip .the-plan-body {
+      margin: 0;
+      display: inline-block; }
+    .tooltip-item .tooltip::after {
+      position: absolute;
+      left: 11px;
+      top: -19px;
+      content: "▼";
+      rotate: 180deg;
+      font-size: 1.4em;
+      text-align: center; }
+
+.js-fade-element-hide {
+  opacity: 0; }
+
+.js-fade-element-show {
+  opacity: 1;
+  transition: all 0.4s ease-in-out; }
+
+@keyframes fade-in {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.animate--on-scroll {
+  opacity: 0;
+  transition: all 1s; }
+
+.animation--blur {
+  filter: blur(5px); }
+
+.animation--up {
+  transform: translateY(29px); }
+
+.animation--down {
+  transform: translateY(-29px); }
+
+.animation--left {
+  transform: translateX(29px); }
+
+.animation--right {
+  transform: translateX(-29px); }
+
+.animation--big-up {
+  transform: translateY(123px); }
+
+.animation--big-down {
+  transform: translateY(-123px); }
+
+.animation---big-left {
+  transform: translateX(123px); }
+
+.animation--big-right {
+  transform: translateX(-123px); }
+
+.hidden {
+  opacity: 0; }
+
+.animation--show {
+  opacity: 1;
+  transition: all 1s;
+  filter: blur(0px);
+  transform: translateX(0);
+  transform: translateY(0); }
+
+.animate--on-scroll:nth-child(2) {
+  transition-delay: 200ms; }
+
+.animate--on-scroll:nth-child(3) {
+  transition-delay: 400ms; }
+
+.animate--on-scroll:nth-child(4) {
+  transition-delay: 600ms; }
+
+.animate--on-scroll:nth-child(5) {
+  transition-delay: 800ms; }
+
+.animate--on-scroll:nth-child(6) {
+  transition-delay: 1000ms; }
+
+.element-to-fade-in {
+  animation: fade-in 1.5s ease forwards;
+  opacity: 0; }
 
 .homepage .hero {
   padding-top: 47px;

@@ -13,7 +13,7 @@ html(lang='en-US')
       include components/nav.pug
 
       section.hero
-        .copy
+        .copy.animate--on-scroll.animation--blur.animation--right
           //- h1.header Meet your team’s new <span class='text-highlight'> design partner </span>
 
           //- h1.header Every design you need. <span class='text-highlight'>Fast. </span>
@@ -28,18 +28,25 @@ html(lang='en-US')
 
 
           p.subheader Why spend months and burn a bunch of cash interviewing, hiring and onboarding a full-time product designer? Get started with Go Time today with zero commitment. Designs delivered every 2-4 days for a flat, monthly fee
+
           a.button(href='https://calendly.com/gotimehq/meet' data-sa-link-event='primary_CTA' target='_blank' ) Book a Call
 
           .social-proof-avatars.mt1
             //- h5.label.ml-1 Trusted by
-            a.avatar(href='https://www.linkedin.com/in/ssshah0624/' target='_blank')
+            a.avatar.tooltip-item(href='https://www.linkedin.com/in/ssshah0624/' target='_blank')
               img.portrait(src='source/images/photo-bio-sunny.jpeg' draggable='false')
+              .tooltip
+                p &ldquo;Go Time is a <u>true partner</u>.&rdquo; &ndash;Sunny
 
-            a.avatar(href='https://www.linkedin.com/in/emmanuelbamfo/' target='_blank')
+            a.avatar.tooltip-item(href='https://www.linkedin.com/in/emmanuelbamfo/' target='_blank')
               img.portrait(src='source/images/photo-bio-manny.jpeg' draggable='false')
+              .tooltip
+                p &ldquo;I was <u>BLOWN AWAY</u> by how quickly Go Time understood my ideas and delivered great work.&rdquo; &ndash;Manny
 
-            a.avatar(href='https://www.linkedin.com/in/borislippeveld/' target='_blank')
+            a.avatar.tooltip-item(href='https://www.linkedin.com/in/borislippeveld/' target='_blank')
               img.portrait(src='source/images/photo-bio-boris.jpeg' draggable='false')
+              .tooltip
+                p &ldquo;Effective collaboration enabled us to <u>develop &amp; iterate rapidly!</u>&rdquo; &ndash;Boris
 
             .avatar
               h5.counter +70
@@ -51,22 +58,21 @@ html(lang='en-US')
 
 
         .visuals
-          img.photo-hero-1(src="source/images/photo-hero-motorcycle.jpg" draggable='false')
-          img.photo-hero-2(src="source/images/photo-hero-rocket.jpg" draggable='false')
-          img.photo-hero-3(src="source/images/photo-hero-f1.jpg" draggable='false')
+          img.photo-hero-1.animate--on-scroll.animation--blur.animation--big-right(src="source/images/photo-hero-motorcycle.jpg" draggable='false')
+          img.photo-hero-2.animate--on-scroll.animation--blur.animation--big-down(src="source/images/photo-hero-rocket.jpg" draggable='false')
+          img.photo-hero-3.animate--on-scroll.animation--blur.animation--big-up(src="source/images/photo-hero-f1.jpg" draggable='false')
 
 
 
-      section.design-collage.mt3
-        //- h5.tc.text-extra-subtle.mb0 Work Samples
-        .row.df.jc-center.animate__animated.animate__fadeIn
+      section.design-collage.mt3.animate--on-scroll.animation--up
+        .row.df.jc-center
           img(src='source/images/design-collage-01.png' srcset='source/images/design-collage-01.png 2x' draggable='false')
           img(src='source/images/design-collage-11.png' srcset='source/images/design-collage-11.png 2x' draggable='false')
           img(src='source/images/design-collage-10.png' srcset='source/images/design-collage-10.png 2x' draggable='false')
           img(src='source/images/design-collage-09.png' srcset='source/images/design-collage-09.png 2x' draggable='false')
           img(src='source/images/design-collage-02.png' srcset='source/images/design-collage-02.png 2x' draggable='false')
           img(src='source/images/design-collage-12.png' srcset='source/images/design-collage-12.png 2x' draggable='false')
-        .row.df.jc-center.animate__animated.animate__fadeIn
+        .row.df.jc-center
           img(src='source/images/design-collage-06.png' srcset='source/images/design-collage-06.png 2x' draggable='false')
           img(src='source/images/design-collage-03.png' srcset='source/images/design-collage-03.png 2x' draggable='false')
           img(src='source/images/design-collage-04.png' srcset='source/images/design-collage-04.png 2x' draggable='false')
@@ -76,26 +82,26 @@ html(lang='en-US')
 
 
 
-      section.case-studies-section 
+      section.case-studies-section
         .header-group
           .super-header Case studies
           .header Amazing outcomes
 
         .case-studies
           
-          a(href='/case-studies/fractional-product-design').case-study.link-with-border
+          a(href='/case-studies/fractional-product-design').case-study.link-with-border.animate--on-scroll.animation--blur.animation--up
             .case-study-thumbnail
               img(src='/case-studies/fractional-product-design/case-study-1.jpg' srcset='/case-studies/fractional-product-design/case-study-1.jpg 2x' draggable='false' loading='lazy')
             .case-study-header Did 9 months of work in 4 months
             .case-study-body Product design • microsites • marketing • web &amp; mobile app
 
-          a(href='/case-studies/mvp-in-7-days').case-study.link-with-border
+          a(href='/case-studies/mvp-in-7-days').case-study.link-with-border.animate--on-scroll.animation--blur.animation--up
             .case-study-thumbnail
               img(src='/case-studies/mvp-in-7-days/case-study-1.jpg' srcset='/case-studies/mvp-in-7-days/case-study-1@2x.jpg 2x' draggable='false' loading='lazy')
             .case-study-header Started building an MVP in 7 days
             .case-study-body Product design • branding • web &amp; mobile app • creative direction
 
-          a(href='/case-studies/leads-in-24-hours').case-study.link-with-border
+          a(href='/case-studies/leads-in-24-hours').case-study.link-with-border.animate--on-scroll.animation--blur.animation--up
             .case-study-thumbnail
               img(src='/case-studies/leads-in-24-hours/case-study-1.jpg' srcset='/case-studies/leads-in-24-hours/case-study-1@2x.jpg 2x' draggable='false' loading='lazy')
             .case-study-header Started getting leads in 24 hours
@@ -104,22 +110,22 @@ html(lang='en-US')
 
       section.value-props-section
         .value-props 
-          .value-prop.animate__animated.animate__fadeIn
+          .value-prop.animate--on-scroll.animation--blur.animation--up
             img.icon(src='source/images/icon-stopwatch.svg' draggable='false')
             .value-prop-header Absurdly fast
             .value-prop-subheader Designs delivered in 2-4 days
 
-          .value-prop.box
+          .value-prop.animate--on-scroll.animation--blur.animation--up
             img.icon(src='source/images/icon-map-pin.svg' draggable='false')
             .value-prop-header One-stop shop
             .value-prop-subheader All of your creative needs met 
 
-          .value-prop
+          .value-prop.animate--on-scroll.animation--blur.animation--up
             img.icon(src='source/images/icon-handshake.svg' draggable='false')
             .value-prop-header Long-term partner
             .value-prop-subheader You winning is us winning
 
-          .value-prop.animate__animated.animate__fadeIn
+          .value-prop.animate--on-scroll.animation--blur.animation--up
             img.icon(src='source/images/icon-money-shield.svg' draggable='false')
             .value-prop-header Layoff-proof 
             .value-prop-subheader More output, not headcount 
@@ -135,17 +141,17 @@ html(lang='en-US')
           .header Your fast track to great design.
 
         .the-plan-steps
-          .the-plan-step
+          .the-plan-step.animate--on-scroll.animation--blur.animation--up
             .the-plan-number 1
             .the-plan-header Subscribe
             .the-plan-body Getting started takes a matter of minutes. Get connected to Slack.
 
-          .the-plan-step
+          .the-plan-step.animate--on-scroll.animation--blur.animation--up
             .the-plan-number 2
             .the-plan-header Kickoff
             .the-plan-body Kick off our first project together. We’ll use Airtable for project management.
 
-          .the-plan-step
+          .the-plan-step.animate--on-scroll.animation--blur.animation--up
             .the-plan-number 3
             .the-plan-header Deliver
             .the-plan-body In days you’ll see the designs in Figma. Leave feedback or send your next brief. 
@@ -163,7 +169,7 @@ html(lang='en-US')
           .header How might your team benefit?
 
         .services
-          .service
+          .service.animate--on-scroll.animation--blur.animation--up
             img.icon(src='source/images/icon-launch.svg' draggable='false')
             .service-header Branding &amp; <br>Website Launch
             .service-time.text-extra-subtle Avg length 2-3 months
@@ -173,7 +179,7 @@ html(lang='en-US')
             .service-list-item Website design
             .service-list-item Webflow build
 
-          .service
+          .service.animate--on-scroll.animation--blur.animation--up
             img.icon(src='source/images/icon-mountaintop.svg' draggable='false')
             .service-header Minimal Viable <br>Product Design
             .service-time Avg length 3-4 months
@@ -183,7 +189,7 @@ html(lang='en-US')
             .service-list-item Hi-fi prototypes
             .service-list-item New design system
 
-          .service
+          .service.animate--on-scroll.animation--blur.animation--up
             img.icon(src='source/images/icon-ui-design-system.svg' draggable='false')
             .service-header Product Design <br>Team Support
             .service-time Avg length 12+ months
@@ -205,7 +211,7 @@ html(lang='en-US')
           .super-header The ♡ we get
           .header Join 70+ happy clients
         .social-proof
-          .quote
+          .quote.animate--on-scroll.animation--blur.animation--up
             p.quotation-mark &ldquo;
             p.quote-body Go Time is a <u>true partner</u> to EngineIQ. Whether we need to slow down and really nail a tough UX problem or hustle and get something hairy done overnight, you can count on Go Time’s speed &amp; quality.
             a.person(href='https://www.linkedin.com/in/ssshah0624/' target='_blank')
@@ -214,7 +220,7 @@ html(lang='en-US')
                 p.name Sunny Shah
                 p.job-title CEO &amp; Co-Founder
 
-          .quote
+          .quote.animate--on-scroll.animation--blur.animation--up
             p.quotation-mark &ldquo;
             p.quote-body The <u>efficiency & accuracy</u> of Go Time HQ’s work continues to blow me away. Whether it’s designing landing pages, logos, mobile apps, you name it—Go Time <u>handles everything</u>.
             a.person(href='https://www.linkedin.com/in/anebiagbo/' target='_blank')
@@ -223,7 +229,7 @@ html(lang='en-US')
                 p.name Anebi Agbo
                 p.job-title Founder & CEO
 
-          .quote
+          .quote.animate--on-scroll.animation--blur.animation--up
             p.quotation-mark &ldquo;
             p.quote-body Effective collaboration enabled us to <u>develop and iterate rapidly</u>! We initially used the Go Time team for UI/UX, but they also handled our entire rebrand!
             a.person(href='https://www.linkedin.com/in/borislippeveld/' target='_blank')
@@ -232,7 +238,7 @@ html(lang='en-US')
                 p.name Boris Lippeveld
                 p.job-title CTO &amp; Co-founder
 
-          .quote
+          .quote.animate--on-scroll.animation--blur.animation--up
             p.quotation-mark &ldquo;
             p.quote-body Go Time <u>gets founders</u>. Working with other designers has taken many iterations to get what we needed. I was <u>BLOWN AWAY</u> by how quickly Go Time understood my ideas and delivered great work.
             a.person(href='https://www.linkedin.com/in/emmanuelbamfo/' target='_blank')
@@ -241,7 +247,7 @@ html(lang='en-US')
                 p.name Manny Bamfo
                 p.job-title Founder
 
-          .quote
+          .quote.animate--on-scroll.animation--blur.animation--up
             p.quotation-mark &ldquo;
             p.quote-body These designs are <u>SO EXCITING</u>. The team has been so impressed with the quality delivered in the short time frames. Seriously impressive!
             a.person(href='https://www.linkedin.com/in/shivaunanderberg/' target='_blank')
@@ -250,7 +256,7 @@ html(lang='en-US')
                 p.name Dr. Shivaun Anderberg
                 p.job-title Director of Insights and Analytics
         
-          .quote
+          .quote.animate--on-scroll.animation--blur.animation--up
             p.quotation-mark &ldquo;
             p.quote-body Not only do they handle every project with an <u>immense amount of enthusiasm</u>, but Go Time brings a unique perspective to every client and project they work on. <u>You’ll be lucky to work together</u> given the chance.
             a.person(href="https://www.linkedin.com/in/kylerphillips/" target='_blank')
@@ -312,7 +318,7 @@ html(lang='en-US')
           .header FAQs
 
         .faqs
-          .faq-wrapper
+          .faq-wrapper.animate--on-scroll.animation--right
             .faq 
               input(type='checkbox')#faq-1
               label(for='faq-1').faq-question 
@@ -322,7 +328,7 @@ html(lang='en-US')
                 p When you’re ready for a full-power Design Subscription it costs a flat rate of $8,000 per month. Considering the median total compensation for product designers is $151,980, after health insurance, benefits, and taxes that’s $16,781 per month. With Go Time you’re saving a lot of moolah. 
                 p We also offer Design On-Demand. This is how even the most cash-strapped startups can access great design. Don’t hesitate to reach out! If it’s a good fit, we’re going to find a way to work together, even if it means paring down the scope (but NEVER paring down the quality!).
 
-          .faq-wrapper
+          .faq-wrapper.animate--on-scroll.animation--right
             .faq 
               input(type='checkbox')#faq-2
               label(for='faq-2').faq-question 
@@ -331,7 +337,7 @@ html(lang='en-US')
               .faq-answer
                 p We know you’re used to thinking in hours. But worrying about billable hours creates organizational deadweight. Instead, think of results. When you’re subscribed you’re getting designs delivered in 2-4 days. When you’re getting design on-demand, you’re experiencing similar speed and the same quality.
 
-          .faq-wrapper
+          .faq-wrapper.animate--on-scroll.animation--right
             .faq 
               input(type='checkbox')#faq-3
               label(for='faq-3').faq-question 
@@ -340,7 +346,7 @@ html(lang='en-US')
               .faq-answer
                 p Well, it depends. There are a lot of variables that come into play. One of the biggest is how long it takes to gather feedback on the designs. Very decisive teams move very quickly. More contemplative teams can to longer. Everyone moves at their own pace, and that’s quite alright!
 
-          .faq-wrapper
+          .faq-wrapper.animate--on-scroll.animation--right
             .faq 
               input(type='checkbox')#faq-4
               label(for='faq-4').faq-question 
@@ -349,7 +355,7 @@ html(lang='en-US')
               .faq-answer
                 p One. At Go Time you’re not getting design work outsourced. You get a dedicated, hands on designer working with your team. That same person is also going to be your go-to person for communication and updates.
 
-          .faq-wrapper
+          .faq-wrapper.animate--on-scroll.animation--right
             .faq 
               input(type='checkbox')#faq-6
               label(for='faq-6').faq-question 
@@ -358,7 +364,7 @@ html(lang='en-US')
               .faq-answer
                 p No. Go Time is founded in the USA and all of its designers are based there too. A lot of similar looking design studios will outsource overseas to save some money. With Go Time you’re getting access to world-class, onshore talent.
 
-          .faq-wrapper
+          .faq-wrapper.animate--on-scroll.animation--right
             .faq 
               input(type='checkbox')#faq-5
               label(for='faq-5').faq-question 
@@ -379,66 +385,65 @@ html(lang='en-US')
       .images-hi-res
 
         //- Farms 2 Friends onboarding
-        img(src='source/images/design-hi-res-15.jpg' srcset='source/images/design-hi-res-15@2x.jpg 2x' draggable='false' loading='lazy')
+        img.animate--on-scroll.animation--blur(src='source/images/design-hi-res-15.jpg' srcset='source/images/design-hi-res-15@2x.jpg 2x' draggable='false' loading='lazy')
 
         //- Farms 2 Friends checkout
-        img(src='source/images/design-hi-res-16.jpg' srcset='source/images/design-hi-res-16@2x.jpg 2x' draggable='false' loading='lazy')
+        img.animate--on-scroll.animation--blur(src='source/images/design-hi-res-16.jpg' srcset='source/images/design-hi-res-16@2x.jpg 2x' draggable='false' loading='lazy')
 
         //- Farms 2 Friends market
-        img(src='source/images/design-hi-res-05.jpg' srcset='source/images/design-hi-res-05@2x.jpg 2x' draggable='false' loading='lazy')
+        img.animate--on-scroll.animation--blur(src='source/images/design-hi-res-05.jpg' srcset='source/images/design-hi-res-05@2x.jpg 2x' draggable='false' loading='lazy')
 
         //- Farms 2 Friends products
-        img(src='source/images/design-hi-res-06.jpg' srcset='source/images/design-hi-res-06@2x.jpg 2x' draggable='false' loading='lazy')
+        img.animate--on-scroll.animation--blur(src='source/images/design-hi-res-06.jpg' srcset='source/images/design-hi-res-06@2x.jpg 2x' draggable='false' loading='lazy')
 
 
 
         //- Vacayou destination
-        img(src='source/images/design-hi-res-09.jpg' srcset='source/images/design-hi-res-09@2x.jpg 2x' draggable='false' loading='lazy')
+        img.animate--on-scroll.animation--blur(src='source/images/design-hi-res-09.jpg' srcset='source/images/design-hi-res-09@2x.jpg 2x' draggable='false' loading='lazy')
 
         //- Vacayou app
-        img(src='source/images/design-hi-res-10.jpg' srcset='source/images/design-hi-res-10@2x.jpg 2x' draggable='false' loading='lazy')
+        img.animate--on-scroll.animation--blur(src='source/images/design-hi-res-10.jpg' srcset='source/images/design-hi-res-10@2x.jpg 2x' draggable='false' loading='lazy')
 
         //- Vacayou lightbox
-        img(src='source/images/design-hi-res-11.jpg' srcset='source/images/design-hi-res-11@2x.jpg 2x' draggable='false' loading='lazy')
+        img.animate--on-scroll.animation--blur(src='source/images/design-hi-res-11.jpg' srcset='source/images/design-hi-res-11@2x.jpg 2x' draggable='false' loading='lazy')
 
         //- Vacayou checkout
-        img(src='source/images/design-hi-res-12.jpg' srcset='source/images/design-hi-res-12@2x.jpg 2x' draggable='false' loading='lazy')
+        img.animate--on-scroll.animation--blur(src='source/images/design-hi-res-12.jpg' srcset='source/images/design-hi-res-12@2x.jpg 2x' draggable='false' loading='lazy')
 
 
 
         //- Aterio report
-        img(src='source/images/design-hi-res-13.jpg' srcset='source/images/design-hi-res-13@2x.jpg 2x' draggable='false' loading='lazy')
+        img.animate--on-scroll.animation--blur(src='source/images/design-hi-res-13.jpg' srcset='source/images/design-hi-res-13@2x.jpg 2x' draggable='false' loading='lazy')
 
         //- Aterio app
-        img(src='source/images/design-hi-res-14.jpg' srcset='source/images/design-hi-res-14@2x.jpg 2x' draggable='false' loading='lazy')
+        img.animate--on-scroll.animation--blur(src='source/images/design-hi-res-14.jpg' srcset='source/images/design-hi-res-14@2x.jpg 2x' draggable='false' loading='lazy')
 
         //- Aterio map
-        img(src='source/images/design-hi-res-07.jpg' srcset='source/images/design-hi-res-07@2x.jpg 2x' draggable='false' loading='lazy')
+        img.animate--on-scroll.animation--blur(src='source/images/design-hi-res-07.jpg' srcset='source/images/design-hi-res-07@2x.jpg 2x' draggable='false' loading='lazy')
 
         //- Aterio website
-        img(src='source/images/design-hi-res-08.jpg' srcset='source/images/design-hi-res-08@2x.jpg 2x' draggable='false' loading='lazy')
+        img.animate--on-scroll.animation--blur(src='source/images/design-hi-res-08.jpg' srcset='source/images/design-hi-res-08@2x.jpg 2x' draggable='false' loading='lazy')
 
 
 
         //- XtraMath website
-        img(src='source/images/design-hi-res-18.jpg' srcset='source/images/design-hi-res-18@2x.jpg 2x' draggable='false' loading='lazy')
+        img.animate--on-scroll.animation--blur(src='source/images/design-hi-res-18.jpg' srcset='source/images/design-hi-res-18@2x.jpg 2x' draggable='false' loading='lazy')
 
         //- Hiji mobile
-        img(src='source/images/design-hi-res-01.jpg' srcset='source/images/design-hi-res-01@2x.jpg 2x' draggable='false' loading='lazy')
+        img.animate--on-scroll.animation--blur(src='source/images/design-hi-res-01.jpg' srcset='source/images/design-hi-res-01@2x.jpg 2x' draggable='false' loading='lazy')
 
         //- Emplifi logo
-        img(src='source/images/design-hi-res-02.jpg' srcset='source/images/design-hi-res-02@2x.jpg 2x' draggable='false' loading='lazy')
+        img.animate--on-scroll.animation--blur(src='source/images/design-hi-res-02.jpg' srcset='source/images/design-hi-res-02@2x.jpg 2x' draggable='false' loading='lazy')
 
         //- Riskline microsite
-        img(src='source/images/design-hi-res-03.jpg' srcset='source/images/design-hi-res-03@2x.jpg 2x' draggable='false' loading='lazy')
+        img.animate--on-scroll.animation--blur(src='source/images/design-hi-res-03.jpg' srcset='source/images/design-hi-res-03@2x.jpg 2x' draggable='false' loading='lazy')
 
         //- Umani logo
-        img(src='source/images/design-hi-res-17.jpg' srcset='source/images/design-hi-res-17@2x.jpg 2x' draggable='false' loading='lazy')
+        img.animate--on-scroll.animation--blur(src='source/images/design-hi-res-17.jpg' srcset='source/images/design-hi-res-17@2x.jpg 2x' draggable='false' loading='lazy')
 
         //- Umani shirt
-        img(src='source/images/design-hi-res-04.jpg' srcset='source/images/design-hi-res-04@2x.jpg 2x' draggable='false' loading='lazy')
+        img.animate--on-scroll.animation--blur(src='source/images/design-hi-res-04.jpg' srcset='source/images/design-hi-res-04@2x.jpg 2x' draggable='false' loading='lazy')
 
       include components/cta.pug
       include components/footer.pug
-
-    //- script(src=/source/script.js)
+      script(src='/source/scripts.js' async)

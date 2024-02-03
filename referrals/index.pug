@@ -29,23 +29,23 @@ html(lang='en-US')
   body.page.subpage.page-referrals
     include /source/components/nav.pug
     .layout-with-sticky-image
-      .layout-header
+      .layout-header.animate--on-scroll.animation--blur.animation--right
         h1.header Refer a client <span class='text-highlight'>&amp; earn $1,600 instantly&nbsp;</span>
         p Plus earn 10% of Go Time’s monthly fee for each additional month up to one year. That’s $10,400 for referring a single client—a nice chunk of change. Download our one-pager and share.
         a.button.mt0.mb1(href='/one-pager' data-sa-link-event='download_one_pager' target='_blank') Download One-Pager
 
-        .layout-visuals.layout-mobile
+        .layout-visuals.layout-mobile.animate--on-scroll.animation--blur.animation--left
           img.image-with-border(src='/source/images/photo-benjamin.jpg' srcset='/source/images/photo-benjamin@2x.jpg 2x' draggable='false')
 
-        .mt3
+        .mt3.animate--on-scroll.animation--blur.animation--right
           h4.mb0 What if I’m your new client?
           p If this is your first time working with us, yes! Let’s pass on those sweet savings to you! (So long as we’re not paying someone a referral for you.)
 
-        .mt3
+        .mt3.animate--on-scroll.animation--blur.animation--right
           h4.mb0 What if I want to pass the savings to my referral?
           p By all means! We’re happy to apply it to their subscription instead.
 
-        .mt3
+        .mt3.animate--on-scroll.animation--blur.animation--right
           h4.mb0 Terms &amp; conditions
           ul.fs0.text-default
             li.mb0 ☑ Valid for new clients only
@@ -57,7 +57,7 @@ html(lang='en-US')
             li.mb0 ☑ Offer subject to change or end at any time
             li.mb0 ☑ Payments end when the referred client ends the subscription or after 12 months, whichever comes first 
 
-      .layout-visuals.layout-desktop
+      .layout-visuals.layout-desktop.animate--on-scroll.animation--blur.animation--left
         img.image-with-border.image-sticky(src='/source/images/photo-benjamin.jpg' srcset='/source/images/photo-benjamin@2x.jpg 2x' draggable='false')
 
     include /source/components/footer.pug
