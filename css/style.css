@@ -1023,6 +1023,10 @@ h1 u {
     .homepage .hero .visuals .photo-hero-1 {
       display: none; } }
 
+@media (max-width: 500px) {
+  .homepage .hero {
+    padding-top: 18px; } }
+
 .homepage .value-props-section, .homepage .the-plan-section, .homepage .social-proof-section, .homepage .services-section, .homepage .faq-section, .homepage .projects-section, .homepage .case-studies-section, .homepage .section-portfolio {
   margin: 200px 76px; }
 
