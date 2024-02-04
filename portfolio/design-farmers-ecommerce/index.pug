@@ -1,0 +1,26 @@
+html(lang='en-US')
+  head
+    include /source/components/head.pug
+    include /source/components/meta-tags.pug
+    include /source/components/google-analytics.pug
+
+  body.page-portfolio-piece.page-portfolio--farms.layout-centered
+    include /source/components/nav.pug
+    include /source/components/portfolio-piece.pug
+
+    .hero.ma3.mb0.pl0.pr0.tc
+      a(href="/portfolio") 
+        h5 Portfolio
+      h2.header Go Time helped farmers <span class='text-highlight'>sell directly to consumers</span>
+
+      p Farmers need a direct line to customers and that’s exactly what Farms 2 Friends provides. Go Time designed the brand identity and the e-commerce experience on web and mobile.
+    
+    +portfolioPieceImg('portfolio-farms-01')
+    +portfolioPieceImg('portfolio-farms-02')
+    +portfolioPieceImg('portfolio-farms-05')
+    +portfolioPieceImg('portfolio-farms-06')
+    +portfolioPieceImg('portfolio-farms-07')
+    +portfolioPieceImg('portfolio-farms-08')
+
+    include /source/components/cta.pug
+    include /source/components/footer.pug

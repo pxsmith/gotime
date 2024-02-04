@@ -1,0 +1,27 @@
+html(lang='en-US')
+  head
+    include /source/components/head.pug
+    include /source/components/meta-tags.pug
+    include /source/components/google-analytics.pug
+
+  body.page-portfolio-piece.layout-centered
+    include /source/components/nav.pug
+    include /source/components/portfolio-piece.pug
+
+    .hero.ma3.mb0.pl0.pr0.tc
+      a(href="/portfolio") 
+        h5 Portfolio
+      h2.header Go Time helped EngineIQ start building their MVP in <span class='text-highlight'>less than 7 days</span>
+
+      p Like many early-stage startups, EngineIQ could see their runway approaching. With Go Time’s design subscription, their engineers started building the MVP in less than a week. Every 2-4 business days you will be getting new designs delivered. Go Time branded EngineIQ.
+    
+    +portfolioPieceImg('portfolio-engineiq-01')
+    +portfolioPieceImg('portfolio-engineiq-02')
+    +portfolioPieceImg('portfolio-engineiq-03')
+    +portfolioPieceImg('portfolio-engineiq-04')
+    +portfolioPieceImg('portfolio-engineiq-05')
+    +portfolioPieceImg('portfolio-engineiq-06')
+    +portfolioPieceImg('portfolio-engineiq-07')
+
+    include /source/components/cta.pug
+    include /source/components/footer.pug

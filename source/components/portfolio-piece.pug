@@ -1,0 +1,6 @@
+link(rel='stylesheet' href='/source/components/portfolio-piece.css' preload)
+
+mixin portfolioPieceImg(imgSrc, captionText)
+  figure.portfolio-piece.df.animate--on-scroll.animation--blur.animation--up
+    img.portfolio-piece-img(src='/source/images/'+imgSrc+'.jpg' srcset='/source/images/'+imgSrc+'@2x.jpg 2x' draggable='false' loading='lazy')
+    figcaption.tc.text-subtle= captionText

@@ -34,6 +34,84 @@
 
 
 
+
+// PORTFOLIO 🎨 🎨 🎨 🎨 🎨 🎨 🎨
+
+.layout-centered
+  .hero
+    margin: $s0--18
+    padding-left: $s0--18
+    padding-right: $s0--18
+    text-align: center
+    max-width: 58rem
+    margin-left: auto
+    margin-right: auto
+
+    p
+      margin: auto
+      margin-top: $s0--18
+      max-width: 75ch
+
+    p:last-of-type
+      margin-bottom: $s3--76
+
+  .header
+    line-height: 1.05em
+
+  a img
+    width: 100%
+
+@media (max-width: 768px)
+  .layout-centered
+    .hero
+      margin-top: $s2--47
+      text-align: left
+
+      p
+        margin-top: $s0--18
+
+      p:last-of-type
+        margin-bottom: $s2--47
+
+// .case-studies-section
+//   margin: $s3--76
+
+//   .header-group
+//     margin-bottom: $s1--29
+
+//   .case-studies
+//     display: grid
+//     grid-template-columns: repeat(3, minmax(0, 1fr))
+//     gap: $s2--47
+
+//   .case-study-thumbnail img
+//     width: 100%
+
+//   .case-study-header
+//     display: flex
+//     flex-grow: 1
+//     @extend h4
+//     padding-top: $s0--18
+//     padding-bottom: $s0--18
+
+//   .case-study-body
+//     @extend h5
+
+@media (max-width: 768px)
+  .case-studies-section 
+    .case-studies
+      grid-template-columns: repeat(1, minmax(0, 1fr))
+
+
+@media (max-width: 1080px)
+  .case-studies-section
+    margin: $s2--47 $s0--18
+
+
+
+
+
+
 // MEDIA
 .image-sticky
   position: -webkit-sticky

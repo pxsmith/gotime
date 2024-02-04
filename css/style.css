@@ -733,6 +733,10 @@ h1 u {
 .ac-space-around {
   align-content: space-around; }
 
+.margin-auto {
+  margin-left: auto;
+  margin-right: auto; }
+
 .layout-with-sticky-image {
   padding: 76px;
   display: grid;
@@ -756,6 +760,44 @@ h1 u {
       display: block; }
     .layout-with-sticky-image .layout-visuals.layout-desktop {
       display: none; } }
+
+.layout-centered .hero {
+  margin: 18px;
+  padding-left: 18px;
+  padding-right: 18px;
+  text-align: center;
+  max-width: 58rem;
+  margin-left: auto;
+  margin-right: auto; }
+  .layout-centered .hero p, .layout-centered .hero .homepage .projects-section .project-body, .homepage .projects-section .layout-centered .hero .project-body, .layout-centered .hero .homepage .the-plan-section .the-plan-body, .homepage .the-plan-section .layout-centered .hero .the-plan-body {
+    margin: auto;
+    margin-top: 18px;
+    max-width: 75ch; }
+  .layout-centered .hero p:last-of-type, .layout-centered .hero .homepage .projects-section .project-body:last-of-type, .homepage .projects-section .layout-centered .hero .project-body:last-of-type, .layout-centered .hero .homepage .the-plan-section .the-plan-body:last-of-type, .homepage .the-plan-section .layout-centered .hero .the-plan-body:last-of-type {
+    margin-bottom: 76px; }
+
+.layout-centered .header {
+  line-height: 1.05em; }
+
+.layout-centered a img {
+  width: 100%; }
+
+@media (max-width: 768px) {
+  .layout-centered .hero {
+    margin-top: 47px;
+    text-align: left; }
+    .layout-centered .hero p, .layout-centered .hero .homepage .projects-section .project-body, .homepage .projects-section .layout-centered .hero .project-body, .layout-centered .hero .homepage .the-plan-section .the-plan-body, .homepage .the-plan-section .layout-centered .hero .the-plan-body {
+      margin-top: 18px; }
+    .layout-centered .hero p:last-of-type, .layout-centered .hero .homepage .projects-section .project-body:last-of-type, .homepage .projects-section .layout-centered .hero .project-body:last-of-type, .layout-centered .hero .homepage .the-plan-section .the-plan-body:last-of-type, .homepage .the-plan-section .layout-centered .hero .the-plan-body:last-of-type {
+      margin-bottom: 47px; } }
+
+@media (max-width: 768px) {
+  .case-studies-section .case-studies {
+    grid-template-columns: repeat(1, minmax(0, 1fr)); } }
+
+@media (max-width: 1080px) {
+  .case-studies-section {
+    margin: 47px 18px; } }
 
 .image-sticky {
   position: -webkit-sticky;
@@ -894,8 +936,7 @@ h1 u {
   opacity: 0; }
 
 .homepage .hero {
-  padding-top: 47px;
-  padding-bottom: 47px; }
+  padding-top: 76px; }
   .homepage .hero .copy {
     padding-left: 76px;
     padding-right: 76px; }
@@ -982,16 +1023,16 @@ h1 u {
     .homepage .hero .visuals .photo-hero-1 {
       display: none; } }
 
-.homepage .value-props-section, .homepage .the-plan-section, .homepage .social-proof-section, .homepage .services-section, .homepage .faq-section, .homepage .projects-section, .homepage .case-studies-section {
+.homepage .value-props-section, .homepage .the-plan-section, .homepage .social-proof-section, .homepage .services-section, .homepage .faq-section, .homepage .projects-section, .homepage .case-studies-section, .homepage .section-portfolio {
   margin: 200px 76px; }
 
 @media (max-width: 1080px) {
-  .homepage .value-props-section, .homepage .the-plan-section, .homepage .social-proof-section, .homepage .services-section, .homepage .faq-section, .homepage .projects-section, .homepage .case-studies-section {
+  .homepage .value-props-section, .homepage .the-plan-section, .homepage .social-proof-section, .homepage .services-section, .homepage .faq-section, .homepage .projects-section, .homepage .case-studies-section, .homepage .section-portfolio {
     margin: 76px 47px;
     margin-bottom: 123px; } }
 
 @media (max-width: 768px) {
-  .homepage .value-props-section, .homepage .the-plan-section, .homepage .social-proof-section, .homepage .services-section, .homepage .faq-section, .homepage .projects-section, .homepage .case-studies-section {
+  .homepage .value-props-section, .homepage .the-plan-section, .homepage .social-proof-section, .homepage .services-section, .homepage .faq-section, .homepage .projects-section, .homepage .case-studies-section, .homepage .section-portfolio {
     margin: 76px 29px;
     margin-bottom: 123px; } }
 
@@ -1007,7 +1048,6 @@ h1 u {
     margin-bottom: 47px; } }
 
 .homepage .value-props-section {
-  margin-top: -76px;
   padding-bottom: 76px; }
   .homepage .value-props-section .value-prop-header {
     margin-bottom: 11px; }
@@ -1401,6 +1441,26 @@ section.design-collage {
   section.design-collage .header {
     color: transparent;
     -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5); }
+
+.section-portfolio {
+  display: grid;
+  column-gap: 76px;
+  row-gap: 76px;
+  grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+@media (max-width: 1000px) {
+  .section-portfolio {
+    grid-template-columns: repeat(1, minmax(0, 1fr)); } }
+
+.portfolio-thumbnail img {
+  max-width: 100%;
+  max-height: 100%;
+  transition: all 0.5s ease-in-out; }
+  .portfolio-thumbnail img:hover {
+    outline: 2px solid white; }
+
+.page-portfolio--farms .portfolio-thumbnail img:nth-of-type(1) {
+  width: 50%; }
 
 body {
   cursor: url("/source/images/cursor-hand.svg"), auto; }

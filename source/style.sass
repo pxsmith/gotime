@@ -5,8 +5,8 @@
 // HERO COPY
 
 .homepage .hero
-  padding-top: $s2--47
-  padding-bottom: $s2--47
+  padding-top: $s3--76
+  // margin-bottom: - $s3--76
 
   .copy
     padding-left: $s3--76
@@ -50,6 +50,11 @@
 
     .label
       color: white
+
+
+
+
+
 
 
 // HERO VISUALS 🦸‍♂️ 🦸‍♂️ 🦸‍♂️ 🦸‍♂️ 🦸‍♂️ 🦸‍♂️ 🦸‍♂️
@@ -121,21 +126,24 @@
 
 
 
+
+
+
 // GENERAL LAYOUT / STYLING 💅 💅 💅 💅 💅 💅 💅
 
 .homepage 
-  & .value-props-section, .the-plan-section, .social-proof-section, .services-section, .faq-section, .projects-section, .case-studies-section
+  & .value-props-section, .the-plan-section, .social-proof-section, .services-section, .faq-section, .projects-section, .case-studies-section, .section-portfolio
     margin: $s5--200 $s3--76 
 
 @media (max-width: 1080px)
   .homepage 
-    & .value-props-section, .the-plan-section, .social-proof-section, .services-section, .faq-section, .projects-section, .case-studies-section
+    & .value-props-section, .the-plan-section, .social-proof-section, .services-section, .faq-section, .projects-section, .case-studies-section, .section-portfolio
       margin: $s3--76 $s2--47
       margin-bottom: $s4--123
 
 @media (max-width: 768px)
   .homepage 
-    & .value-props-section, .the-plan-section, .social-proof-section, .services-section, .faq-section, .projects-section, .case-studies-section
+    & .value-props-section, .the-plan-section, .social-proof-section, .services-section, .faq-section, .projects-section, .case-studies-section, .section-portfolio
       margin: $s3--76 $s1--29
       margin-bottom: $s4--123
 
@@ -171,7 +179,7 @@
 // VALUE PROPS ✨ ✨ ✨ ✨ ✨ ✨ ✨
 
 .homepage .value-props-section
-  margin-top: - $s3--76
+  // margin-top: - $s3--76
   padding-bottom: $s3--76
 
   .value-prop-header
@@ -450,7 +458,12 @@
 
 
 
-// Case Studies 📚 📚 📚 📚 📚 📚 📚
+
+
+
+
+
+// CASE STUDIES 📚 📚 📚 📚 📚 📚 📚
 
 .page-case-study
   .hero
@@ -488,8 +501,6 @@
       p:last-of-type
         margin-bottom: $s2--47
 
-
-
 .case-studies-section
   margin: $s3--76
 
@@ -524,10 +535,6 @@
   .case-studies-section
     margin: $s2--47 $s0--18
 
-// @media (max-width: 768px)
-//   .layout-common-margin
-//     margin: $s3--76 $s1--29
-//     margin-bottom: $s4--123
 
 
 
@@ -543,6 +550,8 @@
   .page-referrals
     .layout-header .header
       font-size: $s3--76
+
+
 
 
 
@@ -616,6 +625,8 @@
 
 
 
+
+
 // WORK SAMPLES 🎨 🎨 🎨 🎨 🎨 🎨 🎨
 
 .homepage .recent-work
@@ -669,8 +680,6 @@
   section.design-collage .row :last-of-type
     display: none
 
-
-
 @media (min-width: 450px)
   .homepage .recent-work
     @include b
@@ -703,7 +712,6 @@
     .thumbnail, .header
       width: 450px
 
-
 @media (min-width: 1300px)
   .homepage .recent-work
     max-width: 1304px
@@ -713,6 +721,7 @@
 
     .thumbnail
       width: 350px
+
 
 
 
@@ -754,12 +763,42 @@ section.design-collage
 
 
 
+// PORTFOLIO HOMEPAGE
+.section-portfolio
+  display: grid
+  column-gap: $s3--76
+  row-gap: $s3--76
+  grid-template-columns: repeat(2, minmax(0, 1fr))
+
+@media (max-width: 1000px)
+  .section-portfolio
+    grid-template-columns: repeat(1, minmax(0, 1fr))
+
+.portfolio-thumbnail img
+  max-width: 100%
+  max-height: 100%
+  transition: all 0.5s ease-in-out
+  &:hover
+    outline: 2px solid white
+
+.page-portfolio--farms
+  .portfolio-thumbnail img:nth-of-type(1)
+    width: 50%
+
+
+
+
 // CURSOR
 
 body
   cursor: url('/source/images/cursor-hand.svg'), auto
 a, a:hover, label
   cursor: url('/source/images/cursor-point.svg'), auto
+
+
+
+
+
 
 
 // HOVER ANIMATIONS
@@ -784,6 +823,7 @@ a.button:hover
 
 a:hover
   transition: 200ms ease-in 
+
 
 
 

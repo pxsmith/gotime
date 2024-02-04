@@ -1,0 +1,27 @@
+html(lang='en-US')
+  head
+    include /source/components/head.pug
+    include /source/components/meta-tags.pug
+    include /source/components/google-analytics.pug
+
+  body.page-portfolio-piece.layout-centered
+    include /source/components/nav.pug
+    include /source/components/portfolio-piece.pug
+
+    .hero.ma3.mb0.pl0.pr0.tc
+      a(href="/portfolio") 
+        h5 Portfolio
+      h2.header Go Time helped Riskine’s <span class='text-highlight'>product, marketing, and sales teams</span>
+
+      p The beauty of Go Time’s design subscription is the flexibility, which <u><a href='https://riskline.com' target='_blank'>Riskline</a></u> took full advantage of. It started with a web app redesign for product. Marketing &amp; sales joined the fun too: email redesigns, prototypes for high stakes sales demos, microsites, lead generators, and more. 
+    
+    +portfolioPieceImg('portfolio-riskline-01')
+    +portfolioPieceImg('portfolio-riskline-02')
+    +portfolioPieceImg('portfolio-riskline-03')
+    +portfolioPieceImg('portfolio-riskline-04')
+    +portfolioPieceImg('portfolio-riskline-05')
+    +portfolioPieceImg('portfolio-riskline-06')
+    +portfolioPieceImg('portfolio-riskline-07')
+
+    include /source/components/cta.pug
+    include /source/components/footer.pug
