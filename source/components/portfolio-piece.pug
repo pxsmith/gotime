@@ -2,5 +2,11 @@ link(rel='stylesheet' href='/source/components/portfolio-piece.css' preload)
 
 mixin portfolioPieceImg(imgSrc, captionText)
   figure.portfolio-piece.df.animate--on-scroll.animation--blur.animation--up
-    img.portfolio-piece-img(src='/source/images/'+imgSrc+'.jpg' srcset='/source/images/'+imgSrc+'@2x.jpg 2x' draggable='false' loading='lazy')
+    img.portfolio-piece-img(src='/source/images/'+imgSrc+'.jpg' srcset='/source/images/'+imgSrc+'@2x.jpg 2x' draggable='false')
     figcaption.tc.text-subtle= captionText
+
+mixin portfolio-thumbnail(caption, url, imgSrc)
+  .portfolio-thumbnail.animate--on-scroll.animation--blur.animation--up
+    a(href=url)
+      img(src='/source/images/'+imgSrc+'.jpg' srcset='/source/images/'+imgSrc+'@2x.jpg 2x' draggable='false')
+      h4.mt-1= caption

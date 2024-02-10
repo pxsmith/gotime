@@ -11,6 +11,7 @@ html(lang='en-US')
 
     .page-wrapper
       include components/nav.pug
+      include /source/components/portfolio-piece.pug
 
       section.hero
         .copy.animate--on-scroll.animation--blur.animation--right
@@ -51,7 +52,7 @@ html(lang='en-US')
             .avatar
               h5.counter +70
 
-            h5.label.ml-1 happy clients
+            h5.label.ml-1 clients
 
         .visuals
           img.card.photo-hero-1.animate--on-scroll.animation--blur.animation--big-right(src="source/images/photo-hero-motorcycle.jpg" draggable='false')
@@ -64,16 +65,17 @@ html(lang='en-US')
 
 
 
-      mixin portfolio-thumbnail(caption, url, imgSrc)
-        .portfolio-thumbnail.animate--on-scroll.animation--blur.animation--up
-          a(href=url)
-            img(src='/source/images/'+imgSrc+'.jpg' srcset='/source/images/'+imgSrc+'@2x.jpg 2x' draggable='false' loading='lazy')
-            h4.mt-1= caption
+      //- mixin portfolio-thumbnail(caption, url, imgSrc)
+      //-   .portfolio-thumbnail.animate--on-scroll.animation--blur.animation--up
+      //-     a(href=url)
+      //-       img(src='/source/images/'+imgSrc+'.jpg' srcset='/source/images/'+imgSrc+'@2x.jpg 2x' draggable='false' loading='lazy')
+      //-       h4.mt-1= caption
 
       section.section-portfolio.mt0
         +portfolio-thumbnail('The World’s 1st Crypto Micro-Economy', '/portfolio/design-the-worlds-first-crypto-micro-economy', 'portfolio-near-06')
         +portfolio-thumbnail('Giving Farmers a Direct Connection to Customers', '/portfolio/design-farmers-ecommerce', 'portfolio-farms-06')
-        +portfolio-thumbnail('Fractional Design for Product, Marketing, and More', '/portfolio/fractional-design-for-product-marketing-and-more', 'portfolio-riskline-01')
+        +portfolio-thumbnail('Design System Gets a Construction App Building', '/portfolio/design-system-for-construction', 'portfolio-projexion-01')
+        //- +portfolio-thumbnail('Fractional Design for Product, Marketing, and More', '/portfolio/fractional-design-for-product-marketing-and-more', 'portfolio-riskline-01')
         +portfolio-thumbnail('Start Building MVP in Less Than 7 Days', '/portfolio/start-building-mvp-in-less-than-7-days', 'portfolio-engineiq-01')
 
 

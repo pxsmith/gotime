@@ -1,0 +1,26 @@
+html(lang='en-US')
+  head
+    include /source/components/head.pug
+    include /source/components/meta-tags.pug
+    include /source/components/google-analytics.pug
+
+  body.page-portfolio-piece.page-portfolio--projexion.layout-centered
+    include /source/components/nav.pug
+    include /source/components/portfolio-piece.pug
+
+    .hero.ma3.mb0.pl0.pr0.tc
+      a(href="/portfolio") 
+        h5 Portfolio
+      h2.header Design systems help<br><span class='text-highlight'>teams build faster</span>
+
+      p Go Time helped Projexion upgrade their product and upgrade it fast. <br> When done right, design systems are a powerful tool to scale with style.
+    
+    +portfolioPieceImg('portfolio-projexion-01')
+    +portfolioPieceImg('portfolio-projexion-02')
+    +portfolioPieceImg('portfolio-projexion-03')
+    +portfolioPieceImg('portfolio-projexion-04')
+    +portfolioPieceImg('portfolio-projexion-05')
+    +portfolioPieceImg('portfolio-projexion-06')
+
+    include /source/components/cta.pug
+    include /source/components/footer.pug
