@@ -1,6 +1,6 @@
 @charset "UTF-8";
 html, body, div, span, applet, object, iframe,
-h1, h2, .header-group .header, h3, .homepage .the-plan-section .the-plan-header, h4, .homepage .faq-section .faq-question, .case-studies-section .case-study-header, .pricing-section .price, .homepage .services-section .service-header, .homepage .value-props-section .value-prop-header, h5, .button-afterword, .case-studies-section .case-study-body, .homepage .services-section .service-time, h6, .pricing-section .tag, p, .homepage .the-plan-section .the-plan-body, blockquote, pre,
+h1, h2, .header-group .header, h3, .pricing-section .price-header, .homepage .the-plan-section .the-plan-header, h4, .homepage .faq-section .faq-question, .case-studies-section .case-study-header, .pricing-section .price, .homepage .services-section .service-header, .homepage .value-props-section .value-prop-header, h5, .button-afterword, .case-studies-section .case-study-body, .homepage .services-section .service-time, h6, .pricing-section .tag, p, .homepage .the-plan-section .the-plan-body, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -546,12 +546,12 @@ h2, .header-group .header {
   h2, .header-group .header {
     font-size: 47px; } }
 
-h3, .homepage .the-plan-section .the-plan-header {
+h3, .pricing-section .price-header, .homepage .the-plan-section .the-plan-header {
   font-size: 47px;
   font-family: "Covik_Sans-Bold"; }
 
 @media (max-width: 768px) {
-  h3, .homepage .the-plan-section .the-plan-header {
+  h3, .pricing-section .price-header, .homepage .the-plan-section .the-plan-header {
     font-size: 29px;
     color: white; } }
 
@@ -1244,6 +1244,28 @@ h1 u {
   position: absolute;
   top: -38px; }
 
+@media (max-width: 900px) {
+  .pricing-section .header-group {
+    margin-bottom: 76px; }
+  .pricing-section .price-header {
+    font-size: 29px; } }
+
+@media (max-width: 680px) {
+  .pricing-section .pricing-tiers {
+    gap: 18px; } }
+
+@media (max-width: 580px) {
+  .pricing-section .header-group {
+    margin-bottom: 29px; }
+  .pricing-section .pricing-tiers {
+    grid-template-columns: repeat(1, minmax(0, 1fr)); }
+  .pricing-section .tag {
+    position: static;
+    margin-top: 29px;
+    margin-bottom: 11px; }
+  .pricing-section .pricing-tier:nth-of-type(3) {
+    margin-top: 29px; } }
+
 .page-case-study .hero {
   margin: 18px;
   padding-left: 18px;
@@ -1369,7 +1391,7 @@ h1 u {
     align-items: center;
     justify-content: center;
     width: 100%; }
-    .homepage .recent-work .header h3, .homepage .recent-work .header .the-plan-section .the-plan-header, .homepage .the-plan-section .recent-work .header .the-plan-header, .homepage .recent-work .header p, .homepage .recent-work .header .the-plan-section .the-plan-body, .homepage .the-plan-section .recent-work .header .the-plan-body {
+    .homepage .recent-work .header h3, .homepage .recent-work .header .the-plan-section .the-plan-header, .homepage .the-plan-section .recent-work .header .the-plan-header, .homepage .recent-work .header .pricing-section .price-header, .pricing-section .homepage .recent-work .header .price-header, .homepage .recent-work .header p, .homepage .recent-work .header .the-plan-section .the-plan-body, .homepage .the-plan-section .recent-work .header .the-plan-body {
       width: 100%; }
   .homepage .recent-work .thumbnail {
     max-width: 100%;
