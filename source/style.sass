@@ -132,21 +132,24 @@
 
 
 
+
+
+
 // GENERAL LAYOUT / STYLING 💅 💅 💅 💅 💅 💅 💅
 
 .homepage 
-  & .value-props-section, .the-plan-section, .social-proof-section, .services-section, .faq-section, .projects-section, .case-studies-section, .section-portfolio
+  & .value-props-section, .the-plan-section, .social-proof-section, .services-section, .faq-section, .case-studies-section, .section-portfolio, .pricing-section
     margin: $s5--200 $s3--76 
 
 @media (max-width: 1080px)
   .homepage 
-    & .value-props-section, .the-plan-section, .social-proof-section, .services-section, .faq-section, .projects-section, .case-studies-section, .section-portfolio
+    & .value-props-section, .the-plan-section, .social-proof-section, .services-section, .faq-section, .case-studies-section, .section-portfolio, .pricing-section
       margin: $s3--76 $s2--47
       margin-bottom: $s4--123
 
 @media (max-width: 768px)
   .homepage 
-    & .value-props-section, .the-plan-section, .social-proof-section, .services-section, .faq-section, .projects-section, .case-studies-section, .section-portfolio
+    & .value-props-section, .the-plan-section, .social-proof-section, .services-section, .faq-section, .case-studies-section, .section-portfolio, .pricing-section
       margin: $s3--76 $s1--29
       margin-bottom: $s4--123
 
@@ -164,10 +167,12 @@
 .header-group
   margin-bottom: $s3--76
 
-@media (max-width: 1080px)
-  .homepage 
-    .header-group
-      // margin-bottom: $s2--47
+// @media (max-width: 1080px)
+//   .homepage 
+//     .header-group
+//       margin-bottom: $s2--47
+
+
 
 @media (max-width: 768px)
   .homepage 
@@ -231,20 +236,21 @@
     row-gap: $s3--76
 
   .the-plan-step
-    place-self: center
-    align-self: start
-    text-align: center
+    // place-self: center
+    // align-self: start
+    // text-align: center
 
   .the-plan-number
     @include f-mono-400-regular
-    font-size: $s6--323
-    -webkit-text-fill-color: transparent
-    -webkit-text-stroke-width: 1px
-    -webkit-text-stroke-color: $accent
+    font-size: $s5--200
+    // -webkit-text-fill-color: transparent
+    // -webkit-text-stroke-width: 1px
+    // -webkit-text-stroke-color: $accent
+    @extend .text-highlight
 
   .the-plan-header
     @extend h3
-    @extend .text-highlight
+    // @extend .text-highlight
     padding-bottom: $s0--18
     
   .the-plan-body
@@ -256,31 +262,45 @@
 
 @media (min-width: 1080px)
   .homepage .the-plan-section    
+
     .the-plan-steps
-      margin-top: - $s3--76
+      margin-top: - 80px
+
 
 @media (max-width: 1080px)
   .homepage .the-plan-section    
+    margin-bottom: $s5--200
+
+    .header-group
+      margin-bottom: 0
     .the-plan-number
       font-size: $s5--200
 
 @media (max-width: 768px)
   .homepage .the-plan-section
     .the-plan-steps
-      grid-template-columns: repeat(1, minmax(0, 1fr))
-      row-gap: 0
+      // grid-template-columns: repeat(1, minmax(0, 1fr))
+      column-gap: $s-1--11
+
+
+// @media (max-width: 480px)
+//   .homepage .section-the-plan
+//     .the-plan-steps
+//       row-gap: $s0--18
+
+//     .the-plan-number
+//       font-size: $s4--123
+
+
 
 @media (max-width: 480px)
-  .homepage .section-the-plan
+  .homepage .the-plan-section
     .the-plan-steps
-      row-gap: $s0--18
-
-    .the-plan-number
-      font-size: $s4--123
+      grid-template-columns: repeat(1, minmax(0, 1fr))
+      gap: 0
 
     .the-plan-body
       max-width: 100%
-
 
 
 
@@ -354,12 +374,6 @@
 
 
 
-
-
-
-
-
-
 // SERVICES 🛠️ 🛠️ 🛠️ 🛠️ 🛠️ 🛠️ 🛠️
 
 .homepage .services-section
@@ -367,7 +381,7 @@
   .services
     display: grid
     grid-template-columns: repeat(3, minmax(0, 1fr))
-    gap: $s4--123
+    gap: $s0--18
 
   .service
     display: flex
@@ -383,6 +397,7 @@
   .service-time
     @extend h5
     opacity: 0.65
+    margin-top:  - $s-1--11
 
   .service .icon
     width: 48px * 1.5
@@ -391,7 +406,8 @@
 
   .service-list-item
     line-height: 1.5em
-    @extend h5
+    margin-bottom: - $s-1--11
+    // @extend h5
     color: white
 
   .service-list-item:before
@@ -424,43 +440,31 @@
 
 
 
-// Projects 🖼️ 🖼️ 🖼️ 🖼️ 🖼️ 🖼️ 🖼️
-.homepage .projects-section
+// PRICING 💵 💵 💵 💵 💵 💵 💵
 
-  .projects
+.pricing-section
+  .price
+    @extend .text-highlight
+    @extend h4
+
+  .pricing-tiers
     display: grid
-    grid-template-columns: repeat(2, minmax(0, 1fr))
-    gap: $s3--76
+    grid-template-columns: repeat(3, minmax(0, 1fr))
+    gap: $s2--47
 
-  .project
-    // display: block
-    // padding-bottom: $s1--29
+  .price
+    line-height: 1.1em
 
-  .project-thumbnail
-
-    img
-      width: 100%
-
-  .project-header
-    display: flex
-    flex-grow: 1
-    @extend h3
-    padding-top: $s0--18
-    padding-bottom: $s0--18
-
-  .project-body
-    @extend p
-
-@media (max-width: 768px)
-  .homepage .projects-section 
-    .projects
-      grid-template-columns: repeat(1, minmax(0, 1fr))
-
-
-
-
-
-
+  .tag
+    display: inline-block
+    background: white
+    color: $dark
+    padding: $s-2--7 $s-1--11
+    text-transform: uppercase
+    position: absolute
+    top: -38px
+    @extend h6
+    // transform: rotate(-5deg)
 
 
 

@@ -56,7 +56,9 @@ html(lang='en-US')
 
         .visuals
           img.card.photo-hero-1.animate--on-scroll.animation--blur.animation--big-right(src="source/images/photo-hero-motorcycle.jpg" draggable='false')
+
           img.card.photo-hero-2.animate--on-scroll.animation--blur.animation--big-down(src="source/images/photo-hero-rocket.jpg" draggable='false')
+
           img.card.photo-hero-3.animate--on-scroll.animation--blur.animation--big-up(src="source/images/photo-hero-f1.jpg" draggable='false')
 
 
@@ -72,11 +74,15 @@ html(lang='en-US')
       //-       h4.mt-1= caption
 
       section.section-portfolio.mt0
-        +portfolio-thumbnail('The World’s 1st Crypto Micro-Economy', '/portfolio/design-the-worlds-first-crypto-micro-economy', 'portfolio-near-06')
-        +portfolio-thumbnail('Giving Farmers a Direct Connection to Customers', '/portfolio/design-farmers-ecommerce', 'portfolio-farms-06')
-        +portfolio-thumbnail('Design System Gets a SaaS Startup Building Fast', '/portfolio/design-system-for-construction', 'portfolio-projexion-01')
+        +portfolio-thumbnail('World’s 1st Crypto Micro-Economy', '/portfolio/design-the-worlds-first-crypto-micro-economy', 'portfolio-near-06')
+
+        +portfolio-thumbnail('Online Farmer’s Market ', '/portfolio/design-farmers-ecommerce', 'portfolio-farms-06')
+
+        +portfolio-thumbnail('Uber for Limousines', '/portfolio/start-building-mvp-in-less-than-7-days', 'portfolio-engineiq-01')
+
+        +portfolio-thumbnail('Construction SaaS Design System', '/portfolio/design-system-for-construction', 'portfolio-projexion-01')
+
         //- +portfolio-thumbnail('Fractional Design for Product, Marketing, and More', '/portfolio/fractional-design-for-product-marketing-and-more', 'portfolio-riskline-01')
-        +portfolio-thumbnail('Engineering Unblocked in Less Than 7 Days', '/portfolio/start-building-mvp-in-less-than-7-days', 'portfolio-engineiq-01')
 
 
 
@@ -114,8 +120,8 @@ html(lang='en-US')
 
       section.the-plan-section
         .header-group
-          .super-header See designs in under a week
-          .header Your fast track to great design.
+          .super-header Beautifully simple
+          .header Design in the fast lane.
 
         .the-plan-steps
           .the-plan-step.animate--on-scroll.animation--blur.animation--up
@@ -139,48 +145,45 @@ html(lang='en-US')
 
 
 
-
-      section.services-section
+      section.pricing-section
         .header-group
-          .super-header Possible timelines
-          .header How might your team benefit?
+          .super-header The numbers
+          .header Simple &amp; clear pricing 
 
-        .services
-          .service.animate--on-scroll.animation--blur.animation--up
-            img.icon(src='source/images/icon-launch.svg' draggable='false')
-            .service-header Branding &amp; <br>Website Launch
-            .service-time.text-extra-subtle Avg length 2-3 months
-            .service-list-item Brand identity 
-            .service-list-item Creative direction
-            .service-list-item Brand guidelines
-            .service-list-item Website design
-            .service-list-item Webflow build
+        .pricing-tiers
+          .pricing-tier.animate--on-scroll.animation--blur.animation--up
+            h3.service-header Lean Design <br> Subscription
+            .checklist
+              .checklist-item Dedicated on-shone designer
+              .checklist-item Designs delivered in 2-4 days
+              .checklist-item 9 fractional days / month
+              .checklist-item 2 strategy meetings / month
+              .checklist-item On-going chat support
+              .checklist-item Cancel any time
+            .price $4,000/mo
 
-          .service.animate--on-scroll.animation--blur.animation--up
-            img.icon(src='source/images/icon-mountaintop.svg' draggable='false')
-            .service-header Minimal Viable <br>Product Design
-            .service-time Avg length 3-4 months
-            .service-list-item User research
-            .service-list-item Wireframes
-            .service-list-item UI design
-            .service-list-item Hi-fi prototypes
-            .service-list-item New design system
+          .pricing-tier.animate--on-scroll.animation--blur.animation--up
+            .tag Most popular
+            h3.service-header Full Design <br> Subscription
+            .checklist
+              .checklist-item Dedicated on-shone designer
+              .checklist-item Designs delivered in 2-4 days
+              .checklist-item Unlimited days / month
+              .checklist-item Unlimited strategy meetings
+              .checklist-item On-going chat support
+              .checklist-item Cancel any time
+            .price $8,000/mo
 
-          .service.animate--on-scroll.animation--blur.animation--up
-            img.icon(src='source/images/icon-ui-design-system.svg' draggable='false')
-            .service-header Product Design <br>Team Support
-            .service-time Avg length 12+ months
-            .service-list-item Design system support
-            .service-list-item User research
-            .service-list-item Wireframes
-            .service-list-item UI design
-            .service-list-item Hi-fi prototypes
-
-
-
-
-
-      include components/cta
+          .pricing-tier.animate--on-scroll.animation--blur.animation--up
+            h3.service-header Design <br> On-Demand
+            .checklist
+              .checklist-item Dedicated on-shone designer
+              .checklist-item Designs delivered in 2-4 days
+              .checklist-item Flexible &amp; predictable
+              .checklist-item Fixed rate projects
+              .checklist-item Affordable
+              .checklist-item Pay as you go
+            .price Starting at $3,500
 
 
       section.social-proof-section
@@ -248,40 +251,49 @@ html(lang='en-US')
 
 
 
+      include components/cta
 
-      //- section.projects-section 
+
+
+
+
+
+
+      section.services-section
         .header-group
-          .super-header Samples we can share
-          .header Craftsmanship we’re proud of
+          .super-header Possible timelines
+          .header How might your team benefit?
 
-        .projects
-          
-          a(href='#').project.link-with-border
-            .project-thumbnail
-              img(src='source/images/design-hi-res-05.jpg' srcset='source/images/design-hi-res-05@2x.jpg 2x' draggable='false' loading='lazy')
-            .project-header Farmers’ marketplace
-            .project-body DTC • E-commerce • brand identity • web &amp; mobile app • MVP design • creative direction
+        .services
+          .service.animate--on-scroll.animation--blur.animation--up
+            img.icon(src='source/images/icon-launch.svg' draggable='false')
+            .service-header Branding &amp; <br>Website Launch
+            .service-time.text-extra-subtle Avg length 2-3 months
+            .service-list-item Brand identity 
+            .service-list-item Creative direction
+            .service-list-item Brand guidelines
+            .service-list-item Website design
+            .service-list-item Webflow build
 
-          a(href='#').project.link-with-border
-            .project-thumbnail
-              img(src='source/images/design-hi-res-10.jpg' srcset='source/images/design-hi-res-10@2x.jpg 2x' draggable='false' loading='lazy')
-            .project-header Vacation booking
-            .project-body Web app • 
+          .service.animate--on-scroll.animation--blur.animation--up
+            img.icon(src='source/images/icon-mountaintop.svg' draggable='false')
+            .service-header Minimal Viable <br>Product Design
+            .service-time Avg length 3-4 months
+            .service-list-item User research
+            .service-list-item Wireframes
+            .service-list-item UI design
+            .service-list-item Hi-fi prototypes
+            .service-list-item New design system
 
-          a(href='#').project.link-with-border
-            .project-thumbnail
-              //- img(src='source/images/design-hi-res-10.jpg' srcset='source/images/design-hi-res-10@2x.jpg 2x' draggable='false' loading='lazy')
-            .project-header Real estate scoring
-            .project-body service
-
-          a(href='#').project.link-with-border
-            .project-thumbnail
-              //- img(src='source/images/design-hi-res-10.jpg' srcset='source/images/design-hi-res-10@2x.jpg 2x' draggable='false' loading='lazy')
-            .project-header Auto repair shop
-            .project-body service 
-
-
-
+          .service.animate--on-scroll.animation--blur.animation--up
+            img.icon(src='source/images/icon-ui-design-system.svg' draggable='false')
+            .service-header Product Design <br>Team Extension
+            .service-time Avg length 12+ months
+            .service-list-item Design system support
+            .service-list-item User research
+            .service-list-item Wireframes
+            .service-list-item UI design
+            .service-list-item Hi-fi prototypes
 
 
 
@@ -295,15 +307,15 @@ html(lang='en-US')
           .header FAQs
 
         .faqs
-          .faq-wrapper.animate--on-scroll.animation--right
-            .faq 
-              input(type='checkbox')#faq-1
-              label(for='faq-1').faq-question 
-                .faq-question-text How much does it cost?
-                .faq-question-icon
-              .faq-answer
-                p When you’re ready for a full-power Design Subscription it costs a flat rate of $8,000 per month. Considering the median total compensation for product designers is $151,980, after health insurance, benefits, and taxes that’s $16,781 per month. With Go Time you’re saving a lot of moolah. 
-                p We also offer Design On-Demand. This is how even the most cash-strapped startups can access great design. Don’t hesitate to reach out! If it’s a good fit, we’re going to find a way to work together, even if it means paring down the scope (but NEVER paring down the quality!).
+          //- .faq-wrapper.animate--on-scroll.animation--right
+          //-   .faq 
+          //-     input(type='checkbox')#faq-1
+          //-     label(for='faq-1').faq-question 
+          //-       .faq-question-text How much does it cost?
+          //-       .faq-question-icon
+          //-     .faq-answer
+          //-       p When you’re ready for a full-power Design Subscription it costs a flat rate of $8,000 per month. Considering the median total compensation for product designers is $151,980, after health insurance, benefits, and taxes that’s $16,781 per month. With Go Time you’re saving a lot of moolah. 
+          //-       p We also offer Design On-Demand. This is how even the most cash-strapped startups can access great design. Don’t hesitate to reach out! If it’s a good fit, we’re going to find a way to work together, even if it means paring down the scope (but NEVER paring down the quality!).
 
           .faq-wrapper.animate--on-scroll.animation--right
             .faq 

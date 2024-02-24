@@ -153,6 +153,30 @@
 
 
 
+
+
+
+// CHECKBOX
+.checklist
+  display: flex
+  flex-direction: column
+  gap: $s-1--11
+  margin-top: $s0--18
+  margin-bottom: $s0--18
+  padding-left: $s0--18
+  line-height: 1.3em
+
+.checklist-item:before
+  content: '☑ '
+  margin-left: -$s0--18
+  @extend .text-highlight
+
+
+
+
+
+
+
 // TOOLTIP
 
 .tooltip-item
