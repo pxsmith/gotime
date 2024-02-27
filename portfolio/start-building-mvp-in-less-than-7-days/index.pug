@@ -1,8 +1,12 @@
 html(lang='en-US')
   head
     include /source/components/head.pug
-    include /source/components/meta-tags.pug
-    include /source/components/google-analytics.pug
+    include /source/components/meta-tag-custom.pug
+    +metaTagCustom(
+      "Uber for Limousines • Go Time Design Studio", 
+      "Go Time helped EngineIQ start building their MVP in less than 7 days.",
+      "portfolio/design-farmers-ecommerce",
+      "portfolio-engineiq-01")
 
   body.page-portfolio-piece.layout-centered
     include /source/components/nav.pug

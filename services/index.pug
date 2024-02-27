@@ -1,7 +1,12 @@
 html(lang='en-US')
   head
     include /source/components/head.pug
-    include /source/components/meta-tags.pug
+    include /source/components/meta-tag-custom.pug
+    +metaTagCustom(
+      "Services • Go Time Design Studio", 
+      "Go Time is a high-speed design studio for startups & fast-moving teams. Get exceptional design services extremely fast.",
+      "services",
+      "photo-prototype-computer")
 
   body.page.subpage
     include /source/components/nav.pug
@@ -11,7 +16,7 @@ html(lang='en-US')
         p Go Time gives you access to world-class design services. When you’re subscribed, everything below is at your finger tips. It’s all inclusive. Not only that, but turnaround is always 2-4 days.
 
         .layout-visuals.layout-mobile.animate--on-scroll.animation--blur.animation--left
-          img.image-with-border(src='/source/images/photo-hairpin-turn.jpg' srcset='/source/images/photo-hairpin-turn@2x.jpg 2x' draggable='false')
+          img.image-with-border(src='/source/images/photo-prototype-computer.jpg' srcset='/source/images/photo-prototype-computer@2x.jpg 2x' draggable='false')
 
         mixin service(serviceName, link)
           a(href=link).df.jc-space-between.bb.pt1.pb1
@@ -27,18 +32,19 @@ html(lang='en-US')
           +service('UX/UI Design', '/services/ux-ui-design')
           +service('Mobile Apps', '/services/mobile-apps')
           +service('Design Systems', '/services/design-systems')
-          +service('MVP Sprints', '/services/mvp-sprints')
-          +service('HiFi Prototypes', '/services/hifi-prototypes')
-          +service('Pitch Decks', '/services/pitch-decks')
           +serviceNoLink('Website Design / Landing Pages')
           +serviceNoLink('Webflow Builds')
+          +serviceNoLink('MVP Sprints')
+          +serviceNoLink('HiFi Prototypes')
+          +serviceNoLink('Pitch Decks')
           +serviceNoLink('Design Thinking Workshops')
+          +serviceNoLink('Product Promo Videos')
 
       .layout-visuals.layout-desktop.animate--on-scroll.animation--blur.animation--left
-        img.image-with-border.image-sticky(src='/source/images/photo-hairpin-turn.jpg' srcset='/source/images/photo-hairpin-turn@2x.jpg 2x' draggable='false')
+        img.image-with-border.image-sticky(src='/source/images/photo-prototype-computer.jpg' srcset='/source/images/photo-prototype-computer@2x.jpg 2x' draggable='false')
 
 
 
-
+    include /source/components/pricing.pug
     include /source/components/cta.pug
     include /source/components/footer.pug

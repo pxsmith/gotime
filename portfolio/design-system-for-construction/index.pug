@@ -1,7 +1,12 @@
 html(lang='en-US')
   head
     include /source/components/head.pug
-    include /source/components/meta-tags.pug
+    include /source/components/meta-tag-custom.pug
+    +metaTagCustom(
+      "Construction SaaS Design System • Go Time Design Studio", 
+      "Go Time helped Projexion upgrade their product and upgrade it fast. When done right, design systems are a powerful tool to scale with style.",
+      "portfolio/design-system-for-construction",
+      "portfolio-projexion-01")
 
   body.page-portfolio-piece.page-portfolio--projexion.layout-centered
     include /source/components/nav.pug

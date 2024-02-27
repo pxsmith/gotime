@@ -1,12 +1,15 @@
 html(lang='en-US')
   head
     include /source/components/head.pug
-    include /source/components/meta-tags.pug
-    include /source/components/google-analytics.pug
+    include /source/components/meta-tag-custom.pug
+    +metaTagCustom(
+      "The World’s 1st successful Crypto Micro-Economy • Go Time Design Studio", 
+      "Web3 is still in its early days. Several conferences have tried to launch an experience built on their own cryptocurrency. In November 2023 was the first to do it successfully. Go Time helped design the entire experience for receiving and sending NCON at the Nearcon in Lisbon.",
+      "portfolio/design-the-worlds-first-crypto-micro-economy",
+      "portfolio-near-06")
 
   body.page-portfolio-piece.layout-centered
     include /source/components/nav.pug
-    include /source/components/portfolio-piece.pug
 
     .hero.ma3.mb0.pl0.pr0.tc
       a(href="/portfolio") 
@@ -15,6 +18,7 @@ html(lang='en-US')
 
       p Web3 is still in its early days. Several conferences have tried to launch an experience built on their own cryptocurrency. In November 2023 <u><a href='https://near.org' target='_blank'>NEAR Foundation</a></u> was the first to do it successfully. Go Time helped design the entire experience for receiving and sending NCON at the Nearcon in Lisbon.
     
+    include /source/components/portfolio-piece.pug
     +portfolioPieceImg('portfolio-near-01')
     +portfolioPieceImg('portfolio-near-02')
     +portfolioPieceImg('portfolio-near-03')

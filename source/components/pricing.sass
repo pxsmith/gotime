@@ -1,0 +1,52 @@
+@import '../source/_variables.sass'
+@import '../source/_global.sass'
+
+.pricing-section
+  .pricing-tiers
+    display: grid
+    grid-template-columns: repeat(3, minmax(0, 1fr))
+    gap: $s2--47
+
+  .price-header
+    @extend h3
+
+  .price
+    @extend .text-highlight
+    @extend h4
+    line-height: 1.1em
+
+  .tag
+    display: inline-block
+    background: white
+    color: $dark
+    padding: $s-2--7 $s-1--11
+    text-transform: uppercase
+    position: absolute
+    top: -38px
+    @extend h6
+    // transform: rotate(-5deg)
+
+@media (max-width: 900px)
+  .pricing-section
+    .header-group
+      margin-bottom: $s3--76
+    .price-header
+      font-size: $s1--29
+
+@media (max-width: 680px)
+  .pricing-section
+    .pricing-tiers
+      gap: $s0--18
+
+@media (max-width: 580px)
+  .pricing-section
+    .header-group
+      margin-bottom: $s1--29
+    .pricing-tiers
+      grid-template-columns: repeat(1, minmax(0, 1fr))
+    .tag
+      position: static
+      margin-top: $s1--29
+      margin-bottom: $s-1--11
+    .pricing-tier:nth-of-type(3)
+      margin-top: $s1--29

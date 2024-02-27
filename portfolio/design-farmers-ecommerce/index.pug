@@ -1,12 +1,15 @@
 html(lang='en-US')
   head
     include /source/components/head.pug
-    include /source/components/meta-tags.pug
-    include /source/components/google-analytics.pug
+    include /source/components/meta-tag-custom.pug
+    +metaTagCustom(
+      "Online Farmer’s Market • Go Time Design Studio", 
+      "Farmers need a direct line to customers and that’s exactly what Farms 2 Friends provides. Go Time designed the brand identity and the e-commerce experience on web and mobile.",
+      "portfolio/design-farmers-ecommerce",
+      "portfolio-farms-06")
 
   body.page-portfolio-piece.page-portfolio--farms.layout-centered
     include /source/components/nav.pug
-    include /source/components/portfolio-piece.pug
 
     .hero.ma3.mb0.pl0.pr0.tc
       a(href="/portfolio") 
@@ -15,6 +18,7 @@ html(lang='en-US')
 
       p Farmers need a direct line to customers and that’s exactly what Farms 2 Friends provides. Go Time designed the brand identity and the e-commerce experience on web and mobile.
     
+    include /source/components/portfolio-piece.pug
     +portfolioPieceImg('portfolio-farms-01')
     +portfolioPieceImg('portfolio-farms-02')
     +portfolioPieceImg('portfolio-farms-05')

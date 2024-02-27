@@ -35,7 +35,7 @@ html(lang='en-US')
 
           .social-proof-avatars.mt1
             //- h5.label.ml-1 Trusted by
-            a.avatar.tooltip-item(href='https://www.linkedin.com/in/ssshah0624/'  data-sa-link-event='social_proof_LI' target='_blank')
+            a.avatar.tooltip-item(href='https://www.linkedin.com/in/ssshah0624/' data-sa-link-event='social_proof_LI' target='_blank')
               img.portrait(src='source/images/photo-bio-sunny.jpeg' draggable='false')
               .tooltip
                 p &ldquo;Go Time is a <u>true partner</u>.&rdquo; &ndash;Sunny
@@ -138,45 +138,12 @@ html(lang='en-US')
 
 
 
-      section.pricing-section
-        .header-group
-          .super-header The numbers
-          .header Simple &amp; clear pricing 
+      include /source/components/pricing.pug
 
-        .pricing-tiers
-          .pricing-tier.animate--on-scroll.animation--blur.animation--up
-            .price-header Lean Design <br> Subscription
-            .checklist
-              .checklist-item Dedicated on-shone designer
-              .checklist-item Designs delivered in 2-4 days
-              .checklist-item 9 fractional days / month
-              .checklist-item 2 strategy meetings / month
-              .checklist-item On-going chat support
-              .checklist-item Cancel any time
-            .price $4,000/mo
 
-          .pricing-tier.animate--on-scroll.animation--blur.animation--up
-            .tag Most popular
-            .price-header Full Design <br> Subscription
-            .checklist
-              .checklist-item Dedicated on-shone designer
-              .checklist-item Designs delivered in 2-4 days
-              .checklist-item Unlimited days / month
-              .checklist-item Unlimited strategy meetings
-              .checklist-item On-going chat support
-              .checklist-item Cancel any time
-            .price $8,000/mo
 
-          .pricing-tier.animate--on-scroll.animation--blur.animation--up
-            .price-header Design <br> On-Demand
-            .checklist
-              .checklist-item Dedicated on-shone designer
-              .checklist-item Designs delivered in 2-4 days
-              .checklist-item Flexible &amp; predictable
-              .checklist-item Fixed rate projects
-              .checklist-item Affordable
-              .checklist-item Pay as you go
-            .price Starting at $3,500
+
+
 
 
       section.social-proof-section
@@ -187,7 +154,7 @@ html(lang='en-US')
           .quote.animate--on-scroll.animation--blur.animation--up
             p.quotation-mark &ldquo;
             p.quote-body Go Time is a <u>true partner</u> to EngineIQ. Whether we need to slow down and really nail a tough UX problem or hustle and get something hairy done overnight, you can count on Go Time’s speed &amp; quality.
-            a.person(href='https://www.linkedin.com/in/ssshah0624/' target='_blank')
+            a.person(href='https://www.linkedin.com/in/ssshah0624/' data-sa-link-event='social_proof_LI' target='_blank')
               img.portrait(src='source/images/photo-bio-sunny.jpeg' draggable='false')
               .text
                 p.name Sunny Shah
@@ -196,7 +163,7 @@ html(lang='en-US')
           .quote.animate--on-scroll.animation--blur.animation--up
             p.quotation-mark &ldquo;
             p.quote-body The <u>efficiency & accuracy</u> of Go Time HQ’s work continues to blow me away. Whether it’s designing landing pages, logos, mobile apps, you name it—Go Time <u>handles everything</u>.
-            a.person(href='https://www.linkedin.com/in/anebiagbo/' target='_blank')
+            a.person(href='https://www.linkedin.com/in/anebiagbo/' data-sa-link-event='social_proof_LI' target='_blank')
               img.portrait(src='source/images/photo-bio-anebi.jpeg' draggable='false')
               .text
                 p.name Anebi Agbo
@@ -205,7 +172,7 @@ html(lang='en-US')
           .quote.animate--on-scroll.animation--blur.animation--up
             p.quotation-mark &ldquo;
             p.quote-body Effective collaboration enabled us to <u>develop and iterate rapidly</u>! We initially used the Go Time team for UI/UX, but they also handled our entire rebrand!
-            a.person(href='https://www.linkedin.com/in/borislippeveld/' target='_blank')
+            a.person(href='https://www.linkedin.com/in/borislippeveld/' data-sa-link-event='social_proof_LI' target='_blank')
               img.portrait(src='source/images/photo-bio-boris.jpeg' draggable='false')
               .text
                 p.name Boris Lippeveld
@@ -214,7 +181,7 @@ html(lang='en-US')
           .quote.animate--on-scroll.animation--blur.animation--up
             p.quotation-mark &ldquo;
             p.quote-body Go Time <u>gets founders</u>. Working with other designers has taken many iterations to get what we needed. I was <u>BLOWN AWAY</u> by how quickly Go Time understood my ideas and delivered great work.
-            a.person(href='https://www.linkedin.com/in/emmanuelbamfo/' target='_blank')
+            a.person(href='https://www.linkedin.com/in/emmanuelbamfo/' data-sa-link-event='social_proof_LI' target='_blank')
               img.portrait(src='source/images/photo-bio-manny.jpeg' draggable='false')
               .text
                 p.name Manny Bamfo
@@ -223,7 +190,7 @@ html(lang='en-US')
           .quote.animate--on-scroll.animation--blur.animation--up
             p.quotation-mark &ldquo;
             p.quote-body These designs are <u>SO EXCITING</u>. The team has been so impressed with the quality delivered in the short time frames. Seriously impressive!
-            a.person(href='https://www.linkedin.com/in/shivaunanderberg/' target='_blank')
+            a.person(href='https://www.linkedin.com/in/shivaunanderberg/' data-sa-link-event='social_proof_LI' target='_blank')
               img.portrait(src='source/images/photo-bio-shivaun.jpeg' draggable='false')
               .text
                 p.name Dr. Shivaun Anderberg
@@ -232,7 +199,7 @@ html(lang='en-US')
           .quote.animate--on-scroll.animation--blur.animation--up
             p.quotation-mark &ldquo;
             p.quote-body Not only do they handle every project with an <u>immense amount of enthusiasm</u>, but Go Time brings a unique perspective to every client and project they work on. <u>You’ll be lucky to work together</u> given the chance.
-            a.person(href="https://www.linkedin.com/in/kylerphillips/" target='_blank')
+            a.person(href='https://www.linkedin.com/in/kylerphillips/' data-sa-link-event='social_proof_LI' target='_blank')
               img.portrait(src='source/images/photo-bio-kyler.jpeg' draggable='false')
               .text
                 p.name Kyler Phillips

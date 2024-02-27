@@ -1,6 +1,6 @@
 @charset "UTF-8";
 html, body, div, span, applet, object, iframe,
-h1, h2, .header-group .header, h3, .pricing-section .price-header, .homepage .the-plan-section .the-plan-header, h4, .homepage .faq-section .faq-question, .case-studies-section .case-study-header, .pricing-section .price, .homepage .services-section .service-header, .homepage .value-props-section .value-prop-header, h5, .button-afterword, .case-studies-section .case-study-body, .homepage .services-section .service-time, h6, .pricing-section .tag, p, .homepage .the-plan-section .the-plan-body, blockquote, pre,
+h1, h2, .header-group .header, h3, .homepage .the-plan-section .the-plan-header, h4, .homepage .faq-section .faq-question, .case-studies-section .case-study-header, .homepage .services-section .service-header, .homepage .value-props-section .value-prop-header, h5, .button-afterword, .case-studies-section .case-study-body, .homepage .services-section .service-time, h6, p, .homepage .the-plan-section .the-plan-body, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -503,7 +503,7 @@ a {
 .fs6--323, .fs6 {
   font-size: 323px; }
 
-.text-highlight, .pricing-section .price, .homepage .services-section .service-list-item:before, .homepage .social-proof-section .quotation-mark, .homepage .the-plan-section .the-plan-number, .checklist-item:before {
+.text-highlight, .homepage .services-section .service-list-item:before, .homepage .social-proof-section .quotation-mark, .homepage .the-plan-section .the-plan-number, .checklist-item:before {
   color: 90deg, #DC2626 0%, #FA603E 100%;
   background: -webkit-linear-gradient(90deg, #DC2626 0%, #FA603E 100%);
   -webkit-background-clip: text;
@@ -546,16 +546,16 @@ h2, .header-group .header {
   h2, .header-group .header {
     font-size: 47px; } }
 
-h3, .pricing-section .price-header, .homepage .the-plan-section .the-plan-header {
+h3, .homepage .the-plan-section .the-plan-header {
   font-size: 47px;
   font-family: "Covik_Sans-Bold"; }
 
 @media (max-width: 768px) {
-  h3, .pricing-section .price-header, .homepage .the-plan-section .the-plan-header {
+  h3, .homepage .the-plan-section .the-plan-header {
     font-size: 29px;
     color: white; } }
 
-h4, .homepage .faq-section .faq-question, .case-studies-section .case-study-header, .pricing-section .price, .homepage .services-section .service-header, .homepage .value-props-section .value-prop-header {
+h4, .homepage .faq-section .faq-question, .case-studies-section .case-study-header, .homepage .services-section .service-header, .homepage .value-props-section .value-prop-header {
   font-size: 29px;
   font-family: "Covik_Sans-Bold"; }
 
@@ -566,7 +566,7 @@ h5, .button-afterword, .case-studies-section .case-study-body, .homepage .servic
   text-transform: uppercase;
   line-height: 1.4em; }
 
-h6, .pricing-section .tag {
+h6 {
   font-family: "Covik_Sans_Mono-Bold";
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -607,7 +607,7 @@ h1 u {
   background: #DC2626;
   border: 2px solid white; }
 
-.hero-list h4, .hero-list .homepage .faq-section .faq-question, .homepage .faq-section .hero-list .faq-question, .hero-list .case-studies-section .case-study-header, .case-studies-section .hero-list .case-study-header, .hero-list .pricing-section .price, .pricing-section .hero-list .price, .hero-list .homepage .services-section .service-header, .homepage .services-section .hero-list .service-header, .hero-list .homepage .value-props-section .value-prop-header, .homepage .value-props-section .hero-list .value-prop-header {
+.hero-list h4, .hero-list .homepage .faq-section .faq-question, .homepage .faq-section .hero-list .faq-question, .hero-list .case-studies-section .case-study-header, .case-studies-section .hero-list .case-study-header, .hero-list .homepage .services-section .service-header, .homepage .services-section .hero-list .service-header, .hero-list .homepage .value-props-section .value-prop-header, .homepage .value-props-section .hero-list .value-prop-header {
   margin-bottom: 18px; }
 
 .hero-list > * {
@@ -1227,45 +1227,6 @@ h1 u {
   .homepage .services-section .services {
     grid-template-columns: repeat(1, minmax(0, 1fr)); } }
 
-.pricing-section .pricing-tiers {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 47px; }
-
-.pricing-section .price {
-  line-height: 1.1em; }
-
-.pricing-section .tag {
-  display: inline-block;
-  background: white;
-  color: #120404;
-  padding: 7px 11px;
-  text-transform: uppercase;
-  position: absolute;
-  top: -38px; }
-
-@media (max-width: 900px) {
-  .pricing-section .header-group {
-    margin-bottom: 76px; }
-  .pricing-section .price-header {
-    font-size: 29px; } }
-
-@media (max-width: 680px) {
-  .pricing-section .pricing-tiers {
-    gap: 18px; } }
-
-@media (max-width: 580px) {
-  .pricing-section .header-group {
-    margin-bottom: 29px; }
-  .pricing-section .pricing-tiers {
-    grid-template-columns: repeat(1, minmax(0, 1fr)); }
-  .pricing-section .tag {
-    position: static;
-    margin-top: 29px;
-    margin-bottom: 11px; }
-  .pricing-section .pricing-tier:nth-of-type(3) {
-    margin-top: 29px; } }
-
 .page-case-study .hero {
   margin: 18px;
   padding-left: 18px;
@@ -1391,7 +1352,7 @@ h1 u {
     align-items: center;
     justify-content: center;
     width: 100%; }
-    .homepage .recent-work .header h3, .homepage .recent-work .header .the-plan-section .the-plan-header, .homepage .the-plan-section .recent-work .header .the-plan-header, .homepage .recent-work .header .pricing-section .price-header, .pricing-section .homepage .recent-work .header .price-header, .homepage .recent-work .header p, .homepage .recent-work .header .the-plan-section .the-plan-body, .homepage .the-plan-section .recent-work .header .the-plan-body {
+    .homepage .recent-work .header h3, .homepage .recent-work .header .the-plan-section .the-plan-header, .homepage .the-plan-section .recent-work .header .the-plan-header, .homepage .recent-work .header p, .homepage .recent-work .header .the-plan-section .the-plan-body, .homepage .the-plan-section .recent-work .header .the-plan-body {
       width: 100%; }
   .homepage .recent-work .thumbnail {
     max-width: 100%;

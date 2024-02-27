@@ -1019,6 +1019,18 @@
       "pg" : 0,
       "sct" : 1
     },
+    "\/source\/components\/banner.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/source\/components\/banner-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/source\/components\/banner.pug" : {
       "cB" : 0,
       "cOD" : 1,
@@ -1273,6 +1285,31 @@
       "oA" : 0,
       "oAP" : "\/source\/components\/portfolio-piece.css",
       "oF" : 3,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/source\/components\/pricing.pug" : {
+      "cB" : 0,
+      "cOD" : 1,
+      "ft" : 512,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/source\/components\/pricing.html",
+      "oF" : 0,
+      "oS" : 0
+    },
+    "\/source\/components\/pricing.sass" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 2,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/source\/components\/pricing.css",
+      "oF" : 2,
       "oS" : 0,
       "pg" : 0,
       "sct" : 1
@@ -3682,26 +3719,26 @@
     },
     "\/source\/images\/portfolio-projexion-01.jpg" : {
       "ft" : 16384,
-      "iS" : 76081,
+      "iS" : 172316,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/source\/images\/portfolio-projexion-01.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 1,
+      "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
     },
     "\/source\/images\/portfolio-projexion-01@2x.jpg" : {
       "ft" : 16384,
-      "iS" : 175955,
+      "iS" : 396405,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/source\/images\/portfolio-projexion-01@2x.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 1,
+      "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75

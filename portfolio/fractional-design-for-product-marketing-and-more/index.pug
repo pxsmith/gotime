@@ -1,8 +1,12 @@
 html(lang='en-US')
   head
     include /source/components/head.pug
-    include /source/components/meta-tags.pug
-    include /source/components/google-analytics.pug
+    include /source/components/meta-tag-custom.pug
+    +metaTagCustom(
+      "Al Risk Monitoring • Go Time Design Studio", 
+      "Go Time helped Riskine’s product, marketing, and sales teams with product redesign, email designs, prototypes, microsites, lead generators, and more.",
+      "portfolio/fractional-design-for-product-marketing-and-more",
+      "portfolio-riskline-01") 
 
   body.page-portfolio-piece.layout-centered
     include /source/components/nav.pug
