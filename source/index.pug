@@ -5,6 +5,7 @@ html(lang='en-US')
 
   body.homepage
     .page-wrapper
+      include /source/components/banner.pug
       include /source/components/nav.pug
       include /source/components/portfolio-piece.pug
 
@@ -34,17 +35,17 @@ html(lang='en-US')
 
           .social-proof-avatars.mt1
             //- h5.label.ml-1 Trusted by
-            a.avatar.tooltip-item(href='https://www.linkedin.com/in/ssshah0624/' target='_blank')
+            a.avatar.tooltip-item(href='https://www.linkedin.com/in/ssshah0624/'  data-sa-link-event='social_proof_LI' target='_blank')
               img.portrait(src='source/images/photo-bio-sunny.jpeg' draggable='false')
               .tooltip
                 p &ldquo;Go Time is a <u>true partner</u>.&rdquo; &ndash;Sunny
 
-            a.avatar.tooltip-item(href='https://www.linkedin.com/in/emmanuelbamfo/' target='_blank')
+            a.avatar.tooltip-item(href='https://www.linkedin.com/in/emmanuelbamfo/' data-sa-link-event='social_proof_LI' target='_blank')
               img.portrait(src='source/images/photo-bio-manny.jpeg' draggable='false')
               .tooltip
                 p &ldquo;I was <u>BLOWN AWAY</u> by how quickly Go Time understood my ideas and delivered great work.&rdquo; &ndash;Manny
 
-            a.avatar.tooltip-item(href='https://www.linkedin.com/in/borislippeveld/' target='_blank')
+            a.avatar.tooltip-item(href='https://www.linkedin.com/in/borislippeveld/'  data-sa-link-event='social_proof_LI' target='_blank')
               img.portrait(src='source/images/photo-bio-boris.jpeg' draggable='false')
               .tooltip
                 p &ldquo;Effective collaboration enabled us to <u>develop &amp; iterate rapidly!</u>&rdquo; &ndash;Boris

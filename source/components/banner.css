@@ -1,0 +1,20 @@
+.banner {
+  width: 100%;
+  background: #DC2626;
+  padding-top: 0.15em;
+  padding-bottom: 0.3em; }
+  .banner .banner-text {
+    height: 1em;
+    width: 400%;
+    position: relative;
+    animation: horizontal-scrolling 15s linear infinite;
+    overflow: hidden; }
+  .banner h6 {
+    color: #120404;
+    display: inline; }
+
+@keyframes horizontal-scrolling {
+  0% {
+    right: 0ch; }
+  100% {
+    right: 765px; } }
