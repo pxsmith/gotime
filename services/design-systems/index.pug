@@ -1,11 +1,12 @@
 html(lang='en-US')
   head
     include /source/components/head.pug
-    include /source/components/meta-tags.pug
-
-  include /source/components/google-analytics.pug
-
-
+    include /source/components/meta-tag-custom.pug
+    +metaTagCustom(
+      "Design Systems for startups & fast teams • Go Time Design Studio", 
+      "At an early stage, you don’t need it to be over-designed. You need a solid foundation: commmon reusable components, a pleasing color palette, and some key screens. Then you can hit the ground running.",
+      "services/design-systems",
+      "portfolio-projexion-01.jpg")
 
   body.page.subpage
     include /source/components/nav.pug
@@ -13,14 +14,20 @@ html(lang='en-US')
       .layout-header
         a(href='/services').pa-2
           h4 SERVICES
-        h1 <u>Design Systems</u> for startups &amp; fast-moving companies
-        p It’s important to build consistent and reusable components for your product. But at an early stage, you don’t need it to be over-designed. With design deliverables like reusable components, a customizable color palettes, and a full-featured design library, you'll be able to quickly and easily build a design system that meets your needs. Get up and running with your design system today and start creating amazing user experiences today.
+        h1 <u>Design Systems</u> for startups &amp; fast teams
+        p At an early stage, you don’t need it to be over-designed. You need a solid foundation: commmon reusable components, a pleasing color palette, and some key screens. Then you can hit the ground running.
 
       .layout-visuals
         img.image-with-border.image-sticky(src='/source/images/photo-lego.jpg' srcset='/source/images/photo-lego@2x.jpg 2x' draggable='false')
 
-
-
+    include /source/components/portfolio-piece.pug
+    .page-portfolio-piece.layout-centered
+      +portfolioPieceImg('portfolio-projexion-01')
+      +portfolioPieceImg('portfolio-projexion-02')
+      +portfolioPieceImg('portfolio-projexion-03')
+      +portfolioPieceImg('portfolio-projexion-04')
+      +portfolioPieceImg('portfolio-projexion-05')
+      +portfolioPieceImg('portfolio-projexion-06')
 
     include /source/components/cta.pug
     include /source/components/footer.pug

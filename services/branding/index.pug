@@ -1,0 +1,39 @@
+html(lang='en-US')
+  head
+    include /source/components/head.pug
+    include /source/components/meta-tag-custom.pug
+    +metaTagCustom(
+      "Branding & Logo Design for startups • Go Time Design Studio", 
+      "Your brand is the prerequisite to earn customers’ trust. Go Time will deliver a great looking brand identity—fast.",
+      "services/branding",
+      "social-preview--services-branding.jpg")
+
+  body.page.subpage
+    include /source/components/nav.pug
+    .layout-with-sticky-image
+      .layout-header
+        a(href='/services').pa-2
+          h4 SERVICES
+        h1 <u>Branding &amp; Logo Design</u> for startups
+        p Getting branding right is mission critical for your startup. Your brand is the prerequisite to earn customers’ trust. Bad branding = no trust. The problem is most designers don’t understand branding when it comes to startups. Your brand identity needs to look great, but it also needs to be fast and ready for you to pivot. Go Time is the branding expert you’ve been looking for.
+
+      .layout-visuals
+        img.image-with-border.image-sticky(src='/source/images/photo-nyc-subway.jpg' srcset='/source/images/photo-nyc-subway@2x.jpg 2x' draggable='false')
+
+    include /source/components/portfolio-piece.pug
+    .page-portfolio-piece.layout-centered
+      +portfolioPieceImg('portfolio-farms-01')
+      +portfolioPieceImg('portfolio-farms-02')
+      +portfolioPieceImg('portfolio-brand-certus-01')
+      +portfolioPieceImg('portfolio-engineiq-04')
+      +portfolioPieceImg('portfolio-brand-joyce-01')
+      +portfolioPieceImg('portfolio-brand-joyce-02')
+      +portfolioPieceImg('portfolio-brand-sun-lift-01')
+      +portfolioPieceImg('portfolio-brand-umani-01')
+      +portfolioPieceImg('portfolio-brand-umani-02')
+      +portfolioPieceImg('portfolio-brand-umani-03')
+      +portfolioPieceImg('portfolio-brand-wilbur-01')
+      +portfolioPieceImg('portfolio-brand-emplifi-01')
+
+    include /source/components/cta.pug
+    include /source/components/footer.pug

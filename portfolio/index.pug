@@ -1,26 +1,34 @@
 html(lang='en-US')
   head
     include /source/components/head.pug
-    include /source/components/meta-tags.pug
-    include /source/components/google-analytics.pug
+    include /source/components/meta-tag-custom.pug
+    +metaTagCustom(
+      "Branding & Logo Design for startups • Go Time Design Studio", 
+      "Your brand is the prerequisite to earn customers’ trust. Go Time will deliver a great looking brand identity—fast.",
+      "services/branding",
+      "social-preview--services-branding.jpg")
 
   body.page.subpage.layout-centered
     include /source/components/nav.pug
     include /source/components/portfolio-piece.pug
 
-    .hero.ma3.mb0.pl0.pr0.tc
+    .hero.ma3.mb0.pl0.pr0
       .layout-header.animate--on-scroll.animation--blur.animation--up
-        h1.mb2
-          span.text-highlight Portfolio
+        h2.mb3.tc <u>Select projects</u>
 
-    section.section-portfolio.mt0
-      +portfolio-thumbnail('The World’s 1st Crypto Micro-Economy', '/portfolio/design-the-worlds-first-crypto-micro-economy', 'portfolio-near-06')
-      +portfolio-thumbnail('Giving Farmers a Direct Connection to Customers', '/portfolio/design-farmers-ecommerce', 'portfolio-farms-06')
-      +portfolio-thumbnail('Design System Gets a Construction App Building', '/portfolio/design-system-for-construction', 'portfolio-projexion-01')
-      +portfolio-thumbnail('Start Building MVP in Less Than 7 Days', '/portfolio/start-building-mvp-in-less-than-7-days', 'portfolio-engineiq-01')
-      +portfolio-thumbnail('Fractional Design for Product, Marketing, and More', '/portfolio/fractional-design-for-product-marketing-and-more', 'portfolio-riskline-01')
+    section.section-portfolio.ma2.mt0
+      +portfolio-thumbnail('World’s 1st Crypto Micro-Economy', '/portfolio/design-the-worlds-first-crypto-micro-economy', 'portfolio-near-06')
 
+      +portfolio-thumbnail('Online Farmer’s Market ', '/portfolio/design-farmers-ecommerce', 'portfolio-farms-06')
 
+      +portfolio-thumbnail('Uber for Limousines', '/portfolio/start-building-mvp-in-less-than-7-days', 'portfolio-engineiq-01')
 
+      +portfolio-thumbnail('Construction SaaS Design System', '/portfolio/design-system-for-construction', 'portfolio-projexion-01')
+
+      +portfolio-thumbnail('Airbnb for Luxury Travelers', '/portfolio/airbnb-for-luxury-travelers', 'design-hi-res-10')
+
+      +portfolio-thumbnail('AI Risk Monitoring', '/portfolio/fractional-design-for-product-marketing-and-more', 'portfolio-riskline-01')
+
+    .mt4
     include /source/components/cta.pug
     include /source/components/footer.pug

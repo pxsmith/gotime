@@ -1,0 +1,34 @@
+html(lang='en-US')
+  head
+    include /source/components/head.pug
+    include /source/components/meta-tag-custom.pug
+    +metaTagCustom(
+      "UX/UI Design for startups & fast teams • Go Time Design Studio", 
+      "As a tech company the user interface is central to your entire business. Everything depends on a great experience. With Go Time, you’re getting a dedicated, seasoned product designer focusing on you.",
+      "services/ux-ui-design",
+      "portfolio-near-08.jpg")
+
+  body.page.subpage
+    include /source/components/nav.pug
+    .layout-with-sticky-image
+      .layout-header
+        a(href='/services').pa-2
+          h4 SERVICES
+        h1 <u>UX/UI Design</u> for startups &amp; fast teams
+        p As a tech company the user interface is central to your entire business. Everything depends on a great experience. With Go Time, you’re getting a dedicated, seasoned product designer focusing on you.
+
+      .layout-visuals
+        img.image-with-border.image-sticky(src='/source/images/photo-prototype-computer.jpg' srcset='/source/images/photo-prototype-computer@2x.jpg 2x' draggable='false')
+
+    include /source/components/portfolio-piece.pug
+    .page-portfolio-piece.layout-centered
+      +portfolioPieceImg('portfolio-near-07')
+      +portfolioPieceImg('portfolio-near-08')
+      +portfolioPieceImg('portfolio-farms-05')
+      +portfolioPieceImg('portfolio-farms-07')
+      +portfolioPieceImg('portfolio-farms-08')
+      +portfolioPieceImg('portfolio-engineiq-01')
+      +portfolioPieceImg('portfolio-engineiq-03')
+
+    include /source/components/cta.pug
+    include /source/components/footer.pug

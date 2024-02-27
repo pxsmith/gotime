@@ -1,0 +1,28 @@
+html(lang='en-US')
+  head
+    include /source/components/head.pug
+    include /source/components/meta-tag-custom.pug
+    +metaTagCustom(
+      "Go Time helped Vacayou design a truly luxurious travel experience", 
+      "Travel planning is now a breeze. You can book entire retreats (and more) all in one place. Travelers get to more time dreaming about their next trip.",
+      "portfolio/airbnb-for-luxury-travelers",
+      "design-hi-res-10.jpg")
+
+  body.page-portfolio-piece.layout-centered
+    include /source/components/nav.pug
+    include /source/components/portfolio-piece.pug
+
+    .hero.ma3.mb0.pl0.pr0.tc
+      a(href="/portfolio") 
+        h5 Portfolio
+      h2.header Go Time helped Vacayou design a <span class='text-highlight'>truly luxurious travel experience</span>
+
+      p <u><a href='https://vacayou.com' target='_blank'>Vacayou</a></u> is making travel planning a breeze by connecting disjointed tech. Now you can book entire retreats and more all in one place. Travelers spend less time fighting against clunky tech and more time dreaming about their next trip.
+    
+    +portfolioPieceImg('design-hi-res-12')
+    +portfolioPieceImg('design-hi-res-10')
+    +portfolioPieceImg('design-hi-res-11')
+    +portfolioPieceImg('design-hi-res-09')
+
+    include /source/components/cta.pug
+    include /source/components/footer.pug

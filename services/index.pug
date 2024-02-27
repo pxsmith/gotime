@@ -2,36 +2,35 @@ html(lang='en-US')
   head
     include /source/components/head.pug
     include /source/components/meta-tags.pug
-    include /source/components/google-analytics.pug
 
   body.page.subpage
     include /source/components/nav.pug
     .layout-with-sticky-image
       .layout-header.animate--on-scroll.animation--blur.animation--right
-        h1 Design services for <span class='text-highlight'>fast-moving&nbsp; teams&nbsp;</span>
-        p At Go Time we’ve helped many founders &amp; fast-moving businesses with everything below. You’re going to see your first round of designs in under a week. This isn’t our first rodeo!
+        h1 The design subscription is <span class='text-highlight'>all-inclusive</span>
+        p Go Time gives you access to world-class design services. When you’re subscribed, everything below is at your finger tips. It’s all inclusive. Not only that, but turnaround is always 2-4 days.
 
         .layout-visuals.layout-mobile.animate--on-scroll.animation--blur.animation--left
           img.image-with-border(src='/source/images/photo-hairpin-turn.jpg' srcset='/source/images/photo-hairpin-turn@2x.jpg 2x' draggable='false')
 
         mixin service(serviceName, link)
-          a(href=link).df.jc-space-between.bb.pt1.pb1.animate--on-scroll.animation--right
+          a(href=link).df.jc-space-between.bb.pt1.pb1
             h3= serviceName
             h3 →
 
         mixin serviceNoLink(serviceName)
-          .df.jc-space-between.bb.pt1.pb1.animate--on-scroll.animation--right
+          .df.jc-space-between.bb.pt1.pb1
             h3= serviceName
         
-        .animate--on-scroll.animation--right
-          +service('Pitch Decks', '/services/pitch-decks')
+        .animate--on-scroll.animation--up.animation--blur
+          +service('Branding & Logo Design', '/services/branding')
+          +service('UX/UI Design', '/services/ux-ui-design')
+          +service('Mobile Apps', '/services/mobile-apps')
+          +service('Design Systems', '/services/design-systems')
           +service('MVP Sprints', '/services/mvp-sprints')
           +service('HiFi Prototypes', '/services/hifi-prototypes')
-          +service('Design Systems', '/services/design-systems')
-          +serviceNoLink('Branding & Logo Design')
-          +serviceNoLink('UX/UI Design')
-          +serviceNoLink('Website Designs')
-          +serviceNoLink('Landing Pages')
+          +service('Pitch Decks', '/services/pitch-decks')
+          +serviceNoLink('Website Design / Landing Pages')
           +serviceNoLink('Webflow Builds')
           +serviceNoLink('Design Thinking Workshops')
 

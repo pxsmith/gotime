@@ -1,0 +1,36 @@
+html(lang='en-US')
+  head
+    include /source/components/head.pug
+    include /source/components/meta-tag-custom.pug
+    +metaTagCustom(
+      "Mobile Design for startups &amp; fast teams", 
+      "Your customers—and potential customers—bring their phones with them everywhere. Wow them with relevant, timely, and useful to provide value to your customers. With Go Time, you’re getting a dedicated, seasoned mobile designer focusing on you.",
+      "services/mobile-apps",
+      "portfolio-near-09.jpg")
+
+  body.page.subpage
+    include /source/components/nav.pug
+    .layout-with-sticky-image
+      .layout-header
+        a(href='/services').pa-2
+          h4 SERVICES
+        h1 <u>Mobile Design</u> for startups &amp; fast teams
+        p Your customers—and potential customers—bring their phones with them everywhere. Wow them with relevant, timely, and useful to provide value to your customers. With Go Time, you’re getting a dedicated, seasoned mobile designer focusing on you.
+
+      .layout-visuals
+        img.image-with-border.image-sticky(src='/source/images/photo-phone-hands.jpg' srcset='/source/images/photo-phone-hands@2x.jpg 2x' draggable='false')
+
+    include /source/components/portfolio-piece.pug
+    .page-portfolio-piece.layout-centered
+      +portfolioPieceImg('portfolio-near-01')
+      +portfolioPieceImg('portfolio-near-02')
+      +portfolioPieceImg('portfolio-near-04')
+      +portfolioPieceImg('portfolio-near-05')
+      +portfolioPieceImg('portfolio-near-06')
+      +portfolioPieceImg('portfolio-near-09')
+      +portfolioPieceImg('portfolio-farms-06')
+      +portfolioPieceImg('portfolio-engineiq-02')
+      +portfolioPieceImg('portfolio-engineiq-05')
+
+    include /source/components/cta.pug
+    include /source/components/footer.pug
