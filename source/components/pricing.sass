@@ -2,6 +2,9 @@
 @import '../source/_global.sass'
 
 .pricing-section
+  margin: $s3
+  margin-bottom: $s4
+
   .pricing-tiers
     display: grid
     grid-template-columns: repeat(3, minmax(0, 1fr))
@@ -24,7 +27,11 @@
     position: absolute
     top: -38px
     @extend h6
-    // transform: rotate(-5deg)
+
+@media (max-width: 950px)
+  .pricing-section
+    margin: $s3 $s0
+    margin-bottom: $s4
 
 @media (max-width: 900px)
   .pricing-section
