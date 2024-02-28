@@ -1,4 +1,5 @@
 .banner {
+  display: none;
   width: 100%;
   background: #DC2626;
   padding-top: 0.15em;
@@ -7,7 +8,7 @@
     height: 1em;
     width: 400%;
     position: relative;
-    animation: horizontal-scrolling 5s linear infinite;
+    animation: horizontal-scrolling 15s linear infinite;
     overflow: hidden; }
   .banner h6 {
     color: #120404;

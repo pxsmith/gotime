@@ -633,3 +633,97 @@ h1 u
 .margin-auto
   margin-left: auto
   margin-right: auto
+
+
+
+
+
+
+
+// ANIMATION
+
+@keyframes fade-in
+  from
+    opacity: 0
+  to
+    opacity: 1
+
+.animate--on-scroll
+  opacity: 0
+  transition: all 1s
+
+.animation--blur
+  filter: blur(5px)
+
+.animation--up
+  transform: translateY($s1--29)
+
+.animation--down
+  transform: translateY(- $s1--29)
+
+.animation--left
+  transform: translateX($s1--29)
+
+.animation--right
+  transform: translateX(- $s1--29)
+
+.animation--big-up
+  transform: translateY($s4--123)
+
+.animation--big-down
+  transform: translateY(- $s4--123)
+
+.animation---big-left
+  transform: translateX($s4--123)
+
+.animation--big-right
+  transform: translateX(- $s4--123)
+
+
+.hidden
+  opacity: 0
+
+.animation--show
+  opacity: 1
+  transition: all 1s
+  filter: blur(0px)
+  transform: translateX(0)
+  transform: translateY(0)
+
+
+.animate--on-scroll:nth-child(2)
+  transition-delay: 200ms
+
+.animate--on-scroll:nth-child(3)
+  transition-delay: 400ms
+
+.animate--on-scroll:nth-child(4)
+  transition-delay: 600ms
+
+.animate--on-scroll:nth-child(5)
+  transition-delay: 800ms
+
+.animate--on-scroll:nth-child(6)
+  transition-delay: 1000ms
+
+.animate--on-scroll:nth-child(7)
+  transition-delay: 1200ms
+
+.animate--on-scroll:nth-child(8)
+  transition-delay: 1400ms
+
+.animate--on-scroll:nth-child(9)
+  transition-delay: 1600ms
+
+.animate--on-scroll:nth-child(10)
+  transition-delay: 1800ms
+
+.animate--on-scroll:nth-child(11)
+  transition-delay: 2000ms
+
+.animate--on-scroll:nth-child(12)
+  transition-delay: 2200ms
+
+.element-to-fade-in
+  animation: fade-in 1.5s ease forwards
+  opacity: 0

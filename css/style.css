@@ -737,6 +737,90 @@ h1 u {
   margin-left: auto;
   margin-right: auto; }
 
+@keyframes fade-in {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.animate--on-scroll {
+  opacity: 0;
+  transition: all 1s; }
+
+.animation--blur {
+  filter: blur(5px); }
+
+.animation--up {
+  transform: translateY(29px); }
+
+.animation--down {
+  transform: translateY(-29px); }
+
+.animation--left {
+  transform: translateX(29px); }
+
+.animation--right {
+  transform: translateX(-29px); }
+
+.animation--big-up {
+  transform: translateY(123px); }
+
+.animation--big-down {
+  transform: translateY(-123px); }
+
+.animation---big-left {
+  transform: translateX(123px); }
+
+.animation--big-right {
+  transform: translateX(-123px); }
+
+.hidden {
+  opacity: 0; }
+
+.animation--show {
+  opacity: 1;
+  transition: all 1s;
+  filter: blur(0px);
+  transform: translateX(0);
+  transform: translateY(0); }
+
+.animate--on-scroll:nth-child(2) {
+  transition-delay: 200ms; }
+
+.animate--on-scroll:nth-child(3) {
+  transition-delay: 400ms; }
+
+.animate--on-scroll:nth-child(4) {
+  transition-delay: 600ms; }
+
+.animate--on-scroll:nth-child(5) {
+  transition-delay: 800ms; }
+
+.animate--on-scroll:nth-child(6) {
+  transition-delay: 1000ms; }
+
+.animate--on-scroll:nth-child(7) {
+  transition-delay: 1200ms; }
+
+.animate--on-scroll:nth-child(8) {
+  transition-delay: 1400ms; }
+
+.animate--on-scroll:nth-child(9) {
+  transition-delay: 1600ms; }
+
+.animate--on-scroll:nth-child(10) {
+  transition-delay: 1800ms; }
+
+.animate--on-scroll:nth-child(11) {
+  transition-delay: 2000ms; }
+
+.animate--on-scroll:nth-child(12) {
+  transition-delay: 2200ms; }
+
+.element-to-fade-in {
+  animation: fade-in 1.5s ease forwards;
+  opacity: 0; }
+
 .layout-with-sticky-image {
   padding: 76px;
   display: grid;
@@ -874,79 +958,6 @@ h1 u {
       rotate: 180deg;
       font-size: 1.4em;
       text-align: center; }
-
-.js-fade-element-hide {
-  opacity: 0; }
-
-.js-fade-element-show {
-  opacity: 1;
-  transition: all 0.4s ease-in-out; }
-
-@keyframes fade-in {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-
-.animate--on-scroll {
-  opacity: 0;
-  transition: all 1s; }
-
-.animation--blur {
-  filter: blur(5px); }
-
-.animation--up {
-  transform: translateY(29px); }
-
-.animation--down {
-  transform: translateY(-29px); }
-
-.animation--left {
-  transform: translateX(29px); }
-
-.animation--right {
-  transform: translateX(-29px); }
-
-.animation--big-up {
-  transform: translateY(123px); }
-
-.animation--big-down {
-  transform: translateY(-123px); }
-
-.animation---big-left {
-  transform: translateX(123px); }
-
-.animation--big-right {
-  transform: translateX(-123px); }
-
-.hidden {
-  opacity: 0; }
-
-.animation--show {
-  opacity: 1;
-  transition: all 1s;
-  filter: blur(0px);
-  transform: translateX(0);
-  transform: translateY(0); }
-
-.animate--on-scroll:nth-child(2) {
-  transition-delay: 200ms; }
-
-.animate--on-scroll:nth-child(3) {
-  transition-delay: 400ms; }
-
-.animate--on-scroll:nth-child(4) {
-  transition-delay: 600ms; }
-
-.animate--on-scroll:nth-child(5) {
-  transition-delay: 800ms; }
-
-.animate--on-scroll:nth-child(6) {
-  transition-delay: 1000ms; }
-
-.element-to-fade-in {
-  animation: fade-in 1.5s ease forwards;
-  opacity: 0; }
 
 .homepage .hero {
   padding-top: 76px; }

@@ -1,18 +1,26 @@
 @import '../source/_variables.sass'
+@import '../source/_global.sass'
 
 // NAVBAR
 // flexbox guide https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 .navbar
-  height: $s3--76
+  display: flex
+  justify-content: space-between
+  // height: $s3--76
   padding-left: $s0
-  padding-right: $s0
+  padding-right: $s1
+  padding-top: $s0
+  padding-bottom: $s-2
   @include fs0--18
   @include f-sans-800-black
   text-align: center
-  display: flex
   top: 0
   z-index: 1
+
+  .links
+    display: flex
+    justify-content: flex-end
 
   .link
     flex: 0 0 auto
@@ -48,25 +56,68 @@
     transition: 200ms ease-in
 
   .nav-cta:hover
-    border: 2px solid white
     box-shadow: -7px 7px 0px $dark, -7px 7px 0px 2px white
 
-// NAVBAR MOBILE
+
+
+
+
+
+  .visually-hidden
+    position: absolute
+    left: -100vw
+
+
+
+
+
+
+
+
+
+
+
+.btn--open-nav, .btn--close-nav
+  width: $s2
+  height: $s2
+  font-size: $s2
+  font-family: "Covik_Sans-Regular"
+
+.menu-drawer
+  display: none
+
+@media (min-width: 801px)
+  .btn--open-nav, .btn--close-nav
+    display: none
+  .navbar
+    .mobile-menu-trigger, .mobile-menu-icons
+      display: none
 
 @media (max-width: 800px)
-  .navbar
-    flex-wrap: wrap
-    .links
-      flex-wrap: wrap
-    .link 
-      padding: $s-1 $s-2--7 
-  .navbar, .navbar .flex
-    justify-content: center
-    margin-top: $s-2
+  .navigation
+    display: none
+    position: absolute
+    right: -100px
+    width: 100vw
+    height: 100vh
+    background-color: rgba($dark, 0.85)
 
-// @media (max-width: 500px)
+  .navigation.mobile-nav-open
+    right: 0
+    top: 0
+    z-index: 1
 
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    gap: $s1
 
-@media (max-width: 500px)
-  .navbar
-    margin-bottom: $s3
+    padding-top: 14px
+    padding-right: $s0
+    font-size: $s1
+
+    .btn--close-nav
+      margin-right: 21px
+    .nav-cta
+      margin-right: $s1
+

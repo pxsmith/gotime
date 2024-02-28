@@ -1,11 +1,38 @@
 link(rel='stylesheet' href='/source/components/nav.css' preload)
+script(src="/source/components/nav.js" type="text/javascript")
 
-.navbar
-  a(href='/index.html' data-sa-link-event='nav_home' draggable='false').logo
+
+nav.navbar
+  a.logo(href='/index.html' data-sa-link-event='nav_home' draggable='false')
     img(src="/source/images/logomark--white.svg" draggable='false')
-  .links.flex.jc-flex-end.fg-1
-    //- a(href='/case-studies').link Case Studies
-    a(href='/portfolio' data-sa-link-event='nav_portfolio').link Portfolio
-    a(href='/services' data-sa-link-event='nav_services').link Services
-    a(href='/referrals' data-sa-link-event='nav_referrals').link Refer &amp; Earn
-    a(href='https://calendly.com/gotimehq/meet' data-sa-link-event='primary_CTA' target='_blank').nav-cta.b Book a Call
+
+  .btn--open-nav =
+
+  .navigation
+    .btn--close-nav x
+    a.link(href='/portfolio' data-sa-link-event='nav_portfolio') Portfolio
+    a.link(href='/services' data-sa-link-event='nav_services') Services
+    a.link(href='/referrals' data-sa-link-event='nav_referrals') Refer &amp; Earn
+    a.nav-cta.b(href='https://calendly.com/gotimehq/meet' data-sa-link-event='primary_CTA' target='_blank') Book a Call
+    .scrim
+
+
+
+//- .navbar
+//-   a.b.logo(href='/index.html' data-sa-link-event='nav_home' draggable='false')
+//-     img(src="/source/images/logomark--white.svg" draggable='false')
+  
+//-   .b.mobile-menu-container
+//-     label.mobile-menu-trigger(for="toggle")
+//-     input(type="checkbox" id="toggle").visually-hidden
+//-     .mobile-menu-icons
+//-       .icon-burger =
+//-       //- .icon-close x
+
+//-   .control-me
+//-     a.link(href='/portfolio' data-sa-link-event='nav_portfolio') Portfolio
+//-     a.link(href='/services' data-sa-link-event='nav_services') Services
+//-     a.link(href='/referrals' data-sa-link-event='nav_referrals') Refer &amp; Earn
+//-     a.nav-cta.b(href='https://calendly.com/gotimehq/meet' data-sa-link-event='primary_CTA' target='_blank') Book a Call
+//-     .scrim
+
