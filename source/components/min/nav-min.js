@@ -1,1 +1,0 @@
-document.addEventListener("DOMContentLoaded",(function(e){let n=document.querySelector(".btn--open-nav"),t=document.querySelector(".btn--close-nav");nav=document.querySelector(".navigation"),n.addEventListener("click",(function(){nav.classList.toggle("mobile-nav-open")})),t.addEventListener("click",(function(){nav.classList.toggle("mobile-nav-open")}))}));

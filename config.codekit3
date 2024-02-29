@@ -1187,14 +1187,6 @@
       "oF" : 0,
       "oS" : 0
     },
-    "\/source\/components\/meta-tag-custom.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/source\/components\/meta-tag-custom.html",
-      "oF" : 0
-    },
     "\/source\/components\/meta-tag-custom.pug" : {
       "cB" : 0,
       "cOD" : 1,
@@ -1215,17 +1207,6 @@
       "oF" : 1,
       "oS" : 0
     },
-    "\/source\/components\/min\/nav-min.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/source\/components\/min\/min\/nav-min-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
     "\/source\/components\/nav.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -1243,9 +1224,9 @@
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/source\/components\/min\/nav-min.js",
-      "oF" : 0,
+      "oF" : 1,
       "sC" : 3,
       "tS" : 0
     },
@@ -1322,14 +1303,6 @@
       "oAP" : "\/source\/components\/pricing-min.css",
       "oF" : 0,
       "pg" : 0
-    },
-    "\/source\/components\/pricing.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/source\/components\/pricing.html",
-      "oF" : 0
     },
     "\/source\/components\/pricing.pug" : {
       "cB" : 0,
